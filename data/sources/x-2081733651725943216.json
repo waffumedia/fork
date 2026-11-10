@@ -36,7 +36,44 @@
         "media/x-2081733651725943216/s00_1.jpg",
         "media/x-2081733651725943216/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+      "link": "https://x.com/NormieEdits/status/2081733651725943216",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "data-viz"
+        ],
+        "style": [
+          "dark-moody",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "talking-head",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "orange"
+        ],
+        "concepts": [
+          "audio waveform visualization",
+          "split-screen commentary",
+          "text overlay"
+        ],
+        "title": "Split-screen talking head",
+        "description": "A man in a green jacket speaks at a table, shown in a split-screen format with text overlays like 'he's like?' and a complex audio waveform visualizer below.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +88,43 @@
         "media/x-2081733651725943216/s01_1.jpg",
         "media/x-2081733651725943216/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+      "link": "https://x.com/NormieEdits/status/2081733651725943216",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "y2k",
+          "retro-futurism",
+          "vaporwave"
+        ],
+        "format": [
+          "title-sequence",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "orange",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "character introduction",
+          "text animation",
+          "color-blocked background"
+        ],
+        "title": "Text reveal with character",
+        "description": "A man in a blue jacket is introduced with the text 'this is Cole' in a stylized font, using a split-screen effect and a color-blocked background.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +139,43 @@
         "media/x-2081733651725943216/s02_1.jpg",
         "media/x-2081733651725943216/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+      "link": "https://x.com/NormieEdits/status/2081733651725943216",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "dark-moody",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "talking-head",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "talking head commentary",
+          "text overlay",
+          "split-screen"
+        ],
+        "title": "Talking head with text",
+        "description": "A man in a green jacket gestures while speaking, with the text 'Think like a creator' displayed on screen in a split-screen format.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +190,43 @@
         "media/x-2081733651725943216/s03_1.jpg",
         "media/x-2081733651725943216/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+      "link": "https://x.com/NormieEdits/status/2081733651725943216",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "streetwear",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "pink",
+          "white"
+        ],
+        "concepts": [
+          "sports jersey",
+          "split-screen",
+          "text overlay"
+        ],
+        "title": "Man in sports jersey",
+        "description": "A man in a black and pink sports jersey stands with arms outstretched, shown in a split-screen format with the text 'how cole' below.",
+        "quality": 3
+      }
     },
     {
       "idx": 4,
@@ -96,7 +241,43 @@
         "media/x-2081733651725943216/s04_1.jpg",
         "media/x-2081733651725943216/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+      "link": "https://x.com/NormieEdits/status/2081733651725943216",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "dark-moody",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "talking-head",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "talking head",
+          "laughter",
+          "split-screen"
+        ],
+        "title": "Man laughing at table",
+        "description": "A man in a green jacket laughs while sitting at a table, shown in a split-screen format with the text 'this' overlaid.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +292,43 @@
         "media/x-2081733651725943216/s05_1.jpg",
         "media/x-2081733651725943216/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+      "link": "https://x.com/NormieEdits/status/2081733651725943216",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "dark-moody",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "talking-head",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "brown",
+          "green",
+          "black"
+        ],
+        "concepts": [
+          "military attire",
+          "split-screen",
+          "text overlay"
+        ],
+        "title": "Man in military gear",
+        "description": "A man in a camouflage uniform and cap is shown in a split-screen format, with the text 'until' overlaid.",
+        "quality": 3
+      }
     },
     {
       "idx": 6,
@@ -126,8 +343,45 @@
         "media/x-2081733651725943216/s06_1.jpg",
         "media/x-2081733651725943216/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+      "link": "https://x.com/NormieEdits/status/2081733651725943216",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "dark-moody",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "talking-head",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "talking head commentary",
+          "text overlay",
+          "split-screen"
+        ],
+        "title": "Man with 'Apology' text",
+        "description": "A man in a green jacket sits at a table, shown in a split-screen format with the text 'he made this Apology video' overlaid.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

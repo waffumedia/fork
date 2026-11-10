@@ -36,7 +36,44 @@
         "media/x-2086146967760236992/s00_1.jpg",
         "media/x-2086146967760236992/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2086146967760236992"
+      "link": "https://x.com/NormieEdits/status/2086146967760236992",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "overlay-graphics",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "digital collage",
+          "social media montage",
+          "ui elements"
+        ],
+        "title": "social media collage",
+        "description": "A four-quadrant split-screen displays a montage of social media content, including Polaroid-style photos, an Instagram story, a desktop UI recording, and a grid of images with text overlays.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +86,45 @@
       "frames": [
         "media/x-2086146967760236992/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2086146967760236992"
+      "link": "https://x.com/NormieEdits/status/2086146967760236992",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "grid-layout",
+          "text-on-path",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "swiss"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "smooth-ease",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey",
+          "red"
+        ],
+        "concepts": [
+          "timeline animation",
+          "brand journey",
+          "minimal design"
+        ],
+        "title": "timeline animation",
+        "description": "A minimalist timeline graphic shows years 2024-2026, transitioning to a calendar with handwritten notes and icons for clothing items.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +139,44 @@
         "media/x-2086146967760236992/s02_1.jpg",
         "media/x-2086146967760236992/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2086146967760236992"
+      "link": "https://x.com/NormieEdits/status/2086146967760236992",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "dark-moody"
+        ],
+        "format": [
+          "showreel",
+          "vsl"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "purple",
+          "red"
+        ],
+        "concepts": [
+          "creative process",
+          "branding questions",
+          "workplace"
+        ],
+        "title": "creative process montage",
+        "description": "A four-quadrant split-screen shows text intros, a cluttered workspace, a man at a computer, and a list of questions about branding.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +189,41 @@
       "frames": [
         "media/x-2086146967760236992/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2086146967760236992"
+      "link": "https://x.com/NormieEdits/status/2086146967760236992",
+      "tags": {
+        "technique": [
+          "motion-blur"
+        ],
+        "style": [
+          "grunge",
+          "streetwear",
+          "organic"
+        ],
+        "format": [
+          "short-film",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "pink",
+          "purple",
+          "black"
+        ],
+        "concepts": [
+          "handmade process",
+          "text as overlay",
+          "craft"
+        ],
+        "title": "screen printing process",
+        "description": "A close-up shot shows hands using a squeegee to apply ink onto a screen during a silk-screen printing process.",
+        "quality": 5
+      }
     },
     {
       "idx": 4,
@@ -90,7 +236,41 @@
       "frames": [
         "media/x-2086146967760236992/s04_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2086146967760236992"
+      "link": "https://x.com/NormieEdits/status/2086146967760236992",
+      "tags": {
+        "technique": [
+          "motion-blur"
+        ],
+        "style": [
+          "grunge",
+          "streetwear",
+          "dark-moody"
+        ],
+        "format": [
+          "short-film",
+          "brand-ad"
+        ],
+        "motion": [
+          "chaotic",
+          "physics"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "physical action",
+          "text overlay",
+          "urban setting"
+        ],
+        "title": "boxing action",
+        "description": "A man with tattoos is shown punching a heavy bag in front of a red, graffiti-covered shutter, with text overlay.",
+        "quality": 5
+      }
     },
     {
       "idx": 5,
@@ -103,8 +283,42 @@
       "frames": [
         "media/x-2086146967760236992/s05_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2086146967760236992"
+      "link": "https://x.com/NormieEdits/status/2086146967760236992",
+      "tags": {
+        "technique": [
+          "freeze-frame"
+        ],
+        "style": [
+          "dark-moody",
+          "grunge",
+          "streetwear"
+        ],
+        "format": [
+          "short-film",
+          "brand-ad"
+        ],
+        "motion": [
+          "slow-drift"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "intimate moment",
+          "text overlay",
+          "minimalist"
+        ],
+        "title": "man in bed",
+        "description": "A man with tattoos lies shirtless in bed, looking at the camera, with text overlay that reads 'i wake up'.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

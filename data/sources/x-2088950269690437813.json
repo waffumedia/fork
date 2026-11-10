@@ -24,8 +24,44 @@
       "frames": [
         "media/x-2088950269690437813/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2088950269690437813"
+      "link": "https://x.com/NormieEdits/status/2088950269690437813",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "figma",
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "creator branding",
+          "social media profile",
+          "partner grid"
+        ],
+        "title": "Profile Update! by @NormieEdits",
+        "description": "A static screenshot of a social media profile page for 'Normie | Video Editor', featuring a dark theme, a circular profile picture of the editor, and a grid of partner logos including Cine, Rive, and TNG. The layout is clean and modern, with a focus on creator branding.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -36,8 +36,46 @@
         "media/x-2089049556088463746/s00_1.jpg",
         "media/x-2089049556088463746/s00_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2089049556088463746"
+      "link": "https://x.com/xarrfx/status/2089049556088463746",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation",
+          "zoom-transition"
+        ],
+        "style": [
+          "corporate-clean",
+          "apple-style",
+          "minimal"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "app interface",
+          "content browsing",
+          "visual inspiration"
+        ],
+        "title": "Pinterest app interface",
+        "description": "A screen recording of the Pinterest app interface, showcasing a user browsing various content cards with a focus on a central image of a person in a glowing aura, likely demonstrating how to make static content move.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

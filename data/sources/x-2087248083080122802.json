@@ -36,8 +36,52 @@
         "media/x-2087248083080122802/s00_1.jpg",
         "media/x-2087248083080122802/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087248083080122802"
+      "link": "https://x.com/NormieEdits/status/2087248083080122802",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "grid-layout",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody",
+          "high-contrast"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "grey"
+        ],
+        "concepts": [
+          "creator process",
+          "information overload",
+          "split-screen design",
+          "text overlay"
+        ],
+        "title": "Split-screen creator showcase",
+        "description": "A split-screen composition shows a person working at a computer on the left and a grid of lights on the right, with text overlay about cognitive overload. The design uses a clean, modern layout to present information and a creative process.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

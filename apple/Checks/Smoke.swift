@@ -3,6 +3,25 @@ import Foundation
 // Read-only integration checks. Compile with the same models/client as the app.
 @main struct Smoke {
     @MainActor static func main() async throws {
+        // A circular cloud must not acquire the old grid's four-fold bias.
+        let cloud = Graph(nodes: (0..<96).map {
+            GraphNode(id: "cloud-\($0)", type: "idea", label: "Cloud", degree: 0)
+        }, edges: [], stats: [:])
+        let cloudLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud")
+        let repeatLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud-fresh")
+        precondition(cloudLayout.count == repeatLayout.count && cloudLayout.allSatisfy { repeatLayout[$0.key]?.x == $0.value.x && repeatLayout[$0.key]?.y == $0.value.y }, "Layout must be deterministic without a cache hit")
+        let points = Array(cloudLayout.values)
+        let center = CGPoint(x: points.map(\.x).reduce(0, +) / Double(points.count),
+                             y: points.map(\.y).reduce(0, +) / Double(points.count))
+        let angles = points.map { atan2($0.y - center.y, $0.x - center.x) * 4 }
+        let gridBias = hypot(angles.map { cos($0) }.reduce(0, +), angles.map { sin($0) }.reduce(0, +)) / Double(points.count)
+        precondition(gridBias < 0.2, "Circular repulsion developed an axis-aligned grid")
+        for i in points.indices {
+            for j in points.indices where j > i {
+                precondition(hypot(points[i].x - points[j].x, points[i].y - points[j].y) > 1, "Collapsed nodes")
+            }
+        }
+        print("PASS: deterministic fresh layout, separated cloud, four-fold grid bias \(gridBias)")
         let api = APIClient()
         let stats: Stats = try await api.request("stats")
         let today: TodayResponse = try await api.request("today")
@@ -43,7 +62,7 @@ import Foundation
         let start = clock.now
         let layout = try await GraphLayout.shared.positions(graph: graph, key: "scale-check")
         precondition(layout.count == 900 && layout.values.allSatisfy { $0.x.isFinite && $0.y.isFinite })
-        print("900 nodes / 4000 edges / 300 iterations: \(start.duration(to: clock.now))")
+        print("900 nodes / 4000 edges / 1000 iterations: \(start.duration(to: clock.now))")
         let cached = try await GraphLayout.shared.positions(graph: graph, key: "scale-check")
         precondition(cached.count == layout.count && layout.allSatisfy { cached[$0.key]?.x == $0.value.x && cached[$0.key]?.y == $0.value.y })
         let badAuth = APIClient()

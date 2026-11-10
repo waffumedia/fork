@@ -1,0 +1,157 @@
+{
+  "id": "x-2098841990435614875",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/contentrewards/status/2098841990435614875",
+  "native_id": "2098841990435614875",
+  "author": "contentrewards",
+  "input_url": "https://x.com/contentrewards/status/2098841990435614875",
+  "added_at": "2026-11-10T11:13:53Z",
+  "title": "What if your marketing strategy was just \u201cpress this\u201d?",
+  "text": "What if your marketing strategy was just \u201cpress this\u201d?\n\nContent Rewards V2 is live.",
+  "author_name": "Content Rewards",
+  "posted_at": "Sat Sep 12 18:31:39 +0000 2026",
+  "likes": 521,
+  "views": 261201,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 25.73,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 22,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 4.33,
+      "t_mid": 2.17,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2098841990435614875/s00_0.jpg",
+        "media/x-2098841990435614875/s00_1.jpg",
+        "media/x-2098841990435614875/s00_2.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.33,
+      "t_end": 7.08,
+      "t_mid": 5.71,
+      "timestamp": "0:04",
+      "frames": [
+        "media/x-2098841990435614875/s01_0.jpg",
+        "media/x-2098841990435614875/s01_1.jpg",
+        "media/x-2098841990435614875/s01_2.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.08,
+      "t_end": 11.08,
+      "t_mid": 9.08,
+      "timestamp": "0:07",
+      "frames": [
+        "media/x-2098841990435614875/s02_0.jpg",
+        "media/x-2098841990435614875/s02_1.jpg",
+        "media/x-2098841990435614875/s02_2.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 11.08,
+      "t_end": 12.25,
+      "t_mid": 11.67,
+      "timestamp": "0:11",
+      "frames": [
+        "media/x-2098841990435614875/s03_0.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 12.25,
+      "t_end": 13.62,
+      "t_mid": 12.94,
+      "timestamp": "0:12",
+      "frames": [
+        "media/x-2098841990435614875/s04_0.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 13.62,
+      "t_end": 14.83,
+      "t_mid": 14.23,
+      "timestamp": "0:14",
+      "frames": [
+        "media/x-2098841990435614875/s05_0.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 14.83,
+      "t_end": 18.92,
+      "t_mid": 16.88,
+      "timestamp": "0:15",
+      "frames": [
+        "media/x-2098841990435614875/s06_0.jpg",
+        "media/x-2098841990435614875/s06_1.jpg",
+        "media/x-2098841990435614875/s06_2.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 18.92,
+      "t_end": 22.96,
+      "t_mid": 20.94,
+      "timestamp": "0:19",
+      "frames": [
+        "media/x-2098841990435614875/s07_0.jpg",
+        "media/x-2098841990435614875/s07_1.jpg",
+        "media/x-2098841990435614875/s07_2.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    },
+    {
+      "idx": 8,
+      "file": 0,
+      "kind": "video",
+      "t_start": 22.96,
+      "t_end": 25.73,
+      "t_mid": 24.34,
+      "timestamp": "0:23",
+      "frames": [
+        "media/x-2098841990435614875/s08_0.jpg",
+        "media/x-2098841990435614875/s08_1.jpg",
+        "media/x-2098841990435614875/s08_2.jpg"
+      ],
+      "link": "https://x.com/contentrewards/status/2098841990435614875"
+    }
+  ],
+  "status": "ready"
+}

@@ -68,3 +68,25 @@ Both final builds: **BUILD SUCCEEDED**. iOS simulator compiled arm64 and x86_64;
 - Consequently rendered layout, gestures, macOS wheel zoom, Keychain save UI, ShareLink and actually opening an external URL still need an interactive device/simulator check. The read-only check validates the deep-link URL and image, not an openURL interaction.
 - Today and History were empty throughout testing. Their empty responses decoded successfully; swipe/undo/flip/clear UI and completion transitions aren't runtime-tested against populated data. Nothing was added to the library to manufacture a deck.
 - The backend graph excludes palette ideas. Tapping a palette chip sends the specified idea focus, but that server response may have no nodes. No backend changes were made.
+
+## Round 2
+
+Fixed the owner-reported Map issues in `apple/`:
+
+- Both Ideas and Full use the shared revised force layout. Initial positions now come from a stable FNV-1a ID seed and SplitMix64 samples distributed uniformly inside a disc. Repulsion searches all cells within the 360-point neighbourhood (seven by seven with 120-point cells), applies a circular distance cutoff, and smoothly tapers to zero at that radius. The old cell-shaped force boundary is gone. The simulation runs 1,000 iterations with quadratic cooling from 18.02 to approximately 0.02 points per step. Detached execution, cancellation and caching remain.
+- Idea radius is `3 + sqrt(max(1, count))`. The 25 largest ideas (stable ID tie-breaks) always draw labels, including at default fit zoom. Other labels appear at 1.8× zoom relative to fit, independent of graph size.
+- Map's Liked only filter starts off. Other screens and interactions are unchanged.
+- Updated the native README and read-only smoke checks. Added an uncached determinism check and a 96-node disconnected-cloud regression check for collisions and four-fold angular bias.
+
+Acceptance commands ran sequentially from `apple/`:
+
+```sh
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+```
+
+Both **BUILD SUCCEEDED**. Logs: `apple/build-ios.log`, `apple/build-macos.log`. No Swift compiler warnings/errors; the usual unused AppIntents metadata warning and CoreSimulator environment diagnostics remain.
+
+CoreSimulator still fails at `xcrun simctl list devices available` with connection invalid / connection refused and no runtime discovery. Evidence: `apple/simulator.log`. Could not launch or capture screenshots, so rendered appearance and label readability still need owner-side simulator QC. No foreground app control was used. No commits. Existing changes outside apple were left alone apart from this requested handoff append.
+
+Final `python3 apple/Checks/run.py`: **PASS**. Fresh computations matched exactly; the circular cloud had no collapsed pairs and four-fold grid bias 0.00936 (limit 0.2). Live snapshot: 787 scenes / 133 sources; liked Ideas 244 nodes / 2,878 edges; liked Full 560 nodes / 4,380 edges. Both modes/focus, cache, decoding, image fetch, Library search/tag, scene/source, deep-link URL and 401 handling passed. The 900-node / 4,000-edge / 1,000-iteration Debug layout took 20.49 seconds. Log: `apple/smoke.log`. Numerical checks do not replace rendered simulator QC. `git diff --check -- apple context/sol-native.md` passed.

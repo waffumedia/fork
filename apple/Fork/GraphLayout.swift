@@ -14,6 +14,22 @@ actor GraphLayout {
         return result
     }
     private struct Cell: Hashable { var x: Int; var y: Int }
+    // Stable across launches (Swift's Hasher is deliberately randomized).
+    private static func discPosition(id: String, radius: Double) -> (Double, Double) {
+        var state: UInt64 = 14695981039346656037
+        for byte in id.utf8 { state = (state ^ UInt64(byte)) &* 1099511628211 }
+        func uniform() -> Double {
+            state &+= 0x9E3779B97F4A7C15
+            var value = state
+            value = (value ^ (value >> 30)) &* 0xBF58476D1CE4E5B9
+            value = (value ^ (value >> 27)) &* 0x94D049BB133111EB
+            value ^= value >> 31
+            return Double(value >> 11) / 9007199254740992
+        }
+        let angle = uniform() * 2 * Double.pi
+        let distance = radius * sqrt(uniform())
+        return (cos(angle) * distance, sin(angle) * distance)
+    }
     private static func compute(_ graph: Graph) throws -> [String: CGPoint] {
         let count = graph.nodes.count
         guard count > 0 else { return [:] }
@@ -25,24 +41,30 @@ actor GraphLayout {
         var x = [Double](repeating: 0, count: count), y = x
         let radius = max(150, sqrt(Double(count)) * 24)
         for i in 0..<count {
-            let angle = Double(i) * 2.399963229728653
-            let distance = radius * sqrt(Double(i + 1) / Double(count))
-            x[i] = cos(angle) * distance; y[i] = sin(angle) * distance
+            (x[i], y[i]) = discPosition(id: graph.nodes[i].id, radius: radius)
         }
-        for iteration in 0..<300 {
+        let iterations = 1000
+        let cellSize = 120.0
+        let reach = 360.0
+        let cellReach = Int(ceil(reach / cellSize))
+        for iteration in 0..<iterations {
             try Task.checkCancellation()
             var dx = [Double](repeating: 0, count: count), dy = dx
             var cells: [Cell: [Int]] = [:]
-            let cellSize = 150.0
             for i in 0..<count { cells[Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize))), default: []].append(i) }
             for i in 0..<count {
                 let cell = Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize)))
-                for gx in (cell.x - 1)...(cell.x + 1) {
-                    for gy in (cell.y - 1)...(cell.y + 1) {
+                // Visit every cell intersecting the circular neighbourhood. Cell
+                // membership never defines the force or its cutoff.
+                for gx in (cell.x - cellReach)...(cell.x + cellReach) {
+                    for gy in (cell.y - cellReach)...(cell.y + cellReach) {
                         for j in cells[Cell(x: gx, y: gy)] ?? [] where j > i {
                             let vx = x[i] - x[j], vy = y[i] - y[j]
-                            let squared = max(16, vx * vx + vy * vy)
-                            let force = 1500 / squared
+                            let squared = vx * vx + vy * vy
+                            guard squared < reach * reach else { continue }
+                            // Smoothly vanish at the radius to avoid boundary ridges.
+                            let taper = 1 - squared / (reach * reach)
+                            let force = 2400 * taper * taper / max(1, squared)
                             dx[i] += vx * force; dy[i] += vy * force
                             dx[j] -= vx * force; dy[j] -= vy * force
                         }
@@ -56,7 +78,7 @@ actor GraphLayout {
                 dx[a] += vx * spring; dy[a] += vy * spring
                 dx[b] -= vx * spring; dy[b] -= vy * spring
             }
-            let temperature = 12 * (1 - Double(iteration) / 300) + 0.3
+            let temperature = 18 * pow(1 - Double(iteration) / Double(iterations), 2) + 0.02
             for i in 0..<count {
                 dx[i] -= x[i] * 0.003; dy[i] -= y[i] * 0.003
                 let length = max(1, hypot(dx[i], dy[i]))

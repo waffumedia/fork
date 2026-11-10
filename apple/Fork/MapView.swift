@@ -34,7 +34,7 @@ struct MapView: View {
     @Environment(AppNavigation.self) private var navigation
     @State private var store = MapStore()
     @State private var mode = "ideas"
-    @State private var liked = true
+    @State private var liked = false
     @State private var search = ""
     @State private var detail: ItemID?
     private var requestKey: String { "\(mode)|\(liked)|\(navigation.mapFocus ?? "")|\(api.revision)" }
@@ -102,8 +102,13 @@ private struct GraphCanvas: View {
     @State private var scrollOffset: CGFloat = 0
     #endif
     private let bounds: CGRect
+    private let prominentIdeas: Set<String>
     init(graph: Graph, positions: [String: CGPoint], select: @escaping (GraphNode) -> Void) {
         self.graph = graph; self.positions = positions; self.select = select
+        prominentIdeas = Set(graph.nodes.filter { $0.type == "idea" }.sorted {
+            let a = $0.count ?? 1, b = $1.count ?? 1
+            return a == b ? $0.id < $1.id : a > b
+        }.prefix(25).map(\.id))
         let xs = positions.values.map(\.x), ys = positions.values.map(\.y)
         bounds = CGRect(x: xs.min() ?? 0, y: ys.min() ?? 0,
                         width: max(1, (xs.max() ?? 0) - (xs.min() ?? 0)),
@@ -163,9 +168,9 @@ private struct GraphCanvas: View {
             for node in visible {
                 let p = point(node.id, canvasSize)
                 if node.type == "idea" {
-                    let r: CGFloat = 4 + min(5, CGFloat(node.count ?? 1) / 10)
+                    let r: CGFloat = 3 + sqrt(CGFloat(max(1, node.count ?? 1)))
                     context.fill(Path(ellipseIn: CGRect(x: p.x - r, y: p.y - r, width: r * 2, height: r * 2)), with: .color(facetColor(node.facet)))
-                    if scale(canvasSize) >= 0.65 {
+                    if prominentIdeas.contains(node.id) || zoom * magnification >= 1.8 {
                         context.draw(Text(node.label).font(.caption2).foregroundColor(facetColor(node.facet)), at: CGPoint(x: p.x + r + 3, y: p.y), anchor: .leading)
                     }
                 } else {

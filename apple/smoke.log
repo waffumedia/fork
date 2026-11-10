@@ -1,0 +1,6 @@
+PASS: deterministic fresh layout, separated cloud, four-fold grid bias 0.009358037293811553
+Stats: 787 scenes, 133 sources; Today: 0; History: 0
+ideas: 244 nodes, 2878 edges, focus decoded
+full: 560 nodes, 4380 edges, focus decoded
+900 nodes / 4000 edges / 1000 iterations: 20.490505041000002 seconds
+PASS: live decoding, Library search/tag, scene/source, image, Open-at URL, graph modes/focus/cache/scale, 401 banner state

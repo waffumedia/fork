@@ -1,0 +1,148 @@
+{
+  "id": "x-2003121803812806890",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/mangoster/status/2003121803812806890",
+  "native_id": "2003121803812806890",
+  "author": "mangoster",
+  "input_url": "https://x.com/mangoster/status/2003121803812806890",
+  "added_at": "2026-11-10T11:13:39Z",
+  "title": "latest launch trailer for @contentrewards ",
+  "text": "latest launch trailer for @contentrewards \n\nmade using nano banana pro, flux 2 pro, seedream 4.5, kling 2.6, veo 3.1, and a lot of after effects\n\nthis ai thing is hella fun I can't lie",
+  "author_name": "mango",
+  "posted_at": "Mon Dec 22 15:13:48 +0000 2025",
+  "likes": 327,
+  "views": 16929,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 48.51,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 13,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.96,
+      "t_end": 2.46,
+      "t_mid": 1.71,
+      "timestamp": "0:01",
+      "frames": [
+        "media/x-2003121803812806890/s00_0.jpg",
+        "media/x-2003121803812806890/s00_1.jpg",
+        "media/x-2003121803812806890/s00_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 3.38,
+      "t_end": 9.22,
+      "t_mid": 6.3,
+      "timestamp": "0:03",
+      "frames": [
+        "media/x-2003121803812806890/s01_0.jpg",
+        "media/x-2003121803812806890/s01_1.jpg",
+        "media/x-2003121803812806890/s01_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 9.22,
+      "t_end": 10.84,
+      "t_mid": 10.03,
+      "timestamp": "0:09",
+      "frames": [
+        "media/x-2003121803812806890/s02_0.jpg",
+        "media/x-2003121803812806890/s02_1.jpg",
+        "media/x-2003121803812806890/s02_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 12.26,
+      "t_end": 19.89,
+      "t_mid": 16.08,
+      "timestamp": "0:12",
+      "frames": [
+        "media/x-2003121803812806890/s03_0.jpg",
+        "media/x-2003121803812806890/s03_1.jpg",
+        "media/x-2003121803812806890/s03_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 19.89,
+      "t_end": 37.2,
+      "t_mid": 28.55,
+      "timestamp": "0:20",
+      "frames": [
+        "media/x-2003121803812806890/s04_0.jpg",
+        "media/x-2003121803812806890/s04_1.jpg",
+        "media/x-2003121803812806890/s04_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 37.2,
+      "t_end": 39.37,
+      "t_mid": 38.29,
+      "timestamp": "0:37",
+      "frames": [
+        "media/x-2003121803812806890/s05_0.jpg",
+        "media/x-2003121803812806890/s05_1.jpg",
+        "media/x-2003121803812806890/s05_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 40.46,
+      "t_end": 41.96,
+      "t_mid": 41.21,
+      "timestamp": "0:40",
+      "frames": [
+        "media/x-2003121803812806890/s06_0.jpg",
+        "media/x-2003121803812806890/s06_1.jpg",
+        "media/x-2003121803812806890/s06_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 43.0,
+      "t_end": 48.51,
+      "t_mid": 45.76,
+      "timestamp": "0:43",
+      "frames": [
+        "media/x-2003121803812806890/s07_0.jpg",
+        "media/x-2003121803812806890/s07_1.jpg",
+        "media/x-2003121803812806890/s07_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2003121803812806890"
+    }
+  ],
+  "status": "ready"
+}

@@ -1,0 +1,5 @@
+Fix round 2 for the Fork SwiftUI app (apple/ only; read context/sol-native.md for your previous handoff). Owner-side QC in the iOS simulator found:
+1. Map "Ideas" mode: the force layout collapses into a visible square GRID (nodes aligned in rows/columns, a dense cross in the middle). It must look like an organic Obsidian-style graph: seed initial positions randomly (deterministic seed from node id) inside a disc, not on a grid; make repulsion act between all nearby nodes (the spatial grid is only an acceleration structure, check neighbour cells properly), add cooling, run enough iterations to converge. Same for Full mode.
+2. Ideas mode shows no labels at the default zoom. Size idea nodes by `count` (sqrt scale), and always draw labels for the ~25 largest idea nodes; others appear as you zoom in.
+3. Default "Liked only" should be OFF.
+Keep everything else. Verify with both acceptance builds, then if CoreSimulator works take screenshots to context/shots/. Do not commit. Append a "Round 2" section to context/sol-native.md.

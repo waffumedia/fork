@@ -36,7 +36,45 @@
         "media/x-2085085934215635425/s00_1.jpg",
         "media/x-2085085934215635425/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "collage",
+          "grid-layout",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "red",
+          "orange"
+        ],
+        "concepts": [
+          "video montage",
+          "social media content",
+          "thumbnail grid"
+        ],
+        "title": "thumbnail grid of video clips",
+        "description": "A grid of ten blurred thumbnails showcasing various short video clips, likely a social media reel or showreel, with a collage layout and a soft focus effect.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +87,41 @@
       "frames": [
         "media/x-2085085934215635425/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "apple-style",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "digital communication",
+          "freelance work",
+          "mobile app"
+        ],
+        "title": "iMessage chat on iPhone",
+        "description": "A screen recording of an iMessage conversation on an iPhone, showing a user being hired for video editing work.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +136,41 @@
         "media/x-2085085934215635425/s02_1.jpg",
         "media/x-2085085934215635425/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "apple-style",
+          "dark-moody"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "digital communication",
+          "job rejection",
+          "mobile app"
+        ],
+        "title": "email inbox on iPhone",
+        "description": "A screen recording of an iPhone email app showing a dark mode interface with multiple rejections for a job application.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +185,41 @@
         "media/x-2085085934215635425/s03_1.jpg",
         "media/x-2085085934215635425/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "line-art",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "hand-drawn",
+          "organic"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "slow-drift"
+        ],
+        "medium": [
+          "illustration"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "red"
+        ],
+        "concepts": [
+          "time management",
+          "planning",
+          "personal note"
+        ],
+        "title": "calendar with handwritten text",
+        "description": "A minimalist calendar page with a red circle around the number 27 and handwritten text that reads 'I'm showing you the'.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +234,41 @@
         "media/x-2085085934215635425/s04_1.jpg",
         "media/x-2085085934215635425/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "line-art"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "data visualization",
+          "trend analysis",
+          "time series"
+        ],
+        "title": "timeline graph",
+        "description": "An animated line graph showing a fluctuating trend from 2015 to 2025, with key years marked.",
+        "quality": 5
+      }
     },
     {
       "idx": 5,
@@ -109,7 +283,42 @@
         "media/x-2085085934215635425/s05_1.jpg",
         "media/x-2085085934215635425/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "mask-reveal",
+          "glow-bloom"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "high-contrast"
+        ],
+        "format": [
+          "title-sequence",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "grey"
+        ],
+        "concepts": [
+          "financial analysis",
+          "data error",
+          "investigation"
+        ],
+        "title": "magnifying glass over text",
+        "description": "A magnifying glass focuses on the word 'Wrong' in a stylized title, with a red lightning bolt and a stock chart in the background.",
+        "quality": 5
+      }
     },
     {
       "idx": 6,
@@ -124,7 +333,42 @@
         "media/x-2085085934215635425/s06_1.jpg",
         "media/x-2085085934215635425/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "red",
+          "black"
+        ],
+        "concepts": [
+          "freelance marketplace",
+          "service offering",
+          "digital profile"
+        ],
+        "title": "freelance profile on a website",
+        "description": "A screenshot of a freelance platform profile for 'Tuan le', offering video editing services with a rating and price.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +383,41 @@
         "media/x-2085085934215635425/s07_1.jpg",
         "media/x-2085085934215635425/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "line-art"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "creative process",
+          "learning stages",
+          "workflow"
+        ],
+        "title": "process flow diagram",
+        "description": "An animated diagram showing a four-step process: Copy, Understand, Adapt, Innovate, with a dotted path connecting the steps.",
+        "quality": 5
+      }
     },
     {
       "idx": 8,
@@ -154,7 +432,41 @@
         "media/x-2085085934215635425/s08_1.jpg",
         "media/x-2085085934215635425/s08_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "line-art"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "creative process",
+          "learning stages",
+          "workflow"
+        ],
+        "title": "five-step process diagram",
+        "description": "An animated diagram illustrating a five-step progression: Copy, Understand, Execute, Adapt, Create, with a vertical layout.",
+        "quality": 5
+      }
     },
     {
       "idx": 9,
@@ -169,8 +481,42 @@
         "media/x-2085085934215635425/s09_1.jpg",
         "media/x-2085085934215635425/s09_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2085085934215635425"
+      "link": "https://x.com/NormieEdits/status/2085085934215635425",
+      "tags": {
+        "technique": [
+          "grid-layout"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "illustration"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "time management",
+          "deadline",
+          "planning"
+        ],
+        "title": "calendar with highlighted dates",
+        "description": "A minimalist calendar view with the 27th and 28th highlighted in blue, suggesting a two-day event or deadline.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -36,7 +36,51 @@
         "media/x-2089394048130056270/s00_1.jpg",
         "media/x-2089394048130056270/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2089394048130056270"
+      "link": "https://x.com/NormieEdits/status/2089394048130056270",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful",
+          "geometric"
+        ],
+        "format": [
+          "social-reel",
+          "explainer",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere",
+          "figma"
+        ],
+        "palette": [
+          "orange",
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "text overlay",
+          "data visualization",
+          "life events timeline",
+          "social media content"
+        ],
+        "title": "Colin's story with data",
+        "description": "A four-quadrant split-screen showing a man, a calendar, text about cognitive effects, and a house under construction, likely a social media explainer video.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +95,51 @@
         "media/x-2089394048130056270/s01_1.jpg",
         "media/x-2089394048130056270/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2089394048130056270"
+      "link": "https://x.com/NormieEdits/status/2089394048130056270",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "line-art",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "duotone",
+          "editorial"
+        ],
+        "format": [
+          "social-reel",
+          "explainer",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere",
+          "figma"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange",
+          "yellow"
+        ],
+        "concepts": [
+          "risk factors",
+          "brain health",
+          "data visualization",
+          "social media content"
+        ],
+        "title": "Brain and risk graphics",
+        "description": "A four-quadrant split-screen with a bottle, a bar chart, a brain illustration, and a video thumbnail, suggesting a narrative about addiction or mental health.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,8 +152,53 @@
       "frames": [
         "media/x-2089394048130056270/s02_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2089394048130056270"
+      "link": "https://x.com/NormieEdits/status/2089394048130056270",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful",
+          "geometric"
+        ],
+        "format": [
+          "social-reel",
+          "explainer",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere",
+          "figma"
+        ],
+        "palette": [
+          "red",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "personal story",
+          "timeline",
+          "text message",
+          "social media content"
+        ],
+        "title": "Video message and timeline",
+        "description": "A four-quadrant split-screen featuring a framed photo, a timeline graph, a text message, and social media cards, likely a narrative about a personal story.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

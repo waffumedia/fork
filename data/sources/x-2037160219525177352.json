@@ -1,0 +1,163 @@
+{
+  "id": "x-2037160219525177352",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/mangoster/status/2037160219525177352",
+  "native_id": "2037160219525177352",
+  "author": "mangoster",
+  "input_url": "https://x.com/mangoster/status/2037160219525177352",
+  "added_at": "2026-11-10T11:13:42Z",
+  "title": "If you actually use AI like this I promise you not one normie will be able to point it out",
+  "text": "If you actually use AI like this I promise you not one normie will be able to point it out\n\nI've shown this video to countless of my friends\n\nand the look on their faces is insane when I tell them all of this B-Roll is AI generated\n\nFull prompt breakdown + model reviews soon",
+  "author_name": "mango",
+  "posted_at": "Thu Mar 26 13:30:19 +0000 2026",
+  "likes": 338,
+  "views": 143342,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 23.68,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 14,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.04,
+      "t_end": 1.72,
+      "t_mid": 0.88,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2037160219525177352/s00_0.jpg",
+        "media/x-2037160219525177352/s00_1.jpg",
+        "media/x-2037160219525177352/s00_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 1.72,
+      "t_end": 3.48,
+      "t_mid": 2.6,
+      "timestamp": "0:02",
+      "frames": [
+        "media/x-2037160219525177352/s01_0.jpg",
+        "media/x-2037160219525177352/s01_1.jpg",
+        "media/x-2037160219525177352/s01_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.84,
+      "t_end": 6.88,
+      "t_mid": 5.86,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-2037160219525177352/s02_0.jpg",
+        "media/x-2037160219525177352/s02_1.jpg",
+        "media/x-2037160219525177352/s02_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 8.48,
+      "t_end": 10.28,
+      "t_mid": 9.38,
+      "timestamp": "0:08",
+      "frames": [
+        "media/x-2037160219525177352/s03_0.jpg",
+        "media/x-2037160219525177352/s03_1.jpg",
+        "media/x-2037160219525177352/s03_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 10.28,
+      "t_end": 12.12,
+      "t_mid": 11.2,
+      "timestamp": "0:10",
+      "frames": [
+        "media/x-2037160219525177352/s04_0.jpg",
+        "media/x-2037160219525177352/s04_1.jpg",
+        "media/x-2037160219525177352/s04_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 12.12,
+      "t_end": 13.76,
+      "t_mid": 12.94,
+      "timestamp": "0:12",
+      "frames": [
+        "media/x-2037160219525177352/s05_0.jpg",
+        "media/x-2037160219525177352/s05_1.jpg",
+        "media/x-2037160219525177352/s05_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 13.76,
+      "t_end": 16.48,
+      "t_mid": 15.12,
+      "timestamp": "0:14",
+      "frames": [
+        "media/x-2037160219525177352/s06_0.jpg",
+        "media/x-2037160219525177352/s06_1.jpg",
+        "media/x-2037160219525177352/s06_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 16.48,
+      "t_end": 18.4,
+      "t_mid": 17.44,
+      "timestamp": "0:16",
+      "frames": [
+        "media/x-2037160219525177352/s07_0.jpg",
+        "media/x-2037160219525177352/s07_1.jpg",
+        "media/x-2037160219525177352/s07_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    },
+    {
+      "idx": 8,
+      "file": 0,
+      "kind": "video",
+      "t_start": 18.4,
+      "t_end": 23.68,
+      "t_mid": 21.04,
+      "timestamp": "0:18",
+      "frames": [
+        "media/x-2037160219525177352/s08_0.jpg",
+        "media/x-2037160219525177352/s08_1.jpg",
+        "media/x-2037160219525177352/s08_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2037160219525177352"
+    }
+  ],
+  "status": "ready"
+}

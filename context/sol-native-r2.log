@@ -1,0 +1,1121 @@
+Reading additional input from stdin...
+2026-11-10T11:11:47.629520Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:8420/mcp)")))
+2026-11-10T11:11:47.629521Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:23373/v0/mcp)")))
+OpenAI Codex v0.166.0-alpha.6
+--------
+workdir: /Users/waffu/Claude/inspo
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR, /Users/waffu/Library/Developer, /Users/waffu/Library/Caches] (network access enabled)
+reasoning effort: medium
+reasoning summaries: concise
+session id: 01a1c528-2da7-7e92-bc05-aa52c06c35a8
+--------
+user
+Fix round 2 for the Fork SwiftUI app (apple/ only; read context/sol-native.md for your previous handoff). Owner-side QC in the iOS simulator found:
+1. Map "Ideas" mode: the force layout collapses into a visible square GRID (nodes aligned in rows/columns, a dense cross in the middle). It must look like an organic Obsidian-style graph: seed initial positions randomly (deterministic seed from node id) inside a disc, not on a grid; make repulsion act between all nearby nodes (the spatial grid is only an acceleration structure, check neighbour cells properly), add cooling, run enough iterations to converge. Same for Full mode.
+2. Ideas mode shows no labels at the default zoom. Size idea nodes by `count` (sqrt scale), and always draw labels for the ~25 largest idea nodes; others appear as you zoom in.
+3. Default "Liked only" should be OFF.
+Keep everything else. Verify with both acceptance builds, then if CoreSimulator works take screenshots to context/shots/. Do not commit. Append a "Round 2" section to context/sol-native.md.
+2026-11-10T11:11:47.884132Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:23373/v0/mcp)")))
+2026-11-10T11:11:47.884426Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:8420/mcp)")))
+warning: Under-development features enabled: chronicle. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /Users/waffu/.codex/config.toml.
+2026-11-10T11:11:48.903053Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:23373/v0/mcp)")))
+2026-11-10T11:11:48.903580Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:8420/mcp)")))
+codex
+I’ll read the handoff, fix the graph layout and labels in `apple/`, then run both acceptance builds and try simulator screenshots.
+exec
+/bin/zsh -lc 'pwd && rg -n "Fork|inspo|sol-native" /Users/waffu/.codex/memories/MEMORY.md' in /Users/waffu/Claude/inspo
+ exited 1 in 0ms:
+/Users/waffu/Claude/inspo
+
+exec
+/bin/zsh -lc 'cat context/sol-native.md && rg --files apple | head -60' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+# Fork native handoff
+
+Built one native SwiftUI multiplatform target, Fork (`com.waffu.fork`), for iOS 26 and macOS 26. Read AGENTS.md and docs/UX-SPEC.md before implementation. App code is entirely under apple/. This requested handoff is the only authored file outside apple/. No commits. Existing backend, pipeline, data, scripts, and other working-tree changes were left alone.
+
+## Built
+
+- iOS TabView and macOS NavigationSplitView sidebar: Today, Map, Library, History, Settings. Mac window minimum 1000×700. System fonts, semantic colours, SF Symbols, system controls, automatic light/dark appearance.
+- Today: ordered unswiped deck, scene cycling and page dots, metadata/pitch, current-scene deep link, drag/rotation/fly-out, like/dislike buttons, undo via clear, Mac arrows and Command-Z, refresh, empty/completed states. Failed posts retain the item and show the error.
+- Map: Ideas/Full, liked filter, searchable node buttons, focus/depth-2 fetch and breadcrumb reset, scene sheets. One Canvas with batched edge paths, dashed bridges and accent cross-bridges, facet colours, zoom-dependent labels, rounded thumbnails, pan/pinch/buttons and native macOS scroll-wheel zoom.
+- Library: debounced server search, top 30 facet/tag filters, liked filter, adaptive scene grid, scene sheets, loading/errors/refresh.
+- Scene: image and selectable frame strip, timestamp/title/description, Open at, ShareLink, Source navigation, grouped tag buttons that focus Map and dismiss detail sheets.
+- Source: title/author/platform/duration/origin/status/pitch, external link, current-verdict like/dislike controls (tap the selected verdict to clear), scene grid.
+- History: All/Liked/Disliked, thumbnails/author/verdict/relative time, source navigation, flip/clear swipe actions and Mac context menu.
+- Settings: server URL, SecureField token, explicit Save, Keychain storage, stats connection test, shared 401 banner linking to Settings.
+
+## Files
+
+| File | Purpose |
+|---|---|
+| apple/project.yml | Single-target XcodeGen project and shared Fork scheme |
+| apple/Info.plist | Local-network ATS permission, arbitrary loads off |
+| apple/Fork.xcodeproj/project.pbxproj | Generated project |
+| apple/Fork.xcodeproj/project.xcworkspace/contents.xcworkspacedata | Generated workspace |
+| apple/Fork.xcodeproj/xcshareddata/xcschemes/Fork.xcscheme | Generated shared scheme |
+| apple/Fork/ForkApp.swift | App entry, platform navigation, shared route state and auth banner |
+| apple/Fork/APIClient.swift | Async URLSession/Codable client, Keychain, DEBUG environment, observable loading store |
+| apple/Fork/Models.swift | Endpoint response models |
+| apple/Fork/Images.swift | Shared bounded image cache, off-main downsampling, reusable stock UI |
+| apple/Fork/TodayView.swift | Deck and undo |
+| apple/Fork/MapView.swift | Map store, Canvas, gestures, visible thumbnail loading |
+| apple/Fork/GraphLayout.swift | Detached 300-iteration spatial-grid force layout and actor cache |
+| apple/Fork/LibraryView.swift | Search, tags and grid |
+| apple/Fork/DetailViews.swift | Scene and Source details |
+| apple/Fork/HistoryView.swift | Verdict history |
+| apple/Fork/SettingsView.swift | Connection settings |
+| apple/Checks/Smoke.swift | Read-only checks using the actual client/models/layout |
+| apple/Checks/run.py | Compiles DEBUG checks; supplies token only via launch environment |
+| apple/README.md | Build, credentials, checks and simulator launch notes |
+| apple/build-ios.log, apple/build-macos.log | Final successful acceptance build output |
+| apple/smoke.log | Successful live checks and layout timing |
+| apple/simulator.log | CoreSimulator failure evidence |
+
+## Decisions
+
+- No packages, web views, custom fonts, or custom visual theme. UIKit/AppKit only bridge decoded images into SwiftUI Image; all UI is SwiftUI.
+- Token is never in source, project, scheme or logs. DEBUG FORK_TOKEN/FORK_URL prefill in memory; Settings persists only on Save/Test. Release ignores launch environment. A scan against the actual token found no matches anywhere under apple/.
+- macOS signing is automatic with empty team and ad hoc identity `-`. iOS simulator builds without signing.
+- Debug adds Swift compiler `-disable-sandbox`: Observation macro subprocesses otherwise fail with `sandbox-exec: sandbox_apply: Operation not permitted` inside this already sandboxed host. Release has no override; app network/security permissions aren't changed.
+- Layout is computed off the main actor, cached by server/mode/filter/focus/graph fingerprint, then drawn statically. Spatial-grid repulsion bounds the larger graph workload. Thumbnail requests run six at a time, only for visible nodes, downsampled to 96 pixels; normal scene images use up to 1600 pixels. Cache is limited by decoded-image cost.
+- Run destination builds sequentially: concurrent builds initially conflicted over Xcode's shared build database. Final exact acceptance commands passed sequentially.
+
+## Verification
+
+With Xcode 26.6 (26.5 SDKs), ran `cd apple && xcodegen`, then:
+
+```sh
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+```
+
+Both final builds: **BUILD SUCCEEDED**. iOS simulator compiled arm64 and x86_64; macOS compiled arm64 and signed ad hoc. No Swift compiler warnings/errors in final logs. Xcode prints environment CoreSimulator diagnostics and its usual unused AppIntents metadata warning.
+
+`python3 apple/Checks/run.py` passed against http://localhost:3300 using DEBUG launch environment. Verified real stats/Today/history decoding; Library search and tag filtering; scene/source details and membership; image HTTP 200; valid Open-at URL; both graph modes, idea focus and connected endpoints; cached finite layout positions; 401 banner state. No swipe mutations. Final live snapshot: 246 scenes / 45 sources, Ideas 194 nodes / 2307 edges, Full 441 nodes / 3359 edges. Data changed during this run as the existing backend/library work continued, so these are test-time counts. Synthetic 900 nodes / 4000 edges / 300 iterations: 2.74 seconds in Debug.
+
+## Known gaps / follow-up checks
+
+- `xcrun simctl list devices available` fails with CoreSimulatorService connection invalid / connection refused; runtime discovery and simdiskimaged are unavailable in this sandbox. Couldn't boot, install, launch or capture simulator screenshots. No context/shots images were produced. No desktop app or visible browser was launched.
+- Consequently rendered layout, gestures, macOS wheel zoom, Keychain save UI, ShareLink and actually opening an external URL still need an interactive device/simulator check. The read-only check validates the deep-link URL and image, not an openURL interaction.
+- Today and History were empty throughout testing. Their empty responses decoded successfully; swipe/undo/flip/clear UI and completion transitions aren't runtime-tested against populated data. Nothing was added to the library to manufacture a deck.
+- The backend graph excludes palette ideas. Tapping a palette chip sends the specified idea focus, but that server response may have no nodes. No backend changes were made.
+apple/Info.plist
+apple/README.md
+apple/Fork.xcodeproj/xcshareddata/xcschemes/Fork.xcscheme
+apple/Fork.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+apple/Fork.xcodeproj/project.pbxproj
+apple/project.yml
+apple/Checks/Smoke.swift
+apple/Checks/run.py
+apple/Fork/HistoryView.swift
+apple/Fork/TodayView.swift
+apple/Fork/Images.swift
+apple/Fork/ForkApp.swift
+apple/Fork/Models.swift
+apple/Fork/LibraryView.swift
+apple/Fork/GraphLayout.swift
+apple/Fork/MapView.swift
+apple/Fork/APIClient.swift
+apple/Fork/SettingsView.swift
+apple/Fork/DetailViews.swift
+
+exec
+/bin/zsh -lc 'cat apple/Fork/GraphLayout.swift && cat apple/Fork/MapView.swift' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+import Foundation
+
+// A spatial grid keeps the repulsion pass bounded for larger libraries.
+// Layout work runs in a detached task; only the finished positions reach the UI.
+actor GraphLayout {
+    static let shared = GraphLayout()
+    private var cache: [String: [String: CGPoint]] = [:]
+    func positions(graph: Graph, key: String) async throws -> [String: CGPoint] {
+        if let value = cache[key] { return value }
+        let task = Task.detached(priority: .userInitiated) { try Self.compute(graph) }
+        let result = try await withTaskCancellationHandler { try await task.value } onCancel: { task.cancel() }
+        if cache.count >= 12 { cache.removeAll() }
+        cache[key] = result
+        return result
+    }
+    private struct Cell: Hashable { var x: Int; var y: Int }
+    private static func compute(_ graph: Graph) throws -> [String: CGPoint] {
+        let count = graph.nodes.count
+        guard count > 0 else { return [:] }
+        let indices = Dictionary(uniqueKeysWithValues: graph.nodes.enumerated().map { ($0.element.id, $0.offset) })
+        let edges = graph.edges.compactMap { edge -> (Int, Int, Double)? in
+            guard let a = indices[edge.source], let b = indices[edge.target] else { return nil }
+            return (a, b, min(3, sqrt(edge.weight)))
+        }
+        var x = [Double](repeating: 0, count: count), y = x
+        let radius = max(150, sqrt(Double(count)) * 24)
+        for i in 0..<count {
+            let angle = Double(i) * 2.399963229728653
+            let distance = radius * sqrt(Double(i + 1) / Double(count))
+            x[i] = cos(angle) * distance; y[i] = sin(angle) * distance
+        }
+        for iteration in 0..<300 {
+            try Task.checkCancellation()
+            var dx = [Double](repeating: 0, count: count), dy = dx
+            var cells: [Cell: [Int]] = [:]
+            let cellSize = 150.0
+            for i in 0..<count { cells[Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize))), default: []].append(i) }
+            for i in 0..<count {
+                let cell = Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize)))
+                for gx in (cell.x - 1)...(cell.x + 1) {
+                    for gy in (cell.y - 1)...(cell.y + 1) {
+                        for j in cells[Cell(x: gx, y: gy)] ?? [] where j > i {
+                            let vx = x[i] - x[j], vy = y[i] - y[j]
+                            let squared = max(16, vx * vx + vy * vy)
+                            let force = 1500 / squared
+                            dx[i] += vx * force; dy[i] += vy * force
+                            dx[j] -= vx * force; dy[j] -= vy * force
+                        }
+                    }
+                }
+            }
+            for (a, b, weight) in edges {
+                let vx = x[b] - x[a], vy = y[b] - y[a]
+                let distance = max(1, hypot(vx, vy))
+                let spring = (distance - 72) * 0.012 * weight / distance
+                dx[a] += vx * spring; dy[a] += vy * spring
+                dx[b] -= vx * spring; dy[b] -= vy * spring
+            }
+            let temperature = 12 * (1 - Double(iteration) / 300) + 0.3
+            for i in 0..<count {
+                dx[i] -= x[i] * 0.003; dy[i] -= y[i] * 0.003
+                let length = max(1, hypot(dx[i], dy[i]))
+                let factor = min(temperature, length) / length
+                x[i] += dx[i] * factor; y[i] += dy[i] * factor
+            }
+        }
+        return Dictionary(uniqueKeysWithValues: graph.nodes.enumerated().map { ($0.element.id, CGPoint(x: x[$0.offset], y: y[$0.offset])) })
+    }
+}
+import SwiftUI
+import Observation
+
+@MainActor @Observable final class MapStore {
+    var graph: Graph?
+    var positions: [String: CGPoint] = [:]
+    var loading = false
+    var error: String?
+    private var generation = 0
+    func load(api: APIClient, mode: String, liked: Bool, focus: String?) async {
+        generation += 1
+        let current = generation
+        loading = true; error = nil
+        do {
+            var params = [URLQueryItem(name: "mode", value: mode), URLQueryItem(name: "depth", value: "2")]
+            if liked { params.append(URLQueryItem(name: "liked", value: "1")) }
+            if let focus { params.append(URLQueryItem(name: "focus", value: focus)) }
+            let graph: Graph = try await api.request("graph", query: params)
+            let fingerprint = graph.nodes.map { "\($0.id):\($0.degree)" }.joined(separator: "|")
+            let key = "\(api.server)|\(mode)|\(liked)|\(focus ?? "")|\(fingerprint)"
+            let positions = try await GraphLayout.shared.positions(graph: graph, key: key)
+            guard current == generation, !Task.isCancelled else { return }
+            self.graph = graph; self.positions = positions
+        } catch {
+            guard current == generation else { return }
+            if !Task.isCancelled { self.error = error.localizedDescription }
+        }
+        if current == generation { loading = false }
+    }
+}
+
+struct MapView: View {
+    @Environment(APIClient.self) private var api
+    @Environment(AppNavigation.self) private var navigation
+    @State private var store = MapStore()
+    @State private var mode = "ideas"
+    @State private var liked = true
+    @State private var search = ""
+    @State private var detail: ItemID?
+    private var requestKey: String { "\(mode)|\(liked)|\(navigation.mapFocus ?? "")|\(api.revision)" }
+    var body: some View {
+        VStack(spacing: 0) {
+            HStack {
+                Picker("Map mode", selection: $mode) { Text("Ideas").tag("ideas"); Text("Full").tag("full") }
+                    .pickerStyle(.segmented).frame(maxWidth: 230)
+                Spacer()
+                Toggle("Liked only", isOn: $liked).fixedSize()
+            }.padding()
+            if let focus = navigation.mapFocus {
+                HStack {
+                    Button("All") { navigation.mapFocus = nil }
+                    Image(systemName: "chevron.right").font(.caption)
+                    Text(focus.split(separator: ":").dropFirst(2).joined(separator: ":")).lineLimit(1)
+                    Spacer()
+                }.padding(.horizontal).padding(.bottom, 8)
+            }
+            if !search.isEmpty {
+                List((store.graph?.nodes ?? []).filter { $0.label.localizedCaseInsensitiveContains(search) }.prefix(12)) { node in
+                    Button { select(node); search = "" } label: { Label(node.label, systemImage: node.type == "idea" ? "circle.fill" : "photo") }
+                }.frame(maxHeight: 180)
+            }
+            if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+            ZStack {
+                if let graph = store.graph {
+                    if graph.nodes.isEmpty && !store.loading {
+                        ContentUnavailableView("No connections yet", systemImage: "point.3.connected.trianglepath.dotted", description: Text("Connections appear as scenes receive tags. Try Full or turn off Liked only."))
+                    } else {
+                        GraphCanvas(graph: graph, positions: store.positions, select: select)
+                            .id(requestKey)
+                            .overlay(alignment: .bottomLeading) {
+                                Text("\(graph.nodes.count) nodes · \(graph.edges.count) connections")
+                                    .font(.caption).foregroundStyle(.secondary).padding(8).background(.regularMaterial, in: .rect(cornerRadius: 8)).padding()
+                            }
+                    }
+                }
+                if store.loading { ProgressView("Laying out map…").padding().background(.regularMaterial, in: .rect(cornerRadius: 10)) }
+            }.frame(maxWidth: .infinity, maxHeight: .infinity)
+        }.navigationTitle("Map")
+        .searchable(text: $search, prompt: "Find a node")
+        .toolbar { Button("Refresh", systemImage: "arrow.clockwise") { Task { await load() } } }
+        .task(id: requestKey) { await load() }
+        .sheet(item: $detail) { SceneDetailView(id: $0.id) }
+    }
+    private func select(_ node: GraphNode) {
+        if node.type == "idea" { navigation.mapFocus = node.id }
+        else { detail = ItemID(id: node.id) }
+    }
+    private func load() async { await store.load(api: api, mode: mode, liked: liked, focus: navigation.mapFocus) }
+}
+
+private struct GraphCanvas: View {
+    var graph: Graph
+    var positions: [String: CGPoint]
+    var select: (GraphNode) -> Void
+    @Environment(APIClient.self) private var api
+    @State private var pan = CGSize.zero
+    @GestureState private var drag = CGSize.zero
+    @State private var zoom: CGFloat = 1
+    @GestureState private var magnification: CGFloat = 1
+    @State private var thumbnails = ThumbnailStore()
+    #if os(macOS)
+    @State private var scrollOffset: CGFloat = 0
+    #endif
+    private let bounds: CGRect
+    init(graph: Graph, positions: [String: CGPoint], select: @escaping (GraphNode) -> Void) {
+        self.graph = graph; self.positions = positions; self.select = select
+        let xs = positions.values.map(\.x), ys = positions.values.map(\.y)
+        bounds = CGRect(x: xs.min() ?? 0, y: ys.min() ?? 0,
+                        width: max(1, (xs.max() ?? 0) - (xs.min() ?? 0)),
+                        height: max(1, (ys.max() ?? 0) - (ys.min() ?? 0)))
+    }
+    private func scale(_ size: CGSize) -> CGFloat { min((size.width - 80) / (bounds.width + 60), (size.height - 80) / (bounds.height + 60)) * zoom * magnification }
+    private func point(_ id: String, _ size: CGSize) -> CGPoint {
+        let p = positions[id] ?? .zero
+        let s = max(0.01, scale(size))
+        return CGPoint(x: (p.x - bounds.midX) * s + size.width / 2 + pan.width + drag.width,
+                       y: (p.y - bounds.midY) * s + size.height / 2 + pan.height + drag.height)
+    }
+    var body: some View {
+        GeometryReader { proxy in
+            #if os(macOS)
+            // SwiftUI's native scroll geometry supplies wheel deltas without an AppKit event monitor.
+            ScrollView(.vertical) {
+                canvas(proxy.size).frame(height: proxy.size.height)
+                    .offset(y: scrollOffset)
+                    .frame(height: proxy.size.height + 100_000, alignment: .top)
+            }.scrollIndicators(.hidden).defaultScrollAnchor(.center)
+            .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y } action: { old, new in
+                scrollOffset = new
+                if abs(new - old) < 2000 { zoom = min(12, max(0.2, zoom * exp((new - old) * 0.003))) }
+            }
+            #else
+            canvas(proxy.size)
+            #endif
+        }
+        .overlay(alignment: .bottomTrailing) {
+            HStack {
+                Button("Zoom out", systemImage: "minus.magnifyingglass") { zoom = max(0.2, zoom / 1.3) }
+                Button("Fit", systemImage: "arrow.up.left.and.arrow.down.right") { zoom = 1; pan = .zero }
+                Button("Zoom in", systemImage: "plus.magnifyingglass") { zoom = min(12, zoom * 1.3) }
+            }.labelStyle(.iconOnly).buttonStyle(.bordered).padding()
+        }
+    }
+    private func canvas(_ size: CGSize) -> some View {
+        let visible = graph.nodes.filter { CGRect(origin: .zero, size: size).insetBy(dx: -40, dy: -40).contains(point($0.id, size)) }
+        let imageKey = visible.filter { $0.type == "scene" }.map(\.id).joined(separator: "|")
+        return Canvas { context, canvasSize in
+            var has = Path(), co = Path(), bridge = Path(), cross = Path()
+            for edge in graph.edges {
+                let a = point(edge.source, canvasSize), b = point(edge.target, canvasSize)
+                switch edge.kind {
+                case "has": has.move(to: a); has.addLine(to: b)
+                case "co": co.move(to: a); co.addLine(to: b)
+                default:
+                    if edge.cross == true { cross.move(to: a); cross.addLine(to: b) }
+                    else { bridge.move(to: a); bridge.addLine(to: b) }
+                }
+            }
+            context.stroke(has, with: .color(.secondary.opacity(0.15)), lineWidth: 0.5)
+            context.stroke(co, with: .color(.secondary.opacity(0.24)), lineWidth: 0.7)
+            context.stroke(bridge, with: .color(.secondary.opacity(0.3)), style: StrokeStyle(lineWidth: 0.7, dash: [3, 3]))
+            context.stroke(cross, with: .color(.accentColor.opacity(0.5)), style: StrokeStyle(lineWidth: 0.8, dash: [3, 3]))
+            for node in visible {
+                let p = point(node.id, canvasSize)
+                if node.type == "idea" {
+                    let r: CGFloat = 4 + min(5, CGFloat(node.count ?? 1) / 10)
+                    context.fill(Path(ellipseIn: CGRect(x: p.x - r, y: p.y - r, width: r * 2, height: r * 2)), with: .color(facetColor(node.facet)))
+                    if scale(canvasSize) >= 0.65 {
+                        context.draw(Text(node.label).font(.caption2).foregroundColor(facetColor(node.facet)), at: CGPoint(x: p.x + r + 3, y: p.y), anchor: .leading)
+                    }
+                } else {
+                    let rect = CGRect(x: p.x - 13, y: p.y - 13, width: 26, height: 26)
+                    let shape = Path(roundedRect: rect, cornerRadius: 4)
+                    if let image = thumbnails.images[node.id] {
+                        var clipped = context
+                        clipped.clip(to: shape)
+                        clipped.draw(image, in: rect)
+                    } else { context.fill(shape, with: .color(.secondary.opacity(0.4))) }
+                }
+            }
+        }
+        .contentShape(Rectangle())
+        .gesture(DragGesture(minimumDistance: 4).updating($drag) { value, state, _ in state = value.translation }.onEnded { pan.width += $0.translation.width; pan.height += $0.translation.height })
+        .simultaneousGesture(MagnifyGesture().updating($magnification) { value, state, _ in state = value.magnification }.onEnded { zoom = min(12, max(0.2, zoom * $0.magnification)) })
+        .simultaneousGesture(SpatialTapGesture().onEnded { value in
+            let nearest = visible.min { hypot(point($0.id, size).x - value.location.x, point($0.id, size).y - value.location.y) < hypot(point($1.id, size).x - value.location.x, point($1.id, size).y - value.location.y) }
+            if let node = nearest {
+                let p = point(node.id, size)
+                if hypot(p.x - value.location.x, p.y - value.location.y) < 28 { select(node) }
+            }
+        })
+        .task(id: imageKey) {
+            await thumbnails.load(visible, api: api)
+        }
+        .accessibilityLabel("Taste map, \(graph.nodes.count) nodes. Use search to select an idea or scene.")
+    }
+}
+
+@MainActor @Observable private final class ThumbnailStore {
+    var images: [String: Image] = [:]
+    func load(_ visible: [GraphNode], api: APIClient) async {
+        let nodes = visible.filter { $0.type == "scene" && images[$0.id] == nil }
+        for start in stride(from: 0, to: nodes.count, by: 6) {
+            if Task.isCancelled { return }
+            await withTaskGroup(of: Void.self) { group in
+                for node in nodes[start..<min(nodes.count, start + 6)] {
+                    group.addTask { await self.loadOne(node, api: api) }
+                }
+            }
+        }
+    }
+    private func loadOne(_ node: GraphNode, api: APIClient) async {
+        guard !Task.isCancelled, let image = node.image, let request = api.imageRequest(image) else { return }
+        if let loaded = await ImageCache.shared.load(request, api: api, maxPixel: 96) { images[node.id] = loaded }
+    }
+}
+
+**Refining artifact cutoff**
+codex
+The repulsion pass has a square boundary: it checks adjacent cells but has no circular distance cutoff, so cell boundaries affect the forces. I’ll use ID-seeded positions inside a disc, smoothly taper repulsion by distance, and give the layout more time to settle. I’ll also keep the 25 largest idea labels visible at fit zoom and turn “Liked only” off by default.
+exec
+/bin/zsh -lc 'cat apple/Fork/Models.swift | tail -90; cat apple/Checks/run.py; cat context/brief-native-r2.md' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+import Foundation
+
+struct Items<T: Decodable & Sendable>: Decodable, Sendable { var items: [T] }
+struct Scene: Decodable, Identifiable, Sendable {
+    var id: String
+    var image: String?
+    var timestamp: String?
+    var title: String
+    var link: String
+    var description: String?
+    var frame_urls: [String]?
+    var t_start: Double?
+    var t_end: Double?
+    var tags: [String: [String]]?
+    var source: Source?
+    var displayTitle: String { title.isEmpty ? "Scene at \(timestamp ?? "0:00")" : title }
+}
+struct Source: Decodable, Identifiable, Sendable {
+    var id: String
+    var title: String
+    var author: String
+    var url: String
+    var verdict: String?
+    var scenes: [Scene]?
+    var origin: String?
+    var duration: Double?
+    var pitch: String?
+    var status: String?
+    var platform: String?
+    var displayTitle: String { title.isEmpty ? "Untitled source" : title }
+}
+struct TodayResponse: Decodable, Sendable {
+    var day: String
+    var total: Int
+    var remaining: Int
+    var items: [Source]
+}
+struct TagCount: Decodable, Identifiable, Sendable {
+    var facet: String
+    var tag: String
+    var n: Int
+    var id: String { "\(facet):\(tag)" }
+}
+struct Stats: Decodable, Sendable {
+    var sources: Int
+    var scenes: Int
+    var tags: [TagCount]
+}
+struct HistoryItem: Decodable, Identifiable, Sendable {
+    var id: String
+    var title: String
+    var author: String
+    var url: String
+    var verdict: String?
+    var at: String?
+    var cover: String?
+    var date: Date? {
+        guard let at else { return nil }
+        let fractional = ISO8601DateFormatter()
+        fractional.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return fractional.date(from: at) ?? ISO8601DateFormatter().date(from: at)
+    }
+}
+struct GraphNode: Decodable, Identifiable, Sendable {
+    var id: String
+    var type: String
+    var label: String
+    var image: String?
+    var timestamp: String?
+    var link: String?
+    var liked: Bool?
+    var facet: String?
+    var count: Int?
+    var degree: Int
+}
+struct GraphEdge: Decodable, Sendable {
+    var source: String
+    var target: String
+    var kind: String
+    var weight: Double
+    var cross: Bool?
+    var shared: [String]?
+}
+struct Graph: Decodable, Sendable {
+    var nodes: [GraphNode]
+    var edges: [GraphEdge]
+    var stats: [String: Int]
+}
+struct SwipeResponse: Decodable, Sendable { var id: String; var verdict: String }
+struct ItemID: Identifiable, Hashable { var id: String }
+#!/usr/bin/env python3
+"""Run read-only checks against the local API without writing credentials to disk."""
+import os
+from pathlib import Path
+import subprocess
+import tempfile
+
+apple = Path(__file__).resolve().parents[1]
+env = os.environ.copy()
+if not env.get('FORK_TOKEN'):
+    for line in (apple.parent / '.env.local').read_text().splitlines():
+        if line.startswith('FORK_TOKEN='):
+            env['FORK_TOKEN'] = line.split('=', 1)[1].strip().strip('\"\'')
+env.setdefault('FORK_URL', 'http://localhost:3300')
+with tempfile.TemporaryDirectory(prefix='fork-check-') as temp:
+    executable = Path(temp) / 'smoke'
+    cache = Path.home() / 'Library/Caches/ForkSwift'
+    subprocess.run([
+        'xcrun', 'swiftc', '-D', 'DEBUG', '-disable-sandbox', '-swift-version', '6',
+        '-module-cache-path', str(cache), '-parse-as-library',
+        *[str(apple / 'Fork' / name) for name in ['Models.swift', 'APIClient.swift', 'GraphLayout.swift']],
+        str(apple / 'Checks/Smoke.swift'), '-o', str(executable)
+    ], check=True)
+    result = subprocess.run([str(executable)], env=env, text=True, capture_output=True)
+    (apple / 'smoke.log').write_text(result.stdout + result.stderr)
+    print(result.stdout + result.stderr, end='')
+    raise SystemExit(result.returncode)
+Fix round 2 for the Fork SwiftUI app (apple/ only; read context/sol-native.md for your previous handoff). Owner-side QC in the iOS simulator found:
+1. Map "Ideas" mode: the force layout collapses into a visible square GRID (nodes aligned in rows/columns, a dense cross in the middle). It must look like an organic Obsidian-style graph: seed initial positions randomly (deterministic seed from node id) inside a disc, not on a grid; make repulsion act between all nearby nodes (the spatial grid is only an acceleration structure, check neighbour cells properly), add cooling, run enough iterations to converge. Same for Full mode.
+2. Ideas mode shows no labels at the default zoom. Size idea nodes by `count` (sqrt scale), and always draw labels for the ~25 largest idea nodes; others appear as you zoom in.
+3. Default "Liked only" should be OFF.
+Keep everything else. Verify with both acceptance builds, then if CoreSimulator works take screenshots to context/shots/. Do not commit. Append a "Round 2" section to context/sol-native.md.
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+from pathlib import Path
+p=Path('apple/Fork/GraphLayout.swift')
+s=p.read_text().replace('    private static func compute', '''    // Stable across launches (Swift's Hasher is deliberately randomized).
+    private static func discPosition(id: String, radius: Double) -> (Double, Double) {
+        var state: UInt64 = 14695981039346656037
+        for byte in id.utf8 { state = (state "'^ UInt64(byte)) &* 1099511628211 }
+        func uniform() -> Double {
+            state &+= 0x9E3779B97F4A7C15
+            var value = state
+            value = (value ''^ (value >> 30)) &* 0xBF58476D1CE4E5B9
+            value = (value ''^ (value >> 27)) &* 0x94D049BB133111EB
+            value ''^= value >> 31
+            return Double(value >> 11) / 9007199254740992
+        }
+        let angle = uniform() * 2 * Double.pi
+        let distance = radius * sqrt(uniform())
+        return (cos(angle) * distance, sin(angle) * distance)
+    }
+    private static func compute'"''')
+a=s.index('        for i in 0..<count {\\n            let angle')
+b=s.index('            for (a, b, weight)',a)
+s=s[:a]+'''        for i in 0..<count {
+            (x[i], y[i]) = discPosition(id: graph.nodes[i].id, radius: radius)
+        }
+        let iterations = 1000
+        let cellSize = 120.0
+        let reach = 360.0
+        let cellReach = Int(ceil(reach / cellSize))
+        for iteration in 0..<iterations {
+            try Task.checkCancellation()
+            var dx = [Double](repeating: 0, count: count), dy = dx
+            var cells: [Cell: [Int]] = [:]
+            for i in 0..<count { cells[Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize))), default: []].append(i) }
+            for i in 0..<count {
+                let cell = Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize)))
+                // Visit every cell intersecting the circular neighbourhood. Cell
+                // membership never defines the force or its cutoff.
+                for gx in (cell.x - cellReach)...(cell.x + cellReach) {
+                    for gy in (cell.y - cellReach)...(cell.y + cellReach) {
+                        for j in cells[Cell(x: gx, y: gy)] ?? [] where j > i {
+                            let vx = x[i] - x[j], vy = y[i] - y[j]
+                            let squared = vx * vx + vy * vy
+                            guard squared < reach * reach else { continue }
+                            // Smoothly vanish at the radius to avoid boundary ridges.
+                            let taper = 1 - squared / (reach * reach)
+                            let force = 2400 * taper * taper / max(1, squared)
+                            dx[i] += vx * force; dy[i] += vy * force
+                            dx[j] -= vx * force; dy[j] -= vy * force
+                        }
+                    }
+                }
+            }
+'''+s[b:]
+s=s.replace('12 * (1 - Double(iteration) / 300) + 0.3','18 * pow(1 - Double(iteration) / Double(iterations), 2) + 0.02')
+p.write_text(s)
+p=Path('apple/Fork/MapView.swift');s=p.read_text().replace('@State private var liked = true','@State private var liked = false')
+s=s.replace('    private let bounds: CGRect','    private let bounds: CGRect\\n    private let prominentIdeas: Set<String>')
+s=s.replace('        let xs = positions.values', '''        prominentIdeas = Set(graph.nodes.filter { "'$0.type == "idea" }.sorted {
+            let a = $0.count ?? 1, b = $1.count ?? 1
+            return a == b ? $0.id < $1.id : a > b
+        }.prefix(25).map('"\\\\.id))
+        let xs = positions.values''')
+s=s.replace('4 + min(5, CGFloat(node.count ?? 1) / 10)','3 + sqrt(CGFloat(max(1, node.count ?? 1)))')
+s=s.replace('if scale(canvasSize) >= 0.65 {','if prominentIdeas.contains(node.id) || zoom * magnification >= 1.8 {')
+p.write_text(s)
+p=Path('apple/README.md');p.write_text(p.read_text().replace('(300 iterations)','(1,000 iterations, ID-seeded disc positions and circular repulsion)'))
+p=Path('apple/Checks/Smoke.swift');p.write_text(p.read_text().replace('/ 300 iterations:', '/ 1000 iterations:'))
+PY
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build > build-ios.log 2>&1" in /Users/waffu/Claude/inspo/apple
+**Rerunning code without build**
+ succeeded in 6329ms:
+Traceback (most recent call last):
+  File "<stdin>", line 3, in <module>
+  File "/opt/homebrew/Cellar/python@3.15/3.15.1/Frameworks/Python.framework/Versions/3.15/lib/python3.15/pathlib/__init__.py", line 986, in read_text
+    with self.open(mode='r', encoding=encoding, errors=errors, newline=newline) as f:
+         ~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.1/Frameworks/Python.framework/Versions/3.15/lib/python3.15/pathlib/__init__.py", line 970, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: 'apple/Fork/GraphLayout.swift'
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+from pathlib import Path
+p=Path('apple/Fork/GraphLayout.swift')
+s=p.read_text().replace('    private static func compute', '''    // Stable across launches (Swift's Hasher is deliberately randomized).
+    private static func discPosition(id: String, radius: Double) -> (Double, Double) {
+        var state: UInt64 = 14695981039346656037
+        for byte in id.utf8 { state = (state "'^ UInt64(byte)) &* 1099511628211 }
+        func uniform() -> Double {
+            state &+= 0x9E3779B97F4A7C15
+            var value = state
+            value = (value ''^ (value >> 30)) &* 0xBF58476D1CE4E5B9
+            value = (value ''^ (value >> 27)) &* 0x94D049BB133111EB
+            value ''^= value >> 31
+            return Double(value >> 11) / 9007199254740992
+        }
+        let angle = uniform() * 2 * Double.pi
+        let distance = radius * sqrt(uniform())
+        return (cos(angle) * distance, sin(angle) * distance)
+    }
+    private static func compute'"''')
+a=s.index('        for i in 0..<count {\\n            let angle');b=s.index('            for (a, b, weight)',a)
+s=s[:a]+'''        for i in 0..<count {
+            (x[i], y[i]) = discPosition(id: graph.nodes[i].id, radius: radius)
+        }
+        let iterations = 1000
+        let cellSize = 120.0
+        let reach = 360.0
+        let cellReach = Int(ceil(reach / cellSize))
+        for iteration in 0..<iterations {
+            try Task.checkCancellation()
+            var dx = [Double](repeating: 0, count: count), dy = dx
+            var cells: [Cell: [Int]] = [:]
+            for i in 0..<count { cells[Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize))), default: []].append(i) }
+            for i in 0..<count {
+                let cell = Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize)))
+                // Visit every cell intersecting the circular neighbourhood. Cell
+                // membership never defines the force or its cutoff.
+                for gx in (cell.x - cellReach)...(cell.x + cellReach) {
+                    for gy in (cell.y - cellReach)...(cell.y + cellReach) {
+                        for j in cells[Cell(x: gx, y: gy)] ?? [] where j > i {
+                            let vx = x[i] - x[j], vy = y[i] - y[j]
+                            let squared = vx * vx + vy * vy
+                            guard squared < reach * reach else { continue }
+                            // Smoothly vanish at the radius to avoid boundary ridges.
+                            let taper = 1 - squared / (reach * reach)
+                            let force = 2400 * taper * taper / max(1, squared)
+                            dx[i] += vx * force; dy[i] += vy * force
+                            dx[j] -= vx * force; dy[j] -= vy * force
+                        }
+                    }
+                }
+            }
+'''+s[b:]
+s=s.replace('12 * (1 - Double(iteration) / 300) + 0.3','18 * pow(1 - Double(iteration) / Double(iterations), 2) + 0.02');p.write_text(s)
+p=Path('apple/Fork/MapView.swift');s=p.read_text().replace('@State private var liked = true','@State private var liked = false')
+s=s.replace('    private let bounds: CGRect','    private let bounds: CGRect\\n    private let prominentIdeas: Set<String>')
+s=s.replace('        let xs = positions.values', '''        prominentIdeas = Set(graph.nodes.filter { "'$0.type == "idea" }.sorted {
+            let a = $0.count ?? 1, b = $1.count ?? 1
+            return a == b ? $0.id < $1.id : a > b
+        }.prefix(25).map('"\\\\.id))
+        let xs = positions.values''')
+s=s.replace('4 + min(5, CGFloat(node.count ?? 1) / 10)','3 + sqrt(CGFloat(max(1, node.count ?? 1)))').replace('if scale(canvasSize) >= 0.65 {','if prominentIdeas.contains(node.id) || zoom * magnification >= 1.8 {');p.write_text(s)
+p=Path('apple/README.md');p.write_text(p.read_text().replace('(300 iterations)','(1,000 iterations, ID-seeded disc positions and circular repulsion)'))
+p=Path('apple/Checks/Smoke.swift');p.write_text(p.read_text().replace('/ 300 iterations:', '/ 1000 iterations:'))
+PY" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+**Planning test strategy**
+exec
+/bin/zsh -lc "xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build > build-ios.log 2>&1" in /Users/waffu/Claude/inspo/apple
+exec
+/bin/zsh -lc 'python3 apple/Checks/run.py' in /Users/waffu/Claude/inspo
+exec
+/bin/zsh -lc 'xcrun simctl list devices available > apple/simulator.log 2>&1; cat apple/simulator.log' in /Users/waffu/Claude/inspo
+ succeeded in 248ms:
+2026-11-10 06:12:44.751 simctl[23728:13245488] CoreSimulatorService connection became invalid.  Simulator services will no longer be available.
+2026-11-10 06:12:44.992 simctl[23728:13245591] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
+	"XPCErrorDescription" => <string: 0x1f7a39730> { string cache = 0x0, length = 18, contents = "Connection invalid" }
+}>
+2026-11-10 06:12:44.992 simctl[23728:13245488] Error opening log file (/Users/waffu/Library/Logs/CoreSimulator/CoreSimulator.com.apple.CoreSimulator.simctl.log): Operation not permitted
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+[-[SimDiskImageManager _onQueue_checkConnection:]:239] ERROR : simdiskimaged returned error (invalid), marking disconnected.
+[-[SimDiskImageManager init]:175] ERROR : Could not kickstart simdiskimaged; SimDiskImageManager services will not be available: Error Domain=NSPOSIXErrorDomain Code=53 "Software caused connection abort" UserInfo={NSLocalizedDescription=Error returned in reply from CoreSimulatorService: Connection invalid}
+[-[SimDiskImageManager _onQueue_checkConnection:]:239] ERROR : simdiskimaged returned error (invalid), marking disconnected.
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+    request = "notification_subscription";
+    "set_path" = "/Users/waffu/Library/Developer/CoreSimulator/Devices";
+}) because we are not connected to CoreSimulatorService.
+2026-11-10 06:12:44.993 simctl[23728:13245485] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
+Unable to locate device set: Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedFailureReason=Failed to subscribe to notifications from CoreSimulatorService., NSLocalizedDescription=Failed to initialize simulator device set., NSUnderlyingError=0x88ea50420 {Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}}}
+
+**Planning organic layout testing**
+ succeeded in 9938ms:
+exec
+/bin/zsh -lc "git diff --stat; rg -n 'error:|warning:|BUILD SUCCEEDED' apple/build-ios.log | tail -10" in /Users/waffu/Claude/inspo
+ succeeded in 211ms:
+ apple/Checks/Smoke.swift                |   2 +-
+ apple/Fork/GraphLayout.swift            |  42 +++--
+ apple/Fork/MapView.swift                |  11 +-
+ apple/README.md                         |   2 +-
+ context/tag-run2.log                    |   3 +
+ data/sources/x-2081733651725943216.json | 270 ++++++++++++++++++++++++++++-
+ data/sources/x-2082472075617579108.json | 296 +++++++++++++++++++++++++++++++-
+ data/sources/x-2084648683929522473.json |  85 ++++++++-
+ 8 files changed, 676 insertions(+), 35 deletions(-)
+3:2026-11-10 06:12:46.957 xcodebuild[23722:13246171] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
+30:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+31:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+37:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+40:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+228:2026-11-10 06:12:54.565 appintentsmetadataprocessor[24022:13248611] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+235:** BUILD SUCCEEDED **
+
+**Waiting briefly**
+codex
+The iOS acceptance build passed. The layout now uses ID-seeded disc positions, circular repulsion across every relevant cell, and 1,000 cooling iterations. Idea nodes use square-root count sizing, with the largest 25 labels visible at default zoom.
+
+CoreSimulator still refuses connections in this environment, so I can’t capture simulator screenshots. I’m finishing the macOS build and layout checks.
+exec
+/bin/zsh -lc "xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build > build-macos.log 2>&1" in /Users/waffu/Claude/inspo/apple
+ succeeded in 9964ms:
+**Preparing performance tests**
+exec
+/bin/zsh -lc "ps -axo pid,etime,pcpu,comm | rg 'smoke|swift|run.py'; git diff -- apple/Fork/GraphLayout.swift apple/Fork/MapView.swift" in /Users/waffu/Claude/inspo
+ succeeded in 100ms:
+zsh:1: operation not permitted: ps
+diff --git a/apple/Fork/GraphLayout.swift b/apple/Fork/GraphLayout.swift
+index df89e23..6d0a20e 100644
+--- a/apple/Fork/GraphLayout.swift
++++ b/apple/Fork/GraphLayout.swift
+@@ -14,6 +14,22 @@ actor GraphLayout {
+         return result
+     }
+     private struct Cell: Hashable { var x: Int; var y: Int }
++    // Stable across launches (Swift's Hasher is deliberately randomized).
++    private static func discPosition(id: String, radius: Double) -> (Double, Double) {
++        var state: UInt64 = 14695981039346656037
++        for byte in id.utf8 { state = (state ^ UInt64(byte)) &* 1099511628211 }
++        func uniform() -> Double {
++            state &+= 0x9E3779B97F4A7C15
++            var value = state
++            value = (value ^ (value >> 30)) &* 0xBF58476D1CE4E5B9
++            value = (value ^ (value >> 27)) &* 0x94D049BB133111EB
++            value ^= value >> 31
++            return Double(value >> 11) / 9007199254740992
++        }
++        let angle = uniform() * 2 * Double.pi
++        let distance = radius * sqrt(uniform())
++        return (cos(angle) * distance, sin(angle) * distance)
++    }
+     private static func compute(_ graph: Graph) throws -> [String: CGPoint] {
+         let count = graph.nodes.count
+         guard count > 0 else { return [:] }
+@@ -25,24 +41,30 @@ actor GraphLayout {
+         var x = [Double](repeating: 0, count: count), y = x
+         let radius = max(150, sqrt(Double(count)) * 24)
+         for i in 0..<count {
+-            let angle = Double(i) * 2.399963229728653
+-            let distance = radius * sqrt(Double(i + 1) / Double(count))
+-            x[i] = cos(angle) * distance; y[i] = sin(angle) * distance
++            (x[i], y[i]) = discPosition(id: graph.nodes[i].id, radius: radius)
+         }
+-        for iteration in 0..<300 {
++        let iterations = 1000
++        let cellSize = 120.0
++        let reach = 360.0
++        let cellReach = Int(ceil(reach / cellSize))
++        for iteration in 0..<iterations {
+             try Task.checkCancellation()
+             var dx = [Double](repeating: 0, count: count), dy = dx
+             var cells: [Cell: [Int]] = [:]
+-            let cellSize = 150.0
+             for i in 0..<count { cells[Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize))), default: []].append(i) }
+             for i in 0..<count {
+                 let cell = Cell(x: Int(floor(x[i] / cellSize)), y: Int(floor(y[i] / cellSize)))
+-                for gx in (cell.x - 1)...(cell.x + 1) {
+-                    for gy in (cell.y - 1)...(cell.y + 1) {
++                // Visit every cell intersecting the circular neighbourhood. Cell
++                // membership never defines the force or its cutoff.
++                for gx in (cell.x - cellReach)...(cell.x + cellReach) {
++                    for gy in (cell.y - cellReach)...(cell.y + cellReach) {
+                         for j in cells[Cell(x: gx, y: gy)] ?? [] where j > i {
+                             let vx = x[i] - x[j], vy = y[i] - y[j]
+-                            let squared = max(16, vx * vx + vy * vy)
+-                            let force = 1500 / squared
++                            let squared = vx * vx + vy * vy
++                            guard squared < reach * reach else { continue }
++                            // Smoothly vanish at the radius to avoid boundary ridges.
++                            let taper = 1 - squared / (reach * reach)
++                            let force = 2400 * taper * taper / max(1, squared)
+                             dx[i] += vx * force; dy[i] += vy * force
+                             dx[j] -= vx * force; dy[j] -= vy * force
+                         }
+@@ -56,7 +78,7 @@ actor GraphLayout {
+                 dx[a] += vx * spring; dy[a] += vy * spring
+                 dx[b] -= vx * spring; dy[b] -= vy * spring
+             }
+-            let temperature = 12 * (1 - Double(iteration) / 300) + 0.3
++            let temperature = 18 * pow(1 - Double(iteration) / Double(iterations), 2) + 0.02
+             for i in 0..<count {
+                 dx[i] -= x[i] * 0.003; dy[i] -= y[i] * 0.003
+                 let length = max(1, hypot(dx[i], dy[i]))
+diff --git a/apple/Fork/MapView.swift b/apple/Fork/MapView.swift
+index bfda6a6..9e6f984 100644
+--- a/apple/Fork/MapView.swift
++++ b/apple/Fork/MapView.swift
+@@ -34,7 +34,7 @@ struct MapView: View {
+     @Environment(AppNavigation.self) private var navigation
+     @State private var store = MapStore()
+     @State private var mode = "ideas"
+-    @State private var liked = true
++    @State private var liked = false
+     @State private var search = ""
+     @State private var detail: ItemID?
+     private var requestKey: String { "\(mode)|\(liked)|\(navigation.mapFocus ?? "")|\(api.revision)" }
+@@ -102,8 +102,13 @@ private struct GraphCanvas: View {
+     @State private var scrollOffset: CGFloat = 0
+     #endif
+     private let bounds: CGRect
++    private let prominentIdeas: Set<String>
+     init(graph: Graph, positions: [String: CGPoint], select: @escaping (GraphNode) -> Void) {
+         self.graph = graph; self.positions = positions; self.select = select
++        prominentIdeas = Set(graph.nodes.filter { $0.type == "idea" }.sorted {
++            let a = $0.count ?? 1, b = $1.count ?? 1
++            return a == b ? $0.id < $1.id : a > b
++        }.prefix(25).map(\.id))
+         let xs = positions.values.map(\.x), ys = positions.values.map(\.y)
+         bounds = CGRect(x: xs.min() ?? 0, y: ys.min() ?? 0,
+                         width: max(1, (xs.max() ?? 0) - (xs.min() ?? 0)),
+@@ -163,9 +168,9 @@ private struct GraphCanvas: View {
+             for node in visible {
+                 let p = point(node.id, canvasSize)
+                 if node.type == "idea" {
+-                    let r: CGFloat = 4 + min(5, CGFloat(node.count ?? 1) / 10)
++                    let r: CGFloat = 3 + sqrt(CGFloat(max(1, node.count ?? 1)))
+                     context.fill(Path(ellipseIn: CGRect(x: p.x - r, y: p.y - r, width: r * 2, height: r * 2)), with: .color(facetColor(node.facet)))
+-                    if scale(canvasSize) >= 0.65 {
++                    if prominentIdeas.contains(node.id) || zoom * magnification >= 1.8 {
+                         context.draw(Text(node.label).font(.caption2).foregroundColor(facetColor(node.facet)), at: CGPoint(x: p.x + r + 3, y: p.y), anchor: .leading)
+                     }
+                 } else {
+
+**Estimating performance and timeout**
+exec
+/bin/zsh -lc "rg -n 'error:|warning:|BUILD SUCCEEDED' apple/build-macos.log | tail -6; curl -s -o /dev/null -w '%{http_code}\\n' --max-time 5 http://localhost:3300/api/stats" in /Users/waffu/Claude/inspo
+ succeeded in 37ms:
+26:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+29:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+30:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+36:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+158:2026-11-10 06:13:19.172 appintentsmetadataprocessor[24522:13255257] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+193:** BUILD SUCCEEDED **
+401
+
+**Improving smoke layout diagnostics**
+ succeeded in 54691ms:
+Stats: 787 scenes, 133 sources; Today: 0; History: 0
+ideas: 244 nodes, 2878 edges, focus decoded
+full: 560 nodes, 4380 edges, focus decoded
+900 nodes / 4000 edges / 1000 iterations: 22.993140458 seconds
+PASS: live decoding, Library search/tag, scene/source, image, Open-at URL, graph modes/focus/cache/scale, 401 banner state
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+from pathlib import Path
+p=Path('apple/Checks/Smoke.swift');s=p.read_text();s=s.replace('        let api = APIClient()', '''        // A circular cloud must not acquire the old grid's four-fold bias.
+        let cloud = Graph(nodes: (0..<96).map {
+            GraphNode(id: \"cloud-\\\\("'$0)", type: "idea", label: "Cloud", degree: 0)
+        }, edges: [], stats: [:])
+        let cloudLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud")
+        let repeatLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud-fresh")
+        precondition(cloudLayout == repeatLayout, "Layout must be deterministic without a cache hit")
+        let points = Array(cloudLayout.values)
+        let center = CGPoint(x: points.map('"\\\\.x).reduce(0, +) / Double(points.count),
+                             y: points.map(\\\\.y).reduce(0, +) / Double(points.count))
+        let angles = points.map { atan2("'$0.y - center.y, $0.x - center.x) * 4 }
+        let gridBias = hypot(angles.map { cos($0) }.reduce(0, +), angles.map { sin($0) }.reduce(0, +)) / Double(points.count)
+        precondition(gridBias < 0.2, "Circular repulsion developed an axis-aligned grid")
+        for i in points.indices {
+            for j in points.indices where j > i {
+                precondition(hypot(points[i].x - points[j].x, points[i].y - points[j].y) > 1, "Collapsed nodes")
+            }
+        }
+        print("PASS: deterministic fresh layout, separated cloud, four-fold grid bias '"\\\\(gridBias)\")
+        let api = APIClient()''');p.write_text(s)
+PY" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+**Assessing data ownership and defaults**
+exec
+/bin/zsh -lc "rg -n 'liked =' apple/Fork; python3 apple/Checks/run.py" in /Users/waffu/Claude/inspo
+ exited 1 in 4415ms:
+apple/Fork/LibraryView.swift:9:    @State private var liked = true
+apple/Fork/MapView.swift:37:    @State private var liked = false
+/Users/waffu/Claude/inspo/apple/Checks/Smoke.swift:12:34: error: operator function '==' requires that 'CGPoint' conform to 'Equatable'
+10 |         let cloudLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud")
+11 |         let repeatLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud-fresh")
+12 |         precondition(cloudLayout == repeatLayout, "Layout must be deterministic without a cache hit")
+   |                                  `- error: operator function '==' requires that 'CGPoint' conform to 'Equatable'
+13 |         let points = Array(cloudLayout.values)
+14 |         let center = CGPoint(x: points.map(\.x).reduce(0, +) / Double(points.count),
+
+Swift.Dictionary:1:11: note: requirement from conditional conformance of '[String : CGPoint]' to 'Equatable'
+1 | extension Dictionary : Equatable where Value : Equatable {
+  |           `- note: requirement from conditional conformance of '[String : CGPoint]' to 'Equatable'
+2 |     @inlinable public static func == (lhs: [Key : Value], rhs: [Key : Value]) -> Bool
+3 | }
+Traceback (most recent call last):
+  File "/Users/waffu/Claude/inspo/apple/Checks/run.py", line 18, in <module>
+    subprocess.run([
+    ~~~~~~~~~~~~~~^^
+        'xcrun', 'swiftc', '-D', 'DEBUG', '-disable-sandbox', '-swift-version', '6',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        str(apple / 'Checks/Smoke.swift'), '-o', str(executable)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ], check=True)
+    ^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.1/Frameworks/Python.framework/Versions/3.15/lib/python3.15/subprocess.py", line 692, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command ['xcrun', 'swiftc', '-D', 'DEBUG', '-disable-sandbox', '-swift-version', '6', '-module-cache-path', '/Users/waffu/Library/Caches/ForkSwift', '-parse-as-library', '/Users/waffu/Claude/inspo/apple/Fork/Models.swift', '/Users/waffu/Claude/inspo/apple/Fork/APIClient.swift', '/Users/waffu/Claude/inspo/apple/Fork/GraphLayout.swift', '/Users/waffu/Claude/inspo/apple/Checks/Smoke.swift', '-o', '/var/folders/ss/shw8rcjd2rb7jqj1dnbthfr80000gn/T/fork-check-hezp08wc/smoke'] returned non-zero exit status 1.
+
+**Adjusting task context mapping**
+codex
+Both acceptance builds passed. The live checks passed for Ideas and Full mode, and the 900-node stress layout finished in about 23 seconds in Debug.
+
+I’m running a final regression check for deterministic placement, collapsed nodes, and square-axis bias, then I’ll append the Round 2 handoff.
+exec
+/bin/zsh -lc "git diff --check -- apple; sed -n '1,58p' apple/Checks/Smoke.swift; tail -2 apple/build-ios.log; tail -2 apple/build-macos.log" in /Users/waffu/Claude/inspo
+ succeeded in 935ms:
+import Foundation
+
+// Read-only integration checks. Compile with the same models/client as the app.
+@main struct Smoke {
+    @MainActor static func main() async throws {
+        // A circular cloud must not acquire the old grid's four-fold bias.
+        let cloud = Graph(nodes: (0..<96).map {
+            GraphNode(id: "cloud-\($0)", type: "idea", label: "Cloud", degree: 0)
+        }, edges: [], stats: [:])
+        let cloudLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud")
+        let repeatLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud-fresh")
+        precondition(cloudLayout == repeatLayout, "Layout must be deterministic without a cache hit")
+        let points = Array(cloudLayout.values)
+        let center = CGPoint(x: points.map(\.x).reduce(0, +) / Double(points.count),
+                             y: points.map(\.y).reduce(0, +) / Double(points.count))
+        let angles = points.map { atan2($0.y - center.y, $0.x - center.x) * 4 }
+        let gridBias = hypot(angles.map { cos($0) }.reduce(0, +), angles.map { sin($0) }.reduce(0, +)) / Double(points.count)
+        precondition(gridBias < 0.2, "Circular repulsion developed an axis-aligned grid")
+        for i in points.indices {
+            for j in points.indices where j > i {
+                precondition(hypot(points[i].x - points[j].x, points[i].y - points[j].y) > 1, "Collapsed nodes")
+            }
+        }
+        print("PASS: deterministic fresh layout, separated cloud, four-fold grid bias \(gridBias)")
+        let api = APIClient()
+        let stats: Stats = try await api.request("stats")
+        let today: TodayResponse = try await api.request("today")
+        let history: Items<HistoryItem> = try await api.request("history")
+        print("Stats: \(stats.scenes) scenes, \(stats.sources) sources; Today: \(today.total); History: \(history.items.count)")
+        let scenes: Items<Scene> = try await api.request("scenes", query: [.init(name: "limit", value: "60"), .init(name: "liked", value: "1")])
+        guard let first = scenes.items.first else { fatalError("Expected a real Library scene") }
+        let scene: Scene = try await api.request("scenes/\(first.id)")
+        guard let sourceID = scene.source?.id, let image = scene.image, let request = api.imageRequest(image),
+              let deepLink = URL(string: scene.link), ["http", "https"].contains(deepLink.scheme) else { fatalError("Missing scene detail fields") }
+        let source: Source = try await api.request("sources/\(sourceID)")
+        precondition(source.scenes?.contains { $0.id == scene.id } == true)
+        let (imageData, response) = try await URLSession.shared.data(for: request)
+        precondition((response as? HTTPURLResponse)?.statusCode == 200 && !imageData.isEmpty)
+        let search: Items<Scene> = try await api.request("scenes", query: [.init(name: "q", value: "showreel"), .init(name: "limit", value: "60")])
+        precondition(!search.items.isEmpty)
+        if let tag = stats.tags.first {
+            let filtered: Items<Scene> = try await api.request("scenes", query: [.init(name: "tag", value: tag.id)])
+            precondition(filtered.items.allSatisfy { $0.tags?[tag.facet]?.contains(tag.tag) == true })
+        }
+        for mode in ["ideas", "full"] {
+            let graph: Graph = try await api.request("graph", query: [.init(name: "mode", value: mode), .init(name: "liked", value: "1")])
+            let ids = Set(graph.nodes.map(\.id))
+            precondition(graph.edges.allSatisfy { ids.contains($0.source) && ids.contains($0.target) })
+            let positions = try await GraphLayout.shared.positions(graph: graph, key: mode)
+            precondition(positions.count == graph.nodes.count)
+            if let idea = graph.nodes.first(where: { $0.type == "idea" }) {
+                let focused: Graph = try await api.request("graph", query: [.init(name: "mode", value: mode), .init(name: "focus", value: idea.id), .init(name: "depth", value: "2")])
+                precondition(focused.nodes.contains { $0.id == idea.id })
+            }
+            print("\(mode): \(graph.nodes.count) nodes, \(graph.edges.count) edges, focus decoded")
+        }
+        // Test the specified scale even when the current library is still being tagged.
+        let nodes = (0..<900).map { GraphNode(id: "n\($0)", type: "idea", label: "Node \($0)", facet: "technique", degree: 9) }
+** BUILD SUCCEEDED **
+
+** BUILD SUCCEEDED **
+
+
+**Adjusting coordinates**
+exec
+/bin/zsh -lc "python3 - <<'PY'
+from pathlib import Path
+p=Path('apple/Checks/Smoke.swift');s=p.read_text().replace('precondition(cloudLayout == repeatLayout,', 'precondition(cloudLayout.count == repeatLayout.count && cloudLayout.allSatisfy { repeatLayout["'$0.key]?.x == $0.value.x && repeatLayout[$0.key]?.y == $0.value.y },'"');p.write_text(s)
+PY
+python3 apple/Checks/run.py" in /Users/waffu/Claude/inspo
+**Adjusting tests and optimizations**
+exec
+/bin/zsh -lc "python3 - <<'PY'
+from pathlib import Path
+p=Path('apple/README.md');s=p.read_text().replace('layout caching, a 900-node/4,000-edge layout, and 401 state.', 'layout caching, deterministic fresh layouts, circular-cloud separation and grid bias, a 900-node/4,000-edge layout, and 401 state.')
+s=s.replace('Search also exposes Canvas nodes as native buttons.', 'Map starts with Liked only off. Idea radii use square-root scene counts; the 25 largest idea labels stay visible at fit, and other labels appear at 1.8× zoom. Search also exposes Canvas nodes as native buttons.')
+p.write_text(s)
+PY" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+**Reviewing layout and label stability**
+exec
+/bin/zsh -lc "git diff --check -- apple; git status --short -- apple context/sol-native.md; rg -n 'iterations|cellReach|prominentIdeas|liked =|sqrt' apple/Fork/GraphLayout.swift apple/Fork/MapView.swift" in /Users/waffu/Claude/inspo
+ succeeded in 42ms:
+ M apple/Checks/Smoke.swift
+ M apple/Fork/GraphLayout.swift
+ M apple/Fork/MapView.swift
+ M apple/README.md
+?? apple/build-ios.log
+?? apple/build-macos.log
+?? apple/simulator.log
+?? apple/smoke.log
+apple/Fork/MapView.swift:37:    @State private var liked = false
+apple/Fork/MapView.swift:105:    private let prominentIdeas: Set<String>
+apple/Fork/MapView.swift:108:        prominentIdeas = Set(graph.nodes.filter { $0.type == "idea" }.sorted {
+apple/Fork/MapView.swift:171:                    let r: CGFloat = 3 + sqrt(CGFloat(max(1, node.count ?? 1)))
+apple/Fork/MapView.swift:173:                    if prominentIdeas.contains(node.id) || zoom * magnification >= 1.8 {
+apple/Fork/GraphLayout.swift:30:        let distance = radius * sqrt(uniform())
+apple/Fork/GraphLayout.swift:39:            return (a, b, min(3, sqrt(edge.weight)))
+apple/Fork/GraphLayout.swift:42:        let radius = max(150, sqrt(Double(count)) * 24)
+apple/Fork/GraphLayout.swift:46:        let iterations = 1000
+apple/Fork/GraphLayout.swift:49:        let cellReach = Int(ceil(reach / cellSize))
+apple/Fork/GraphLayout.swift:50:        for iteration in 0..<iterations {
+apple/Fork/GraphLayout.swift:59:                for gx in (cell.x - cellReach)...(cell.x + cellReach) {
+apple/Fork/GraphLayout.swift:60:                    for gy in (cell.y - cellReach)...(cell.y + cellReach) {
+apple/Fork/GraphLayout.swift:81:            let temperature = 18 * pow(1 - Double(iteration) / Double(iterations), 2) + 0.02
+
+**Analyzing logging and graph constraints**
+**Considering time measurement**
+exec
+/bin/zsh -lc "cat >> context/sol-native.md <<'EOF'
+
+## Round 2
+
+Fixed the owner-reported Map issues in "'`apple/`:
+
+- Both Ideas and Full use the shared revised force layout. Initial positions now come from a stable FNV-1a ID seed and SplitMix64 samples distributed uniformly inside a disc. Repulsion searches all cells within the 360-point neighbourhood (seven by seven with 120-point cells), applies a circular distance cutoff, and smoothly tapers to zero at that radius. The old cell-shaped force boundary is gone. The simulation runs 1,000 iterations with quadratic cooling from 18.02 to approximately 0.02 points per step. Detached execution, cancellation and caching remain.
+- Idea radius is `3 + sqrt(max(1, count))`. The 25 largest ideas (stable ID tie-breaks) always draw labels, including at default fit zoom. Other labels appear at 1.8× zoom relative to fit, independent of graph size.
+- Map'"'s Liked only filter starts off. Other screens and interactions are unchanged.
+- Updated the native README and read-only smoke checks. Added an uncached determinism check and a 96-node disconnected-cloud regression check for collisions and four-fold angular bias.
+
+Acceptance commands ran sequentially from "'`apple/`:
+
+```sh
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination '"'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+"'```
+
+Both **BUILD SUCCEEDED**. Logs: `apple/build-ios.log`, `apple/build-macos.log`. No Swift compiler warnings/errors; the usual unused AppIntents metadata warning and CoreSimulator environment diagnostics remain.
+
+CoreSimulator still fails at `xcrun simctl list devices available` with connection invalid / connection refused and no runtime discovery. Evidence: `apple/simulator.log`. Could not launch or capture screenshots, so rendered appearance and label readability still need owner-side simulator QC. No foreground app control was used. No commits. Existing changes outside apple were left alone apart from this requested handoff append.
+EOF' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+**Monitoring update intervals**
+ succeeded in 53901ms:
+PASS: deterministic fresh layout, separated cloud, four-fold grid bias 0.009358037293811553
+Stats: 787 scenes, 133 sources; Today: 0; History: 0
+ideas: 244 nodes, 2878 edges, focus decoded
+full: 560 nodes, 4380 edges, focus decoded
+900 nodes / 4000 edges / 1000 iterations: 20.490505041000002 seconds
+PASS: live decoding, Library search/tag, scene/source, image, Open-at URL, graph modes/focus/cache/scale, 401 banner state
+
+**Considering test strategy**
+codex
+The Round 2 handoff is appended. The final regression run is still working through the live graphs and stress layout; both app builds have already passed. Simulator screenshots remain blocked by CoreSimulator’s connection failure.
+exec
+/bin/zsh -lc "cat >> context/sol-native.md <<'EOF'
+
+Final "'`python3 apple/Checks/run.py`: **PASS**. Fresh computations matched exactly; the circular cloud had no collapsed pairs and four-fold grid bias 0.00936 (limit 0.2). Live snapshot: 787 scenes / 133 sources; liked Ideas 244 nodes / 2,878 edges; liked Full 560 nodes / 4,380 edges. Both modes/focus, cache, decoding, image fetch, Library search/tag, scene/source, deep-link URL and 401 handling passed. The 900-node / 4,000-edge / 1,000-iteration Debug layout took 20.49 seconds. Log: `apple/smoke.log`. Numerical checks do not replace rendered simulator QC. `git diff --check -- apple context/sol-native.md` passed.
+EOF
+git diff --check -- apple context/sol-native.md' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+codex
+Implemented all three Map fixes: seeded disc placement with circular repulsion and cooling, square-root node sizing with 25 persistent labels, and “Liked only” off by default.
+
+Both acceptance builds and regression checks passed. CoreSimulator refused connections, so screenshots and visual QC remain blocked.
+
+Appended [Round 2 handoff](/Users/waffu/Claude/inspo/context/sol-native.md). No commits.
+tokens used
+46,209
+Implemented all three Map fixes: seeded disc placement with circular repulsion and cooling, square-root node sizing with 25 persistent labels, and “Liked only” off by default.
+
+Both acceptance builds and regression checks passed. CoreSimulator refused connections, so screenshots and visual QC remain blocked.
+
+Appended [Round 2 handoff](/Users/waffu/Claude/inspo/context/sol-native.md). No commits.

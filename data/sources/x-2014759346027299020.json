@@ -1,0 +1,71 @@
+{
+  "id": "x-2014759346027299020",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/mangoster/status/2014759346027299020",
+  "native_id": "2014759346027299020",
+  "author": "mangoster",
+  "input_url": "https://x.com/mangoster/status/2014759346027299020",
+  "added_at": "2026-11-10T11:13:39Z",
+  "title": "We're done for...",
+  "text": "We're done for...\n\nMade this in less than 45 minutes using Claude Code\ud83d\udc80\n\nAdapt or get left behind.",
+  "author_name": "mango",
+  "posted_at": "Fri Jan 23 17:57:15 +0000 2026",
+  "likes": 504,
+  "views": 73104,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 10.2,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 3,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 3.71,
+      "t_mid": 1.86,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2014759346027299020/s00_0.jpg",
+        "media/x-2014759346027299020/s00_1.jpg",
+        "media/x-2014759346027299020/s00_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2014759346027299020"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 3.71,
+      "t_end": 9.01,
+      "t_mid": 6.36,
+      "timestamp": "0:04",
+      "frames": [
+        "media/x-2014759346027299020/s01_0.jpg",
+        "media/x-2014759346027299020/s01_1.jpg",
+        "media/x-2014759346027299020/s01_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2014759346027299020"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 9.01,
+      "t_end": 10.2,
+      "t_mid": 9.6,
+      "timestamp": "0:09",
+      "frames": [
+        "media/x-2014759346027299020/s02_0.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2014759346027299020"
+    }
+  ],
+  "status": "ready"
+}

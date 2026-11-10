@@ -34,7 +34,46 @@
       "frames": [
         "media/x-2087971310102266009/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087971310102266009"
+      "link": "https://x.com/NormieEdits/status/2087971310102266009",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "orange",
+          "white",
+          "black",
+          "blue"
+        ],
+        "concepts": [
+          "success story",
+          "social media success",
+          "data visualization",
+          "digital storytelling"
+        ],
+        "title": "Split-screen success story",
+        "description": "A dynamic split-screen composition showcasing a narrative of entrepreneurial success, combining a news headline about a college dropout's company earnings with a vibrant orange background displaying a large number, a smartphone screen showing a social media interface, and a user profile for video editing services. The layout uses a grid to juxtapose different media types, creating a modern and eng",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +88,45 @@
         "media/x-2087971310102266009/s01_1.jpg",
         "media/x-2087971310102266009/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087971310102266009"
+      "link": "https://x.com/NormieEdits/status/2087971310102266009",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "logo-animation",
+          "collage"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "luxury"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange",
+          "red"
+        ],
+        "concepts": [
+          "brand identity",
+          "product showcase",
+          "digital branding",
+          "minimalist design"
+        ],
+        "title": "Branding and product collage",
+        "description": "A clean, minimalist collage featuring a logo animation for 'Buldak', a numbered process diagram, a classic Nike sneaker, and a smartphone interface. The layout uses a grid to present diverse elements, including branding, product design, and technology, creating a modern and cohesive visual narrative.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,8 +141,48 @@
         "media/x-2087971310102266009/s02_1.jpg",
         "media/x-2087971310102266009/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087971310102266009"
+      "link": "https://x.com/NormieEdits/status/2087971310102266009",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "social media content",
+          "live streaming",
+          "content structure",
+          "user engagement"
+        ],
+        "title": "Social media content comparison",
+        "description": "A split-screen composition comparing different social media content formats, including a person walking to an office, a smartphone screen with a live stream, a user interface for content structure, and a person speaking directly to the camera. The layout uses a grid to juxtapose various media types, creating a modern and engaging visual story.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

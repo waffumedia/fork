@@ -36,7 +36,44 @@
         "media/x-2087041552044716479/s00_1.jpg",
         "media/x-2087041552044716479/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087041552044716479"
+      "link": "https://x.com/NormieEdits/status/2087041552044716479",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "mask-reveal",
+          "zoom-transition"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "content aggregation",
+          "social media interface",
+          "highlighted content"
+        ],
+        "title": "grid of social media clips",
+        "description": "A grid layout of numerous video thumbnails, likely from a social media platform, showcasing various creators. The central thumbnail is highlighted with a red border and a magnified view of a person applying makeup, indicating a focus on a specific content piece. The overall aesthetic is clean and modern.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +86,44 @@
       "frames": [
         "media/x-2087041552044716479/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087041552044716479"
+      "link": "https://x.com/NormieEdits/status/2087041552044716479",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "luxury"
+        ],
+        "format": [
+          "brand-ad",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "orange",
+          "yellow"
+        ],
+        "concepts": [
+          "product comparison",
+          "content quality",
+          "user-generated content"
+        ],
+        "title": "split-screen product comparison",
+        "description": "A split-screen comparison of two different types of user-generated content. On the left, a hand holds a skincare product with text indicating 'Premium ugc'. On the right, a woman holds makeup products with text indicating 'High Trust UGC'. The layout is clean and informative.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +138,44 @@
         "media/x-2087041552044716479/s02_1.jpg",
         "media/x-2087041552044716479/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087041552044716479"
+      "link": "https://x.com/NormieEdits/status/2087041552044716479",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "brand-ad",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "earning potential",
+          "social media monetization",
+          "data visualization"
+        ],
+        "title": "phone screen with commission data",
+        "description": "A smartphone displays a social media video, while an adjacent graphic shows a monthly commission of $10k. The composition suggests a narrative about earning potential through content creation, with a clean and direct presentation.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,8 +188,45 @@
       "frames": [
         "media/x-2087041552044716479/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2087041552044716479"
+      "link": "https://x.com/NormieEdits/status/2087041552044716479",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "brand-ad",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "creator comparison",
+          "audience growth",
+          "social media metrics"
+        ],
+        "title": "creator profile comparison",
+        "description": "A side-by-side comparison of two social media profiles, @Creator A and @Creator B. The layout highlights a significant difference in follower count, emphasizing the impact of content quality on audience growth.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

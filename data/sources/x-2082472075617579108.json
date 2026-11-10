@@ -36,7 +36,42 @@
         "media/x-2082472075617579108/s00_1.jpg",
         "media/x-2082472075617579108/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "depth-of-field",
+          "motion-blur"
+        ],
+        "style": [
+          "cinematic",
+          "luxury",
+          "high-contrast"
+        ],
+        "format": [
+          "vsl",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "money counting",
+          "wealth",
+          "business"
+        ],
+        "title": "hands counting cash",
+        "description": "A close-up shot of a man in a suit holding and counting stacks of $100 bills, emphasizing wealth and financial success.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +84,42 @@
       "frames": [
         "media/x-2082472075617579108/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "hard-cut-montage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "cinematic",
+          "streetwear",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "brown"
+        ],
+        "concepts": [
+          "speaker",
+          "tattoos",
+          "direct address"
+        ],
+        "title": "talking head with tattoos",
+        "description": "A man with extensive arm tattoos and a cap speaks directly to the camera, gesturing emphatically while seated in front of a bookshelf.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +132,40 @@
       "frames": [
         "media/x-2082472075617579108/s02_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "compositing"
+        ],
+        "style": [
+          "photoreal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [],
+        "palette": [
+          "grey",
+          "white",
+          "green",
+          "blue"
+        ],
+        "concepts": [
+          "real estate",
+          "new home",
+          "listing"
+        ],
+        "title": "modern house for sale",
+        "description": "A photorealistic rendering of a modern two-story grey house with a 'For Sale' sign, showcasing a new property listing.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +180,42 @@
         "media/x-2082472075617579108/s03_1.jpg",
         "media/x-2082472075617579108/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "split-screen"
+        ],
+        "style": [
+          "grunge",
+          "meme",
+          "organic"
+        ],
+        "format": [
+          "vsl",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "green",
+          "blue"
+        ],
+        "concepts": [
+          "house flip",
+          "before and after",
+          "transformation"
+        ],
+        "title": "man in front of old house",
+        "description": "A man stands with arms outstretched on the porch of a dilapidated stone house, with a large '$150' graphic overlaid, suggesting a low-cost renovation project.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +230,42 @@
         "media/x-2082472075617579108/s04_1.jpg",
         "media/x-2082472075617579108/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "split-screen"
+        ],
+        "style": [
+          "documentary",
+          "grunge",
+          "organic"
+        ],
+        "format": [
+          "vsl",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "green",
+          "brown",
+          "grey"
+        ],
+        "concepts": [
+          "charity",
+          "community",
+          "journey"
+        ],
+        "title": "man walking with supplies",
+        "description": "A man in a red shirt walks down a street carrying a bag, with a blue line graphic tracing his path; other people are visible in the background.",
+        "quality": 3
+      }
     },
     {
       "idx": 5,
@@ -107,7 +280,41 @@
         "media/x-2082472075617579108/s05_1.jpg",
         "media/x-2082472075617579108/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "process flow",
+          "steps",
+          "numbered list"
+        ],
+        "title": "numbered steps",
+        "description": "A minimalist graphic displays five numbered circles in a row, representing a step-by-step process: Search, Land, Funding, Build, Sell.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -122,7 +329,42 @@
         "media/x-2082472075617579108/s06_1.jpg",
         "media/x-2082472075617579108/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "duotone",
+          "corporate-clean"
+        ],
+        "format": [
+          "brand-ad",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "comparison",
+          "investor types",
+          "split screen"
+        ],
+        "title": "investors split screen",
+        "description": "A split-screen graphic shows two silhouettes of a man in a suit, one with a blue background and the other with a black background, both labeled 'investors'.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -137,8 +379,44 @@
         "media/x-2082472075617579108/s07_1.jpg",
         "media/x-2082472075617579108/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+      "link": "https://x.com/NormieEdits/status/2082472075617579108",
+      "tags": {
+        "technique": [
+          "hard-cut-montage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "cinematic",
+          "streetwear",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "brown"
+        ],
+        "concepts": [
+          "speaker",
+          "tattoos",
+          "direct address"
+        ],
+        "title": "talking head with hands",
+        "description": "A man with tattoos on his hands and arms speaks to the camera, gesturing with his hands while seated in a room with a bookshelf.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

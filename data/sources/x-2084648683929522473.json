@@ -36,7 +36,46 @@
         "media/x-2084648683929522473/s00_1.jpg",
         "media/x-2084648683929522473/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2084648683929522473"
+      "link": "https://x.com/NormieEdits/status/2084648683929522473",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "glow-bloom",
+          "parallax",
+          "3d-render"
+        ],
+        "style": [
+          "cyberpunk",
+          "minimal",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "product-promo",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "blender"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "digital interface",
+          "glowing elements",
+          "central logo"
+        ],
+        "title": "UI interface with glowing icons",
+        "description": "A sleek, dark-themed user interface featuring a central logo flanked by six interactive icons with subtle blue glow effects, suggesting a modern and minimalist digital product design.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,8 +90,48 @@
         "media/x-2084648683929522473/s01_1.jpg",
         "media/x-2084648683929522473/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2084648683929522473"
+      "link": "https://x.com/NormieEdits/status/2084648683929522473",
+      "tags": {
+        "technique": [
+          "data-viz",
+          "map-animation",
+          "line-art",
+          "glow-bloom"
+        ],
+        "style": [
+          "cyberpunk",
+          "minimal",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "product-promo",
+          "ui-demo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects",
+          "blender"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "global analytics",
+          "data visualization",
+          "glowing connections"
+        ],
+        "title": "Data dashboard with global analytics",
+        "description": "A dynamic data visualization interface showing a global map, stock charts, and performance metrics, connected by glowing blue lines to three abstract data sources above, creating a futuristic analytics dashboard.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

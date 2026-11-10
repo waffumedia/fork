@@ -1,0 +1,43 @@
+{
+  "id": "x-2071533544891949317",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/mangoster/status/2071533544891949317",
+  "native_id": "2071533544891949317",
+  "author": "mangoster",
+  "input_url": "https://x.com/mangoster/status/2071533544891949317",
+  "added_at": "2026-11-10T11:13:50Z",
+  "title": "Latest Sound Design Breakdown \ud83e\udd20",
+  "text": "Latest Sound Design Breakdown \ud83e\udd20",
+  "author_name": "mango",
+  "posted_at": "Mon Jun 29 09:57:38 +0000 2026",
+  "likes": 356,
+  "views": 13775,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 41.17,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 41.17,
+      "t_mid": 20.59,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2071533544891949317/s00_0.jpg",
+        "media/x-2071533544891949317/s00_1.jpg",
+        "media/x-2071533544891949317/s00_2.jpg"
+      ],
+      "link": "https://x.com/mangoster/status/2071533544891949317"
+    }
+  ],
+  "status": "ready"
+}
