@@ -1,0 +1,83 @@
+{
+  "id": "x-1925789494298505373",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1925789494298505373",
+  "native_id": "1925789494298505373",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1925789494298505373",
+  "added_at": "2026-11-10T10:43:06Z",
+  "title": "Animations from short form edit",
+  "text": "Animations from short form edit",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Fri May 23 05:42:49 +0000 2025",
+  "likes": 118,
+  "views": 5657,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 3.58,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 3.58,
+      "t_mid": 1.79,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1925789494298505373/s00_0.jpg",
+        "media/x-1925789494298505373/s00_1.jpg",
+        "media/x-1925789494298505373/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1925789494298505373",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation",
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "monochrome",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head",
+          "short-film"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red"
+        ],
+        "concepts": [
+          "social media interface",
+          "talking head",
+          "comment section"
+        ],
+        "title": "talking head with social media UI",
+        "description": "A man speaks directly to the camera in a talking-head format, framed within a social media app interface that includes like and comment elements, suggesting a short-form video content style.",
+        "quality": 4
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

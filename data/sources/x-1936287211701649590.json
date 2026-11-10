@@ -1,0 +1,73 @@
+{
+  "id": "x-1936287211701649590",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1936287211701649590",
+  "native_id": "1936287211701649590",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1936287211701649590",
+  "added_at": "2026-11-10T10:43:05Z",
+  "title": "Frames from long form edit.",
+  "text": "Frames from long form edit.",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Sat Jun 21 04:57:00 +0000 2025",
+  "likes": 39,
+  "views": 2619,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "image",
+      "t_start": null,
+      "t_end": null,
+      "timestamp": null,
+      "frames": [
+        "media/x-1936287211701649590/s00_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1936287211701649590",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "text-on-path",
+          "overlay-graphics",
+          "glow-bloom"
+        ],
+        "style": [
+          "cinematic",
+          "corporate-clean",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "poster",
+          "infographic",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "photography"
+        ],
+        "palette": [
+          "green",
+          "white",
+          "grey",
+          "red"
+        ],
+        "concepts": [
+          "stadium architecture",
+          "text as overlay",
+          "national identity"
+        ],
+        "title": "Wembley stadium aerial",
+        "description": "An aerial view of Wembley Stadium with a large green 'England' text overlay, captured in a stylized graphic format.",
+        "quality": 4
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

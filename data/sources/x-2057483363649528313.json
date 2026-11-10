@@ -1,0 +1,43 @@
+{
+  "id": "x-2057483363649528313",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2057483363649528313",
+  "native_id": "2057483363649528313",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2057483363649528313",
+  "added_at": "2026-11-10T10:42:01Z",
+  "title": "Ai Launch video work",
+  "text": "Ai Launch video work",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Thu May 21 15:27:14 +0000 2026",
+  "likes": 27,
+  "views": 1242,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 17.86,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 17.86,
+      "t_mid": 8.93,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2057483363649528313/s00_0.jpg",
+        "media/x-2057483363649528313/s00_1.jpg",
+        "media/x-2057483363649528313/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2057483363649528313"
+    }
+  ],
+  "status": "ready"
+}

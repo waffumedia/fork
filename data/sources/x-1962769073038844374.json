@@ -1,0 +1,99 @@
+{
+  "id": "x-1962769073038844374",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1962769073038844374",
+  "native_id": "1962769073038844374",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1962769073038844374",
+  "added_at": "2026-11-10T10:43:03Z",
+  "title": "August editing highlights",
+  "text": "August editing highlights",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Tue Sep 02 06:46:28 +0000 2025",
+  "likes": 790,
+  "views": 37873,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 6.53,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 5,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 0.87,
+      "t_mid": 0.43,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1962769073038844374/s00_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1962769073038844374"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.87,
+      "t_end": 2.37,
+      "t_mid": 1.62,
+      "timestamp": "0:01",
+      "frames": [
+        "media/x-1962769073038844374/s01_0.jpg",
+        "media/x-1962769073038844374/s01_1.jpg",
+        "media/x-1962769073038844374/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1962769073038844374"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.37,
+      "t_end": 3.14,
+      "t_mid": 2.75,
+      "timestamp": "0:02",
+      "frames": [
+        "media/x-1962769073038844374/s02_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1962769073038844374"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 3.14,
+      "t_end": 4.84,
+      "t_mid": 3.99,
+      "timestamp": "0:03",
+      "frames": [
+        "media/x-1962769073038844374/s03_0.jpg",
+        "media/x-1962769073038844374/s03_1.jpg",
+        "media/x-1962769073038844374/s03_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1962769073038844374"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.84,
+      "t_end": 6.53,
+      "t_mid": 5.68,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-1962769073038844374/s04_0.jpg",
+        "media/x-1962769073038844374/s04_1.jpg",
+        "media/x-1962769073038844374/s04_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1962769073038844374"
+    }
+  ],
+  "status": "ready"
+}

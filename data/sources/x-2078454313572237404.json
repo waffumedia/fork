@@ -1,0 +1,43 @@
+{
+  "id": "x-2078454313572237404",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2078454313572237404",
+  "native_id": "2078454313572237404",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2078454313572237404",
+  "added_at": "2026-11-10T10:41:38Z",
+  "title": "Some Practice Animations.",
+  "text": "Some Practice Animations.",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Sat Jul 18 12:18:18 +0000 2026",
+  "likes": 27,
+  "views": 1072,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.68,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 7.68,
+      "t_mid": 3.84,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2078454313572237404/s00_0.jpg",
+        "media/x-2078454313572237404/s00_1.jpg",
+        "media/x-2078454313572237404/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2078454313572237404"
+    }
+  ],
+  "status": "ready"
+}

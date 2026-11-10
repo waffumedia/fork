@@ -1,0 +1,73 @@
+{
+  "id": "x-2115473667023114704",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/everygen_ai/status/2115473667023114704",
+  "native_id": "2115473667023114704",
+  "author": "everygen_ai",
+  "input_url": "https://x.com/everygen_ai/status/2115473667023114704",
+  "added_at": "2026-11-10T10:37:02Z",
+  "title": "Introducing Everygen Clipper. \ud83c\udfac",
+  "text": "Introducing Everygen Clipper. \ud83c\udfac\n\nYour entire workflow in one chat:\n\n> Drop in a VOD or video\n> Everygen analyzes, and finds the best moments\n> Turned into ready to post clips\n\nNow live on Everygen.",
+  "author_name": "Everygen",
+  "posted_at": "Wed Oct 28 16:00:00 +0000 2026",
+  "likes": 22,
+  "views": 1698,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 21.89,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 4,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 5.58,
+      "t_mid": 2.79,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2115473667023114704/s00_0.jpg",
+        "media/x-2115473667023114704/s00_1.jpg",
+        "media/x-2115473667023114704/s00_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2115473667023114704"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.58,
+      "t_end": 12.96,
+      "t_mid": 9.27,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-2115473667023114704/s01_0.jpg",
+        "media/x-2115473667023114704/s01_1.jpg",
+        "media/x-2115473667023114704/s01_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2115473667023114704"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 12.96,
+      "t_end": 21.89,
+      "t_mid": 17.42,
+      "timestamp": "0:13",
+      "frames": [
+        "media/x-2115473667023114704/s02_0.jpg",
+        "media/x-2115473667023114704/s02_1.jpg",
+        "media/x-2115473667023114704/s02_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2115473667023114704"
+    }
+  ],
+  "status": "ready"
+}

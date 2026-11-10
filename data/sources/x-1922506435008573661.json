@@ -1,0 +1,82 @@
+{
+  "id": "x-1922506435008573661",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1922506435008573661",
+  "native_id": "1922506435008573661",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1922506435008573661",
+  "added_at": "2026-11-10T10:43:06Z",
+  "title": "Recent VSL Edit",
+  "text": "Recent VSL Edit",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Wed May 14 04:17:07 +0000 2025",
+  "likes": 296,
+  "views": 9741,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 2.35,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.35,
+      "t_mid": 1.17,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1922506435008573661/s00_0.jpg",
+        "media/x-1922506435008573661/s00_1.jpg",
+        "media/x-1922506435008573661/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1922506435008573661",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "vaporwave",
+          "y2k",
+          "retro-futurism"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "illustration",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "purple",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "portrait with graphic overlay",
+          "digital art",
+          "minimalist design"
+        ],
+        "title": "portrait with star overlay",
+        "description": "A stylized black and white portrait of a man on a pale yellow background, with a purple star graphic overlay. The image has a minimalist and graphic quality, suggesting a digital illustration or photo manipulation.",
+        "quality": 4
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

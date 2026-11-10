@@ -1,0 +1,43 @@
+{
+  "id": "x-2061849957536260354",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/xarrfx/status/2061849957536260354",
+  "native_id": "2061849957536260354",
+  "author": "xarrfx",
+  "input_url": "https://x.com/xarrfx/status/2061849957536260354",
+  "added_at": "2026-11-10T10:37:24Z",
+  "title": "Behind the scenes of some recent edits!",
+  "text": "Behind the scenes of some recent edits!",
+  "author_name": "xarr",
+  "posted_at": "Tue Jun 02 16:38:31 +0000 2026",
+  "likes": 139,
+  "views": 3755,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.83,
+      "width": 1080,
+      "height": 1920
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 7.83,
+      "t_mid": 3.91,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2061849957536260354/s00_0.jpg",
+        "media/x-2061849957536260354/s00_1.jpg",
+        "media/x-2061849957536260354/s00_2.jpg"
+      ],
+      "link": "https://x.com/xarrfx/status/2061849957536260354"
+    }
+  ],
+  "status": "ready"
+}

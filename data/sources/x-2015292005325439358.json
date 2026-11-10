@@ -1,0 +1,56 @@
+{
+  "id": "x-2015292005325439358",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2015292005325439358",
+  "native_id": "2015292005325439358",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2015292005325439358",
+  "added_at": "2026-11-10T10:42:48Z",
+  "title": "Video editing is dead now.  ",
+  "text": "Video editing is dead now.  \n\nMade this in only 20 minutes.  \n\nTook only 5 prompts.",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Sun Jan 25 05:13:51 +0000 2026",
+  "likes": 499,
+  "views": 96616,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 11.46,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 1.3,
+      "t_mid": 0.65,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2015292005325439358/s00_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2015292005325439358"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 1.3,
+      "t_end": 11.46,
+      "t_mid": 6.38,
+      "timestamp": "0:01",
+      "frames": [
+        "media/x-2015292005325439358/s01_0.jpg",
+        "media/x-2015292005325439358/s01_1.jpg",
+        "media/x-2015292005325439358/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2015292005325439358"
+    }
+  ],
+  "status": "ready"
+}

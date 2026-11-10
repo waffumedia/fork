@@ -1,0 +1,43 @@
+{
+  "id": "x-2118358785165328590",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/EditSatyjeet/status/2118358785165328590",
+  "native_id": "2118358785165328590",
+  "author": "EditSatyjeet",
+  "input_url": "https://x.com/EditSatyjeet/status/2118358785165328590",
+  "added_at": "2026-11-10T10:40:44Z",
+  "title": "Animation from a recent video",
+  "text": "Animation from a recent video\n\nThoughts? \ud83d\udc40",
+  "author_name": "Satyjeet",
+  "posted_at": "Thu Nov 05 15:04:26 +0000 2026",
+  "likes": 87,
+  "views": 2390,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 4.1,
+      "width": 1080,
+      "height": 1462
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 4.1,
+      "t_mid": 2.05,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2118358785165328590/s00_0.jpg",
+        "media/x-2118358785165328590/s00_1.jpg",
+        "media/x-2118358785165328590/s00_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2118358785165328590"
+    }
+  ],
+  "status": "ready"
+}

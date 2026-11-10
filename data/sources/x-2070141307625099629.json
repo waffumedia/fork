@@ -1,0 +1,86 @@
+{
+  "id": "x-2070141307625099629",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2070141307625099629",
+  "native_id": "2070141307625099629",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2070141307625099629",
+  "added_at": "2026-11-10T10:41:44Z",
+  "title": "Animation from recent Edit",
+  "text": "Animation from recent Edit",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Thu Jun 25 13:45:23 +0000 2026",
+  "likes": 48,
+  "views": 1707,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 15.57,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 5,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 0.9,
+      "t_mid": 0.45,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2070141307625099629/s00_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2070141307625099629"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.9,
+      "t_end": 3.24,
+      "t_mid": 2.07,
+      "timestamp": "0:01",
+      "frames": [
+        "media/x-2070141307625099629/s01_0.jpg",
+        "media/x-2070141307625099629/s01_1.jpg",
+        "media/x-2070141307625099629/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2070141307625099629"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 3.24,
+      "t_end": 7.94,
+      "t_mid": 5.59,
+      "timestamp": "0:03",
+      "frames": [
+        "media/x-2070141307625099629/s02_0.jpg",
+        "media/x-2070141307625099629/s02_1.jpg",
+        "media/x-2070141307625099629/s02_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2070141307625099629"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.94,
+      "t_end": 15.57,
+      "t_mid": 11.76,
+      "timestamp": "0:08",
+      "frames": [
+        "media/x-2070141307625099629/s03_0.jpg",
+        "media/x-2070141307625099629/s03_1.jpg",
+        "media/x-2070141307625099629/s03_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2070141307625099629"
+    }
+  ],
+  "status": "ready"
+}

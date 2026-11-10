@@ -1,0 +1,526 @@
+{
+  "id": "x-2007907795929350537",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/EditSatyjeet/status/2007907795929350537",
+  "native_id": "2007907795929350537",
+  "author": "EditSatyjeet",
+  "input_url": "https://x.com/EditSatyjeet/status/2007907795929350537/video/1",
+  "added_at": "2026-11-10T10:36:12Z",
+  "title": "2025 wasn\u2019t easy",
+  "text": "2025 wasn\u2019t easy\n\nBut this is what came out of it",
+  "author_name": "Satyjeet",
+  "posted_at": "Sun Jan 04 20:11:38 +0000 2026",
+  "likes": 396,
+  "views": 29649,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 44.16,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 46,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 3.67,
+      "t_mid": 1.83,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2007907795929350537/s00_0.jpg",
+        "media/x-2007907795929350537/s00_1.jpg",
+        "media/x-2007907795929350537/s00_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "text-on-path",
+          "gradient-mesh"
+        ],
+        "style": [
+          "cyberpunk",
+          "neon",
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "title-sequence",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "glowing text",
+          "dark background",
+          "neon banner"
+        ],
+        "title": "Title card for showreel",
+        "description": "A dark, stylized title card for a motion showreel featuring the name 'SATYJEET' in large grey letters and a glowing neon banner for 'MOTION SHOWREEL 2025' against a purple gradient background.",
+        "quality": 5
+      }
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.1,
+      "t_end": 6.42,
+      "t_mid": 5.76,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-2007907795929350537/s01_0.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "collage",
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "infographic",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "figma",
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "red",
+          "yellow"
+        ],
+        "concepts": [
+          "social media icons",
+          "flowchart",
+          "blurred text"
+        ],
+        "title": "Beginner guide with social media icons",
+        "description": "A beginner's guide graphic featuring a flowchart with blurred text, surrounded by social media logos like Snapchat, Instagram, TikTok, and YouTube, on a light background.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 9.85,
+      "t_end": 11.0,
+      "t_mid": 10.43,
+      "timestamp": "0:10",
+      "frames": [
+        "media/x-2007907795929350537/s02_0.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "parallax",
+          "depth-of-field"
+        ],
+        "style": [
+          "cyberpunk",
+          "minimal",
+          "cinematic"
+        ],
+        "format": [
+          "ui-demo"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "green"
+        ],
+        "concepts": [
+          "robot character",
+          "video call",
+          "chatgpt"
+        ],
+        "title": "Robot character in a video call",
+        "description": "A screen recording of a video call showing a humanoid robot character with a sleek, grey design, looking out a window. The interface includes a logo for 'ChatGPT' in the corner.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 13.95,
+      "t_end": 15.18,
+      "t_mid": 14.57,
+      "timestamp": "0:14",
+      "frames": [
+        "media/x-2007907795929350537/s03_0.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "2.5d",
+          "parallax",
+          "motion-blur",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "organic"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "green",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "branding values",
+          "winding road metaphor",
+          "choice"
+        ],
+        "title": "Branding elements and a winding road",
+        "description": "A triptych of animated graphics: a pen pointing to brand values like 'Reliability' and 'Growth', a red car driving on a winding road with the text 'Great brands don't compete', and a choice between two illustrated options.",
+        "quality": 5
+      }
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 17.17,
+      "t_end": 18.45,
+      "t_mid": 17.81,
+      "timestamp": "0:17",
+      "frames": [
+        "media/x-2007907795929350537/s04_0.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "glitch"
+        ],
+        "style": [
+          "anime",
+          "cyberpunk",
+          "meme"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "red",
+          "white",
+          "yellow"
+        ],
+        "concepts": [
+          "anime character",
+          "video editing",
+          "meme"
+        ],
+        "title": "Anime character with video interface",
+        "description": "A triptych featuring an anime character, likely from Dragon Ball, with a 'Ruining your videos' text overlay, a YouTube channel interface, and a video editing timeline.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 21.22,
+      "t_end": 23.05,
+      "t_mid": 22.13,
+      "timestamp": "0:21",
+      "frames": [
+        "media/x-2007907795929350537/s05_0.jpg",
+        "media/x-2007907795929350537/s05_1.jpg",
+        "media/x-2007907795929350537/s05_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "company valuation",
+          "growth chart",
+          "data visualization"
+        ],
+        "title": "Company valuation graph",
+        "description": "A dark-themed graph showing the growth of three companies: Fiverr ($1B), Airbnb ($100B), and Amazon ($1T), with their respective lines trending upwards.",
+        "quality": 5
+      }
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 25.97,
+      "t_end": 27.75,
+      "t_mid": 26.86,
+      "timestamp": "0:26",
+      "frames": [
+        "media/x-2007907795929350537/s06_0.jpg",
+        "media/x-2007907795929350537/s06_1.jpg",
+        "media/x-2007907795929350537/s06_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "collage",
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "luxury",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "pink",
+          "purple",
+          "black"
+        ],
+        "concepts": [
+          "perfume ad",
+          "spinning wheel",
+          "branding"
+        ],
+        "title": "Perfume ad with a spinning wheel",
+        "description": "A triptych: a spinning wheel to find a signature scent, a perfume bottle on a pedestal with the brand name 'Scentular', and a YouTube comment section with a 'King of Youtube' tag.",
+        "quality": 5
+      }
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 30.55,
+      "t_end": 31.85,
+      "t_mid": 31.2,
+      "timestamp": "0:31",
+      "frames": [
+        "media/x-2007907795929350537/s07_0.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "meme",
+          "cyberpunk",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "meme",
+          "youtube profile",
+          "money"
+        ],
+        "title": "Three panels with a man and a YouTube profile",
+        "description": "A triptych: a man in a suit holding a mug, a stylized image of a man with an eye on his face surrounded by dollar signs, and a YouTube profile for 'Brent Rivera' with 37.9M subscribers.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 8,
+      "file": 0,
+      "kind": "video",
+      "t_start": 35.85,
+      "t_end": 38.58,
+      "t_mid": 37.22,
+      "timestamp": "0:36",
+      "frames": [
+        "media/x-2007907795929350537/s08_0.jpg",
+        "media/x-2007907795929350537/s08_1.jpg",
+        "media/x-2007907795929350537/s08_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "text-on-path"
+        ],
+        "style": [
+          "cyberpunk",
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "title-sequence",
+          "showreel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "neon-palette"
+        ],
+        "concepts": [
+          "modern algorithms",
+          "gear icon",
+          "neon text"
+        ],
+        "title": "Modern Algorithms title card",
+        "description": "A title card with a large gear icon and the text 'MODERN ALGORITHMS' in a clean, modern font against a dark background.",
+        "quality": 5
+      }
+    },
+    {
+      "idx": 9,
+      "file": 0,
+      "kind": "video",
+      "t_start": 40.53,
+      "t_end": 44.16,
+      "t_mid": 42.35,
+      "timestamp": "0:41",
+      "frames": [
+        "media/x-2007907795929350537/s09_0.jpg",
+        "media/x-2007907795929350537/s09_1.jpg",
+        "media/x-2007907795929350537/s09_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2007907795929350537",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "text-on-path"
+        ],
+        "style": [
+          "cyberpunk",
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "title-sequence",
+          "showreel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "end screen",
+          "glow effect",
+          "neon text"
+        ],
+        "title": "End screen with a number and text",
+        "description": "A simple end screen with a large number '2' and the text 'Thanks for watching' on a purple gradient background.",
+        "quality": 5
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

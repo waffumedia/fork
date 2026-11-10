@@ -1,0 +1,145 @@
+{
+  "id": "x-1908357702582927635",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1908357702582927635",
+  "native_id": "1908357702582927635",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1908357702582927635",
+  "added_at": "2026-11-10T10:43:08Z",
+  "title": "Animations from recent edit ( Short Form )",
+  "text": "Animations from recent edit ( Short Form )",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Sat Apr 05 03:15:06 +0000 2025",
+  "likes": 229,
+  "views": 10370,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 3.09,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.47,
+      "t_mid": 1.23,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1908357702582927635/s00_0.jpg",
+        "media/x-1908357702582927635/s00_1.jpg",
+        "media/x-1908357702582927635/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1908357702582927635",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "ui-animation",
+          "glow-bloom",
+          "collage"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody",
+          "apple-style"
+        ],
+        "format": [
+          "social-reel",
+          "brand-ad",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "looping"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "white",
+          "yellow"
+        ],
+        "concepts": [
+          "social media interface",
+          "profile reveal",
+          "reels montage",
+          "trend showcase"
+        ],
+        "title": "Instagram UI reveal",
+        "description": "A triptych showing a scenic photo, a dark-mode Instagram profile with a glowing star icon, and a dynamic grid of Reels, suggesting a social media trend. The central profile uses a dark theme with a prominent green star icon, while the right panel shows a fast-paced montage of video clips.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.47,
+      "t_end": 3.09,
+      "t_mid": 2.78,
+      "timestamp": "0:02",
+      "frames": [
+        "media/x-1908357702582927635/s01_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1908357702582927635",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "kinetic-type",
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "minimal",
+          "retro-futurism",
+          "y2k",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "brand-ad",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "grey"
+        ],
+        "concepts": [
+          "countdown sequence",
+          "work life balance",
+          "digital overlay",
+          "time pressure"
+        ],
+        "title": "Countdown and work scene",
+        "description": "A triptych featuring a person walking on a beach at dusk, a large red number '2' in a countdown, and a person working at a desk with a social media post overlay. The middle frame uses a minimalist design with a large number to create anticipation.",
+        "quality": 4
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

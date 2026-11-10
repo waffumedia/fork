@@ -1,0 +1,144 @@
+{
+  "id": "x-2082472075617579108",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2082472075617579108",
+  "native_id": "2082472075617579108",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2082472075617579108",
+  "added_at": "2026-11-10T10:41:27Z",
+  "title": "What $1000 VSL Looks like!",
+  "text": "What $1000 VSL Looks like!",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Wed Jul 29 14:23:27 +0000 2026",
+  "likes": 93,
+  "views": 3122,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 29.53,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 18,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.94,
+      "t_mid": 1.47,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2082472075617579108/s00_0.jpg",
+        "media/x-2082472075617579108/s00_1.jpg",
+        "media/x-2082472075617579108/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 3.54,
+      "t_end": 4.74,
+      "t_mid": 4.14,
+      "timestamp": "0:04",
+      "frames": [
+        "media/x-2082472075617579108/s01_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.64,
+      "t_end": 8.84,
+      "t_mid": 8.24,
+      "timestamp": "0:08",
+      "frames": [
+        "media/x-2082472075617579108/s02_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 8.84,
+      "t_end": 11.71,
+      "t_mid": 10.28,
+      "timestamp": "0:09",
+      "frames": [
+        "media/x-2082472075617579108/s03_0.jpg",
+        "media/x-2082472075617579108/s03_1.jpg",
+        "media/x-2082472075617579108/s03_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 11.71,
+      "t_end": 13.95,
+      "t_mid": 12.83,
+      "timestamp": "0:12",
+      "frames": [
+        "media/x-2082472075617579108/s04_0.jpg",
+        "media/x-2082472075617579108/s04_1.jpg",
+        "media/x-2082472075617579108/s04_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 13.95,
+      "t_end": 21.62,
+      "t_mid": 17.78,
+      "timestamp": "0:14",
+      "frames": [
+        "media/x-2082472075617579108/s05_0.jpg",
+        "media/x-2082472075617579108/s05_1.jpg",
+        "media/x-2082472075617579108/s05_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 21.62,
+      "t_end": 26.26,
+      "t_mid": 23.94,
+      "timestamp": "0:22",
+      "frames": [
+        "media/x-2082472075617579108/s06_0.jpg",
+        "media/x-2082472075617579108/s06_1.jpg",
+        "media/x-2082472075617579108/s06_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 26.26,
+      "t_end": 29.53,
+      "t_mid": 27.89,
+      "timestamp": "0:26",
+      "frames": [
+        "media/x-2082472075617579108/s07_0.jpg",
+        "media/x-2082472075617579108/s07_1.jpg",
+        "media/x-2082472075617579108/s07_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2082472075617579108"
+    }
+  ],
+  "status": "ready"
+}

@@ -1,0 +1,88 @@
+{
+  "id": "x-1824658338975518982",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1824658338975518982",
+  "native_id": "1824658338975518982",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1824658338975518982",
+  "added_at": "2026-11-10T10:43:09Z",
+  "title": "Recently made this sample edit for @AustinGeorgas",
+  "text": "Recently made this sample edit for @AustinGeorgas",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Sat Aug 17 04:03:43 +0000 2024",
+  "likes": 76,
+  "views": 3784,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 18.15,
+      "width": 1080,
+      "height": 1536
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 18.15,
+      "t_mid": 9.08,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1824658338975518982/s00_0.jpg",
+        "media/x-1824658338975518982/s00_1.jpg",
+        "media/x-1824658338975518982/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1824658338975518982",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "collage",
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful",
+          "geometric"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black",
+          "cool"
+        ],
+        "concepts": [
+          "video comparison",
+          "before after",
+          "editing showcase",
+          "minimalist design"
+        ],
+        "title": "Before and after edit comparison",
+        "description": "A side-by-side comparison of a video edit, showing a raw 'before' shot of a man speaking into a microphone and a polished 'after' shot with a smaller video clip embedded in a minimalist white card, suggesting a clean, modern editing style.",
+        "quality": 4
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

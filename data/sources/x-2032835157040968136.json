@@ -1,0 +1,131 @@
+{
+  "id": "x-2032835157040968136",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/hikarimotions/status/2032835157040968136",
+  "native_id": "2032835157040968136",
+  "author": "hikarimotions",
+  "input_url": "https://x.com/hikarimotions/status/2032835157040968136",
+  "added_at": "2026-11-10T10:36:12Z",
+  "title": "Highlights for @josephsvideo",
+  "text": "Highlights for @josephsvideo",
+  "author_name": "Hikari | Editor",
+  "posted_at": "Sat Mar 14 15:04:04 +0000 2026",
+  "likes": 133,
+  "views": 4096,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 57.57,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "shot_count": 16,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 3.63,
+      "t_mid": 1.82,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2032835157040968136/s00_0.jpg",
+        "media/x-2032835157040968136/s00_1.jpg",
+        "media/x-2032835157040968136/s00_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 9.57,
+      "t_end": 10.97,
+      "t_mid": 10.27,
+      "timestamp": "0:10",
+      "frames": [
+        "media/x-2032835157040968136/s01_0.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 11.97,
+      "t_end": 15.7,
+      "t_mid": 13.83,
+      "timestamp": "0:12",
+      "frames": [
+        "media/x-2032835157040968136/s02_0.jpg",
+        "media/x-2032835157040968136/s02_1.jpg",
+        "media/x-2032835157040968136/s02_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 15.7,
+      "t_end": 25.67,
+      "t_mid": 20.68,
+      "timestamp": "0:16",
+      "frames": [
+        "media/x-2032835157040968136/s03_0.jpg",
+        "media/x-2032835157040968136/s03_1.jpg",
+        "media/x-2032835157040968136/s03_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 25.67,
+      "t_end": 38.8,
+      "t_mid": 32.23,
+      "timestamp": "0:26",
+      "frames": [
+        "media/x-2032835157040968136/s04_0.jpg",
+        "media/x-2032835157040968136/s04_1.jpg",
+        "media/x-2032835157040968136/s04_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 38.8,
+      "t_end": 51.63,
+      "t_mid": 45.22,
+      "timestamp": "0:39",
+      "frames": [
+        "media/x-2032835157040968136/s05_0.jpg",
+        "media/x-2032835157040968136/s05_1.jpg",
+        "media/x-2032835157040968136/s05_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 51.63,
+      "t_end": 55.07,
+      "t_mid": 53.35,
+      "timestamp": "0:52",
+      "frames": [
+        "media/x-2032835157040968136/s06_0.jpg",
+        "media/x-2032835157040968136/s06_1.jpg",
+        "media/x-2032835157040968136/s06_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+    }
+  ],
+  "status": "ready"
+}

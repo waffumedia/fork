@@ -1,0 +1,43 @@
+{
+  "id": "x-2119303823185612826",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/eback_4u/status/2119303823185612826",
+  "native_id": "2119303823185612826",
+  "author": "eback_4u",
+  "input_url": "https://x.com/eback_4u/status/2119303823185612826",
+  "added_at": "2026-11-10T10:43:10Z",
+  "title": "Say GOOBYE to Ai slop - Dropping soon",
+  "text": "Say GOOBYE to Ai slop - Dropping soon\n\nTraining claude on how I do my graphs in after effects for each composition. \n\nModel used : Opus5.5",
+  "author_name": "E20life\u2606 | Video Editor",
+  "posted_at": "Sun Nov 08 05:39:40 +0000 2026",
+  "likes": 298,
+  "views": 9939,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 11.27,
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 11.27,
+      "t_mid": 5.64,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2119303823185612826/s00_0.jpg",
+        "media/x-2119303823185612826/s00_1.jpg",
+        "media/x-2119303823185612826/s00_2.jpg"
+      ],
+      "link": "https://x.com/eback_4u/status/2119303823185612826"
+    }
+  ],
+  "status": "ready"
+}

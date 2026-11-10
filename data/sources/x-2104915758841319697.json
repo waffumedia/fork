@@ -1,0 +1,146 @@
+{
+  "id": "x-2104915758841319697",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2104915758841319697",
+  "native_id": "2104915758841319697",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2104915758841319697",
+  "added_at": "2026-11-10T10:40:54Z",
+  "title": "Podcast Intro Edit \u2728",
+  "text": "Podcast Intro Edit \u2728",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Tue Sep 29 12:46:39 +0000 2026",
+  "likes": 120,
+  "views": 2956,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 67.2,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 13,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.84,
+      "t_end": 10.31,
+      "t_mid": 6.57,
+      "timestamp": "0:03",
+      "frames": [
+        "media/x-2104915758841319697/s00_0.jpg",
+        "media/x-2104915758841319697/s00_1.jpg",
+        "media/x-2104915758841319697/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 10.31,
+      "t_end": 28.76,
+      "t_mid": 19.54,
+      "timestamp": "0:10",
+      "frames": [
+        "media/x-2104915758841319697/s01_0.jpg",
+        "media/x-2104915758841319697/s01_1.jpg",
+        "media/x-2104915758841319697/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 28.76,
+      "t_end": 32.9,
+      "t_mid": 30.83,
+      "timestamp": "0:29",
+      "frames": [
+        "media/x-2104915758841319697/s02_0.jpg",
+        "media/x-2104915758841319697/s02_1.jpg",
+        "media/x-2104915758841319697/s02_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 34.73,
+      "t_end": 45.85,
+      "t_mid": 40.29,
+      "timestamp": "0:35",
+      "frames": [
+        "media/x-2104915758841319697/s03_0.jpg",
+        "media/x-2104915758841319697/s03_1.jpg",
+        "media/x-2104915758841319697/s03_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 45.85,
+      "t_end": 47.18,
+      "t_mid": 46.51,
+      "timestamp": "0:46",
+      "frames": [
+        "media/x-2104915758841319697/s04_0.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 48.15,
+      "t_end": 52.79,
+      "t_mid": 50.47,
+      "timestamp": "0:48",
+      "frames": [
+        "media/x-2104915758841319697/s05_0.jpg",
+        "media/x-2104915758841319697/s05_1.jpg",
+        "media/x-2104915758841319697/s05_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 52.79,
+      "t_end": 57.82,
+      "t_mid": 55.31,
+      "timestamp": "0:53",
+      "frames": [
+        "media/x-2104915758841319697/s06_0.jpg",
+        "media/x-2104915758841319697/s06_1.jpg",
+        "media/x-2104915758841319697/s06_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 58.89,
+      "t_end": 67.2,
+      "t_mid": 63.05,
+      "timestamp": "0:59",
+      "frames": [
+        "media/x-2104915758841319697/s07_0.jpg",
+        "media/x-2104915758841319697/s07_1.jpg",
+        "media/x-2104915758841319697/s07_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2104915758841319697"
+    }
+  ],
+  "status": "ready"
+}

@@ -1,0 +1,141 @@
+{
+  "id": "x-1937021334078312745",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1937021334078312745",
+  "native_id": "1937021334078312745",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1937021334078312745",
+  "added_at": "2026-11-10T10:43:05Z",
+  "title": "Animations from recent long form edit.",
+  "text": "Animations from recent long form edit.",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Mon Jun 23 05:34:08 +0000 2025",
+  "likes": 143,
+  "views": 5139,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 4.71,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 1.53,
+      "t_mid": 0.77,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1937021334078312745/s00_0.jpg",
+        "media/x-1937021334078312745/s00_1.jpg",
+        "media/x-1937021334078312745/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1937021334078312745",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "collage",
+          "screen-recording",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "blue",
+          "red"
+        ],
+        "concepts": [
+          "product display",
+          "text overlay",
+          "grid layout",
+          "social media content"
+        ],
+        "title": "Product collage with text overlay",
+        "description": "A four-quadrant grid layout displaying various snack products and a video clip of a person holding a product, with text about MrBeast's chocolate empire. The design uses a clean, minimalist aesthetic with a light grey background and sharp product photography.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 1.53,
+      "t_end": 4.71,
+      "t_mid": 3.12,
+      "timestamp": "0:02",
+      "frames": [
+        "media/x-1937021334078312745/s01_0.jpg",
+        "media/x-1937021334078312745/s01_1.jpg",
+        "media/x-1937021334078312745/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1937021334078312745",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "collage",
+          "split-screen",
+          "hard-cut-montage"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "dark-moody",
+          "retro-futurism"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "chaotic"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue",
+          "purple"
+        ],
+        "concepts": [
+          "product montage",
+          "person in retail",
+          "number display",
+          "dark background"
+        ],
+        "title": "Product and person montage",
+        "description": "A dynamic four-quadrant montage featuring snack products, a hoodie, and a person in a retail setting. The scene uses a dark background to highlight the products and includes a large number '12' in one quadrant, suggesting a countdown or list format.",
+        "quality": 4
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

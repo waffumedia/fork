@@ -1,0 +1,43 @@
+{
+  "id": "x-1993334215325499700",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1993334215325499700",
+  "native_id": "1993334215325499700",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1993334215325499700",
+  "added_at": "2026-11-10T10:42:54Z",
+  "title": "Animations from my recent edit (Long Form)",
+  "text": "Animations from my recent edit (Long Form)",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Tue Nov 25 15:01:25 +0000 2025",
+  "likes": 73,
+  "views": 2314,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.53,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 7.53,
+      "t_mid": 3.77,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1993334215325499700/s00_0.jpg",
+        "media/x-1993334215325499700/s00_1.jpg",
+        "media/x-1993334215325499700/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1993334215325499700"
+    }
+  ],
+  "status": "ready"
+}

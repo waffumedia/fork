@@ -1,0 +1,43 @@
+{
+  "id": "x-2119311804048503178",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/eback_4u/status/2119311804048503178",
+  "native_id": "2119311804048503178",
+  "author": "eback_4u",
+  "input_url": "https://x.com/eback_4u/status/2119311804048503178",
+  "added_at": "2026-11-10T10:43:09Z",
+  "title": "FINALLY @claudeai understands how i use my After effects \ud83d\ude2d",
+  "text": "FINALLY @claudeai understands how i use my After effects \ud83d\ude2d\n\ngonna save loads of time.",
+  "author_name": "E20life\u2606 | Video Editor",
+  "posted_at": "Sun Nov 08 06:11:23 +0000 2026",
+  "likes": 545,
+  "views": 28241,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.82,
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 7.82,
+      "t_mid": 3.91,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2119311804048503178/s00_0.jpg",
+        "media/x-2119311804048503178/s00_1.jpg",
+        "media/x-2119311804048503178/s00_2.jpg"
+      ],
+      "link": "https://x.com/eback_4u/status/2119311804048503178"
+    }
+  ],
+  "status": "ready"
+}

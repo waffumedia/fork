@@ -1,0 +1,43 @@
+{
+  "id": "x-2094441272903975405",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/EditSatyjeet/status/2094441272903975405",
+  "native_id": "2094441272903975405",
+  "author": "EditSatyjeet",
+  "input_url": "https://x.com/EditSatyjeet/status/2094441272903975405",
+  "added_at": "2026-11-10T10:40:41Z",
+  "title": "Some of my recent work.",
+  "text": "Some of my recent work.\n\nWhich Editing style is best, and why?",
+  "author_name": "Satyjeet",
+  "posted_at": "Mon Aug 31 15:04:46 +0000 2026",
+  "likes": 192,
+  "views": 4575,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 5.72,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 5.72,
+      "t_mid": 2.86,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2094441272903975405/s00_0.jpg",
+        "media/x-2094441272903975405/s00_1.jpg",
+        "media/x-2094441272903975405/s00_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2094441272903975405"
+    }
+  ],
+  "status": "ready"
+}

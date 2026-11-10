@@ -1,0 +1,118 @@
+{
+  "id": "x-2110123575919468963",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/everygen_ai/status/2110123575919468963",
+  "native_id": "2110123575919468963",
+  "author": "everygen_ai",
+  "input_url": "https://x.com/everygen_ai/status/2110123575919468963",
+  "added_at": "2026-11-10T10:36:54Z",
+  "title": "Introducing Everygen Wizard.",
+  "text": "Introducing Everygen Wizard.\n\nYour entire video workflow, in one conversation.\n\nCreate characters. Recreate trends. Make it your own.\n\nAvailable now in Everygen.",
+  "author_name": "Everygen",
+  "posted_at": "Tue Oct 13 21:40:39 +0000 2026",
+  "likes": 56,
+  "views": 6742,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 37.89,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 8,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.96,
+      "t_mid": 1.48,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2110123575919468963/s00_0.jpg",
+        "media/x-2110123575919468963/s00_1.jpg",
+        "media/x-2110123575919468963/s00_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.96,
+      "t_end": 13.21,
+      "t_mid": 8.08,
+      "timestamp": "0:03",
+      "frames": [
+        "media/x-2110123575919468963/s01_0.jpg",
+        "media/x-2110123575919468963/s01_1.jpg",
+        "media/x-2110123575919468963/s01_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 13.21,
+      "t_end": 18.46,
+      "t_mid": 15.83,
+      "timestamp": "0:13",
+      "frames": [
+        "media/x-2110123575919468963/s02_0.jpg",
+        "media/x-2110123575919468963/s02_1.jpg",
+        "media/x-2110123575919468963/s02_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 18.46,
+      "t_end": 28.21,
+      "t_mid": 23.33,
+      "timestamp": "0:18",
+      "frames": [
+        "media/x-2110123575919468963/s03_0.jpg",
+        "media/x-2110123575919468963/s03_1.jpg",
+        "media/x-2110123575919468963/s03_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 28.21,
+      "t_end": 35.25,
+      "t_mid": 31.73,
+      "timestamp": "0:28",
+      "frames": [
+        "media/x-2110123575919468963/s04_0.jpg",
+        "media/x-2110123575919468963/s04_1.jpg",
+        "media/x-2110123575919468963/s04_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 35.25,
+      "t_end": 37.89,
+      "t_mid": 36.57,
+      "timestamp": "0:35",
+      "frames": [
+        "media/x-2110123575919468963/s05_0.jpg",
+        "media/x-2110123575919468963/s05_1.jpg",
+        "media/x-2110123575919468963/s05_2.jpg"
+      ],
+      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+    }
+  ],
+  "status": "ready"
+}

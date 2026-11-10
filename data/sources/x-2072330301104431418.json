@@ -1,0 +1,43 @@
+{
+  "id": "x-2072330301104431418",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2072330301104431418",
+  "native_id": "2072330301104431418",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2072330301104431418",
+  "added_at": "2026-11-10T10:41:42Z",
+  "title": "Saas explainer animations",
+  "text": "Saas explainer animations",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Wed Jul 01 14:43:40 +0000 2026",
+  "likes": 21,
+  "views": 1172,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 18.37,
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 18.37,
+      "t_mid": 9.18,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2072330301104431418/s00_0.jpg",
+        "media/x-2072330301104431418/s00_1.jpg",
+        "media/x-2072330301104431418/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2072330301104431418"
+    }
+  ],
+  "status": "ready"
+}

@@ -1,0 +1,177 @@
+{
+  "id": "x-1954779059306615015",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1954779059306615015",
+  "native_id": "1954779059306615015",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1954779059306615015",
+  "added_at": "2026-11-10T10:43:05Z",
+  "title": "VSL edit in the real estate niche.",
+  "text": "VSL edit in the real estate niche.",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Mon Aug 11 05:37:00 +0000 2025",
+  "likes": 88,
+  "views": 2947,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 44.03,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 3,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 6.51,
+      "t_mid": 3.25,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1954779059306615015/s00_0.jpg",
+        "media/x-1954779059306615015/s00_1.jpg",
+        "media/x-1954779059306615015/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1954779059306615015",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "mask-reveal",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "corporate-clean"
+        ],
+        "format": [
+          "vsl",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "timeline progression",
+          "prison metaphor",
+          "highlighted step"
+        ],
+        "title": "timeline with prison icon",
+        "description": "A sleek, dark-themed timeline graphic features a circular icon with a silhouette of a person behind bars, highlighted with a blue glow. The timeline progresses with numbered steps, suggesting a narrative or process. The design is clean and modern, likely created in After Effects.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 6.51,
+      "t_end": 37.64,
+      "t_mid": 22.07,
+      "timestamp": "0:07",
+      "frames": [
+        "media/x-1954779059306615015/s01_0.jpg",
+        "media/x-1954779059306615015/s01_1.jpg",
+        "media/x-1954779059306615015/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1954779059306615015",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "logo-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "logo-sting",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "home symbol",
+          "brand identity",
+          "simple icon"
+        ],
+        "title": "home icon animation",
+        "description": "A simple, animated blue circular icon with a white house symbol in the center. The icon is centered on a clean white background, suggesting a minimalist and modern design approach.",
+        "quality": 4
+      }
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 37.64,
+      "t_end": 44.03,
+      "t_mid": 40.83,
+      "timestamp": "0:38",
+      "frames": [
+        "media/x-1954779059306615015/s02_0.jpg",
+        "media/x-1954779059306615015/s02_1.jpg",
+        "media/x-1954779059306615015/s02_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1954779059306615015",
+      "tags": {
+        "technique": [
+          "camera-shake"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "beat-synced",
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "money symbolism",
+          "talking head",
+          "wealth narrative"
+        ],
+        "title": "talking head with money",
+        "description": "A man in a light blue hoodie and black cap sits at a desk with stacks of cash. He gestures with his hands while speaking, creating a dynamic and engaging scene. The background features bookshelves, adding depth to the composition.",
+        "quality": 4
+      }
+    }
+  ],
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
+}

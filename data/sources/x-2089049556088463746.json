@@ -1,0 +1,43 @@
+{
+  "id": "x-2089049556088463746",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/xarrfx/status/2089049556088463746",
+  "native_id": "2089049556088463746",
+  "author": "xarrfx",
+  "input_url": "https://x.com/xarrfx/status/2089049556088463746",
+  "added_at": "2026-11-10T10:37:20Z",
+  "title": "Pinterest is full of ideas. You just have to know how to make them move",
+  "text": "Pinterest is full of ideas. You just have to know how to make them move",
+  "author_name": "xarr",
+  "posted_at": "Sun Aug 16 18:00:01 +0000 2026",
+  "likes": 141,
+  "views": 3131,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 9.15,
+      "width": 2160,
+      "height": 1920
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 9.15,
+      "t_mid": 4.58,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2089049556088463746/s00_0.jpg",
+        "media/x-2089049556088463746/s00_1.jpg",
+        "media/x-2089049556088463746/s00_2.jpg"
+      ],
+      "link": "https://x.com/xarrfx/status/2089049556088463746"
+    }
+  ],
+  "status": "ready"
+}

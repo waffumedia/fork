@@ -1,0 +1,88 @@
+{
+  "id": "x-1963479537393553753",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/1963479537393553753",
+  "native_id": "1963479537393553753",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/1963479537393553753",
+  "added_at": "2026-11-10T10:43:01Z",
+  "title": "August editing highlights ( Part 2 )",
+  "text": "August editing highlights ( Part 2 )",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Thu Sep 04 05:49:36 +0000 2025",
+  "likes": 576,
+  "views": 28909,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.64,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 4,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.04,
+      "t_mid": 1.02,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1963479537393553753/s00_0.jpg",
+        "media/x-1963479537393553753/s00_1.jpg",
+        "media/x-1963479537393553753/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.04,
+      "t_end": 4.0,
+      "t_mid": 3.02,
+      "timestamp": "0:02",
+      "frames": [
+        "media/x-1963479537393553753/s01_0.jpg",
+        "media/x-1963479537393553753/s01_1.jpg",
+        "media/x-1963479537393553753/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.0,
+      "t_end": 5.51,
+      "t_mid": 4.75,
+      "timestamp": "0:04",
+      "frames": [
+        "media/x-1963479537393553753/s02_0.jpg",
+        "media/x-1963479537393553753/s02_1.jpg",
+        "media/x-1963479537393553753/s02_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.51,
+      "t_end": 7.64,
+      "t_mid": 6.57,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-1963479537393553753/s03_0.jpg",
+        "media/x-1963479537393553753/s03_1.jpg",
+        "media/x-1963479537393553753/s03_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+    }
+  ],
+  "status": "ready"
+}

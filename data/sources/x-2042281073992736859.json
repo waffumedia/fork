@@ -1,0 +1,58 @@
+{
+  "id": "x-2042281073992736859",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/Ricardofilms_/status/2042281073992736859",
+  "native_id": "2042281073992736859",
+  "author": "Ricardofilms_",
+  "input_url": "https://x.com/Ricardofilms_/status/2042281073992736859",
+  "added_at": "2026-11-10T10:43:13Z",
+  "title": "Recent Intro Documentary Style ",
+  "text": "Recent Intro Documentary Style \nW or L?\nEdited in Premiere Pro and After Effects",
+  "author_name": "Rosving",
+  "posted_at": "Thu Apr 09 16:38:46 +0000 2026",
+  "likes": 239,
+  "views": 7154,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 14.14,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 6.97,
+      "t_mid": 3.48,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2042281073992736859/s00_0.jpg",
+        "media/x-2042281073992736859/s00_1.jpg",
+        "media/x-2042281073992736859/s00_2.jpg"
+      ],
+      "link": "https://x.com/Ricardofilms_/status/2042281073992736859"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 6.97,
+      "t_end": 14.14,
+      "t_mid": 10.55,
+      "timestamp": "0:07",
+      "frames": [
+        "media/x-2042281073992736859/s01_0.jpg",
+        "media/x-2042281073992736859/s01_1.jpg",
+        "media/x-2042281073992736859/s01_2.jpg"
+      ],
+      "link": "https://x.com/Ricardofilms_/status/2042281073992736859"
+    }
+  ],
+  "status": "ready"
+}

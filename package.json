@@ -1,0 +1,29 @@
+{
+  "name": "inspo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev -p 3300",
+    "build": "next build",
+    "start": "next start -p 3300",
+    "typecheck": "tsc --noEmit",
+    "import": "tsx scripts/import.ts",
+    "export": "tsx scripts/export.ts",
+    "smoke": "tsx scripts/smoke.ts"
+  },
+  "dependencies": {
+    "@libsql/client": "^0.17.4",
+    "@modelcontextprotocol/server": "^2.2.0",
+    "mcp-handler": "2.1.1",
+    "next": "16.3.3",
+    "react": "19.2.8",
+    "react-dom": "19.2.8",
+    "zod": "^4.5.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "tsx": "^4.23.12",
+    "typescript": "^5"
+  }
+}

@@ -1,0 +1,116 @@
+{
+  "id": "x-2077100668456702425",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/RenderedVision/status/2077100668456702425",
+  "native_id": "2077100668456702425",
+  "author": "RenderedVision",
+  "input_url": "https://x.com/RenderedVision/status/2077100668456702425",
+  "added_at": "2026-11-10T10:42:17Z",
+  "title": "\ud83d\udc40Check out this trial edit I completed in 4 hours...",
+  "text": "\ud83d\udc40Check out this trial edit I completed in 4 hours...\n\nTalking-head intro paired with simple text, clean animations, and textured sound design. \n\nDM to level up your content\ud83d\udc4a",
+  "author_name": "Wade | Video Editor",
+  "posted_at": "Tue Jul 14 18:39:24 +0000 2026",
+  "likes": 27,
+  "views": 866,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 43.75,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "shot_count": 6,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 1.21,
+      "t_mid": 0.6,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2077100668456702425/s00_0.jpg"
+      ],
+      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 1.21,
+      "t_end": 4.5,
+      "t_mid": 2.86,
+      "timestamp": "0:01",
+      "frames": [
+        "media/x-2077100668456702425/s01_0.jpg",
+        "media/x-2077100668456702425/s01_1.jpg",
+        "media/x-2077100668456702425/s01_2.jpg"
+      ],
+      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.5,
+      "t_end": 13.05,
+      "t_mid": 8.78,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-2077100668456702425/s02_0.jpg",
+        "media/x-2077100668456702425/s02_1.jpg",
+        "media/x-2077100668456702425/s02_2.jpg"
+      ],
+      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 13.05,
+      "t_end": 19.14,
+      "t_mid": 16.1,
+      "timestamp": "0:13",
+      "frames": [
+        "media/x-2077100668456702425/s03_0.jpg",
+        "media/x-2077100668456702425/s03_1.jpg",
+        "media/x-2077100668456702425/s03_2.jpg"
+      ],
+      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 19.14,
+      "t_end": 21.94,
+      "t_mid": 20.54,
+      "timestamp": "0:19",
+      "frames": [
+        "media/x-2077100668456702425/s04_0.jpg",
+        "media/x-2077100668456702425/s04_1.jpg",
+        "media/x-2077100668456702425/s04_2.jpg"
+      ],
+      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 21.94,
+      "t_end": 43.75,
+      "t_mid": 32.85,
+      "timestamp": "0:22",
+      "frames": [
+        "media/x-2077100668456702425/s05_0.jpg",
+        "media/x-2077100668456702425/s05_1.jpg",
+        "media/x-2077100668456702425/s05_2.jpg"
+      ],
+      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+    }
+  ],
+  "status": "ready"
+}

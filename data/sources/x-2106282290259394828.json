@@ -1,0 +1,157 @@
+{
+  "id": "x-2106282290259394828",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/hikarimotions/status/2106282290259394828",
+  "native_id": "2106282290259394828",
+  "author": "hikarimotions",
+  "input_url": "https://x.com/hikarimotions/status/2106282290259394828",
+  "added_at": "2026-11-10T10:36:50Z",
+  "title": "intro for @/BerkanViral",
+  "text": "intro for @/BerkanViral",
+  "author_name": "Hikari | Editor",
+  "posted_at": "Sat Oct 03 07:16:45 +0000 2026",
+  "likes": 24,
+  "views": 674,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 27.26,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "shot_count": 9,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 0.95,
+      "t_mid": 0.47,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2106282290259394828/s00_0.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.95,
+      "t_end": 5.55,
+      "t_mid": 3.25,
+      "timestamp": "0:01",
+      "frames": [
+        "media/x-2106282290259394828/s01_0.jpg",
+        "media/x-2106282290259394828/s01_1.jpg",
+        "media/x-2106282290259394828/s01_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.55,
+      "t_end": 7.08,
+      "t_mid": 6.32,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-2106282290259394828/s02_0.jpg",
+        "media/x-2106282290259394828/s02_1.jpg",
+        "media/x-2106282290259394828/s02_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.08,
+      "t_end": 7.78,
+      "t_mid": 7.43,
+      "timestamp": "0:07",
+      "frames": [
+        "media/x-2106282290259394828/s03_0.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.78,
+      "t_end": 9.43,
+      "t_mid": 8.61,
+      "timestamp": "0:08",
+      "frames": [
+        "media/x-2106282290259394828/s04_0.jpg",
+        "media/x-2106282290259394828/s04_1.jpg",
+        "media/x-2106282290259394828/s04_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 9.43,
+      "t_end": 19.37,
+      "t_mid": 14.4,
+      "timestamp": "0:09",
+      "frames": [
+        "media/x-2106282290259394828/s05_0.jpg",
+        "media/x-2106282290259394828/s05_1.jpg",
+        "media/x-2106282290259394828/s05_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 19.37,
+      "t_end": 21.3,
+      "t_mid": 20.33,
+      "timestamp": "0:19",
+      "frames": [
+        "media/x-2106282290259394828/s06_0.jpg",
+        "media/x-2106282290259394828/s06_1.jpg",
+        "media/x-2106282290259394828/s06_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 21.3,
+      "t_end": 26.42,
+      "t_mid": 23.86,
+      "timestamp": "0:21",
+      "frames": [
+        "media/x-2106282290259394828/s07_0.jpg",
+        "media/x-2106282290259394828/s07_1.jpg",
+        "media/x-2106282290259394828/s07_2.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    },
+    {
+      "idx": 8,
+      "file": 0,
+      "kind": "video",
+      "t_start": 26.42,
+      "t_end": 27.26,
+      "t_mid": 26.84,
+      "timestamp": "0:26",
+      "frames": [
+        "media/x-2106282290259394828/s08_0.jpg"
+      ],
+      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+    }
+  ],
+  "status": "ready"
+}

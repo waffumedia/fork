@@ -1,0 +1,43 @@
+{
+  "id": "x-2080652003475324954",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2080652003475324954",
+  "native_id": "2080652003475324954",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2080652003475324954",
+  "added_at": "2026-11-10T10:41:30Z",
+  "title": "Before \u2192 After ",
+  "text": "Before \u2192 After \n\nIntro from Project.",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Fri Jul 24 13:51:08 +0000 2026",
+  "likes": 72,
+  "views": 1853,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 28.82,
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 28.82,
+      "t_mid": 14.41,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2080652003475324954/s00_0.jpg",
+        "media/x-2080652003475324954/s00_1.jpg",
+        "media/x-2080652003475324954/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2080652003475324954"
+    }
+  ],
+  "status": "ready"
+}

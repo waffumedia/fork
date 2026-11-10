@@ -1,0 +1,43 @@
+{
+  "id": "x-2108960499006377997",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/EditSatyjeet/status/2108960499006377997",
+  "native_id": "2108960499006377997",
+  "author": "EditSatyjeet",
+  "input_url": "https://x.com/EditSatyjeet/status/2108960499006377997",
+  "added_at": "2026-11-10T10:40:42Z",
+  "title": "New client new intro  ",
+  "text": "New client new intro  \n\nThought? \ud83d\udc40",
+  "author_name": "Satyjeet",
+  "posted_at": "Sat Oct 10 16:39:00 +0000 2026",
+  "likes": 74,
+  "views": 2498,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 11.95,
+      "width": 1080,
+      "height": 1920
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 11.95,
+      "t_mid": 5.97,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2108960499006377997/s00_0.jpg",
+        "media/x-2108960499006377997/s00_1.jpg",
+        "media/x-2108960499006377997/s00_2.jpg"
+      ],
+      "link": "https://x.com/EditSatyjeet/status/2108960499006377997"
+    }
+  ],
+  "status": "ready"
+}

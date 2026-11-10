@@ -1,0 +1,58 @@
+{
+  "id": "x-2084648683929522473",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2084648683929522473",
+  "native_id": "2084648683929522473",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2084648683929522473",
+  "added_at": "2026-11-10T10:41:25Z",
+  "title": "2026 Editing highlights",
+  "text": "2026 Editing highlights",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Tue Aug 04 14:32:31 +0000 2026",
+  "likes": 88,
+  "views": 2243,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 33.66,
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 21.32,
+      "t_mid": 10.66,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2084648683929522473/s00_0.jpg",
+        "media/x-2084648683929522473/s00_1.jpg",
+        "media/x-2084648683929522473/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2084648683929522473"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 21.32,
+      "t_end": 33.66,
+      "t_mid": 27.49,
+      "timestamp": "0:21",
+      "frames": [
+        "media/x-2084648683929522473/s01_0.jpg",
+        "media/x-2084648683929522473/s01_1.jpg",
+        "media/x-2084648683929522473/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2084648683929522473"
+    }
+  ],
+  "status": "ready"
+}

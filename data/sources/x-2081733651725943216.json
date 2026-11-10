@@ -1,0 +1,133 @@
+{
+  "id": "x-2081733651725943216",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/NormieEdits/status/2081733651725943216",
+  "native_id": "2081733651725943216",
+  "author": "NormieEdits",
+  "input_url": "https://x.com/NormieEdits/status/2081733651725943216",
+  "added_at": "2026-11-10T10:41:27Z",
+  "title": "Latest Sound Design Breakdown \ud83d\udd25",
+  "text": "Latest Sound Design Breakdown \ud83d\udd25",
+  "author_name": "Normie | Video Editor",
+  "posted_at": "Mon Jul 27 13:29:13 +0000 2026",
+  "likes": 56,
+  "views": 2245,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 51.37,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 7,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 6.12,
+      "t_mid": 3.06,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2081733651725943216/s00_0.jpg",
+        "media/x-2081733651725943216/s00_1.jpg",
+        "media/x-2081733651725943216/s00_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 6.12,
+      "t_end": 8.12,
+      "t_mid": 7.12,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-2081733651725943216/s01_0.jpg",
+        "media/x-2081733651725943216/s01_1.jpg",
+        "media/x-2081733651725943216/s01_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 8.12,
+      "t_end": 10.24,
+      "t_mid": 9.18,
+      "timestamp": "0:08",
+      "frames": [
+        "media/x-2081733651725943216/s02_0.jpg",
+        "media/x-2081733651725943216/s02_1.jpg",
+        "media/x-2081733651725943216/s02_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 10.24,
+      "t_end": 11.8,
+      "t_mid": 11.02,
+      "timestamp": "0:10",
+      "frames": [
+        "media/x-2081733651725943216/s03_0.jpg",
+        "media/x-2081733651725943216/s03_1.jpg",
+        "media/x-2081733651725943216/s03_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 11.8,
+      "t_end": 32.28,
+      "t_mid": 22.04,
+      "timestamp": "0:12",
+      "frames": [
+        "media/x-2081733651725943216/s04_0.jpg",
+        "media/x-2081733651725943216/s04_1.jpg",
+        "media/x-2081733651725943216/s04_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 32.28,
+      "t_end": 35.32,
+      "t_mid": 33.8,
+      "timestamp": "0:32",
+      "frames": [
+        "media/x-2081733651725943216/s05_0.jpg",
+        "media/x-2081733651725943216/s05_1.jpg",
+        "media/x-2081733651725943216/s05_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 35.32,
+      "t_end": 51.37,
+      "t_mid": 43.35,
+      "timestamp": "0:35",
+      "frames": [
+        "media/x-2081733651725943216/s06_0.jpg",
+        "media/x-2081733651725943216/s06_1.jpg",
+        "media/x-2081733651725943216/s06_2.jpg"
+      ],
+      "link": "https://x.com/NormieEdits/status/2081733651725943216"
+    }
+  ],
+  "status": "ready"
+}

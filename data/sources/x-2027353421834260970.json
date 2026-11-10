@@ -1,0 +1,178 @@
+{
+  "id": "x-2027353421834260970",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/Razinvfx/status/2027353421834260970",
+  "native_id": "2027353421834260970",
+  "author": "Razinvfx",
+  "input_url": "https://x.com/Razinvfx/status/2027353421834260970",
+  "added_at": "2026-11-10T10:37:26Z",
+  "title": "Intro for @NotLucFN",
+  "text": "Intro for @NotLucFN",
+  "author_name": "Razin | Video Editor",
+  "posted_at": "Fri Feb 27 12:01:36 +0000 2026",
+  "likes": 161,
+  "views": 6005,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 65.3,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 18,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.02,
+      "t_end": 5.98,
+      "t_mid": 3.0,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2027353421834260970/s00_0.jpg",
+        "media/x-2027353421834260970/s00_1.jpg",
+        "media/x-2027353421834260970/s00_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.18,
+      "t_end": 10.53,
+      "t_mid": 8.86,
+      "timestamp": "0:07",
+      "frames": [
+        "media/x-2027353421834260970/s01_0.jpg",
+        "media/x-2027353421834260970/s01_1.jpg",
+        "media/x-2027353421834260970/s01_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 10.53,
+      "t_end": 18.43,
+      "t_mid": 14.48,
+      "timestamp": "0:11",
+      "frames": [
+        "media/x-2027353421834260970/s02_0.jpg",
+        "media/x-2027353421834260970/s02_1.jpg",
+        "media/x-2027353421834260970/s02_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 18.43,
+      "t_end": 25.38,
+      "t_mid": 21.91,
+      "timestamp": "0:18",
+      "frames": [
+        "media/x-2027353421834260970/s03_0.jpg",
+        "media/x-2027353421834260970/s03_1.jpg",
+        "media/x-2027353421834260970/s03_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 25.38,
+      "t_end": 33.87,
+      "t_mid": 29.62,
+      "timestamp": "0:25",
+      "frames": [
+        "media/x-2027353421834260970/s04_0.jpg",
+        "media/x-2027353421834260970/s04_1.jpg",
+        "media/x-2027353421834260970/s04_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 33.87,
+      "t_end": 40.57,
+      "t_mid": 37.22,
+      "timestamp": "0:34",
+      "frames": [
+        "media/x-2027353421834260970/s05_0.jpg",
+        "media/x-2027353421834260970/s05_1.jpg",
+        "media/x-2027353421834260970/s05_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 40.57,
+      "t_end": 43.3,
+      "t_mid": 41.93,
+      "timestamp": "0:41",
+      "frames": [
+        "media/x-2027353421834260970/s06_0.jpg",
+        "media/x-2027353421834260970/s06_1.jpg",
+        "media/x-2027353421834260970/s06_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 45.05,
+      "t_end": 50.93,
+      "t_mid": 47.99,
+      "timestamp": "0:45",
+      "frames": [
+        "media/x-2027353421834260970/s07_0.jpg",
+        "media/x-2027353421834260970/s07_1.jpg",
+        "media/x-2027353421834260970/s07_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 8,
+      "file": 0,
+      "kind": "video",
+      "t_start": 53.48,
+      "t_end": 61.65,
+      "t_mid": 57.57,
+      "timestamp": "0:53",
+      "frames": [
+        "media/x-2027353421834260970/s08_0.jpg",
+        "media/x-2027353421834260970/s08_1.jpg",
+        "media/x-2027353421834260970/s08_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    },
+    {
+      "idx": 9,
+      "file": 0,
+      "kind": "video",
+      "t_start": 62.98,
+      "t_end": 65.3,
+      "t_mid": 64.14,
+      "timestamp": "1:03",
+      "frames": [
+        "media/x-2027353421834260970/s09_0.jpg",
+        "media/x-2027353421834260970/s09_1.jpg",
+        "media/x-2027353421834260970/s09_2.jpg"
+      ],
+      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+    }
+  ],
+  "status": "ready"
+}
