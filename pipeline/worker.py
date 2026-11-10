@@ -25,15 +25,30 @@ def api(path, body=None):
     with urllib.request.urlopen(req, timeout=300) as r: return json.load(r)
 
 
+def untagged():
+    out = []
+    for f in (ROOT / 'data/sources').glob('*.json'):
+        try:
+            if json.loads(f.read_text()).get('status') == 'ready': out.append(f.stem)
+        except ValueError: pass
+    return out
+
+
 def process():
+    """Queued links (Grokbot / app / MCP) -> download + scenes; then tag everything still untagged; then import."""
     queued = api('/api/worker')['queued']
-    if not queued: print(json.dumps({'process': 0}), flush=True); return
-    lst = ROOT / 'data' / 'queue.txt'
-    lst.write_text('\n'.join(q['url'] for q in queued) + '\n')
-    subprocess.run([sys.executable, str(ROOT / 'pipeline/ingest.py'), str(lst), '--jobs', '3'], check=False)
     ids = [q['id'] for q in queued]
-    subprocess.run([VLM_PY, str(ROOT / 'pipeline/tag.py'), '--only', ','.join(ids)], check=False)
-    print(json.dumps({'process': len(ids), 'import': api('/api/worker', {'ids': ids})}), flush=True)
+    if queued:
+        lst = ROOT / 'data' / 'queue.txt'
+        lst.write_text('\n'.join(q['url'] for q in queued) + '\n')
+        subprocess.run([sys.executable, str(ROOT / 'pipeline/ingest.py'), str(lst), '--jobs', '3'], check=False)
+    todo = untagged()
+    if todo:
+        subprocess.run([VLM_PY, str(ROOT / 'pipeline/tag.py'), '--only', ','.join(todo)], check=False)
+    ids = sorted(set(ids) | set(todo))
+    if not ids: print(json.dumps({'process': 0}), flush=True); return
+    for i in range(0, len(ids), 40):
+        print(json.dumps({'imported': api('/api/worker', {'ids': ids[i:i + 40]})}), flush=True)
 
 
 if __name__ == '__main__':
