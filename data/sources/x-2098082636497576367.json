@@ -36,7 +36,43 @@
         "media/x-2098082636497576367/s00_1.jpg",
         "media/x-2098082636497576367/s00_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "kinetic-type",
+          "parallax"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "figma"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "professional portfolio",
+          "clean design",
+          "hero section"
+        ],
+        "title": "portfolio website mockup",
+        "description": "A clean, modern web design for a professional portfolio, featuring a minimalist layout with a large hero section, a circular profile photo, and clear calls to action.",
+        "quality": 5
+      }
     },
     {
       "idx": 1,
@@ -51,7 +87,40 @@
         "media/x-2098082636497576367/s01_1.jpg",
         "media/x-2098082636497576367/s01_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "line-art"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "figma"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "blue"
+        ],
+        "concepts": [
+          "process flow",
+          "website creation steps",
+          "numbered list"
+        ],
+        "title": "step-by-step process diagram",
+        "description": "A clear, structured flowchart illustrating a four-step process for creating a website, using simple icons and a clean layout.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +135,41 @@
         "media/x-2098082636497576367/s02_1.jpg",
         "media/x-2098082636497576367/s02_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "figma"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "purple"
+        ],
+        "concepts": [
+          "ai assistant",
+          "website generation",
+          "dark mode"
+        ],
+        "title": "AI website builder interface",
+        "description": "A dark-themed user interface for an AI-powered tool, prompting the user to input their idea to generate a website.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +184,40 @@
         "media/x-2098082636497576367/s03_1.jpg",
         "media/x-2098082636497576367/s03_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "figma"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue"
+        ],
+        "concepts": [
+          "ai website builder",
+          "live preview",
+          "split-screen"
+        ],
+        "title": "website preview with AI input",
+        "description": "A split-screen view showing an AI tool's text input on the left and a live preview of the generated portfolio website on the right.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,7 +232,37 @@
         "media/x-2098082636497576367/s04_1.jpg",
         "media/x-2098082636497576367/s04_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [],
+        "style": [
+          "bright-playful",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "brown"
+        ],
+        "concepts": [
+          "personal introduction",
+          "creator",
+          "background collection"
+        ],
+        "title": "talking head with shelves",
+        "description": "A man speaking directly to the camera in a well-lit room, with a background of shelves filled with collectibles and awards.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +277,40 @@
         "media/x-2098082636497576367/s05_1.jpg",
         "media/x-2098082636497576367/s05_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "figma"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "freelancer dashboard",
+          "project management",
+          "user profile"
+        ],
+        "title": "dashboard with user profile",
+        "description": "A user interface of a platform, likely for freelancers or creators, showing a list of projects with a small video of the user in the corner.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -126,7 +325,37 @@
         "media/x-2098082636497576367/s06_1.jpg",
         "media/x-2098082636497576367/s06_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [],
+        "style": [
+          "bright-playful",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "brown"
+        ],
+        "concepts": [
+          "personal introduction",
+          "creator",
+          "background collection"
+        ],
+        "title": "talking head with shelves",
+        "description": "A man speaking directly to the camera in a well-lit room, with a background of shelves filled with collectibles and awards.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -141,7 +370,41 @@
         "media/x-2098082636497576367/s07_1.jpg",
         "media/x-2098082636497576367/s07_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "figma"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "purple"
+        ],
+        "concepts": [
+          "chatbot interface",
+          "dark mode",
+          "minimal design"
+        ],
+        "title": "AI chat interface",
+        "description": "A minimalist dark mode chat interface with a text input field and a send button, designed for user interaction.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -156,8 +419,44 @@
         "media/x-2098082636497576367/s08_1.jpg",
         "media/x-2098082636497576367/s08_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2098082636497576367"
+      "link": "https://x.com/EditSatyjeet/status/2098082636497576367",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "figma"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "personal branding",
+          "professional portfolio",
+          "clean layout"
+        ],
+        "title": "personalized portfolio website",
+        "description": "A fully customized portfolio website for Josh Burns, featuring his name, a professional photo, and statistics about his work.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

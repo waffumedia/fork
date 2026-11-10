@@ -36,8 +36,47 @@
         "media/x-2108960499006377997/s00_1.jpg",
         "media/x-2108960499006377997/s00_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2108960499006377997"
+      "link": "https://x.com/EditSatyjeet/status/2108960499006377997",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "split-screen",
+          "collage",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "green",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "video editing workflow",
+          "motion graphics",
+          "digital workspace"
+        ],
+        "title": "screen recording of video editing",
+        "description": "A screen recording shows a video editor working in After Effects, with multiple panels open including the timeline, effects controls, and a preview window displaying a collage of tennis court images. A plush toy sits on the monitor's frame, adding a personal touch to the workspace.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

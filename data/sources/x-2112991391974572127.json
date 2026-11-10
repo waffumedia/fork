@@ -1,0 +1,178 @@
+{
+  "id": "x-2112991391974572127",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2112991391974572127",
+  "native_id": "2112991391974572127",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2112991391974572127",
+  "added_at": "2026-11-10T11:29:59Z",
+  "title": "Cooked this launch video for @astorinvest",
+  "text": "Cooked this launch video for @astorinvest",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Wed Oct 21 19:36:19 +0000 2026",
+  "likes": 21,
+  "views": 884,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 53.88,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 15,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.72,
+      "t_mid": 1.36,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2112991391974572127/s00_0.jpg",
+        "media/x-2112991391974572127/s00_1.jpg",
+        "media/x-2112991391974572127/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.72,
+      "t_end": 5.12,
+      "t_mid": 3.92,
+      "timestamp": "0:03",
+      "frames": [
+        "media/x-2112991391974572127/s01_0.jpg",
+        "media/x-2112991391974572127/s01_1.jpg",
+        "media/x-2112991391974572127/s01_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.12,
+      "t_end": 9.28,
+      "t_mid": 7.2,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-2112991391974572127/s02_0.jpg",
+        "media/x-2112991391974572127/s02_1.jpg",
+        "media/x-2112991391974572127/s02_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 9.28,
+      "t_end": 14.04,
+      "t_mid": 11.66,
+      "timestamp": "0:09",
+      "frames": [
+        "media/x-2112991391974572127/s03_0.jpg",
+        "media/x-2112991391974572127/s03_1.jpg",
+        "media/x-2112991391974572127/s03_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 14.04,
+      "t_end": 24.4,
+      "t_mid": 19.22,
+      "timestamp": "0:14",
+      "frames": [
+        "media/x-2112991391974572127/s04_0.jpg",
+        "media/x-2112991391974572127/s04_1.jpg",
+        "media/x-2112991391974572127/s04_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 24.4,
+      "t_end": 28.6,
+      "t_mid": 26.5,
+      "timestamp": "0:24",
+      "frames": [
+        "media/x-2112991391974572127/s05_0.jpg",
+        "media/x-2112991391974572127/s05_1.jpg",
+        "media/x-2112991391974572127/s05_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 6,
+      "file": 0,
+      "kind": "video",
+      "t_start": 28.6,
+      "t_end": 30.92,
+      "t_mid": 29.76,
+      "timestamp": "0:29",
+      "frames": [
+        "media/x-2112991391974572127/s06_0.jpg",
+        "media/x-2112991391974572127/s06_1.jpg",
+        "media/x-2112991391974572127/s06_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 7,
+      "file": 0,
+      "kind": "video",
+      "t_start": 30.92,
+      "t_end": 46.2,
+      "t_mid": 38.56,
+      "timestamp": "0:31",
+      "frames": [
+        "media/x-2112991391974572127/s07_0.jpg",
+        "media/x-2112991391974572127/s07_1.jpg",
+        "media/x-2112991391974572127/s07_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 8,
+      "file": 0,
+      "kind": "video",
+      "t_start": 46.2,
+      "t_end": 51.52,
+      "t_mid": 48.86,
+      "timestamp": "0:46",
+      "frames": [
+        "media/x-2112991391974572127/s08_0.jpg",
+        "media/x-2112991391974572127/s08_1.jpg",
+        "media/x-2112991391974572127/s08_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    },
+    {
+      "idx": 9,
+      "file": 0,
+      "kind": "video",
+      "t_start": 51.52,
+      "t_end": 53.88,
+      "t_mid": 52.7,
+      "timestamp": "0:52",
+      "frames": [
+        "media/x-2112991391974572127/s09_0.jpg",
+        "media/x-2112991391974572127/s09_1.jpg",
+        "media/x-2112991391974572127/s09_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112991391974572127"
+    }
+  ],
+  "status": "ready"
+}

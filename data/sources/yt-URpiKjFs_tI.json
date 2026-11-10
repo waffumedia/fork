@@ -34,7 +34,42 @@
         "media/yt-URpiKjFs_tI/s00_1.jpg",
         "media/yt-URpiKjFs_tI/s00_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=0s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=0s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur",
+          "camera-shake"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "dark room",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "A man with curly hair sits in a dark room, speaking directly to the camera into a professional microphone. The scene is lit with a soft key light and a purple neon glow in the background, creating a modern and focused atmosphere.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +84,41 @@
         "media/yt-URpiKjFs_tI/s01_1.jpg",
         "media/yt-URpiKjFs_tI/s01_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=28s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=28s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "close-up",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "A close-up of the man speaking, with his mouth slightly open. The lighting remains consistent, highlighting his face against the dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +133,41 @@
         "media/yt-URpiKjFs_tI/s02_1.jpg",
         "media/yt-URpiKjFs_tI/s02_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=64s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=64s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "engaged expression",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man continues to speak, his expression engaged. The consistent lighting and background elements maintain a cohesive visual style.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +182,41 @@
         "media/yt-URpiKjFs_tI/s03_1.jpg",
         "media/yt-URpiKjFs_tI/s03_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=77s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=77s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "medium shot",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man's mouth is open as he speaks, captured in a medium shot. The focus remains on his face and upper body.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +231,43 @@
         "media/yt-URpiKjFs_tI/s04_1.jpg",
         "media/yt-URpiKjFs_tI/s04_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=100s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=100s",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glitch",
+          "particles"
+        ],
+        "style": [
+          "cyberpunk",
+          "retro-futurism",
+          "vaporwave"
+        ],
+        "format": [
+          "title-sequence",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "yellow",
+          "white",
+          "neon-palette"
+        ],
+        "concepts": [
+          "text graphic",
+          "glitch effect",
+          "digital theme"
+        ],
+        "title": "text overlay on black background",
+        "description": "A text graphic appears on a dark, starry background. The text 'This reset just gave youtube clean data to' is displayed in a stylized font with a glitch effect, suggesting a digital or technological theme.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,7 +282,41 @@
         "media/yt-URpiKjFs_tI/s05_1.jpg",
         "media/yt-URpiKjFs_tI/s05_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=114s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=114s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "intense expression",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man is shown again, speaking with a slightly more intense expression. The lighting and background remain unchanged.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,7 +331,41 @@
         "media/yt-URpiKjFs_tI/s06_1.jpg",
         "media/yt-URpiKjFs_tI/s06_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=141s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=141s",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glow-bloom"
+        ],
+        "style": [
+          "cyberpunk",
+          "retro-futurism",
+          "vaporwave"
+        ],
+        "format": [
+          "title-sequence",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "neon-palette"
+        ],
+        "concepts": [
+          "text graphic",
+          "glow effect",
+          "storytelling"
+        ],
+        "title": "text overlay on dark background",
+        "description": "A blue text graphic 'Storytelling focused script' appears on a dark background. The text is stylized with a glowing effect, suggesting a focus on content creation.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +380,41 @@
         "media/yt-URpiKjFs_tI/s07_1.jpg",
         "media/yt-URpiKjFs_tI/s07_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=160s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=160s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "gesturing hand",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man is shown speaking, with his right hand gesturing. The consistent lighting and background elements maintain the video's visual identity.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -154,7 +429,41 @@
         "media/yt-URpiKjFs_tI/s08_1.jpg",
         "media/yt-URpiKjFs_tI/s08_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=194s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=194s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "focused expression",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man continues to speak, his expression focused. The lighting highlights his face against the dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,7 +478,41 @@
         "media/yt-URpiKjFs_tI/s09_1.jpg",
         "media/yt-URpiKjFs_tI/s09_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=230s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=230s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "close-up",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man is shown speaking, his mouth slightly open. The consistent lighting and background maintain a cohesive visual style.",
+        "quality": 4
+      }
     },
     {
       "idx": 10,
@@ -184,7 +527,39 @@
         "media/yt-URpiKjFs_tI/s10_1.jpg",
         "media/yt-URpiKjFs_tI/s10_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=244s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=244s",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue"
+        ],
+        "concepts": [
+          "youtube page",
+          "screen recording",
+          "content strategy"
+        ],
+        "title": "screen recording of YouTube page",
+        "description": "A screen recording shows a YouTube channel page. A video thumbnail titled 'Addicting Storytelling' is visible, indicating a focus on content strategy.",
+        "quality": 4
+      }
     },
     {
       "idx": 11,
@@ -199,7 +574,41 @@
         "media/yt-URpiKjFs_tI/s11_1.jpg",
         "media/yt-URpiKjFs_tI/s11_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=276s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=276s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "engaged expression",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man is shown speaking, his expression engaged. The lighting and background remain consistent with previous scenes.",
+        "quality": 4
+      }
     },
     {
       "idx": 12,
@@ -214,7 +623,41 @@
         "media/yt-URpiKjFs_tI/s12_1.jpg",
         "media/yt-URpiKjFs_tI/s12_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=286s"
+      "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=286s",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "man speaking",
+          "medium shot",
+          "neon lighting"
+        ],
+        "title": "man speaking into microphone",
+        "description": "The man continues to speak, his mouth open. The consistent lighting and background maintain the video's visual identity.",
+        "quality": 4
+      }
     },
     {
       "idx": 13,
@@ -232,5 +675,7 @@
       "link": "https://www.youtube.com/watch?v=URpiKjFs_tI&t=326s"
     }
   ],
-  "status": "ready"
+  "status": "ready",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit",
+  "tag_error": "1 scenes untagged"
 }

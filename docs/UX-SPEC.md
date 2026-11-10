@@ -64,3 +64,12 @@ iOS: `TabView` — Today · Map · Library · History · Settings. macOS: `Navig
 ## Acceptance
 - `cd apple && xcodegen` then `xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build` and `-destination 'platform=macOS' build` both succeed.
 - Launched in an iOS simulator with FORK_TOKEN/FORK_URL env against http://localhost:3300: Today, Map (both modes), Library search, Scene detail "Open at" all work with real data.
+
+## 8. Boards (added v0.3) — Figma-style board per account and per video
+Owner: "I need like figma boards for every video or account."
+- New tab **Boards** (iOS tab order: Today · Boards · Map · Library · History · Settings; on iOS 6 tabs → Settings may move under "More", fine; macOS sidebar).
+- **Boards index** `GET /api/boards` → `{accounts:[{id:"account:<handle>",handle,platform,sources,scenes,liked_scenes,covers[≤4 urls],profile}], videos:[{id:"video:<source id>",source_id,title,author,platform,scenes,note,cover}], creator_seeds}`.
+  Segmented **Accounts | Videos**, `.searchable`. Account tile = 2×2 cover collage + @handle + "N posts · M scenes". Video tile = cover + title + @author + note (if any).
+- **Board canvas** `GET /api/boards/<id>` → `{id,kind,title,subtitle,profile?,groups:[{source_id,title,url,note,verdict,origin,scenes:[{id,image,frames[],timestamp,title,link,tags,quality}]}]}`.
+  Infinite canvas like a Figma page: light grey canvas background, each group is a white rounded "frame" with a small header (post title, note in italics, ♥/✕ verdict, Open ↗) and its scenes in a horizontal row of cards (image, "0:12", title). Frames laid out in a wrapping grid (account boards) or one big frame (video boards). Pan + pinch / scroll-wheel zoom, "fit" button. Tap scene card → Scene detail sheet. Header bar: board title, subtitle, profile link.
+- Entry points: Source detail gets a "Board" button (→ video board) and tapping @author anywhere opens the account board.

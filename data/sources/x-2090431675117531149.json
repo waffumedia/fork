@@ -34,7 +34,47 @@
       "frames": [
         "media/x-2090431675117531149/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2090431675117531149"
+      "link": "https://x.com/NormieEdits/status/2090431675117531149",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "ui-animation",
+          "chart-animation",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "duotone",
+          "dark-moody",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "orange",
+          "grey"
+        ],
+        "concepts": [
+          "data visualization",
+          "creator economy",
+          "monochrome with accent"
+        ],
+        "title": "money-making breakdown",
+        "description": "A split-screen infographic with a dark, minimalist aesthetic. The top-left shows text about creator earnings, the top-right features a circular profile silhouette, the bottom-left displays a line graph with a glowing 'creator' label, and the bottom-right shows text about higher volume output. The design uses a duotone color scheme of black and orange.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -47,7 +87,45 @@
       "frames": [
         "media/x-2090431675117531149/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2090431675117531149"
+      "link": "https://x.com/NormieEdits/status/2090431675117531149",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "duotone",
+          "dark-moody",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "content monetization",
+          "estimation",
+          "social media analytics"
+        ],
+        "title": "video thumbnails and text",
+        "description": "A four-quadrant layout. The top-left shows a video thumbnail with text, the top-right features a profile silhouette against a grid background. The bottom-left has the text 'so you want', and the bottom-right displays two video thumbnails with estimated earnings. The design uses a dark background with white and grey elements.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +140,46 @@
         "media/x-2090431675117531149/s02_1.jpg",
         "media/x-2090431675117531149/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2090431675117531149"
+      "link": "https://x.com/NormieEdits/status/2090431675117531149",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "text-on-path",
+          "scale-blowup"
+        ],
+        "style": [
+          "minimal",
+          "duotone",
+          "dark-moody",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "orange",
+          "white"
+        ],
+        "concepts": [
+          "financial projection",
+          "revenue growth",
+          "visual hierarchy"
+        ],
+        "title": "revenue estimation",
+        "description": "A four-quadrant layout. The top-left shows three video thumbnails, the top-right features a profile silhouette. The bottom-left displays a large text overlay with an estimated revenue of $1,000,000 on a bright orange background. The bottom-right shows two video thumbnails with earnings of $15k and $2k. The design uses a bold color contrast between black and orange.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,8 +194,48 @@
         "media/x-2090431675117531149/s03_1.jpg",
         "media/x-2090431675117531149/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2090431675117531149"
+      "link": "https://x.com/NormieEdits/status/2090431675117531149",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "chart-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "duotone",
+          "dark-moody",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "creator analytics",
+          "revenue breakdown",
+          "data visualization"
+        ],
+        "title": "creator analytics",
+        "description": "A four-quadrant layout. The top-left shows a creator profile with a navigation bar, the top-right displays a horizontal bar chart. The bottom-left features a pie chart showing a small percentage and a monthly income of $10, while the bottom-right shows a video thumbnail with social media icons. The design uses a dark background with white and orange elements.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

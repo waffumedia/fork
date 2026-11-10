@@ -36,7 +36,49 @@
         "media/x-2118505097714188712/s00_1.jpg",
         "media/x-2118505097714188712/s00_2.jpg"
       ],
-      "link": "https://x.com/tstudi0s_/status/2118505097714188712"
+      "link": "https://x.com/tstudi0s_/status/2118505097714188712",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "kinetic-type",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "minimal",
+          "duotone"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "biographical timeline",
+          "contrast between youth and success",
+          "text as narrative"
+        ],
+        "title": "Jensen Huang timeline",
+        "description": "A triptych split-screen showing a younger Jensen Huang, an older Huang speaking on stage, and him working at a desk, with text overlays describing his journey.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +93,48 @@
         "media/x-2118505097714188712/s01_1.jpg",
         "media/x-2118505097714188712/s01_2.jpg"
       ],
-      "link": "https://x.com/tstudi0s_/status/2118505097714188712"
+      "link": "https://x.com/tstudi0s_/status/2118505097714188712",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "cinematic",
+          "minimal",
+          "dark-moody",
+          "duotone"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "biographical timeline",
+          "academic roots",
+          "text as narrative"
+        ],
+        "title": "Larry Page and Stanford",
+        "description": "A triptych split-screen showing a young Larry Page, an audience in a lecture hall, and a research paper, with text explaining his connection to Stanford.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +149,48 @@
         "media/x-2118505097714188712/s02_1.jpg",
         "media/x-2118505097714188712/s02_2.jpg"
       ],
-      "link": "https://x.com/tstudi0s_/status/2118505097714188712"
+      "link": "https://x.com/tstudi0s_/status/2118505097714188712",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "cinematic",
+          "minimal",
+          "dark-moody",
+          "duotone"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "yellow"
+        ],
+        "concepts": [
+          "technological achievement",
+          "data visualization",
+          "text as narrative"
+        ],
+        "title": "Nvidia milestone",
+        "description": "A triptych split-screen showing a cloud download icon, a news headline about Nvidia's $5tn valuation, and a historical figure with data papers.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +205,48 @@
         "media/x-2118505097714188712/s03_1.jpg",
         "media/x-2118505097714188712/s03_2.jpg"
       ],
-      "link": "https://x.com/tstudi0s_/status/2118505097714188712"
+      "link": "https://x.com/tstudi0s_/status/2118505097714188712",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "minimal",
+          "duotone"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "biographical timeline",
+          "contrast between youth and success",
+          "text as narrative"
+        ],
+        "title": "Jensen Huang's journey",
+        "description": "A triptych split-screen showing a younger version of Jensen Huang, an older Huang speaking, and him working at a desk, with text describing his story.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,8 +259,43 @@
       "frames": [
         "media/x-2118505097714188712/s04_0.jpg"
       ],
-      "link": "https://x.com/tstudi0s_/status/2118505097714188712"
+      "link": "https://x.com/tstudi0s_/status/2118505097714188712",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "monochrome",
+          "corporate-clean"
+        ],
+        "format": [
+          "logo-sting",
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "branding",
+          "signature",
+          "credit"
+        ],
+        "title": "@tstudi0s",
+        "description": "A black screen with the white text '@tstudi0s' in the center, serving as a credit or signature.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -36,7 +36,44 @@
         "media/x-2098436782207721788/s00_1.jpg",
         "media/x-2098436782207721788/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2098436782207721788"
+      "link": "https://x.com/NormieEdits/status/2098436782207721788",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "mask-reveal",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "figma"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "resume details",
+          "social media post",
+          "comparison"
+        ],
+        "title": "Split-screen resume and tweet",
+        "description": "A split-screen composition juxtaposes a magnifying glass over a resume with CDA credentials and an early childhood classroom, against a screenshot of Elon Musk's tweet about X Money. The left side uses a clean, illustrative style while the right is a direct screen capture.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,8 +88,46 @@
         "media/x-2098436782207721788/s01_1.jpg",
         "media/x-2098436782207721788/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2098436782207721788"
+      "link": "https://x.com/NormieEdits/status/2098436782207721788",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "chart-animation",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "figma"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "job applications",
+          "data visualization",
+          "potential"
+        ],
+        "title": "Resumes and pie chart",
+        "description": "A split-screen shows a stack of resumes with profile photos on the left and a pie chart with a dollar sign on the right, suggesting a data-driven analysis of job potential. The animation uses clean transitions between elements.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

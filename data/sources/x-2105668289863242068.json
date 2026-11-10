@@ -36,7 +36,46 @@
         "media/x-2105668289863242068/s00_1.jpg",
         "media/x-2105668289863242068/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2105668289863242068"
+      "link": "https://x.com/NormieEdits/status/2105668289863242068",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "chart-animation",
+          "gradient-mesh"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "red",
+          "orange",
+          "pink"
+        ],
+        "concepts": [
+          "data visualization",
+          "time progression",
+          "color gradient",
+          "minimalist design"
+        ],
+        "title": "3 years bar chart",
+        "description": "A minimalist bar chart animation on a grid background, with bars colored in a gradient from pink to orange. The text '3 YEARS' is displayed prominently at the top.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +88,42 @@
       "frames": [
         "media/x-2105668289863242068/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2105668289863242068"
+      "link": "https://x.com/NormieEdits/status/2105668289863242068",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "orange",
+          "blue",
+          "brown"
+        ],
+        "concepts": [
+          "content creation",
+          "lifestyle business",
+          "online education"
+        ],
+        "title": "YouTube video title",
+        "description": "A screenshot of a YouTube video thumbnail featuring a woman with curly hair. The title 'How I'd Build A $1M Lifestyle Business in 6 Months' is highlighted in an orange box.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +136,42 @@
       "frames": [
         "media/x-2105668289863242068/s02_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2105668289863242068"
+      "link": "https://x.com/NormieEdits/status/2105668289863242068",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "red",
+          "orange",
+          "black"
+        ],
+        "concepts": [
+          "time management",
+          "work schedule",
+          "data visualization"
+        ],
+        "title": "Work schedule timeline",
+        "description": "A horizontal bar chart representing a work schedule from Monday to Friday, with time slots labeled. The main block is red (9 to 5), followed by an orange block for 'LS BUS' and a black block.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -75,7 +184,42 @@
       "frames": [
         "media/x-2105668289863242068/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2105668289863242068"
+      "link": "https://x.com/NormieEdits/status/2105668289863242068",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "purple",
+          "orange"
+        ],
+        "concepts": [
+          "financial success",
+          "product launch",
+          "social proof"
+        ],
+        "title": "Revenue screenshot",
+        "description": "A screenshot of a social media post showing a revenue figure of $73,875.20. The text describes a successful product launch and mentions advice from influencers.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -88,8 +232,48 @@
       "frames": [
         "media/x-2105668289863242068/s04_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2105668289863242068"
+      "link": "https://x.com/NormieEdits/status/2105668289863242068",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "chart-animation",
+          "gradient-mesh"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "red",
+          "orange",
+          "pink"
+        ],
+        "concepts": [
+          "weekly data",
+          "time progression",
+          "color gradient",
+          "minimalist design"
+        ],
+        "title": "Weekly bar chart",
+        "description": "A vertical bar chart showing data for each day of the week, with bars colored in a gradient from pink to orange. The chart is set against a grid background.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

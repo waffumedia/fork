@@ -5,6 +5,7 @@ import type { McpServer } from "@modelcontextprotocol/server";
 import { addCandidate, DATA_DIR, getScene, getSource, mediaUrl, searchScenes, stats, tagCounts } from "@/lib/library";
 import { dailyPicks, history, swipe, tasteProfile } from "@/lib/taste";
 import { buildGraph } from "@/lib/graph";
+import { getBoard, listBoards } from "@/lib/boards";
 
 export const SERVER_INSTRUCTIONS = `Fork is the owner's private motion-design / design / video-edit reference library and taste web.
 Every saved link (YouTube video, X post...) is split into SCENES: a screenshot, the exact timestamp, a deep link, and tags
@@ -17,6 +18,7 @@ PICK THE TOOL:
 - everything from one video/post -> get_source.
 - how ideas connect / what links to a scene or idea -> get_taste_web (focus = scene id or "idea:technique:glitch").
 - today's swipe deck -> get_today; record a swipe -> swipe.
+- a Figma-style board of one account or one video -> list_boards / get_board.
 - save a new link -> add_link (it is downloaded + tagged by the owner's Mac).
 When citing a reference ALWAYS give: scene title, source link, and timestamp (e.g. "at 0:12").`;
 
@@ -138,6 +140,30 @@ export function registerTools(server: McpServer, { baseUrl }: { baseUrl: string 
     inputSchema: { limit: z.number().int().min(1).max(500).optional() },
     annotations: { readOnlyHint: true },
   }, async ({ limit }) => ({ content: [text(await history(limit ?? 100, baseUrl))] }));
+
+  server.registerTool("list_boards", {
+    title: "List boards",
+    description: 'Figma-style boards: one per account (all posts by an author) and one per video. Returns ids like "account:bohdanmotion" / "video:x-123".',
+    inputSchema: {},
+    annotations: { readOnlyHint: true },
+  }, async () => ({ content: [text(await listBoards(baseUrl))] }));
+
+  server.registerTool("get_board", {
+    title: "Get board",
+    description: "One board: every post (group) with all its scenes in order, each with screenshot URL, timestamp, link, tags. Set images=N to SEE the first N screenshots.",
+    inputSchema: { id: z.string().describe('"account:<handle>" or "video:<source id>"'), images: z.number().int().min(0).max(12).optional() },
+    annotations: { readOnlyHint: true },
+  }, async ({ id, images }) => {
+    const b = await getBoard(id, baseUrl);
+    if (!b) return { content: [text({ error: `no board ${id}` })], isError: true };
+    const content: Content[] = [text(b)];
+    const heroes = b.groups.flatMap((g) => g.scenes.map((c) => c.frames[Math.floor(c.frames.length / 2)]));
+    for (const u of heroes.slice(0, images ?? 0)) {
+      const rel = u.replace(/^.*?\/(media\/)/, "$1");
+      const im = await image(rel); if (im) content.push(im);
+    }
+    return { content };
+  });
 
   server.registerTool("add_link", {
     title: "Add link",

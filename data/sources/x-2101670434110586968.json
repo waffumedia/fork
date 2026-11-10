@@ -36,7 +36,48 @@
         "media/x-2101670434110586968/s00_1.jpg",
         "media/x-2101670434110586968/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2101670434110586968"
+      "link": "https://x.com/NormieEdits/status/2101670434110586968",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "glitch",
+          "overlay-graphics",
+          "screen-recording"
+        ],
+        "style": [
+          "dark-moody",
+          "cyberpunk",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "vsl"
+        ],
+        "motion": [
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "white",
+          "neon-palette"
+        ],
+        "concepts": [
+          "digital misinformation",
+          "financial news",
+          "social media commentary",
+          "media collage"
+        ],
+        "title": "social media montage",
+        "description": "A dark, split-screen composition displaying a collage of social media posts and a news broadcast, creating a narrative about misinformation and financial markets.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,8 +92,52 @@
         "media/x-2101670434110586968/s01_1.jpg",
         "media/x-2101670434110586968/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2101670434110586968"
+      "link": "https://x.com/NormieEdits/status/2101670434110586968",
+      "tags": {
+        "technique": [
+          "particles",
+          "glow-bloom",
+          "volumetric-light",
+          "ui-animation"
+        ],
+        "style": [
+          "cyberpunk",
+          "minimal",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo",
+          "logo-sting"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera",
+          "looping"
+        ],
+        "medium": [
+          "after-effects",
+          "blender"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "white",
+          "neon-palette"
+        ],
+        "concepts": [
+          "digital connection",
+          "app interface",
+          "brand identity",
+          "glow effect"
+        ],
+        "title": "app interface reveal",
+        "description": "A glowing, abstract logo descends and connects to a smartphone screen displaying a mobile application interface, suggesting a seamless digital connection.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

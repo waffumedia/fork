@@ -36,8 +36,48 @@
         "media/x-2119311804048503178/s00_1.jpg",
         "media/x-2119311804048503178/s00_2.jpg"
       ],
-      "link": "https://x.com/eback_4u/status/2119311804048503178"
+      "link": "https://x.com/eback_4u/status/2119311804048503178",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "editorial"
+        ],
+        "format": [
+          "tutorial",
+          "breakdown",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "code"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "grey",
+          "cool"
+        ],
+        "concepts": [
+          "design comparison",
+          "workflow visualization",
+          "edit structure"
+        ],
+        "title": "After Effects workflow comparison",
+        "description": "A side-by-side comparison of a reference and an AI-generated version of a video edit, both using a grid layout to display numbered steps. The scene is a screen recording of a design tool, likely for a tutorial or breakdown.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

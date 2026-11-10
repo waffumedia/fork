@@ -1,0 +1,73 @@
+{
+  "id": "x-2117689265215640028",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/zola_thegreat/status/2117689265215640028",
+  "native_id": "2117689265215640028",
+  "author": "zola_thegreat",
+  "input_url": "https://x.com/zola_thegreat/status/2117689265215640028",
+  "added_at": "2026-11-10T12:47:48Z",
+  "title": "A few of my favorite frames from my Apollo project",
+  "text": "A few of my favorite frames from my Apollo project",
+  "author_name": "Zolaris \u2022 Motion Designer",
+  "posted_at": "Tue Nov 03 18:44:00 +0000 2026",
+  "likes": 2,
+  "views": 36,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 14.27,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 3,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 7.13,
+      "t_mid": 3.57,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2117689265215640028/s00_0.jpg",
+        "media/x-2117689265215640028/s00_1.jpg",
+        "media/x-2117689265215640028/s00_2.jpg"
+      ],
+      "link": "https://x.com/zola_thegreat/status/2117689265215640028"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.13,
+      "t_end": 12.6,
+      "t_mid": 9.87,
+      "timestamp": "0:07",
+      "frames": [
+        "media/x-2117689265215640028/s01_0.jpg",
+        "media/x-2117689265215640028/s01_1.jpg",
+        "media/x-2117689265215640028/s01_2.jpg"
+      ],
+      "link": "https://x.com/zola_thegreat/status/2117689265215640028"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 12.6,
+      "t_end": 14.27,
+      "t_mid": 13.43,
+      "timestamp": "0:13",
+      "frames": [
+        "media/x-2117689265215640028/s02_0.jpg",
+        "media/x-2117689265215640028/s02_1.jpg",
+        "media/x-2117689265215640028/s02_2.jpg"
+      ],
+      "link": "https://x.com/zola_thegreat/status/2117689265215640028"
+    }
+  ],
+  "status": "ready"
+}

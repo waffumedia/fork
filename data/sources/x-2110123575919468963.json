@@ -36,7 +36,49 @@
         "media/x-2110123575919468963/s00_1.jpg",
         "media/x-2110123575919468963/s00_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+      "link": "https://x.com/everygen_ai/status/2110123575919468963",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "particles",
+          "glow-bloom",
+          "light-leak"
+        ],
+        "style": [
+          "cyberpunk",
+          "retro-futurism",
+          "surreal",
+          "minimal"
+        ],
+        "format": [
+          "title-sequence",
+          "logo-sting",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects",
+          "ai-video"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black",
+          "rainbow"
+        ],
+        "concepts": [
+          "glowing text",
+          "digital magic",
+          "product branding"
+        ],
+        "title": "Wizard logo reveal",
+        "description": "A stylized title sequence for 'Everygen Wizard' featuring a glowing, sharp-edged logo with a vertical light burst and particle effects against a dark, blurred garden background.",
+        "quality": 5
+      }
     },
     {
       "idx": 1,
@@ -51,7 +93,43 @@
         "media/x-2110123575919468963/s01_1.jpg",
         "media/x-2110123575919468963/s01_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+      "link": "https://x.com/everygen_ai/status/2110123575919468963",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "glow-bloom",
+          "depth-of-field"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "warm",
+          "white",
+          "blue"
+        ],
+        "concepts": [
+          "elderly user",
+          "digital interaction",
+          "product demo"
+        ],
+        "title": "Elderly woman with phone",
+        "description": "A close-up of an elderly woman holding a smartphone, looking at the camera with a surprised expression. A blue orb and text 'Watch me' appear as if from the phone's screen.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +144,44 @@
         "media/x-2110123575919468963/s02_1.jpg",
         "media/x-2110123575919468963/s02_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+      "link": "https://x.com/everygen_ai/status/2110123575919468963",
+      "tags": {
+        "technique": [
+          "particles",
+          "glitch",
+          "datamosh",
+          "pixel-sort"
+        ],
+        "style": [
+          "cyberpunk",
+          "retro-futurism",
+          "minimal"
+        ],
+        "format": [
+          "ui-demo",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "looping"
+        ],
+        "medium": [
+          "after-effects",
+          "ai-video"
+        ],
+        "palette": [
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "data flow",
+          "digital transformation",
+          "technology"
+        ],
+        "title": "Pixelated phone animation",
+        "description": "An abstract animation of a smartphone with blue pixelated data flowing out, set against a white background with a blue dotted pattern.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +196,45 @@
         "media/x-2110123575919468963/s03_1.jpg",
         "media/x-2110123575919468963/s03_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+      "link": "https://x.com/everygen_ai/status/2110123575919468963",
+      "tags": {
+        "technique": [
+          "compositing",
+          "ai-generated",
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "cinematic",
+          "surreal"
+        ],
+        "format": [
+          "brand-ad",
+          "short-film"
+        ],
+        "motion": [
+          "chaotic",
+          "physics"
+        ],
+        "medium": [
+          "ai-video"
+        ],
+        "palette": [
+          "orange",
+          "brown",
+          "black",
+          "blue"
+        ],
+        "concepts": [
+          "action sequence",
+          "character transformation",
+          "sci-fi"
+        ],
+        "title": "Woman in action scene",
+        "description": "A composite image showing an elderly woman in a futuristic combat suit, aiming a weapon at a large alien creature in a desert environment.",
+        "quality": 5
+      }
     },
     {
       "idx": 4,
@@ -96,7 +249,44 @@
         "media/x-2110123575919468963/s04_1.jpg",
         "media/x-2110123575919468963/s04_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+      "link": "https://x.com/everygen_ai/status/2110123575919468963",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "collage",
+          "freeze-frame"
+        ],
+        "style": [
+          "cinematic",
+          "vaporwave"
+        ],
+        "format": [
+          "social-reel",
+          "brand-ad"
+        ],
+        "motion": [
+          "staggered",
+          "looping"
+        ],
+        "medium": [
+          "live-action",
+          "photography"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "red",
+          "green"
+        ],
+        "concepts": [
+          "user diversity",
+          "lifestyle content",
+          "transformation"
+        ],
+        "title": "Collage of woman's clips",
+        "description": "A split-screen collage showing three different scenes of an elderly woman: dancing, walking in heels, and sitting in a conservatory.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,8 +301,41 @@
         "media/x-2110123575919468963/s05_1.jpg",
         "media/x-2110123575919468963/s05_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2110123575919468963"
+      "link": "https://x.com/everygen_ai/status/2110123575919468963",
+      "tags": {
+        "technique": [
+          "text-on-path",
+          "hard-cut-montage"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "brand-ad",
+          "logo-sting"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "call to action",
+          "product website",
+          "final screen"
+        ],
+        "title": "Call to action",
+        "description": "A simple black screen with white text inviting viewers to try the product at a specified website.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

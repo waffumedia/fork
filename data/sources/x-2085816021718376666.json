@@ -1,0 +1,43 @@
+{
+  "id": "x-2085816021718376666",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/thecammedia/status/2085816021718376666",
+  "native_id": "2085816021718376666",
+  "author": "thecammedia",
+  "input_url": "https://x.com/thecammedia/status/2085816021718376666",
+  "added_at": "2026-11-10T11:29:54Z",
+  "title": "Some Frames from a Recent Project \ud83c\udf4f",
+  "text": "Some Frames from a Recent Project \ud83c\udf4f\n\nWanna work? dms are open \ud83d\udce9",
+  "author_name": "CAM",
+  "posted_at": "Fri Aug 07 19:51:06 +0000 2026",
+  "likes": 104,
+  "views": 3264,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 13.06,
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 13.06,
+      "t_mid": 6.53,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2085816021718376666/s00_0.jpg",
+        "media/x-2085816021718376666/s00_1.jpg",
+        "media/x-2085816021718376666/s00_2.jpg"
+      ],
+      "link": "https://x.com/thecammedia/status/2085816021718376666"
+    }
+  ],
+  "status": "ready"
+}

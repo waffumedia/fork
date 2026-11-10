@@ -34,7 +34,46 @@
         "media/yt-9HG3AhWVpbg/s00_1.jpg",
         "media/yt-9HG3AhWVpbg/s00_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=39s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=39s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "line-art",
+          "glow-bloom",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "neon",
+          "dark-moody"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "orange",
+          "yellow"
+        ],
+        "concepts": [
+          "business model",
+          "product flow",
+          "digital illustration"
+        ],
+        "title": "Middleman Business Flow",
+        "description": "An animated graphic illustrates a business model where a platform connects producers and consumers, symbolized by a gear icon, boxes, and dollar signs, with the text 'AND SELL' highlighted in green.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +88,45 @@
         "media/yt-9HG3AhWVpbg/s01_1.jpg",
         "media/yt-9HG3AhWVpbg/s01_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=71s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=71s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "line-art",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "neon",
+          "dark-moody"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "red",
+          "white"
+        ],
+        "concepts": [
+          "middleman model",
+          "platform economy",
+          "connection diagram"
+        ],
+        "title": "Middleman Business Model",
+        "description": "A diagram shows Airbnb as a middleman connecting home owners and guests, with icons representing each party and the central platform.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +141,45 @@
         "media/yt-9HG3AhWVpbg/s02_1.jpg",
         "media/yt-9HG3AhWVpbg/s02_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=116s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=116s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "overlay-graphics",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "neon",
+          "dark-moody"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "red",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "influencer analysis",
+          "focus",
+          "questioning"
+        ],
+        "title": "Influencer Focus",
+        "description": "A red beam with white question marks shines into an eye labeled 'INFLUENCERS', symbolizing a focus on understanding or questioning influencers.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +194,43 @@
         "media/yt-9HG3AhWVpbg/s03_1.jpg",
         "media/yt-9HG3AhWVpbg/s03_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=170s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=170s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "speaker",
+          "studio setup",
+          "text overlay"
+        ],
+        "title": "Talking Head with Text",
+        "description": "A man speaks into a microphone in a studio setting, with text overlay at the bottom of the screen providing key points from his speech.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +245,43 @@
         "media/yt-9HG3AhWVpbg/s04_1.jpg",
         "media/yt-9HG3AhWVpbg/s04_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=199s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=199s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "interests",
+          "categories",
+          "speaker"
+        ],
+        "title": "Interest Categories",
+        "description": "A man speaks while a graphic on the right lists four interest categories: Fitness, Fashion, Tech, and Gaming.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,7 +296,43 @@
         "media/yt-9HG3AhWVpbg/s05_1.jpg",
         "media/yt-9HG3AhWVpbg/s05_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=245s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=245s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "genuine interest",
+          "investment",
+          "speaker"
+        ],
+        "title": "Interest and Investment",
+        "description": "A man speaks into a microphone, with text overlay emphasizing the importance of genuine interest and investment.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,7 +347,43 @@
         "media/yt-9HG3AhWVpbg/s06_1.jpg",
         "media/yt-9HG3AhWVpbg/s06_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=305s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=305s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "solution",
+          "mock campaigns",
+          "speaker"
+        ],
+        "title": "Mock Campaigns Solution",
+        "description": "A man speaks into a microphone, with text overlay introducing 'Mock Campaigns' as the solution to a problem.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +398,43 @@
         "media/yt-9HG3AhWVpbg/s07_1.jpg",
         "media/yt-9HG3AhWVpbg/s07_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=376s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=376s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "speaker",
+          "studio setup",
+          "talking head"
+        ],
+        "title": "Man Speaking",
+        "description": "A man is shown speaking into a microphone, with a neutral expression and a simple background.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -154,7 +449,43 @@
         "media/yt-9HG3AhWVpbg/s08_1.jpg",
         "media/yt-9HG3AhWVpbg/s08_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=414s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=414s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "speaker",
+          "studio setup",
+          "talking head"
+        ],
+        "title": "Man Speaking",
+        "description": "A man is shown speaking into a microphone, with a neutral expression and a simple background.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,7 +500,40 @@
         "media/yt-9HG3AhWVpbg/s09_1.jpg",
         "media/yt-9HG3AhWVpbg/s09_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=465s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=465s",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "neon"
+        ],
+        "format": [
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "purple",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "website demo",
+          "ai tool",
+          "text input"
+        ],
+        "title": "Hostinger Horizons",
+        "description": "A screenshot of the Hostinger Horizons website, featuring a purple background and a text input field asking 'What do you want to create?'.",
+        "quality": 4
+      }
     },
     {
       "idx": 10,
@@ -184,7 +548,40 @@
         "media/yt-9HG3AhWVpbg/s10_1.jpg",
         "media/yt-9HG3AhWVpbg/s10_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=507s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=507s",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "neon"
+        ],
+        "format": [
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "purple",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "calculator tool",
+          "pricing model",
+          "web application"
+        ],
+        "title": "Influencer Pricing Calculator",
+        "description": "A screenshot of a web application called 'Influencer Pricing & CPM Calculator' with input fields for video views and content price.",
+        "quality": 4
+      }
     },
     {
       "idx": 11,
@@ -199,7 +596,43 @@
         "media/yt-9HG3AhWVpbg/s11_1.jpg",
         "media/yt-9HG3AhWVpbg/s11_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=559s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=559s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "speaker",
+          "studio setup",
+          "talking head"
+        ],
+        "title": "Man Speaking",
+        "description": "A man is shown speaking into a microphone, with a neutral expression and a simple background.",
+        "quality": 4
+      }
     },
     {
       "idx": 12,
@@ -214,7 +647,43 @@
         "media/yt-9HG3AhWVpbg/s12_1.jpg",
         "media/yt-9HG3AhWVpbg/s12_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=603s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=603s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "creators",
+          "followers",
+          "social media"
+        ],
+        "title": "Creators and Followers",
+        "description": "A man speaks while a graphic of profile icons appears around him, illustrating the concept of creators and their followers.",
+        "quality": 4
+      }
     },
     {
       "idx": 13,
@@ -229,7 +698,43 @@
         "media/yt-9HG3AhWVpbg/s13_1.jpg",
         "media/yt-9HG3AhWVpbg/s13_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=684s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=684s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "speaker",
+          "studio setup",
+          "talking head"
+        ],
+        "title": "Man Speaking",
+        "description": "A man is shown speaking into a microphone, with a neutral expression and a simple background.",
+        "quality": 4
+      }
     },
     {
       "idx": 14,
@@ -244,7 +749,43 @@
         "media/yt-9HG3AhWVpbg/s14_1.jpg",
         "media/yt-9HG3AhWVpbg/s14_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=728s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=728s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "marketing roles",
+          "job titles",
+          "speaker"
+        ],
+        "title": "Marketing Roles",
+        "description": "A man speaks while a graphic lists various marketing roles such as Head of Marketing and Brand Partnerships Manager.",
+        "quality": 4
+      }
     },
     {
       "idx": 15,
@@ -259,7 +800,40 @@
         "media/yt-9HG3AhWVpbg/s15_1.jpg",
         "media/yt-9HG3AhWVpbg/s15_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=783s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=783s",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue"
+        ],
+        "concepts": [
+          "outreach message",
+          "influencer marketing",
+          "mobile app"
+        ],
+        "title": "Influencer Outreach Message",
+        "description": "A screenshot of a mobile messaging app showing a pre-written outreach message to an influencer.",
+        "quality": 4
+      }
     },
     {
       "idx": 16,
@@ -274,7 +848,43 @@
         "media/yt-9HG3AhWVpbg/s16_1.jpg",
         "media/yt-9HG3AhWVpbg/s16_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=809s"
+      "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=809s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "caption-styling"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "speaker",
+          "studio setup",
+          "talking head"
+        ],
+        "title": "Man Speaking",
+        "description": "A man is shown speaking into a microphone, with a neutral expression and a simple background.",
+        "quality": 4
+      }
     },
     {
       "idx": 17,
@@ -292,5 +902,7 @@
       "link": "https://www.youtube.com/watch?v=9HG3AhWVpbg&t=884s"
     }
   ],
-  "status": "ready"
+  "status": "ready",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit",
+  "tag_error": "1 scenes untagged"
 }

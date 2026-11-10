@@ -24,8 +24,48 @@
       "frames": [
         "media/x-2118975098631983346/s00_0.jpg"
       ],
-      "link": "https://x.com/eback_4u/status/2118975098631983346"
+      "link": "https://x.com/eback_4u/status/2118975098631983346",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "screen-recording",
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "code"
+        ],
+        "palette": [
+          "blue",
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "ai video editing",
+          "content creation workflow",
+          "user interface design"
+        ],
+        "title": "UI demo of video editing tool",
+        "description": "A screen recording showcasing a user interface for an AI-powered video editing platform, featuring multiple clips of a person in a hat and jacket, with various editing options like text overlays and scene transitions. The layout is a grid of thumbnails, suggesting a workflow for content creation.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

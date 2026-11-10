@@ -36,8 +36,43 @@
         "media/x-2103848716369293571/s00_1.jpg",
         "media/x-2103848716369293571/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2103848716369293571"
+      "link": "https://x.com/NormieEdits/status/2103848716369293571",
+      "tags": {
+        "technique": [
+          "ai-generated",
+          "line-art",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "hand-drawn",
+          "surreal"
+        ],
+        "format": [
+          "showreel",
+          "breakdown"
+        ],
+        "motion": [],
+        "medium": [
+          "ai-video",
+          "illustration"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "yellow"
+        ],
+        "concepts": [
+          "glowing face",
+          "text overlay",
+          "minimal character"
+        ],
+        "title": "AI-generated character with text",
+        "description": "A minimalist, hand-drawn style illustration of a person in a hoodie with a glowing face, accompanied by the text 'You produce more'. The image appears to be an AI-generated concept art piece, likely used in a digital showcase.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

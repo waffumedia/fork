@@ -1,0 +1,43 @@
+{
+  "id": "x-2093461004352979016",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2093461004352979016",
+  "native_id": "2093461004352979016",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2093461004352979016",
+  "added_at": "2026-11-10T11:30:14Z",
+  "title": "Here is what a custom made launch video without a single AI prompt looks like btw \ud83d\udc40",
+  "text": "Here is what a custom made launch video without a single AI prompt looks like btw \ud83d\udc40",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Fri Aug 28 22:09:32 +0000 2026",
+  "likes": 37,
+  "views": 3399,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 19.65,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 19.65,
+      "t_mid": 9.82,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2093461004352979016/s00_0.jpg",
+        "media/x-2093461004352979016/s00_1.jpg",
+        "media/x-2093461004352979016/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2093461004352979016"
+    }
+  ],
+  "status": "ready"
+}

@@ -34,7 +34,43 @@
       "frames": [
         "media/x-2100936716999856505/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics"
+        ],
+        "style": [
+          "bright-playful",
+          "corporate-clean",
+          "minimal"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "red",
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "text overlay",
+          "money amount",
+          "man speaking"
+        ],
+        "title": "Man with \u00a320,000 text overlay",
+        "description": "A man in a black hoodie stands in an office, with large red and white text overlaying the image that reads '\u00a320,000'. The scene is a live-action shot with a clear focus on the man and the prominent text.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +85,43 @@
         "media/x-2100936716999856505/s01_1.jpg",
         "media/x-2100936716999856505/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "collage"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "meme"
+        ],
+        "format": [
+          "social-reel",
+          "short-film"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green",
+          "blue"
+        ],
+        "concepts": [
+          "split-screen",
+          "social media comparison",
+          "meme"
+        ],
+        "title": "Split-screen with preschool and X logos",
+        "description": "A split-screen view shows a woman on the left with text 'Still hiring preschool' and a man on the right with X and dollar sign logos. The scene uses a collage style to juxtapose two different contexts.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +136,42 @@
         "media/x-2100936716999856505/s02_1.jpg",
         "media/x-2100936716999856505/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "number tiles",
+          "grid layout",
+          "countdown"
+        ],
+        "title": "Number tiles on red background",
+        "description": "A grid of black tiles with white numbers (1-4, 3-6-7) is displayed on a solid red background. The tiles are arranged in two rows, creating a simple geometric composition.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +186,42 @@
         "media/x-2100936716999856505/s03_1.jpg",
         "media/x-2100936716999856505/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "blue"
+        ],
+        "concepts": [
+          "social media profile",
+          "core metrics",
+          "data viz"
+        ],
+        "title": "TikTok profile screenshot",
+        "description": "A screenshot of a TikTok profile page for '@thestephedition' showing core metrics like followers and demographics. The style is a direct screen recording of a social media interface.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +234,42 @@
       "frames": [
         "media/x-2100936716999856505/s04_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "number tiles",
+          "checkmark",
+          "message reveal"
+        ],
+        "title": "Number tiles with checkmark",
+        "description": "A close-up of number tiles on a red background, with a checkmark and the text 'if it all goe' appearing on the tile for number 6. The scene uses a simple animation to reveal a message.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -107,7 +284,42 @@
         "media/x-2100936716999856505/s05_1.jpg",
         "media/x-2100936716999856505/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "collage",
+          "information presentation",
+          "social media content"
+        ],
+        "title": "Resume and news article collage",
+        "description": "A split-screen collage shows a magnifying glass over a resume with 'CDA CREDENTIALS' on the left, and a news article about Elon Musk's X payment platform on the right. The scene uses a collage style to present information.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -122,7 +334,42 @@
         "media/x-2100936716999856505/s06_1.jpg",
         "media/x-2100936716999856505/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "meme"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green"
+        ],
+        "concepts": [
+          "talking head",
+          "social media video",
+          "microphone"
+        ],
+        "title": "TikTok video of man speaking",
+        "description": "A screenshot of a TikTok video showing a man speaking into a microphone. The interface elements like likes and shares are visible, indicating it's a social media video.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -137,7 +384,42 @@
         "media/x-2100936716999856505/s07_1.jpg",
         "media/x-2100936716999856505/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "number tiles",
+          "grid layout",
+          "highlight"
+        ],
+        "title": "Number tiles with red background",
+        "description": "A sequence of number tiles (4-7) on a red background, with a line and text below. The scene uses a simple animation to highlight the numbers.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -150,7 +432,42 @@
       "frames": [
         "media/x-2100936716999856505/s08_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "money cards",
+          "financial concept",
+          "grid layout"
+        ],
+        "title": "Money cards on white background",
+        "description": "A row of six cards, five yellow and one green, each displaying '$50'. The scene uses a simple layout to present a financial concept.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -165,8 +482,45 @@
         "media/x-2100936716999856505/s09_1.jpg",
         "media/x-2100936716999856505/s09_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100936716999856505"
+      "link": "https://x.com/NormieEdits/status/2100936716999856505",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "collage"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "meme"
+        ],
+        "format": [
+          "social-reel",
+          "short-film"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "blue",
+          "yellow"
+        ],
+        "concepts": [
+          "social media icons",
+          "split-screen",
+          "comparison"
+        ],
+        "title": "Social media icons and dollar sign",
+        "description": "A split-screen shows social media icons on a white background on the left, and a blue background with a dollar sign icon on the right. The scene uses a collage style to compare platforms.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -36,7 +36,47 @@
         "media/x-2115473667023114704/s00_1.jpg",
         "media/x-2115473667023114704/s00_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2115473667023114704"
+      "link": "https://x.com/everygen_ai/status/2115473667023114704",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glow-bloom",
+          "motion-blur",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "neon",
+          "corporate-clean"
+        ],
+        "format": [
+          "logo-sting",
+          "title-sequence",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black",
+          "neon-palette"
+        ],
+        "concepts": [
+          "text as focus",
+          "glow effect",
+          "neon text"
+        ],
+        "title": "Everygen Clipper title card",
+        "description": "A stylized title card for 'Everygen Clipper' with a dashed blue box around the text, set against a dark, blurry background of a person. The logo is centrally positioned with a subtle glow effect.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +91,44 @@
         "media/x-2115473667023114704/s01_1.jpg",
         "media/x-2115473667023114704/s01_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2115473667023114704"
+      "link": "https://x.com/everygen_ai/status/2115473667023114704",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "ui-demo",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "audio visualization",
+          "split screen",
+          "phone interaction"
+        ],
+        "title": "Two men with phone",
+        "description": "A split-screen composition showing two men in a room; one is looking at his phone while the other looks on. Below, an audio waveform visualizes the sound.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,8 +143,46 @@
         "media/x-2115473667023114704/s02_1.jpg",
         "media/x-2115473667023114704/s02_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2115473667023114704"
+      "link": "https://x.com/everygen_ai/status/2115473667023114704",
+      "tags": {
+        "technique": [
+          "whip-transition",
+          "zoom-transition",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "retro-futurism"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "chaotic"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "dynamic transition",
+          "video clip reveal",
+          "motion blur"
+        ],
+        "title": "Video clip transition",
+        "description": "A dynamic transition effect where a vertical video clip appears to be rotating and moving into the frame from the right, revealing a scene of people on a field.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

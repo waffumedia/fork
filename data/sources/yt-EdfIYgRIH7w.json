@@ -34,7 +34,41 @@
         "media/yt-EdfIYgRIH7w/s00_1.jpg",
         "media/yt-EdfIYgRIH7w/s00_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=12s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=12s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "social-reel",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "live stream interface",
+          "engagement buttons",
+          "view counter"
+        ],
+        "title": "YouTube live stream overlay",
+        "description": "A dark-themed live stream interface with a green 'Follow' button, a grey 'Subscribe' button, and a view count of 9,266. The design is clean and modern, typical of a live-streaming platform.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +83,39 @@
         "media/yt-EdfIYgRIH7w/s01_1.jpg",
         "media/yt-EdfIYgRIH7w/s01_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=45s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=45s",
+      "tags": {
+        "technique": [
+          "depth-of-field",
+          "camera-move-3d"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "phone settings",
+          "close-up shot",
+          "personal vlog"
+        ],
+        "title": "Man holding phone",
+        "description": "A man with curly hair and glasses holds up a smartphone, displaying a settings menu. The shot is a close-up with a shallow depth of field, focusing on the phone screen.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +130,38 @@
         "media/yt-EdfIYgRIH7w/s02_1.jpg",
         "media/yt-EdfIYgRIH7w/s02_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=68s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=68s",
+      "tags": {
+        "technique": [
+          "depth-of-field"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "brown"
+        ],
+        "concepts": [
+          "contemplative moment",
+          "indoor setting",
+          "personal reflection"
+        ],
+        "title": "Man looking up",
+        "description": "A man with glasses and a beard looks upwards, captured in a dimly lit room. The shot is a medium close-up with a shallow depth of field.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +176,38 @@
         "media/yt-EdfIYgRIH7w/s03_1.jpg",
         "media/yt-EdfIYgRIH7w/s03_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=86s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=86s",
+      "tags": {
+        "technique": [
+          "light-leak",
+          "lens-flare"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "outdoor setting",
+          "golden hour",
+          "poolside"
+        ],
+        "title": "Man by pool",
+        "description": "A man stands outdoors by a swimming pool during golden hour. The sun is low in the sky, creating a warm, backlit effect.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +222,39 @@
         "media/yt-EdfIYgRIH7w/s04_1.jpg",
         "media/yt-EdfIYgRIH7w/s04_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=116s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=116s",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "video editing",
+          "content creation",
+          "digital workspace"
+        ],
+        "title": "Laptop screen",
+        "description": "A close-up of a laptop screen displaying a YouTube page with various video thumbnails. The background shows a pool and outdoor scenery.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,7 +269,40 @@
         "media/yt-EdfIYgRIH7w/s05_1.jpg",
         "media/yt-EdfIYgRIH7w/s05_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=167s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=167s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "grid-layout"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "search engine",
+          "digital research",
+          "web browsing"
+        ],
+        "title": "Google search results",
+        "description": "A screenshot of a Google search page for 'Crayo AI'. The top result is highlighted, showing the link and description. The background has a subtle grid pattern.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,7 +317,40 @@
         "media/yt-EdfIYgRIH7w/s06_1.jpg",
         "media/yt-EdfIYgRIH7w/s06_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=196s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=196s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "performance metrics",
+          "digital analytics",
+          "content tracking"
+        ],
+        "title": "YouTube analytics",
+        "description": "A close-up of a laptop screen showing YouTube Analytics. The dashboard displays metrics like total views, total revenue, and submissions.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +365,40 @@
         "media/yt-EdfIYgRIH7w/s07_1.jpg",
         "media/yt-EdfIYgRIH7w/s07_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=203s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=203s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "yellow"
+        ],
+        "concepts": [
+          "financial update",
+          "performance tracking",
+          "digital income"
+        ],
+        "title": "Man with payout graphic",
+        "description": "A man holds a phone while a graphic overlay shows a countdown timer and a payout amount of $250.36. The shot is a medium close-up.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -154,7 +413,40 @@
         "media/yt-EdfIYgRIH7w/s08_1.jpg",
         "media/yt-EdfIYgRIH7w/s08_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=245s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=245s",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "content performance",
+          "comparison",
+          "data visualization"
+        ],
+        "title": "Video thumbnails",
+        "description": "A collage of three video thumbnails with view counts. The left two are labeled 'FLOP' and the right one is labeled 'perform'. The layout is clean and informative.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,7 +461,40 @@
         "media/yt-EdfIYgRIH7w/s09_1.jpg",
         "media/yt-EdfIYgRIH7w/s09_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=288s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=288s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "white"
+        ],
+        "concepts": [
+          "view growth",
+          "performance metrics",
+          "data visualization"
+        ],
+        "title": "View count cards",
+        "description": "Two dark cards display view counts: 243,169 for 'Yesterday' and 1,701,293 for 'Today'. The cards have a subtle gradient and are set against a black background.",
+        "quality": 4
+      }
     },
     {
       "idx": 10,
@@ -184,7 +509,38 @@
         "media/yt-EdfIYgRIH7w/s10_1.jpg",
         "media/yt-EdfIYgRIH7w/s10_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=306s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=306s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "outdoor workspace",
+          "digital creator",
+          "modern setting"
+        ],
+        "title": "Man with laptop",
+        "description": "A man stands in a modern outdoor space, holding a laptop. The shot is a medium shot with natural lighting.",
+        "quality": 4
+      }
     },
     {
       "idx": 11,
@@ -199,7 +555,40 @@
         "media/yt-EdfIYgRIH7w/s11_1.jpg",
         "media/yt-EdfIYgRIH7w/s11_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=324s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=324s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "key takeaways",
+          "content summary",
+          "digital learning"
+        ],
+        "title": "Takeaways graphic",
+        "description": "A graphic with the title 'BIGGEST Takeaways' and four numbered points. The text uses a mix of fonts and colors, with platform logos for each point.",
+        "quality": 4
+      }
     },
     {
       "idx": 12,
@@ -214,7 +603,40 @@
         "media/yt-EdfIYgRIH7w/s12_1.jpg",
         "media/yt-EdfIYgRIH7w/s12_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=373s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=373s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green"
+        ],
+        "concepts": [
+          "audience engagement",
+          "performance metrics",
+          "data visualization"
+        ],
+        "title": "Man with analytics",
+        "description": "A man points to a graphic overlay showing audience retention, AVD, and swipe rate. The shot is a medium close-up with a modern background.",
+        "quality": 4
+      }
     },
     {
       "idx": 13,
@@ -229,8 +651,42 @@
         "media/yt-EdfIYgRIH7w/s13_1.jpg",
         "media/yt-EdfIYgRIH7w/s13_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=392s"
+      "link": "https://www.youtube.com/watch?v=EdfIYgRIH7w&t=392s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green"
+        ],
+        "concepts": [
+          "monetization goals",
+          "performance targets",
+          "digital income"
+        ],
+        "title": "Man with text overlay",
+        "description": "A man stands in a modern room with large windows. A graphic overlay shows text about getting paid $1,000 and needing 1M views. The shot is a medium close-up.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

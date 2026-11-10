@@ -1,0 +1,58 @@
+{
+  "id": "x-2120110897083638011",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/aftermagics/status/2120110897083638011",
+  "native_id": "2120110897083638011",
+  "author": "aftermagics",
+  "input_url": "https://x.com/aftermagics/status/2120110897083638011",
+  "added_at": "2026-11-10T12:47:46Z",
+  "title": "Breaking down the layers behind our latest product video hook\ud83e\ude9d.",
+  "text": "Breaking down the layers behind our latest product video hook\ud83e\ude9d.",
+  "author_name": "Aftermagics",
+  "posted_at": "Tue Nov 10 11:06:42 +0000 2026",
+  "likes": 18,
+  "views": 557,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.68,
+      "width": 1614,
+      "height": 908
+    }
+  ],
+  "shot_count": 3,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 5.69,
+      "t_mid": 2.85,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2120110897083638011/s00_0.jpg",
+        "media/x-2120110897083638011/s00_1.jpg",
+        "media/x-2120110897083638011/s00_2.jpg"
+      ],
+      "link": "https://x.com/aftermagics/status/2120110897083638011"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.69,
+      "t_end": 7.68,
+      "t_mid": 6.69,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-2120110897083638011/s01_0.jpg",
+        "media/x-2120110897083638011/s01_1.jpg",
+        "media/x-2120110897083638011/s01_2.jpg"
+      ],
+      "link": "https://x.com/aftermagics/status/2120110897083638011"
+    }
+  ],
+  "status": "ready"
+}

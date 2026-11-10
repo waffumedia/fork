@@ -1,0 +1,58 @@
+{
+  "id": "x-2112236857123897819",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2112236857123897819",
+  "native_id": "2112236857123897819",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2112236857123897819",
+  "added_at": "2026-11-10T11:30:01Z",
+  "title": "Made this launch video for @polarbrowser",
+  "text": "Made this launch video for @polarbrowser",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Mon Oct 19 17:38:04 +0000 2026",
+  "likes": 47,
+  "views": 1508,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 61.46,
+      "width": 3840,
+      "height": 2160
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 19.17,
+      "t_mid": 9.58,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2112236857123897819/s00_0.jpg",
+        "media/x-2112236857123897819/s00_1.jpg",
+        "media/x-2112236857123897819/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112236857123897819"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 19.17,
+      "t_end": 61.46,
+      "t_mid": 40.31,
+      "timestamp": "0:19",
+      "frames": [
+        "media/x-2112236857123897819/s01_0.jpg",
+        "media/x-2112236857123897819/s01_1.jpg",
+        "media/x-2112236857123897819/s01_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112236857123897819"
+    }
+  ],
+  "status": "ready"
+}

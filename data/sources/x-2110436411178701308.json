@@ -1,0 +1,118 @@
+{
+  "id": "x-2110436411178701308",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2110436411178701308",
+  "native_id": "2110436411178701308",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2110436411178701308",
+  "added_at": "2026-11-10T11:30:05Z",
+  "title": "Cooked a new video for Bolt",
+  "text": "Cooked a new video for Bolt\n\nPlatform is free for everyone this weekend, and the best build wins $10K\n\nAbsolute pleasure working with a great team \ud83e\udef6",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Wed Oct 14 18:23:45 +0000 2026",
+  "likes": 23,
+  "views": 1321,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 27.73,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "shot_count": 6,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 4.0,
+      "t_mid": 2.0,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2110436411178701308/s00_0.jpg",
+        "media/x-2110436411178701308/s00_1.jpg",
+        "media/x-2110436411178701308/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110436411178701308"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.0,
+      "t_end": 14.76,
+      "t_mid": 9.38,
+      "timestamp": "0:04",
+      "frames": [
+        "media/x-2110436411178701308/s01_0.jpg",
+        "media/x-2110436411178701308/s01_1.jpg",
+        "media/x-2110436411178701308/s01_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110436411178701308"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 14.76,
+      "t_end": 18.0,
+      "t_mid": 16.38,
+      "timestamp": "0:15",
+      "frames": [
+        "media/x-2110436411178701308/s02_0.jpg",
+        "media/x-2110436411178701308/s02_1.jpg",
+        "media/x-2110436411178701308/s02_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110436411178701308"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 18.0,
+      "t_end": 19.68,
+      "t_mid": 18.84,
+      "timestamp": "0:18",
+      "frames": [
+        "media/x-2110436411178701308/s03_0.jpg",
+        "media/x-2110436411178701308/s03_1.jpg",
+        "media/x-2110436411178701308/s03_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110436411178701308"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 19.68,
+      "t_end": 22.48,
+      "t_mid": 21.08,
+      "timestamp": "0:20",
+      "frames": [
+        "media/x-2110436411178701308/s04_0.jpg",
+        "media/x-2110436411178701308/s04_1.jpg",
+        "media/x-2110436411178701308/s04_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110436411178701308"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 22.48,
+      "t_end": 27.73,
+      "t_mid": 25.11,
+      "timestamp": "0:22",
+      "frames": [
+        "media/x-2110436411178701308/s05_0.jpg",
+        "media/x-2110436411178701308/s05_1.jpg",
+        "media/x-2110436411178701308/s05_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110436411178701308"
+    }
+  ],
+  "status": "ready"
+}

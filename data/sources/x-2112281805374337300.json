@@ -1,0 +1,43 @@
+{
+  "id": "x-2112281805374337300",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2112281805374337300",
+  "native_id": "2112281805374337300",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2112281805374337300",
+  "added_at": "2026-11-10T11:30:00Z",
+  "title": "[1/4] Hook \u2192 Start with the promise, not a feature tour. \"Calling all builders\" targets the exact user, followed immediately by \"Describe it",
+  "text": "[1/4] Hook \u2192 Start with the promise, not a feature tour. \"Calling all builders\" targets the exact user, followed immediately by \"Describe it. Bolt builds it.\" Grabs attention and sets expectations in 3 seconds",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Mon Oct 19 20:36:41 +0000 2026",
+  "likes": 5,
+  "views": 407,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 4.01,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 4.01,
+      "t_mid": 2.01,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2112281805374337300/s00_0.jpg",
+        "media/x-2112281805374337300/s00_1.jpg",
+        "media/x-2112281805374337300/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2112281805374337300"
+    }
+  ],
+  "status": "ready"
+}

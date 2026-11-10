@@ -1,0 +1,43 @@
+{
+  "id": "x-2113801762687549743",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2113801762687549743",
+  "native_id": "2113801762687549743",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2113801762687549743",
+  "added_at": "2026-11-10T11:29:54Z",
+  "title": "Cooked this launch video for @polarbrowser ",
+  "text": "Cooked this launch video for @polarbrowser \n\n150k+ views already generated\n\nFull breakdown of each part in this thread \u2193",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Sat Oct 24 01:16:27 +0000 2026",
+  "likes": 55,
+  "views": 2566,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 61.42,
+      "width": 1080,
+      "height": 824
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 61.42,
+      "t_mid": 30.71,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2113801762687549743/s00_0.jpg",
+        "media/x-2113801762687549743/s00_1.jpg",
+        "media/x-2113801762687549743/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2113801762687549743"
+    }
+  ],
+  "status": "ready"
+}

@@ -36,8 +36,52 @@
         "media/x-2118358785165328590/s00_1.jpg",
         "media/x-2118358785165328590/s00_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2118358785165328590"
+      "link": "https://x.com/EditSatyjeet/status/2118358785165328590",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "screen-recording",
+          "ui-animation",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "tutorial",
+          "showreel",
+          "breakdown"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "red",
+          "grey"
+        ],
+        "concepts": [
+          "exponential growth",
+          "financial animation",
+          "data visualization",
+          "motion graphic"
+        ],
+        "title": "Compounding graph animation",
+        "description": "A screen recording of a motion design project in progress, showing a red exponential curve graph labeled 'Compounding' being animated within a video editing timeline. The animation features a vertical line tracing the curve's growth, likely created using After Effects for data visualization.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

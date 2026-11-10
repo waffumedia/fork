@@ -1,0 +1,58 @@
+{
+  "id": "x-2114028709628027175",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/yashxedits/status/2114028709628027175",
+  "native_id": "2114028709628027175",
+  "author": "yashxedits",
+  "input_url": "https://x.com/yashxedits/status/2114028709628027175",
+  "added_at": "2026-11-10T11:29:54Z",
+  "title": "Some fav frames from a recent edit \ud83d\udd25",
+  "text": "Some fav frames from a recent edit \ud83d\udd25",
+  "author_name": "YasH",
+  "posted_at": "Sat Oct 24 16:18:15 +0000 2026",
+  "likes": 77,
+  "views": 1509,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 8.02,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 5.92,
+      "t_mid": 2.96,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2114028709628027175/s00_0.jpg",
+        "media/x-2114028709628027175/s00_1.jpg",
+        "media/x-2114028709628027175/s00_2.jpg"
+      ],
+      "link": "https://x.com/yashxedits/status/2114028709628027175"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.92,
+      "t_end": 8.02,
+      "t_mid": 6.97,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-2114028709628027175/s01_0.jpg",
+        "media/x-2114028709628027175/s01_1.jpg",
+        "media/x-2114028709628027175/s01_2.jpg"
+      ],
+      "link": "https://x.com/yashxedits/status/2114028709628027175"
+    }
+  ],
+  "status": "ready"
+}

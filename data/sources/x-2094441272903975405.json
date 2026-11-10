@@ -36,8 +36,49 @@
         "media/x-2094441272903975405/s00_1.jpg",
         "media/x-2094441272903975405/s00_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2094441272903975405"
+      "link": "https://x.com/EditSatyjeet/status/2094441272903975405",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "overlay-graphics",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "figma"
+        ],
+        "palette": [
+          "red",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "social media analytics",
+          "content strategy",
+          "branding"
+        ],
+        "title": "viral content checklist",
+        "description": "A collage of social media content and analytics, featuring a red brain graphic with puzzle pieces labeled 'The Viral Checklist' and a section titled 'Viral Content'. The layout uses a grid to display various types of content, including live streams and user-generated videos. The design is clean and informative, with a focus on data visualization and branding elements like the 'Viral Content' text ",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

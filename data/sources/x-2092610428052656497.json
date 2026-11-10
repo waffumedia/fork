@@ -36,7 +36,43 @@
         "media/x-2092610428052656497/s00_1.jpg",
         "media/x-2092610428052656497/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092610428052656497"
+      "link": "https://x.com/NormieEdits/status/2092610428052656497",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "kinetic-type",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "high-contrast"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "numbered sequence",
+          "conditional logic",
+          "ui elements"
+        ],
+        "title": "numbered tiles with checkmark",
+        "description": "A close-up of black square tiles with white numbers on a red background, where the number 7 tile has a hand-drawn checkmark and 'if' written below it, suggesting a step in a sequence or a conditional logic.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +87,41 @@
         "media/x-2092610428052656497/s01_1.jpg",
         "media/x-2092610428052656497/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092610428052656497"
+      "link": "https://x.com/NormieEdits/status/2092610428052656497",
+      "tags": {
+        "technique": [
+          "line-art",
+          "grid-layout",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "monochrome"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "data visualization",
+          "signal wave",
+          "motion path"
+        ],
+        "title": "wavy line across panels",
+        "description": "A black wavy line graph is drawn across a series of white vertical panels against a black background, creating a simple yet dynamic visual that suggests data flow or a signal.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +136,43 @@
         "media/x-2092610428052656497/s02_1.jpg",
         "media/x-2092610428052656497/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092610428052656497"
+      "link": "https://x.com/NormieEdits/status/2092610428052656497",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "kinetic-type",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "high-contrast"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "numbered sequence",
+          "process flow",
+          "ui elements"
+        ],
+        "title": "numbered red tiles",
+        "description": "A sequence of red squares with white numbers 4, 5, 6, and 7 is displayed below greyed-out numbers 1, 2, 3. A line under the red tiles has a handwritten note that says 'to complete t', indicating a step in a process.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +185,40 @@
       "frames": [
         "media/x-2092610428052656497/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092610428052656497"
+      "link": "https://x.com/NormieEdits/status/2092610428052656497",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "retro-futurism",
+          "y2k"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "portrait collage",
+          "personal branding",
+          "digital identity"
+        ],
+        "title": "polaroid photos of men",
+        "description": "Two Polaroid-style photographs are shown side-by-side on a white background. The left photo features a man with the name 'Tom Mattress' written below, and the right photo shows another man with the name 'Curtis Tilbury'.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,8 +233,45 @@
         "media/x-2092610428052656497/s04_1.jpg",
         "media/x-2092610428052656497/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092610428052656497"
+      "link": "https://x.com/NormieEdits/status/2092610428052656497",
+      "tags": {
+        "technique": [
+          "collage",
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "retro-futurism"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "teal",
+          "red"
+        ],
+        "concepts": [
+          "branding suite",
+          "design process",
+          "creative workflow"
+        ],
+        "title": "branding design collage",
+        "description": "A dark-themed collage of various branding elements, including a logo, interior shots, color palettes, and text layouts, all related to 'Viral Toolkit'. The word 'create' is written in a handwritten style at the bottom.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

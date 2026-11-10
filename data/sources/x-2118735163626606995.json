@@ -1,0 +1,73 @@
+{
+  "id": "x-2118735163626606995",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/simodsgn/status/2118735163626606995",
+  "native_id": "2118735163626606995",
+  "author": "simodsgn",
+  "input_url": "https://x.com/simodsgn/status/2118735163626606995",
+  "added_at": "2026-11-10T12:47:47Z",
+  "title": "Some of my favorite frames from a launch film I created for Buckshot Studios in mid 2026 are finally being shared.",
+  "text": "Some of my favorite frames from a launch film I created for Buckshot Studios in mid 2026 are finally being shared.\n\nIf you\u2019re looking for a great launch video for your product, feel free to DM me.",
+  "author_name": "Szymon Pawlik",
+  "posted_at": "Fri Nov 06 16:00:01 +0000 2026",
+  "likes": 1,
+  "views": 16,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.89,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "shot_count": 4,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.67,
+      "t_mid": 1.33,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2118735163626606995/s00_0.jpg",
+        "media/x-2118735163626606995/s00_1.jpg",
+        "media/x-2118735163626606995/s00_2.jpg"
+      ],
+      "link": "https://x.com/simodsgn/status/2118735163626606995"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.67,
+      "t_end": 4.7,
+      "t_mid": 3.68,
+      "timestamp": "0:03",
+      "frames": [
+        "media/x-2118735163626606995/s01_0.jpg",
+        "media/x-2118735163626606995/s01_1.jpg",
+        "media/x-2118735163626606995/s01_2.jpg"
+      ],
+      "link": "https://x.com/simodsgn/status/2118735163626606995"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.7,
+      "t_end": 7.89,
+      "t_mid": 6.3,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-2118735163626606995/s02_0.jpg",
+        "media/x-2118735163626606995/s02_1.jpg",
+        "media/x-2118735163626606995/s02_2.jpg"
+      ],
+      "link": "https://x.com/simodsgn/status/2118735163626606995"
+    }
+  ],
+  "status": "ready"
+}

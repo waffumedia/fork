@@ -24,8 +24,45 @@
       "frames": [
         "media/x-2090797715806642348/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2090797715806642348"
+      "link": "https://x.com/NormieEdits/status/2090797715806642348",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "kinetic-type",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "red"
+        ],
+        "concepts": [
+          "numbered progression",
+          "project milestones",
+          "ui elements"
+        ],
+        "title": "numbered grid layout",
+        "description": "A clean, minimalist grid layout with numbered tiles in grey and red, arranged in two rows. The top row shows numbers 1-3 in grey squares, while the bottom row displays numbers 4-7 in red squares. Below the grid, a red text caption reads 'to complete the project'. The design uses a simple color palette and clear typography to organize information.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -34,7 +34,42 @@
       "frames": [
         "media/x-2106282290259394828/s00_0.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "camera-shake"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "man speaking",
+          "city view",
+          "window shot"
+        ],
+        "title": "man speaking in apartment",
+        "description": "A man with dark hair and a light t-shirt speaks directly to the camera, seated in front of a large window with a city skyline view. The shot is a medium close-up, and the lighting suggests late afternoon or early evening.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +84,41 @@
         "media/x-2106282290259394828/s01_1.jpg",
         "media/x-2106282290259394828/s01_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "glow-bloom"
+        ],
+        "style": [
+          "cyberpunk",
+          "vaporwave",
+          "retro-futurism"
+        ],
+        "format": [
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "looping"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "neon-palette",
+          "blue",
+          "pink"
+        ],
+        "concepts": [
+          "doorbell camera",
+          "package delivery",
+          "dog"
+        ],
+        "title": "doorbell camera footage",
+        "description": "A vertical, smartphone-style frame shows a man placing a package on a porch while a small dog watches. The footage is from a doorbell camera, and the frame has a glowing neon border.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +133,39 @@
         "media/x-2106282290259394828/s02_1.jpg",
         "media/x-2106282290259394828/s02_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "glow-bloom"
+        ],
+        "style": [
+          "cyberpunk",
+          "vaporwave",
+          "retro-futurism"
+        ],
+        "format": [
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "looping"
+        ],
+        "medium": [],
+        "palette": [
+          "neon-palette",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "social media comment",
+          "dog profile picture",
+          "text overlay"
+        ],
+        "title": "social media comment",
+        "description": "A close-up of a social media comment on a dark background. The comment is in German, and the user's profile picture shows a dog. The background has a blue water-like texture.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +178,39 @@
       "frames": [
         "media/x-2106282290259394828/s03_0.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "glow-bloom"
+        ],
+        "style": [
+          "cyberpunk",
+          "vaporwave",
+          "retro-futurism"
+        ],
+        "format": [
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "looping"
+        ],
+        "medium": [],
+        "palette": [
+          "neon-palette",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "social media comment",
+          "cat profile picture",
+          "text overlay"
+        ],
+        "title": "social media comment",
+        "description": "Another close-up of a social media comment. This one is also in German and features a user profile picture of a cat. The background is a blue water texture.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +225,42 @@
         "media/x-2106282290259394828/s04_1.jpg",
         "media/x-2106282290259394828/s04_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "camera-shake"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "man speaking",
+          "city view",
+          "window shot"
+        ],
+        "title": "man speaking in apartment",
+        "description": "A man with dark hair and a light t-shirt speaks directly to the camera, seated in front of a large window with a city skyline view. The shot is a medium close-up, and the lighting suggests late afternoon or early evening.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -107,7 +275,39 @@
         "media/x-2106282290259394828/s05_1.jpg",
         "media/x-2106282290259394828/s05_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "glow-bloom"
+        ],
+        "style": [
+          "cyberpunk",
+          "vaporwave",
+          "retro-futurism"
+        ],
+        "format": [
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "looping"
+        ],
+        "medium": [],
+        "palette": [
+          "neon-palette",
+          "black",
+          "purple"
+        ],
+        "concepts": [
+          "button click",
+          "mouse cursor",
+          "ui element"
+        ],
+        "title": "button click",
+        "description": "A close-up of a button labeled 'Erzeugen' (German for 'Generate') being clicked by a mouse cursor. The button is on a dark background with a glowing purple light source.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -122,7 +322,42 @@
         "media/x-2106282290259394828/s06_1.jpg",
         "media/x-2106282290259394828/s06_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "camera-shake"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "man speaking",
+          "city view",
+          "window shot"
+        ],
+        "title": "man speaking in apartment",
+        "description": "A man with dark hair and a light t-shirt speaks directly to the camera, seated in front of a large window with a city skyline view. The shot is a medium close-up, and the lighting suggests late afternoon or early evening.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -137,7 +372,39 @@
         "media/x-2106282290259394828/s07_1.jpg",
         "media/x-2106282290259394828/s07_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "cel-animation",
+          "motion-blur"
+        ],
+        "style": [
+          "anime",
+          "cyberpunk",
+          "vaporwave"
+        ],
+        "format": [
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "looping"
+        ],
+        "medium": [],
+        "palette": [
+          "neon-palette",
+          "orange",
+          "brown"
+        ],
+        "concepts": [
+          "animated characters",
+          "romantic scene",
+          "blur effect"
+        ],
+        "title": "animated characters",
+        "description": "A blurry, stylized image of two animated characters. One is a female character with brown hair, and the other is an orange, blocky male character. They appear to be in a romantic setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -150,8 +417,44 @@
       "frames": [
         "media/x-2106282290259394828/s08_0.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2106282290259394828"
+      "link": "https://x.com/hikarimotions/status/2106282290259394828",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "camera-shake"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "man speaking",
+          "city view",
+          "window shot"
+        ],
+        "title": "man speaking in apartment",
+        "description": "A man with dark hair and a light t-shirt speaks directly to the camera, seated in front of a large window with a city skyline view. The shot is a medium close-up, and the lighting suggests late afternoon or early evening.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

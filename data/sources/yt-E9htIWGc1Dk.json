@@ -34,7 +34,43 @@
         "media/yt-E9htIWGc1Dk/s00_1.jpg",
         "media/yt-E9htIWGc1Dk/s00_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=7s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=7s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "tiktok interface",
+          "text overlay",
+          "product placement"
+        ],
+        "title": "TikTok video with text overlay",
+        "description": "A smartphone screen displays a TikTok video of a plush toy with stacked ramen cups, overlaid with text about a $100K budget and big team. The style is a clean, modern explainer with a dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +85,39 @@
         "media/yt-E9htIWGc1Dk/s01_1.jpg",
         "media/yt-E9htIWGc1Dk/s01_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=43s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=43s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks directly to the camera in an office setting. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +132,38 @@
         "media/yt-E9htIWGc1Dk/s02_1.jpg",
         "media/yt-E9htIWGc1Dk/s02_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=74s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=74s",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "text excerpt",
+          "highlighted information",
+          "data point"
+        ],
+        "title": "Text excerpt with highlighted sentence",
+        "description": "A screenshot of a document shows text about attention spans, with the sentence 'So back in 2004, we found the average attention span on any screen to be two and a half minutes on average' highlighted in orange.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +178,39 @@
         "media/yt-E9htIWGc1Dk/s03_1.jpg",
         "media/yt-E9htIWGc1Dk/s03_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=135s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=135s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks directly to the camera in an office setting. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +225,44 @@
         "media/yt-E9htIWGc1Dk/s04_1.jpg",
         "media/yt-E9htIWGc1Dk/s04_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=158s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=158s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording",
+          "overlay-graphics",
+          "split-screen"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "tiktok interface",
+          "split-screen",
+          "text overlay"
+        ],
+        "title": "TikTok video with text overlay",
+        "description": "A smartphone screen displays a TikTok video of a dark, textured object. The text 'From scratch' is written above the phone. A small inset video shows a man in a different setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,7 +277,39 @@
         "media/yt-E9htIWGc1Dk/s05_1.jpg",
         "media/yt-E9htIWGc1Dk/s05_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=176s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=176s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks directly to the camera in an office setting. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,7 +324,39 @@
         "media/yt-E9htIWGc1Dk/s06_1.jpg",
         "media/yt-E9htIWGc1Dk/s06_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=236s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=236s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks directly to the camera in an office setting. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +371,39 @@
         "media/yt-E9htIWGc1Dk/s07_1.jpg",
         "media/yt-E9htIWGc1Dk/s07_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=283s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=283s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks while looking off-camera. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -154,7 +418,39 @@
         "media/yt-E9htIWGc1Dk/s08_1.jpg",
         "media/yt-E9htIWGc1Dk/s08_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=295s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=295s",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "video formats",
+          "checklist",
+          "visual examples"
+        ],
+        "title": "Video formats with checkmarks",
+        "description": "A graphic shows two video clips side-by-side. The left clip shows a man holding a shirt with 'EARN' on it, and the right shows a man lifting a weight. Text labels 'opening Shot' and 'Visual Hook' are checked.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,7 +465,43 @@
         "media/yt-E9htIWGc1Dk/s09_1.jpg",
         "media/yt-E9htIWGc1Dk/s09_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=335s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=335s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "tiktok interface",
+          "annotation",
+          "visual hook"
+        ],
+        "title": "TikTok video with annotations",
+        "description": "A smartphone screen displays a TikTok video of a man in an apron pouring liquid. Annotations point to 'unanswered question' and 'visual surprise'. The style is clean and modern.",
+        "quality": 4
+      }
     },
     {
       "idx": 10,
@@ -184,7 +516,39 @@
         "media/yt-E9htIWGc1Dk/s10_1.jpg",
         "media/yt-E9htIWGc1Dk/s10_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=382s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=382s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks directly to the camera in an office setting. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     },
     {
       "idx": 11,
@@ -199,7 +563,39 @@
         "media/yt-E9htIWGc1Dk/s11_1.jpg",
         "media/yt-E9htIWGc1Dk/s11_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=421s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=421s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks directly to the camera in an office setting. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     },
     {
       "idx": 12,
@@ -214,7 +610,39 @@
         "media/yt-E9htIWGc1Dk/s12_1.jpg",
         "media/yt-E9htIWGc1Dk/s12_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=464s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=464s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "list format",
+          "system breakdown",
+          "content strategy"
+        ],
+        "title": "List of viral content system",
+        "description": "A whiteboard-style graphic lists 'our viral content System' with three points: Winning formats, Proven hooks, Weekly reviews. The style is clean and minimalist.",
+        "quality": 4
+      }
     },
     {
       "idx": 13,
@@ -229,8 +657,41 @@
         "media/yt-E9htIWGc1Dk/s13_1.jpg",
         "media/yt-E9htIWGc1Dk/s13_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=509s"
+      "link": "https://www.youtube.com/watch?v=E9htIWGc1Dk&t=509s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "corporate-clean",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "speaker",
+          "office environment",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a brown jacket speaks directly to the camera in an office setting. The shot is a medium close-up with a clean, professional look.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

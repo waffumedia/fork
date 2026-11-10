@@ -36,8 +36,52 @@
         "media/x-2090071303185371192/s00_1.jpg",
         "media/x-2090071303185371192/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2090071303185371192"
+      "link": "https://x.com/NormieEdits/status/2090071303185371192",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "grid-layout",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "corporate-clean",
+          "editorial"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad",
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "green"
+        ],
+        "concepts": [
+          "split-screen composition",
+          "text overlay",
+          "creator culture",
+          "digital overload"
+        ],
+        "title": "Split-screen creator montage",
+        "description": "A split-screen composition shows a person at a computer on the left and a grid of lights on the right, with text about cognitive overload overlaid. The design uses a minimalist aesthetic with a strong contrast between the dark background and the illuminated elements.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

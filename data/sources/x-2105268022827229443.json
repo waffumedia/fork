@@ -36,8 +36,48 @@
         "media/x-2105268022827229443/s00_1.jpg",
         "media/x-2105268022827229443/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2105268022827229443"
+      "link": "https://x.com/NormieEdits/status/2105268022827229443",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "ui-animation",
+          "overlay-graphics",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "showreel",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "ai-video"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "design comparison",
+          "ai recreation",
+          "video editing"
+        ],
+        "title": "My edit vs AI edit comparison",
+        "description": "A side-by-side comparison of a human-edited video and an AI-generated recreation, showcasing different design approaches to a similar concept.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

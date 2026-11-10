@@ -36,7 +36,42 @@
         "media/x-2104223016012169577/s00_1.jpg",
         "media/x-2104223016012169577/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2104223016012169577"
+      "link": "https://x.com/NormieEdits/status/2104223016012169577",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "numbered tiles",
+          "grid layout",
+          "text on texture"
+        ],
+        "title": "numbered tiles on red",
+        "description": "A grid layout of black square tiles with white numbers (1-4 on top row, 3-7 on bottom) against a solid red background. The tiles have a textured, felt-like appearance.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +86,42 @@
         "media/x-2104223016012169577/s01_1.jpg",
         "media/x-2104223016012169577/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2104223016012169577"
+      "link": "https://x.com/NormieEdits/status/2104223016012169577",
+      "tags": {
+        "technique": [
+          "line-art",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "dark-moody"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "green"
+        ],
+        "concepts": [
+          "line graph animation",
+          "panel transition",
+          "text reveal"
+        ],
+        "title": "line graph on white",
+        "description": "A black line graph animates across a series of five white vertical panels against a dark background. The final panel is cream-colored with the green text 'TVA'.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +136,42 @@
         "media/x-2104223016012169577/s02_1.jpg",
         "media/x-2104223016012169577/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2104223016012169577"
+      "link": "https://x.com/NormieEdits/status/2104223016012169577",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "bright-playful"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "numbered tiles",
+          "grid layout",
+          "text on texture"
+        ],
+        "title": "numbered red tiles",
+        "description": "A sequence of four red square tiles with white numbers (4-7) is shown. Above them, grey tiles with numbers 1-3 are visible. A red underline and text 'to complete t' are present below.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +184,42 @@
       "frames": [
         "media/x-2104223016012169577/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2104223016012169577"
+      "link": "https://x.com/NormieEdits/status/2104223016012169577",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "retro-futurism",
+          "y2k"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "polaroid collage",
+          "photograph display",
+          "name reveal"
+        ],
+        "title": "photographs of two men",
+        "description": "Two polaroid-style photographs are displayed side-by-side. The left photo shows a man with the name 'Tom Nattress' written below; the right shows another man with the name 'Curtis Tilbury'.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +234,42 @@
         "media/x-2104223016012169577/s04_1.jpg",
         "media/x-2104223016012169577/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2104223016012169577"
+      "link": "https://x.com/NormieEdits/status/2104223016012169577",
+      "tags": {
+        "technique": [
+          "mask-reveal",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "grunge"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "silhouette reveal",
+          "subscriber count",
+          "profile icon"
+        ],
+        "title": "silhouette with subscribers",
+        "description": "A circular frame shows a silhouette of a person against a brick wall. Below it, the text '|8.6M subscribers' is displayed in white.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,8 +284,44 @@
         "media/x-2104223016012169577/s05_1.jpg",
         "media/x-2104223016012169577/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2104223016012169577"
+      "link": "https://x.com/NormieEdits/status/2104223016012169577",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "hand-drawn",
+          "organic"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "handwritten text",
+          "text emphasis",
+          "underlined text"
+        ],
+        "title": "handwritten text",
+        "description": "A handwritten phrase 'Brand identity will get judged on business res' is shown. The word 'identity' is circled in red, and the end of 'res' is underlined.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

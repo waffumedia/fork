@@ -36,8 +36,53 @@
         "media/x-2119303823185612826/s00_1.jpg",
         "media/x-2119303823185612826/s00_2.jpg"
       ],
-      "link": "https://x.com/eback_4u/status/2119303823185612826"
+      "link": "https://x.com/eback_4u/status/2119303823185612826",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation",
+          "overlay-graphics",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style",
+          "dark-moody"
+        ],
+        "format": [
+          "ui-demo",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease",
+          "snappy",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects",
+          "figma",
+          "premiere"
+        ],
+        "palette": [
+          "blue",
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "data visualization",
+          "modern ui",
+          "desktop interface",
+          "tech demo"
+        ],
+        "title": "Windows UI Demo",
+        "description": "A screen recording of a Windows desktop interface featuring a prominent data visualization chart in the center, surrounded by text and UI elements. The layout is clean and modern with a glassmorphism style, suggesting a tech-focused demonstration.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

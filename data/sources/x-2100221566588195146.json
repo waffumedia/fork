@@ -34,7 +34,43 @@
       "frames": [
         "media/x-2100221566588195146/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100221566588195146"
+      "link": "https://x.com/NormieEdits/status/2100221566588195146",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "grey"
+        ],
+        "concepts": [
+          "text overlay",
+          "money graphic",
+          "talking head"
+        ],
+        "title": "Man with money graphic",
+        "description": "A man in a black hoodie and cap stands in an office, with large text overlaying the image that reads '\u00a320,000'. The number is stylized with a red pound symbol and white numerals.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +85,40 @@
         "media/x-2100221566588195146/s01_1.jpg",
         "media/x-2100221566588195146/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100221566588195146"
+      "link": "https://x.com/NormieEdits/status/2100221566588195146",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red"
+        ],
+        "concepts": [
+          "financial data",
+          "ui element",
+          "number display"
+        ],
+        "title": "Ad spend number",
+        "description": "A white rectangular box on a black background displays the text '\u00a332,641'. A red line appears at the bottom left of the box.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +131,41 @@
       "frames": [
         "media/x-2100221566588195146/s02_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100221566588195146"
+      "link": "https://x.com/NormieEdits/status/2100221566588195146",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red"
+        ],
+        "concepts": [
+          "checklist",
+          "talking head",
+          "branding"
+        ],
+        "title": "Man with checklist",
+        "description": "A man in a black t-shirt and cap speaks into a microphone. On the left, a checklist with red checkmarks shows 'Position', 'Value', and 'Authority'.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +180,39 @@
         "media/x-2100221566588195146/s03_1.jpg",
         "media/x-2100221566588195146/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100221566588195146"
+      "link": "https://x.com/NormieEdits/status/2100221566588195146",
+      "tags": {
+        "technique": [
+          "glitch",
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "brutalist"
+        ],
+        "format": [
+          "social-reel",
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "text reveal",
+          "glitch effect",
+          "message"
+        ],
+        "title": "Text reveal",
+        "description": "The text 'Attention in a sea full of similar offers.' appears on a black background with a glitch effect.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,8 +227,42 @@
         "media/x-2100221566588195146/s04_1.jpg",
         "media/x-2100221566588195146/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2100221566588195146"
+      "link": "https://x.com/NormieEdits/status/2100221566588195146",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red"
+        ],
+        "concepts": [
+          "card design",
+          "ui elements",
+          "branding"
+        ],
+        "title": "Card layout",
+        "description": "A red card with a white 'V' logo is shown, labeled '2'. It's part of a layout with another card and text labels like 'Creative' and 'Strategic'.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

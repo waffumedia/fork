@@ -36,8 +36,44 @@
         "media/x-2101698619258908974/s00_1.jpg",
         "media/x-2101698619258908974/s00_2.jpg"
       ],
-      "link": "https://x.com/EditSatyjeet/status/2101698619258908974"
+      "link": "https://x.com/EditSatyjeet/status/2101698619258908974",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "blue"
+        ],
+        "concepts": [
+          "social media notification",
+          "profile avatars",
+          "clean ui"
+        ],
+        "title": "Social media follow notification",
+        "description": "A minimalist social media notification showing a row of profile avatars with the text 'followed you - 11h' below, set against a clean white background.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

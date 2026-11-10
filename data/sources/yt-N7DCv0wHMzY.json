@@ -34,7 +34,44 @@
         "media/yt-N7DCv0wHMzY/s00_1.jpg",
         "media/yt-N7DCv0wHMzY/s00_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=74s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=74s",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "tutorial",
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "text on path",
+          "split-screen",
+          "minimalist design"
+        ],
+        "title": "Intro slide with presenter",
+        "description": "A clean, minimalist presentation slide featuring a man in a black t-shirt on the left and two key points, 'INTRODUCE' and 'EDUCATE', with their definitions on the right. The design uses a simple white background and black text for high contrast.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +86,41 @@
         "media/yt-N7DCv0wHMzY/s01_1.jpg",
         "media/yt-N7DCv0wHMzY/s01_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=160s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=160s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "grid-layout"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "social media content",
+          "grid layout",
+          "profile page"
+        ],
+        "title": "Instagram profile screenshot",
+        "description": "A screenshot of an Instagram profile page for 'mikedhoffmann_', showing a grid of content cards. The layout is clean and professional, with a focus on business education related to vending machines.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +135,41 @@
         "media/yt-N7DCv0wHMzY/s02_1.jpg",
         "media/yt-N7DCv0wHMzY/s02_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=240s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=240s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "text overlay",
+          "social media post",
+          "infographic"
+        ],
+        "title": "Instagram post with text overlay",
+        "description": "A screenshot of an Instagram post featuring a man in the bottom left corner. The main content is a graphic with text about tax benefits of vending machines, overlaid on a photo of a building.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +184,40 @@
         "media/yt-N7DCv0wHMzY/s03_1.jpg",
         "media/yt-N7DCv0wHMzY/s03_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=262s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=262s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "city view",
+          "laptop"
+        ],
+        "title": "Presenter speaking to camera",
+        "description": "A man with a beard and short hair, wearing a black t-shirt, sits at a white desk in front of a large window with a city view. He is speaking and gesturing with his hands while looking at a laptop.",
+        "quality": 5
+      }
     },
     {
       "idx": 4,
@@ -94,7 +232,41 @@
         "media/yt-N7DCv0wHMzY/s04_1.jpg",
         "media/yt-N7DCv0wHMzY/s04_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=342s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=342s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "reel format",
+          "overlay text",
+          "advice"
+        ],
+        "title": "Instagram Reel screenshot",
+        "description": "A screenshot of an Instagram Reel showing a man in a parking garage. The video has text overlays providing advice on buying a vending machine, with a focus on securing a location first.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,7 +281,40 @@
         "media/yt-N7DCv0wHMzY/s05_1.jpg",
         "media/yt-N7DCv0wHMzY/s05_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=497s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=497s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "tutorial",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "video call",
+          "list format",
+          "talking head"
+        ],
+        "title": "Video call screenshot",
+        "description": "A screenshot of a video call interface with two participants. The main title 'WHAT WE'LL LOOK AT:' is displayed above a list of three topics: '01 YOUR CURRENT CONTENT', '02 WHAT'S HOLDING YOU BACK', and '03 GAPS IN YOUR STRATEGY'.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,7 +329,43 @@
         "media/yt-N7DCv0wHMzY/s06_1.jpg",
         "media/yt-N7DCv0wHMzY/s06_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=532s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=532s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "tutorial",
+          "breakdown",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green"
+        ],
+        "concepts": [
+          "funnel diagram",
+          "process flow",
+          "content strategy"
+        ],
+        "title": "Content funnel diagram",
+        "description": "A screenshot of a Miro whiteboard displaying a detailed content funnel. The diagram shows various stages like 'IG Shoutouts', 'Content', 'Collaborations', and 'DM Convo', connected by arrows to illustrate a marketing strategy.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +380,41 @@
         "media/yt-N7DCv0wHMzY/s07_1.jpg",
         "media/yt-N7DCv0wHMzY/s07_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=670s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=670s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "tutorial",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green"
+        ],
+        "concepts": [
+          "spreadsheet",
+          "financial data",
+          "data viz"
+        ],
+        "title": "Financials spreadsheet",
+        "description": "A screenshot of a Google Sheets document titled 'FINANCIALS JUNE 2025'. The sheet is divided into two main sections: 'INVOICING' and 'EXPENSES', with a green background for the expenses section.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -154,7 +429,42 @@
         "media/yt-N7DCv0wHMzY/s08_1.jpg",
         "media/yt-N7DCv0wHMzY/s08_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=697s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=697s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "tutorial",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green",
+          "red"
+        ],
+        "concepts": [
+          "scorecard",
+          "performance metrics",
+          "data viz"
+        ],
+        "title": "Vendingpreneur Scorecard",
+        "description": "A screenshot of a Google Sheet titled 'Vendingpreneur Scorecard 2025'. The sheet displays a detailed scorecard with metrics like 'Self scheduled call rate', 'Total live calls', and 'Show up rate' across different weeks.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,7 +479,40 @@
         "media/yt-N7DCv0wHMzY/s09_1.jpg",
         "media/yt-N7DCv0wHMzY/s09_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=863s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=863s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "city view",
+          "laptop"
+        ],
+        "title": "Presenter speaking to camera",
+        "description": "A man with a beard and short hair, wearing a black t-shirt, sits at a white desk in front of a large window with a city view. He is speaking and gesturing with his right hand while looking at a laptop.",
+        "quality": 5
+      }
     },
     {
       "idx": 10,
@@ -184,7 +527,39 @@
         "media/yt-N7DCv0wHMzY/s10_1.jpg",
         "media/yt-N7DCv0wHMzY/s10_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=917s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=917s",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "text overlay",
+          "talking head",
+          "minimalist design"
+        ],
+        "title": "Presenter with text overlay",
+        "description": "A man in a black t-shirt sits at a desk with a laptop. On the right side of the screen, there is a white background with the text 'WHAT THE NUMBERS TELL YOU' in bold black letters.",
+        "quality": 4
+      }
     },
     {
       "idx": 11,
@@ -199,7 +574,40 @@
         "media/yt-N7DCv0wHMzY/s11_1.jpg",
         "media/yt-N7DCv0wHMzY/s11_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=969s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=969s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "city view",
+          "laptop"
+        ],
+        "title": "Presenter speaking to camera",
+        "description": "A man with a beard and short hair, wearing a black t-shirt, sits at a white desk in front of a large window with a city view. He is looking down at his laptop and speaking.",
+        "quality": 5
+      }
     },
     {
       "idx": 12,
@@ -214,7 +622,44 @@
         "media/yt-N7DCv0wHMzY/s12_1.jpg",
         "media/yt-N7DCv0wHMzY/s12_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1047s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1047s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "tutorial",
+          "breakdown",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "yellow",
+          "green"
+        ],
+        "concepts": [
+          "conversation flow",
+          "process diagram",
+          "script"
+        ],
+        "title": "DM Setting Script",
+        "description": "A screenshot of a Miro whiteboard showing a conversation flow for a direct message (DM) script. The diagram illustrates a step-by-step process for engaging with potential clients.",
+        "quality": 4
+      }
     },
     {
       "idx": 13,
@@ -229,7 +674,40 @@
         "media/yt-N7DCv0wHMzY/s13_1.jpg",
         "media/yt-N7DCv0wHMzY/s13_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1131s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1131s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "city view",
+          "laptop"
+        ],
+        "title": "Presenter speaking to camera",
+        "description": "A man with a beard and short hair, wearing a black t-shirt, sits at a white desk in front of a large window with a city view. He is speaking and gesturing with both hands while looking at a laptop.",
+        "quality": 5
+      }
     },
     {
       "idx": 14,
@@ -244,7 +722,41 @@
         "media/yt-N7DCv0wHMzY/s14_1.jpg",
         "media/yt-N7DCv0wHMzY/s14_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1267s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1267s",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "reel format",
+          "comparison",
+          "financials"
+        ],
+        "title": "Instagram Reel comparison",
+        "description": "A screenshot of an Instagram Reel comparing Airbnb and a vending machine. The video shows a man in a parking garage with text overlays detailing the financials of both options, such as property value and cash flow.",
+        "quality": 4
+      }
     },
     {
       "idx": 15,
@@ -259,7 +771,40 @@
         "media/yt-N7DCv0wHMzY/s15_1.jpg",
         "media/yt-N7DCv0wHMzY/s15_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1333s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1333s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "city view",
+          "laptop"
+        ],
+        "title": "Presenter speaking to camera",
+        "description": "A man with a beard and short hair, wearing a black t-shirt, sits at a white desk in front of a large window with a city view. He is speaking and looking at his laptop.",
+        "quality": 5
+      }
     },
     {
       "idx": 16,
@@ -274,7 +819,40 @@
         "media/yt-N7DCv0wHMzY/s16_1.jpg",
         "media/yt-N7DCv0wHMzY/s16_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1443s"
+      "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1443s",
+      "tags": {
+        "technique": [
+          "camera-move-3d"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "city view",
+          "laptop"
+        ],
+        "title": "Presenter speaking to camera",
+        "description": "A man with a beard and short hair, wearing a black t-shirt, sits at a white desk in front of a large window with a city view. He is speaking and looking at his laptop.",
+        "quality": 5
+      }
     },
     {
       "idx": 17,
@@ -292,5 +870,7 @@
       "link": "https://www.youtube.com/watch?v=N7DCv0wHMzY&t=1499s"
     }
   ],
-  "status": "ready"
+  "status": "ready",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit",
+  "tag_error": "1 scenes untagged"
 }

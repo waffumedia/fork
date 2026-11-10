@@ -1,0 +1,43 @@
+{
+  "id": "x-2110493931423121470",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2110493931423121470",
+  "native_id": "2110493931423121470",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2110493931423121470",
+  "added_at": "2026-11-10T11:30:02Z",
+  "title": "Favorite moments from the @antigenco launch video",
+  "text": "Favorite moments from the @antigenco launch video",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Wed Oct 14 22:12:18 +0000 2026",
+  "likes": 21,
+  "views": 981,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 10.9,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 10.9,
+      "t_mid": 5.45,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2110493931423121470/s00_0.jpg",
+        "media/x-2110493931423121470/s00_1.jpg",
+        "media/x-2110493931423121470/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110493931423121470"
+    }
+  ],
+  "status": "ready"
+}

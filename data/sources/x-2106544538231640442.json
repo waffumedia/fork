@@ -1,0 +1,43 @@
+{
+  "id": "x-2106544538231640442",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2106544538231640442",
+  "native_id": "2106544538231640442",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2106544538231640442",
+  "added_at": "2026-11-10T11:30:06Z",
+  "title": "Cooking something for @fomo \ud83d\udc40",
+  "text": "Cooking something for @fomo \ud83d\udc40\n\nCustom 3D UI reveal + logo animation\n\nWhat do you think?",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Sun Oct 04 00:38:50 +0000 2026",
+  "likes": 342,
+  "views": 13115,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 8.34,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 8.34,
+      "t_mid": 4.17,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2106544538231640442/s00_0.jpg",
+        "media/x-2106544538231640442/s00_1.jpg",
+        "media/x-2106544538231640442/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2106544538231640442"
+    }
+  ],
+  "status": "ready"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "x-2110469150908825843",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2110469150908825843",
+  "native_id": "2110469150908825843",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2110469150908825843",
+  "added_at": "2026-11-10T11:30:02Z",
+  "title": "Snippets from the video we made for https://bolt.new \ud83d\udcaf",
+  "text": "Snippets from the video we made for https://bolt.new \ud83d\udcaf\n\nEvery frame hand-crafted in Figma + After Effects",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Wed Oct 14 20:33:50 +0000 2026",
+  "likes": 24,
+  "views": 1047,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.21,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 1,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 7.21,
+      "t_mid": 3.61,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2110469150908825843/s00_0.jpg",
+        "media/x-2110469150908825843/s00_1.jpg",
+        "media/x-2110469150908825843/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2110469150908825843"
+    }
+  ],
+  "status": "ready"
+}

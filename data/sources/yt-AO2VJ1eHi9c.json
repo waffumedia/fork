@@ -34,7 +34,44 @@
         "media/yt-AO2VJ1eHi9c/s00_1.jpg",
         "media/yt-AO2VJ1eHi9c/s00_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=31s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=31s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +86,38 @@
         "media/yt-AO2VJ1eHi9c/s01_1.jpg",
         "media/yt-AO2VJ1eHi9c/s01_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=38s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=38s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "white",
+          "yellow"
+        ],
+        "concepts": [
+          "product description",
+          "highlighted text",
+          "dark mode"
+        ],
+        "title": "NotebookLM product page",
+        "description": "A screenshot of the NotebookLM website, showing a text-heavy page with a dark background. The key difference between NotebookLM and traditional AI chatbots is highlighted in yellow.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +132,39 @@
         "media/yt-AO2VJ1eHi9c/s02_1.jpg",
         "media/yt-AO2VJ1eHi9c/s02_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=98s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=98s",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "white",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "application interface",
+          "dark mode",
+          "notebook layout"
+        ],
+        "title": "NotebookLM interface",
+        "description": "A screenshot of the NotebookLM application interface, showing a dark-themed user interface with sections for sources, chat, studio, and notes. The layout is clean and modern.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +179,44 @@
         "media/yt-AO2VJ1eHi9c/s03_1.jpg",
         "media/yt-AO2VJ1eHi9c/s03_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=136s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=136s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +231,44 @@
         "media/yt-AO2VJ1eHi9c/s04_1.jpg",
         "media/yt-AO2VJ1eHi9c/s04_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=169s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=169s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,7 +283,41 @@
         "media/yt-AO2VJ1eHi9c/s05_1.jpg",
         "media/yt-AO2VJ1eHi9c/s05_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=197s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=197s",
+      "tags": {
+        "technique": [
+          "line-art",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "title-sequence",
+          "infographic"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "green",
+          "blue",
+          "purple"
+        ],
+        "concepts": [
+          "audio waveform",
+          "title card",
+          "dark background"
+        ],
+        "title": "NotebookLM audio overview",
+        "description": "A dark background with a title card that reads 'NotebookLM audio overview'. Below the text, there are three wavy lines in green, blue, and purple, resembling an audio waveform.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,7 +332,44 @@
         "media/yt-AO2VJ1eHi9c/s06_1.jpg",
         "media/yt-AO2VJ1eHi9c/s06_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=244s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=244s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +384,44 @@
         "media/yt-AO2VJ1eHi9c/s07_1.jpg",
         "media/yt-AO2VJ1eHi9c/s07_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=285s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=285s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -154,7 +436,44 @@
         "media/yt-AO2VJ1eHi9c/s08_1.jpg",
         "media/yt-AO2VJ1eHi9c/s08_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=317s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=317s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,7 +488,43 @@
         "media/yt-AO2VJ1eHi9c/s09_1.jpg",
         "media/yt-AO2VJ1eHi9c/s09_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=360s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=360s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "talking-head",
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "application features",
+          "split-screen demo",
+          "live-action"
+        ],
+        "title": "NotebookLM application features",
+        "description": "A split-screen view showing a live-action shot of the man on the right and a screen recording of the NotebookLM application on the left. The app interface displays features like anticipating questions and giving grounded answers.",
+        "quality": 4
+      }
     },
     {
       "idx": 10,
@@ -184,7 +539,43 @@
         "media/yt-AO2VJ1eHi9c/s10_1.jpg",
         "media/yt-AO2VJ1eHi9c/s10_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=393s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=393s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "talking-head",
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "application features",
+          "split-screen demo",
+          "live-action"
+        ],
+        "title": "NotebookLM application features",
+        "description": "A split-screen view showing a live-action shot of the man on the right and a screen recording of the NotebookLM application on the left. The app interface displays features like extracting takeaways and structuring them for learning.",
+        "quality": 4
+      }
     },
     {
       "idx": 11,
@@ -199,7 +590,43 @@
         "media/yt-AO2VJ1eHi9c/s11_1.jpg",
         "media/yt-AO2VJ1eHi9c/s11_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=437s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=437s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "talking-head",
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "application features",
+          "split-screen demo",
+          "live-action"
+        ],
+        "title": "NotebookLM application features",
+        "description": "A split-screen view showing a live-action shot of the man on the right and a screen recording of the NotebookLM application on the left. The app interface displays features like tracking milestones and visualizing discoveries.",
+        "quality": 4
+      }
     },
     {
       "idx": 12,
@@ -214,7 +641,44 @@
         "media/yt-AO2VJ1eHi9c/s12_1.jpg",
         "media/yt-AO2VJ1eHi9c/s12_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=463s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=463s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 13,
@@ -229,8 +693,46 @@
         "media/yt-AO2VJ1eHi9c/s13_1.jpg",
         "media/yt-AO2VJ1eHi9c/s13_2.jpg"
       ],
-      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=484s"
+      "link": "https://www.youtube.com/watch?v=AO2VJ1eHi9c&t=484s",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "man at desk",
+          "bookshelf background",
+          "text overlay"
+        ],
+        "title": "Man speaking at desk",
+        "description": "A man in a black t-shirt and glasses sits at a white desk with a laptop, surrounded by bookshelves. He is speaking directly to the camera in what appears to be a well-lit, organized home office setting.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

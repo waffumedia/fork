@@ -1,0 +1,71 @@
+{
+  "id": "x-2118840865158266889",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/frankoperez654/status/2118840865158266889",
+  "native_id": "2118840865158266889",
+  "author": "frankoperez654",
+  "input_url": "https://x.com/frankoperez654/status/2118840865158266889",
+  "added_at": "2026-11-10T12:47:44Z",
+  "title": "some of my favorite frames from a recent project",
+  "text": "some of my favorite frames from a recent project",
+  "author_name": "Franko Perez",
+  "posted_at": "Fri Nov 06 23:00:03 +0000 2026",
+  "likes": 2,
+  "views": 84,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 7.03,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 4,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 4.47,
+      "t_mid": 2.23,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2118840865158266889/s00_0.jpg",
+        "media/x-2118840865158266889/s00_1.jpg",
+        "media/x-2118840865158266889/s00_2.jpg"
+      ],
+      "link": "https://x.com/frankoperez654/status/2118840865158266889"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.47,
+      "t_end": 6.17,
+      "t_mid": 5.32,
+      "timestamp": "0:04",
+      "frames": [
+        "media/x-2118840865158266889/s01_0.jpg",
+        "media/x-2118840865158266889/s01_1.jpg",
+        "media/x-2118840865158266889/s01_2.jpg"
+      ],
+      "link": "https://x.com/frankoperez654/status/2118840865158266889"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 6.17,
+      "t_end": 7.03,
+      "t_mid": 6.6,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-2118840865158266889/s02_0.jpg"
+      ],
+      "link": "https://x.com/frankoperez654/status/2118840865158266889"
+    }
+  ],
+  "status": "ready"
+}

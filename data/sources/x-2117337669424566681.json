@@ -1,0 +1,43 @@
+{
+  "id": "x-2117337669424566681",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/sanzxcreates/status/2117337669424566681",
+  "native_id": "2117337669424566681",
+  "author": "sanzxcreates",
+  "input_url": "https://x.com/sanzxcreates/status/2117337669424566681",
+  "added_at": "2026-11-10T11:30:16Z",
+  "title": "Instantly lovely concept video",
+  "text": "Instantly lovely concept video",
+  "author_name": "Sanz | Motion designer",
+  "posted_at": "Mon Nov 02 19:26:53 +0000 2026",
+  "likes": 75,
+  "views": 1712,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 22.51,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 22.51,
+      "t_mid": 11.25,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2117337669424566681/s00_0.jpg",
+        "media/x-2117337669424566681/s00_1.jpg",
+        "media/x-2117337669424566681/s00_2.jpg"
+      ],
+      "link": "https://x.com/sanzxcreates/status/2117337669424566681"
+    }
+  ],
+  "status": "ready"
+}

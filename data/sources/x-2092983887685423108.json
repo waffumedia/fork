@@ -36,7 +36,44 @@
         "media/x-2092983887685423108/s00_1.jpg",
         "media/x-2092983887685423108/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092983887685423108"
+      "link": "https://x.com/NormieEdits/status/2092983887685423108",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "streetwear"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "digital collage",
+          "social media content",
+          "montage"
+        ],
+        "title": "social media collage",
+        "description": "A four-quadrant split-screen displays a montage of social media content, including profile photos, a video clip from a car, a screenshot of a financial dashboard, and a product collage, creating a dynamic digital narrative.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +86,45 @@
       "frames": [
         "media/x-2092983887685423108/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092983887685423108"
+      "link": "https://x.com/NormieEdits/status/2092983887685423108",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "text-on-path",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "editorial"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "illustration"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "timeline",
+          "planning",
+          "progression"
+        ],
+        "title": "calendar timeline",
+        "description": "A minimalist calendar layout shows a progression of years (2024-2026) and dates, with handwritten notes and icons for clothing, suggesting a narrative about planning or growth over time.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +139,44 @@
         "media/x-2092983887685423108/s02_1.jpg",
         "media/x-2092983887685423108/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092983887685423108"
+      "link": "https://x.com/NormieEdits/status/2092983887685423108",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "editorial"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "creative process",
+          "questioning",
+          "workplace"
+        ],
+        "title": "creative process",
+        "description": "A four-quadrant split-screen shows a mix of text-based questions, a cluttered workspace, a person at a computer, and a list of strategic questions, alluding to the thought process behind creative work.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +189,43 @@
       "frames": [
         "media/x-2092983887685423108/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092983887685423108"
+      "link": "https://x.com/NormieEdits/status/2092983887685423108",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "grunge",
+          "streetwear"
+        ],
+        "format": [
+          "short-film",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease",
+          "physics"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "craftsmanship",
+          "manual labor",
+          "text as overlay"
+        ],
+        "title": "screen printing",
+        "description": "A close-up shot captures hands performing a screen print, with the word 'passion' overlaid as a text element, emphasizing the craft and dedication involved in the process.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -90,7 +238,43 @@
       "frames": [
         "media/x-2092983887685423108/s04_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092983887685423108"
+      "link": "https://x.com/NormieEdits/status/2092983887685423108",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "dark-moody",
+          "cinematic",
+          "minimal"
+        ],
+        "format": [
+          "short-film",
+          "music-video"
+        ],
+        "motion": [
+          "snappy",
+          "stutter"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "personal moment",
+          "introspection",
+          "text overlay"
+        ],
+        "title": "man in bed",
+        "description": "A man with tattoos lies shirtless in bed, looking directly at the camera. The text 'i wake up' is overlaid, creating a personal and introspective moment.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -103,8 +287,45 @@
       "frames": [
         "media/x-2092983887685423108/s05_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2092983887685423108"
+      "link": "https://x.com/NormieEdits/status/2092983887685423108",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "camera-move-3d"
+        ],
+        "style": [
+          "grunge",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "short-film",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white"
+        ],
+        "concepts": [
+          "creative workspace",
+          "daily routine",
+          "text overlay"
+        ],
+        "title": "fabric warehouse",
+        "description": "A man walks through a cluttered warehouse filled with bolts of fabric. The text 'every day' is overlaid, suggesting a routine or the daily grind of a creative process.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

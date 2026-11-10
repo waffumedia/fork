@@ -4,3 +4,4 @@ node_modules
 .env*
 data/raw
 apple/build
+*.local.md

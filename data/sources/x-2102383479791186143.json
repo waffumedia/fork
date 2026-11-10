@@ -36,7 +36,45 @@
         "media/x-2102383479791186143/s00_1.jpg",
         "media/x-2102383479791186143/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2102383479791186143"
+      "link": "https://x.com/NormieEdits/status/2102383479791186143",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glitch",
+          "noise-texture",
+          "vhs"
+        ],
+        "style": [
+          "brutalist",
+          "grunge",
+          "duotone",
+          "minimal"
+        ],
+        "format": [
+          "infographic",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "text as texture",
+          "brand identity",
+          "diagram"
+        ],
+        "title": "brand identity framework",
+        "description": "A red background features a hand-drawn diagram with text and black tape elements, illustrating the components of a brand identity.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +87,43 @@
       "frames": [
         "media/x-2102383479791186143/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2102383479791186143"
+      "link": "https://x.com/NormieEdits/status/2102383479791186143",
+      "tags": {
+        "technique": [
+          "glitch",
+          "noise-texture",
+          "vhs"
+        ],
+        "style": [
+          "brutalist",
+          "grunge",
+          "duotone",
+          "minimal"
+        ],
+        "format": [
+          "infographic",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "numbered cards",
+          "text overlay",
+          "handwritten note"
+        ],
+        "title": "numbered cards with text",
+        "description": "A close-up of two black cards on a white background, one with the number 2 and another with the number 3 and the handwritten text 'per week'.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +138,45 @@
         "media/x-2102383479791186143/s02_1.jpg",
         "media/x-2102383479791186143/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2102383479791186143"
+      "link": "https://x.com/NormieEdits/status/2102383479791186143",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glitch",
+          "noise-texture",
+          "vhs"
+        ],
+        "style": [
+          "brutalist",
+          "grunge",
+          "duotone",
+          "minimal"
+        ],
+        "format": [
+          "infographic",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "social media collage",
+          "text overlay",
+          "brand identity"
+        ],
+        "title": "social media content collage",
+        "description": "A red background displays a collage of social media posts, with the text 'STRATEGY POSITIONING DESIGN DECISIONS' overlaid.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +189,44 @@
       "frames": [
         "media/x-2102383479791186143/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2102383479791186143"
+      "link": "https://x.com/NormieEdits/status/2102383479791186143",
+      "tags": {
+        "technique": [
+          "glitch",
+          "noise-texture",
+          "vhs"
+        ],
+        "style": [
+          "brutalist",
+          "grunge",
+          "duotone",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "talking head",
+          "text overlay",
+          "brand identity"
+        ],
+        "title": "talking head with text overlay",
+        "description": "A man speaks to the camera in a blue-lit room, with text on the left side listing 'Deliverables' and their components.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +241,45 @@
         "media/x-2102383479791186143/s04_1.jpg",
         "media/x-2102383479791186143/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2102383479791186143"
+      "link": "https://x.com/NormieEdits/status/2102383479791186143",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glitch",
+          "noise-texture",
+          "vhs"
+        ],
+        "style": [
+          "brutalist",
+          "grunge",
+          "duotone",
+          "minimal"
+        ],
+        "format": [
+          "infographic",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "cost comparison",
+          "split-screen",
+          "text overlay"
+        ],
+        "title": "deliverables cost comparison",
+        "description": "A split-screen graphic compares the costs of deliverables for a 'Studio' and a 'Client', showing \u00a315,000 and \u00a35,000 respectively.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -107,8 +294,46 @@
         "media/x-2102383479791186143/s05_1.jpg",
         "media/x-2102383479791186143/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2102383479791186143"
+      "link": "https://x.com/NormieEdits/status/2102383479791186143",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glitch",
+          "noise-texture",
+          "vhs"
+        ],
+        "style": [
+          "brutalist",
+          "grunge",
+          "duotone",
+          "minimal"
+        ],
+        "format": [
+          "infographic",
+          "tutorial"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "list of deliverables",
+          "text overlay",
+          "brand identity"
+        ],
+        "title": "deliverables list",
+        "description": "A clean white background displays a list of deliverables including 'LOGO', 'COLOURS', 'TYPOGRAPHY', and 'GUIDELINES' with a price of \u00a315,000.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

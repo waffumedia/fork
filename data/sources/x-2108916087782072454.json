@@ -36,7 +36,46 @@
         "media/x-2108916087782072454/s00_1.jpg",
         "media/x-2108916087782072454/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2108916087782072454"
+      "link": "https://x.com/NormieEdits/status/2108916087782072454",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "glow-bloom",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "cyberpunk",
+          "neon"
+        ],
+        "format": [
+          "showreel",
+          "social-reel",
+          "vsl"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "neon-palette"
+        ],
+        "concepts": [
+          "digital information overload",
+          "social media montage",
+          "news feed collage"
+        ],
+        "title": "social media content collage",
+        "description": "A dark, minimalist composition featuring a split-screen display of various social media posts and news clips, including a tweet about Iran, a Bitcoin price update, and a financial news broadcast, creating a modern, information-dense visual.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,8 +90,49 @@
         "media/x-2108916087782072454/s01_1.jpg",
         "media/x-2108916087782072454/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2108916087782072454"
+      "link": "https://x.com/NormieEdits/status/2108916087782072454",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "glow-bloom",
+          "volumetric-light",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "neon",
+          "dark-moody"
+        ],
+        "format": [
+          "product-promo",
+          "brand-ad",
+          "ui-demo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects",
+          "blender"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "neon-palette"
+        ],
+        "concepts": [
+          "digital connection",
+          "blockchain technology",
+          "app interface"
+        ],
+        "title": "blockchain app interface",
+        "description": "A sleek, dark-themed smartphone displays a blockchain application interface, with a glowing blue logo above it connected by a beam of light, suggesting a digital connection or data transfer.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

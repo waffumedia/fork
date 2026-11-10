@@ -36,7 +36,44 @@
         "media/x-2100481567436992783/s00_1.jpg",
         "media/x-2100481567436992783/s00_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2100481567436992783"
+      "link": "https://x.com/everygen_ai/status/2100481567436992783",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "collage",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "apple-style",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "ai-video"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "video thumbnails",
+          "security footage",
+          "smart home interface"
+        ],
+        "title": "Scanning videos grid",
+        "description": "A grid of five video thumbnails, each showing a different scene, likely from a security camera or smart device. The central thumbnail features a dog wearing sunglasses and a gold chain, while others show a person at a door, a German Shepherd, and a monkey. The layout is clean and modern, suggesting a user interface for viewing recorded footage.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,8 +88,46 @@
         "media/x-2100481567436992783/s01_1.jpg",
         "media/x-2100481567436992783/s01_2.jpg"
       ],
-      "link": "https://x.com/everygen_ai/status/2100481567436992783"
+      "link": "https://x.com/everygen_ai/status/2100481567436992783",
+      "tags": {
+        "technique": [
+          "ai-generated",
+          "glitch",
+          "overlay-graphics"
+        ],
+        "style": [
+          "surreal",
+          "vaporwave",
+          "meme"
+        ],
+        "format": [
+          "social-reel",
+          "short-film"
+        ],
+        "motion": [
+          "stutter",
+          "chaotic"
+        ],
+        "medium": [
+          "ai-video",
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "impossible physics",
+          "social media engagement",
+          "digital art"
+        ],
+        "title": "Man floating in sky",
+        "description": "A man appears to be floating or jumping high in the air against a clear blue sky. The image is framed like a vertical social media post, with engagement metrics visible on the right side. The scene has a surreal quality, suggesting it is either digitally manipulated or AI-generated.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -1,0 +1,58 @@
+{
+  "id": "x-2113005072716030071",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/bohdanmotion/status/2113005072716030071",
+  "native_id": "2113005072716030071",
+  "author": "bohdanmotion",
+  "input_url": "https://x.com/bohdanmotion/status/2113005072716030071",
+  "added_at": "2026-11-10T11:29:58Z",
+  "title": "Astor 2.0 launch video",
+  "text": "Astor 2.0 launch video\n\nDid we cook?",
+  "author_name": "Bohdan Motion",
+  "posted_at": "Wed Oct 21 20:30:41 +0000 2026",
+  "likes": 162,
+  "views": 4464,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 13.61,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 2,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 4.68,
+      "t_mid": 2.34,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-2113005072716030071/s00_0.jpg",
+        "media/x-2113005072716030071/s00_1.jpg",
+        "media/x-2113005072716030071/s00_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2113005072716030071"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.68,
+      "t_end": 13.61,
+      "t_mid": 9.15,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-2113005072716030071/s01_0.jpg",
+        "media/x-2113005072716030071/s01_1.jpg",
+        "media/x-2113005072716030071/s01_2.jpg"
+      ],
+      "link": "https://x.com/bohdanmotion/status/2113005072716030071"
+    }
+  ],
+  "status": "ready"
+}

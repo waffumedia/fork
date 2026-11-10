@@ -36,7 +36,46 @@
         "media/x-2100216931681010089/s00_1.jpg",
         "media/x-2100216931681010089/s00_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "screen-recording",
+          "freeze-frame"
+        ],
+        "style": [
+          "corporate-clean",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "man speaking",
+          "desk setup",
+          "brand graphics"
+        ],
+        "title": "man speaking at desk",
+        "description": "A man in a black t-shirt speaks into a microphone while sitting at a desk with a laptop. The scene is a talking-head shot with branded graphics for 'Claude Code' and 'Shopify' overlaid, indicating a product promotion.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +90,44 @@
         "media/x-2100216931681010089/s01_1.jpg",
         "media/x-2100216931681010089/s01_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording",
+          "data-viz"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "green",
+          "orange"
+        ],
+        "concepts": [
+          "mobile app",
+          "sales dashboard",
+          "data visualization"
+        ],
+        "title": "mobile app dashboard",
+        "description": "A close-up of a smartphone screen displaying a mobile application interface with sales data. The app features a clean, modern design with a line graph and key metrics, set against a stylized background.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +142,44 @@
         "media/x-2100216931681010089/s02_1.jpg",
         "media/x-2100216931681010089/s02_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "corporate-clean",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "man speaking",
+          "desk setup",
+          "tutorial"
+        ],
+        "title": "man speaking at desk",
+        "description": "A man in a black t-shirt speaks into a microphone while sitting at a desk with a laptop. This is a talking-head shot, likely from a tutorial or explainer video.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +194,42 @@
         "media/x-2100216931681010089/s03_1.jpg",
         "media/x-2100216931681010089/s03_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "dark-moody"
+        ],
+        "format": [
+          "title-sequence",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "animated text",
+          "step-by-step",
+          "process"
+        ],
+        "title": "animated text on dark background",
+        "description": "A minimalist animation shows a blue number '1' followed by the text 'Find a product' on a dark background. The elements are connected by a curved line, suggesting a step in a process.",
+        "quality": 5
+      }
     },
     {
       "idx": 4,
@@ -96,7 +244,44 @@
         "media/x-2100216931681010089/s04_1.jpg",
         "media/x-2100216931681010089/s04_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "corporate-clean",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "man speaking",
+          "desk setup",
+          "tutorial"
+        ],
+        "title": "man speaking at desk",
+        "description": "A man in a black t-shirt speaks into a microphone while sitting at a desk with a laptop. This is a talking-head shot, likely from a tutorial or explainer video.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +296,41 @@
         "media/x-2100216931681010089/s05_1.jpg",
         "media/x-2100216931681010089/s05_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "dark-moody"
+        ],
+        "format": [
+          "explainer",
+          "title-sequence"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "filing cabinet",
+          "labeled drawers",
+          "3d object"
+        ],
+        "title": "filing cabinet with labels",
+        "description": "A dark grey filing cabinet is shown against a black background. The top drawer is open, revealing a green label that says 'CRITERIA 1'. This is a stylized 3D-rendered object.",
+        "quality": 5
+      }
     },
     {
       "idx": 6,
@@ -126,7 +345,44 @@
         "media/x-2100216931681010089/s06_1.jpg",
         "media/x-2100216931681010089/s06_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "corporate-clean",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "man speaking",
+          "desk setup",
+          "tutorial"
+        ],
+        "title": "man speaking at desk",
+        "description": "A man in a black t-shirt speaks into a microphone while sitting at a desk with a laptop. This is a talking-head shot, likely from a tutorial or explainer video.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -141,8 +397,43 @@
         "media/x-2100216931681010089/s07_1.jpg",
         "media/x-2100216931681010089/s07_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2100216931681010089"
+      "link": "https://x.com/xarrfx/status/2100216931681010089",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "dark-moody"
+        ],
+        "format": [
+          "explainer",
+          "title-sequence"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "filing cabinet",
+          "brand logos",
+          "3d object"
+        ],
+        "title": "filing cabinet with logos",
+        "description": "A dark grey filing cabinet is shown. The top drawer is open, revealing a green label that says 'RECENTLY TRENDING'. Inside the drawer are three logos: X, Walmart, and Target. This is a stylized 3D-rendered object.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

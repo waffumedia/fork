@@ -36,8 +36,47 @@
         "media/x-2091531019430281431/s00_1.jpg",
         "media/x-2091531019430281431/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2091531019430281431"
+      "link": "https://x.com/NormieEdits/status/2091531019430281431",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "text-on-path",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "timeline visualization",
+          "numbered sequence",
+          "highlighted selection"
+        ],
+        "title": "numbered day blocks",
+        "description": "A minimalist graphic showing a sequence of numbered blocks, with the first three highlighted and labeled 'another three days', suggesting a timeline or countdown. The design uses a clean, geometric layout with a stark contrast between the grey highlighted blocks and the black blocks below.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }
