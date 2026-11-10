@@ -2,11 +2,12 @@ import SwiftUI
 import Observation
 
 enum Section: String, CaseIterable, Identifiable {
-    case today = "Today", map = "Map", library = "Library", history = "History", settings = "Settings"
+    case today = "Today", boards = "Boards", map = "Map", library = "Library", history = "History", settings = "Settings"
     var id: String { rawValue }
     var symbol: String {
         switch self {
         case .today: "square.stack"
+        case .boards: "rectangle.3.group"
         case .map: "point.3.connected.trianglepath.dotted"
         case .library: "square.grid.2x2"
         case .history: "clock"
@@ -69,6 +70,7 @@ struct RootView: View {
     @ViewBuilder private func screen(_ section: Section) -> some View {
         switch section {
         case .today: TodayView()
+        case .boards: BoardsView()
         case .map: MapView()
         case .library: LibraryView()
         case .history: HistoryView()

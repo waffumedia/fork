@@ -90,3 +90,27 @@ Both **BUILD SUCCEEDED**. Logs: `apple/build-ios.log`, `apple/build-macos.log`. 
 CoreSimulator still fails at `xcrun simctl list devices available` with connection invalid / connection refused and no runtime discovery. Evidence: `apple/simulator.log`. Could not launch or capture screenshots, so rendered appearance and label readability still need owner-side simulator QC. No foreground app control was used. No commits. Existing changes outside apple were left alone apart from this requested handoff append.
 
 Final `python3 apple/Checks/run.py`: **PASS**. Fresh computations matched exactly; the circular cloud had no collapsed pairs and four-fold grid bias 0.00936 (limit 0.2). Live snapshot: 787 scenes / 133 sources; liked Ideas 244 nodes / 2,878 edges; liked Full 560 nodes / 4,380 edges. Both modes/focus, cache, decoding, image fetch, Library search/tag, scene/source, deep-link URL and 401 handling passed. The 900-node / 4,000-edge / 1,000-iteration Debug layout took 20.49 seconds. Log: `apple/smoke.log`. Numerical checks do not replace rendered simulator QC. `git diff --check -- apple context/sol-native.md` passed.
+
+## Round 3
+
+Implemented UX spec section 8, Boards, under `apple/`. This handoff append is the only authored change outside that directory. No commits; unrelated concurrent working-tree changes were left alone.
+
+- Added Boards between Today and Map in the iOS tabs and macOS sidebar. Accounts/Videos segmented index supports search, pull-to-refresh and Refresh, loading/error/empty states, account 2×2 cover collages and post/scene counts, video covers/titles/authors/notes.
+- Added live Codable board models and deterministic frame geometry in `BoardModels.swift`; the UI is in `BoardsView.swift`. Account frames wrap in a grid, video boards use the server's single frame. Light grey canvas, white rounded frames, post title, italic note, heart/cross verdict, Open link, horizontal scene cards, timestamp/title, scene detail sheets, board title/subtitle/profile link, pan/pinch, macOS wheel zoom, zoom buttons and Fit.
+- Below absolute canvas scale 0.45, one Canvas draws simple card rectangles with no SwiftUI card views or image tasks. Above it, only viewport-intersecting frames, headers and cards instantiate detail views. Thumbnails load lazily, downsample off-main to 480 pixels (320 for account collage cells), and share the bounded 80 MB decoded-image cache. Layout is computed once per response rather than during gestures.
+- Source detail has a Board button for its video. Author names in Today, History, scene/source details and video index tiles open account boards. Existing source navigation, voting, swipe actions and scene details remain.
+- Inspected both requested live endpoints with curl and credentials read from `.env.local`, without printing the token. NormieEdits has 91 groups / 413 scenes. Five scene timestamps are null; decoding handles them and cards use the existing 0:00 fallback. Quality is optional numeric data.
+- The API emits absolute media URLs using the public Tailscale hostname. URLSession failed TLS against that hostname here. `APIClient.imageRequest` now resolves `/api/media/` paths through the configured server, so a localhost connection also fetches its images locally. Other image URLs retain their supplied host. Credentials continue to be sent only to the configured origin.
+
+Final acceptance commands ran sequentially from `apple/`:
+
+```sh
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+```
+
+Both **BUILD SUCCEEDED**. Logs: `apple/build-ios.log`, `apple/build-macos.log`. No Swift compiler warnings/errors; existing CoreSimulator diagnostics and the unused AppIntents metadata warning remain. Generated project includes both new files. Credential scan found no token anywhere under `apple/`.
+
+`xcrun simctl list devices available` still fails with CoreSimulatorService connection invalid/refused; evidence is in `apple/simulator.log`. No simulator launch, rendered screenshots or interactive smoothness/gesture check was possible, and no foreground app/browser control was used. Viewport culling and level-of-detail behavior are implemented, but device frame rate remains an owner-side check.
+
+Final `python3 apple/Checks/run.py`: **PASS**. Read-only live checks decoded the index and both board kinds, confirmed NormieEdits 91 groups / 413 scenes, checked nonoverlapping frames and card containment, and resolved a board scene through the existing detail endpoint. Existing Library search/tag, source/scene membership, image HTTP fetch, deep-link URL, graph modes/focus/cache/determinism/cloud/scale and 401 checks all passed. Snapshot: 787 scenes / 133 sources; liked Ideas 244 nodes / 2,878 edges; liked Full 560 nodes / 4,380 edges. Synthetic 900-node layout: 18.05 seconds in Debug. Log: `apple/smoke.log`. `git diff --check -- apple context/sol-native.md` passed.

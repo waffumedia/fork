@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		33062B3463BA12FEB427004E /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E71848AA0D0B390CB1B0FCAF /* TodayView.swift */; };
 		4570C35282A169BBAB231884 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CC96BCDBBFFA52EA8B8C4D0 /* HistoryView.swift */; };
+		6398E10F41D50AEBC64EF791 /* BoardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C721B704522DC0D634BB13 /* BoardsView.swift */; };
 		6BE003ED93C6D2BD99143550 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C559C53AFD1D92FF9526C4E9 /* APIClient.swift */; };
 		73C7E6D9DD1E674DB84FB098 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF95DF544ADB59A0B1E65AA /* MapView.swift */; };
 		7A04FE8F0735440F0A682AD0 /* GraphLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3E18B5CBD714A6199E089550 /* GraphLayout.swift */; };
@@ -16,12 +17,14 @@
 		99F7F6CD8B7D46E4C0E4BD38 /* LibraryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA3D26B812D07B8C0235CEC7 /* LibraryView.swift */; };
 		9A76F75AE8197E73B1B47212 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F57292D3D6DF4C9408A83D4 /* Models.swift */; };
 		B6E7A6FDA7038CF616710E86 /* ForkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC16AD43823143F2C47B9742 /* ForkApp.swift */; };
+		B906D598227C78738FFD3615 /* BoardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447BCE7354FD399323E826C /* BoardModels.swift */; };
 		E23BDBEC35DCFBE7B5C153BE /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0664219C08B73D5A314145D /* Images.swift */; };
 		E4797769DB042656EA6C5718 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CDDD86108B2C13B67E3A3953 /* SettingsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1CC96BCDBBFFA52EA8B8C4D0 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		31C721B704522DC0D634BB13 /* BoardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsView.swift; sourceTree = "<group>"; };
 		3AF95DF544ADB59A0B1E65AA /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		3E18B5CBD714A6199E089550 /* GraphLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphLayout.swift; sourceTree = "<group>"; };
 		51C3937C756F32CDE516BB2A /* Fork.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = Fork.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,6 +36,7 @@
 		DC16AD43823143F2C47B9742 /* ForkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForkApp.swift; sourceTree = "<group>"; };
 		E71848AA0D0B390CB1B0FCAF /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
 		EA3D26B812D07B8C0235CEC7 /* LibraryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryView.swift; sourceTree = "<group>"; };
+		F447BCE7354FD399323E826C /* BoardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModels.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -56,6 +60,8 @@
 			isa = PBXGroup;
 			children = (
 				C559C53AFD1D92FF9526C4E9 /* APIClient.swift */,
+				F447BCE7354FD399323E826C /* BoardModels.swift */,
+				31C721B704522DC0D634BB13 /* BoardsView.swift */,
 				DAB20BFA4CE4F61D30339A3B /* DetailViews.swift */,
 				DC16AD43823143F2C47B9742 /* ForkApp.swift */,
 				3E18B5CBD714A6199E089550 /* GraphLayout.swift */,
@@ -130,6 +136,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				6BE003ED93C6D2BD99143550 /* APIClient.swift in Sources */,
+				B906D598227C78738FFD3615 /* BoardModels.swift in Sources */,
+				6398E10F41D50AEBC64EF791 /* BoardsView.swift in Sources */,
 				87F9326D73D0273852B9AF9D /* DetailViews.swift in Sources */,
 				B6E7A6FDA7038CF616710E86 /* ForkApp.swift in Sources */,
 				7A04FE8F0735440F0A682AD0 /* GraphLayout.swift in Sources */,

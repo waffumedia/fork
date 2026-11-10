@@ -1,45 +1,45 @@
-2026-11-10 06:13:10.945 xcodebuild[24334:13253031]  DVTFilePathFSEvents: Failed to start fs event stream.
-Command line invocation:
-    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Fork.xcodeproj -scheme Fork -destination platform=macOS build
-
-2026-11-10 06:13:12.569 xcodebuild[24334:13253710] CoreSimulatorService connection became invalid.  Simulator services will no longer be available.
-2026-11-10 06:13:12.571 xcodebuild[24334:13253710] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
+2026-11-10 07:52:24.727 xcodebuild[89408:14130997]  DVTFilePathFSEvents: Failed to start fs event stream.
+2026-11-10 07:52:25.460 xcodebuild[89408:14130998] CoreSimulatorService connection became invalid.  Simulator services will no longer be available.
+2026-11-10 07:52:25.461 xcodebuild[89408:14131111] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
 	"XPCErrorDescription" => <string: 0x1f7a39730> { string cache = 0x0, length = 18, contents = "Connection invalid" }
 }>
-2026-11-10 06:13:12.572 xcodebuild[24334:13253740] Error opening log file (/Users/waffu/Library/Logs/CoreSimulator/CoreSimulator.com.apple.dt.xcodebuild.log): Operation not permitted
+2026-11-10 07:52:25.461 xcodebuild[89408:14131111] Error opening log file (/Users/waffu/Library/Logs/CoreSimulator/CoreSimulator.com.apple.dt.xcodebuild.log): Operation not permitted
 [-[SimServiceContext sendRequest:]:1751] ERROR : Unable to deliver request ({
     "developer_dir" = "/Applications/Xcode.app/Contents/Developer";
     request = "set_developer_dir";
 }) because we are not connected to CoreSimulatorService.
-2026-11-10 06:13:12.636 xcodebuild[24334:13252984] [MT] DVTAssertions: Warning in DVTFrameworks/DVTFoundation/FileTypes/DVTFileDataTypeDetection.m:80
-Details:  detectedTypeIdentifier (com.apple.binary-property-list) does not conform to matchedTypeIdentifier in MagicFileDataTypeDetector extenson com.apple.property-list. When both are specified, this conformance is required unless overridden by setting allowNonInheritance. extension.identifier:Xcode.MagicFileDataTypeDetector.BinaryPlist
-Object:   <DVTFileDataTypeDetectionMagicCache: 0x84a778270>
-Method:   -initWithExtension:
-Thread:   <_NSMainThread: 0x1056e6190>{number = 1, name = main}
-Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
-2026-11-10 06:13:12.645 xcodebuild[24334:13252984] [MT] DVTAssertions: Warning in DVTFrameworks/DVTFoundation/FileTypes/DVTFileDataTypeDetection.m:80
+Command line invocation:
+    /Applications/Xcode.app/Contents/Developer/usr/bin/xcodebuild -project Fork.xcodeproj -scheme Fork -destination platform=macOS build
+
+2026-11-10 07:52:25.532 xcodebuild[89408:14130996] [MT] DVTAssertions: Warning in DVTFrameworks/DVTFoundation/FileTypes/DVTFileDataTypeDetection.m:80
 Details:  detectedTypeIdentifier (com.apple.xml-property-list) does not conform to matchedTypeIdentifier in MagicFileDataTypeDetector extenson com.apple.property-list. When both are specified, this conformance is required unless overridden by setting allowNonInheritance. extension.identifier:Xcode.MagicFileDataTypeDetector.XMLPlist
-Object:   <DVTFileDataTypeDetectionMagicCache: 0x84a779890>
+Object:   <DVTFileDataTypeDetectionMagicCache: 0xc416f16e0>
 Method:   -initWithExtension:
-Thread:   <_NSMainThread: 0x1056e6190>{number = 1, name = main}
+Thread:   <_NSMainThread: 0x10295a210>{number = 1, name = main}
+Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
+2026-11-10 07:52:25.539 xcodebuild[89408:14130996] [MT] DVTAssertions: Warning in DVTFrameworks/DVTFoundation/FileTypes/DVTFileDataTypeDetection.m:80
+Details:  detectedTypeIdentifier (com.apple.binary-property-list) does not conform to matchedTypeIdentifier in MagicFileDataTypeDetector extenson com.apple.property-list. When both are specified, this conformance is required unless overridden by setting allowNonInheritance. extension.identifier:Xcode.MagicFileDataTypeDetector.BinaryPlist
+Object:   <DVTFileDataTypeDetectionMagicCache: 0xc416f29a0>
+Method:   -initWithExtension:
+Thread:   <_NSMainThread: 0x10295a210>{number = 1, name = main}
 Please file a bug at https://feedbackassistant.apple.com with this warning message and any useful information you can provide.
 [-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
 [-[SimDiskImageManager init]:175] ERROR : Could not kickstart simdiskimaged; SimDiskImageManager services will not be available: Error Domain=NSPOSIXErrorDomain Code=53 "Software caused connection abort" UserInfo={NSLocalizedDescription=Error returned in reply from CoreSimulatorService: Connection invalid}
 [-[SimDiskImageManager _onQueue_checkConnection:]:239] ERROR : simdiskimaged returned error (invalid), marking disconnected.
-[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
 [-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
     request = "notification_subscription";
     "set_path" = "/Users/waffu/Library/Developer/CoreSimulator/Devices";
 }) because we are not connected to CoreSimulatorService.
-[-[SimDiskImageManager _onQueue_checkConnection:]:239] ERROR : simdiskimaged returned error (invalid), marking disconnected.
-2026-11-10 06:13:12.897 xcodebuild[24334:13253032] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
+2026-11-10 07:52:25.576 xcodebuild[89408:14131111] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
+[-[SimDiskImageManager _onQueue_checkConnection:]:219] ERROR : simdiskimaged connection is currently unavailable because connection became invalid
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=409 "Cannot talk to the service used to manage runtime disk images (simdiskimaged) because its launchd job is not registered or was unloaded" UserInfo={NSLocalizedDescription=Cannot talk to the service used to manage runtime disk images (simdiskimaged) because its launchd job is not registered or was unloaded}
+2026-11-10 07:52:25.577 xcodebuild[89408:14131111]  iOSSimulator: [SimServiceContext defaultDeviceSetWithError:] returned nil (Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedFailureReason=Failed to subscribe to notifications from CoreSimulatorService., NSLocalizedDescription=Failed to initialize simulator device set., NSUnderlyingError=0xc42f3b7e0 {Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}}}). Simulator device support disabled.
+2026-11-10 07:52:25.580 xcodebuild[89408:14130997] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
+2026-11-10 07:52:25.581 xcodebuild[89408:14130997]  IDESimulatorAvailability: startObservingSimulatorUpdates() FAILED to register SimDeviceSet observer
 [-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
     request = "notification_subscription";
     "set_path" = "/Users/waffu/Library/Developer/CoreSimulator/Devices";
 }) because we are not connected to CoreSimulatorService.
-2026-11-10 06:13:12.900 xcodebuild[24334:13253032]  iOSSimulator: [SimServiceContext defaultDeviceSetWithError:] returned nil (Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedFailureReason=Failed to subscribe to notifications from CoreSimulatorService., NSLocalizedDescription=Failed to initialize simulator device set., NSUnderlyingError=0x8496a87b0 {Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}}}). Simulator device support disabled.
-2026-11-10 06:13:12.900 xcodebuild[24334:13253707] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
-2026-11-10 06:13:12.947 xcodebuild[24334:13253707]  IDESimulatorAvailability: startObservingSimulatorUpdates() FAILED to register SimDeviceSet observer
 --- xcodebuild: WARNING: Using the first of multiple matching destinations:
 { platform:macOS, arch:arm64, id:00006050-000319611E31401C, name:My Mac }
 { platform:macOS, arch:x86_64, id:00006050-000319611E31401C, name:My Mac }
@@ -68,16 +68,12 @@ ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeD
 
 ExecuteExternalTool /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/ld -version_details
 
-Build description signature: fc678303bb1332084123846bacc6331f
-Build description path: /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/XCBuildData/fc678303bb1332084123846bacc6331f.xcbuilddata
+Build description signature: fcb30af36be5b4f8bb5e7697462dfeb6
+Build description path: /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/XCBuildData/fcb30af36be5b4f8bb5e7697462dfeb6.xcbuilddata
 ClangStatCache /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk /Users/waffu/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.5-25F70-e082c4a02f00227109f4ed75e425c832.sdkstatcache
     cd /Users/waffu/Claude/inspo/apple/Fork.xcodeproj
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang-stat-cache /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -o /Users/waffu/Library/Developer/Xcode/DerivedData/SDKStatCaches.noindex/macosx26.5-25F70-e082c4a02f00227109f4ed75e425c832.sdkstatcache
 Failed to create FS event stream. Considering the cache up-to-date.
-
-Ld /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/__preview.dylib normal (in target 'Fork' from project 'Fork')
-    cd /Users/waffu/Claude/inspo/apple
-    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -Xlinker -reproducible -target arm64-apple-macos26.0 -dynamiclib -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk -O0 -L/Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug -F/Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug -install_name @rpath/Fork.debug.dylib -rdynamic -Xlinker -no_deduplicate -Xlinker -dependency_info -Xlinker /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork_dependency_info.dat -Xlinker -no_adhoc_codesign -o /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/__preview.dylib
 
 ProcessInfoPlistFile /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/Info.plist /Users/waffu/Claude/inspo/apple/Info.plist (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
@@ -91,18 +87,34 @@ SwiftEmitModule normal arm64 Emitting\ module\ for\ Fork (in target 'Fork' from 
 
 EmitSwiftModule normal arm64 (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
-    
 
-SwiftCompile normal arm64 Compiling\ MapView.swift /Users/waffu/Claude/inspo/apple/Fork/MapView.swift (in target 'Fork' from project 'Fork')
-SwiftCompile normal arm64 /Users/waffu/Claude/inspo/apple/Fork/MapView.swift (in target 'Fork' from project 'Fork')
+
+SwiftCompile normal arm64 Compiling\ DetailViews.swift /Users/waffu/Claude/inspo/apple/Fork/DetailViews.swift (in target 'Fork' from project 'Fork')
+SwiftCompile normal arm64 /Users/waffu/Claude/inspo/apple/Fork/DetailViews.swift (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
-    
 
-SwiftCompile normal arm64 Compiling\ GraphLayout.swift /Users/waffu/Claude/inspo/apple/Fork/GraphLayout.swift (in target 'Fork' from project 'Fork')
 
-SwiftCompile normal arm64 /Users/waffu/Claude/inspo/apple/Fork/GraphLayout.swift (in target 'Fork' from project 'Fork')
+SwiftCompile normal arm64 Compiling\ APIClient.swift /Users/waffu/Claude/inspo/apple/Fork/APIClient.swift (in target 'Fork' from project 'Fork')
+
+SwiftCompile normal arm64 /Users/waffu/Claude/inspo/apple/Fork/APIClient.swift (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
-    
+
+
+SwiftCompile normal arm64 Compiling\ BoardsView.swift /Users/waffu/Claude/inspo/apple/Fork/BoardsView.swift (in target 'Fork' from project 'Fork')
+
+SwiftCompile normal arm64 /Users/waffu/Claude/inspo/apple/Fork/BoardsView.swift (in target 'Fork' from project 'Fork')
+    cd /Users/waffu/Claude/inspo/apple
+
+
+SwiftCompile normal arm64 Compiling\ BoardModels.swift /Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift (in target 'Fork' from project 'Fork')
+
+SwiftCompile normal arm64 /Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift (in target 'Fork' from project 'Fork')
+    cd /Users/waffu/Claude/inspo/apple
+
+
+SwiftDriverJobDiscovery normal arm64 Compiling BoardModels.swift (in target 'Fork' from project 'Fork')
+
+SwiftDriverJobDiscovery normal arm64 Compiling APIClient.swift (in target 'Fork' from project 'Fork')
 
 SwiftDriverJobDiscovery normal arm64 Emitting module for Fork (in target 'Fork' from project 'Fork')
 
@@ -114,25 +126,17 @@ Copy /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjx
     cd /Users/waffu/Claude/inspo/apple
     builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.swiftsourceinfo /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.swiftmodule/Project/arm64-apple-macos.swiftsourceinfo
 
-Copy /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.swiftmodule/arm64-apple-macos.abi.json /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.abi.json (in target 'Fork' from project 'Fork')
-    cd /Users/waffu/Claude/inspo/apple
-    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.abi.json /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.swiftmodule/arm64-apple-macos.abi.json
-
 Copy /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.swiftmodule/arm64-apple-macos.swiftmodule /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.swiftmodule (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
     builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.swiftmodule /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.swiftmodule/arm64-apple-macos.swiftmodule
 
-SwiftDriverJobDiscovery normal arm64 Compiling GraphLayout.swift (in target 'Fork' from project 'Fork')
-
-SwiftDriverJobDiscovery normal arm64 Compiling MapView.swift (in target 'Fork' from project 'Fork')
-
-SwiftCompile normal arm64 Compiling\ ForkApp.swift /Users/waffu/Claude/inspo/apple/Fork/ForkApp.swift (in target 'Fork' from project 'Fork')
-
-SwiftCompile normal arm64 /Users/waffu/Claude/inspo/apple/Fork/ForkApp.swift (in target 'Fork' from project 'Fork')
+Copy /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.swiftmodule/arm64-apple-macos.abi.json /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.abi.json (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
-    
+    builtin-copy -exclude .DS_Store -exclude CVS -exclude .svn -exclude .git -exclude .hg -resolve-src-symlinks -rename /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.abi.json /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.swiftmodule/arm64-apple-macos.abi.json
 
-SwiftDriverJobDiscovery normal arm64 Compiling ForkApp.swift (in target 'Fork' from project 'Fork')
+SwiftDriverJobDiscovery normal arm64 Compiling BoardsView.swift (in target 'Fork' from project 'Fork')
+
+SwiftDriverJobDiscovery normal arm64 Compiling DetailViews.swift (in target 'Fork' from project 'Fork')
 
 SwiftDriver\ Compilation Fork normal arm64 com.apple.xcode.tools.swift.compiler (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
@@ -154,8 +158,8 @@ Ld /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwr
 ExtractAppIntentsMetadata (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
     /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/appintentsmetadataprocessor --toolchain-dir /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain --module-name Fork --sdk-root /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX26.5.sdk --xcode-version 17F113 --platform-family macOS --deployment-target 26.0 --bundle-identifier com.waffu.fork --output /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/Resources --target-triple arm64-apple-macos26.0 --binary-file /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/Fork --dependency-file /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork_dependency_info.dat --stringsdata-file /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/ExtractedAppShortcutsMetadata.stringsdata --source-file-list /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.SwiftFileList --metadata-file-list /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Fork.DependencyMetadataFileList --static-metadata-file-list /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Fork.DependencyStaticMetadataFileList --swift-const-vals-list /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Objects-normal/arm64/Fork.SwiftConstValuesFileList --compile-time-extraction --deployment-aware-processing --validate-assistant-intents --no-app-shortcuts-localization
-2026-11-10 06:13:19.166 appintentsmetadataprocessor[24522:13255257] Starting appintentsmetadataprocessor export
-2026-11-10 06:13:19.172 appintentsmetadataprocessor[24522:13255257] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+2026-11-10 07:52:28.749 appintentsmetadataprocessor[89505:14131580] Starting appintentsmetadataprocessor export
+2026-11-10 07:52:28.750 appintentsmetadataprocessor[89505:14131580] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
 
 CopySwiftLibs /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
@@ -163,23 +167,24 @@ CopySwiftLibs /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhs
 
 CodeSign /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/Fork.debug.dylib (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
-    
+
     Signing Identity:     "Sign to Run Locally"
-    
+
     /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/Fork.debug.dylib
 
 CodeSign /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/__preview.dylib (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
-    
+
     Signing Identity:     "Sign to Run Locally"
-    
+
     /usr/bin/codesign --force --sign - --timestamp\=none --generate-entitlement-der /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/__preview.dylib
+/Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app/Contents/MacOS/__preview.dylib: replacing existing signature
 
 CodeSign /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app (in target 'Fork' from project 'Fork')
     cd /Users/waffu/Claude/inspo/apple
-    
+
     Signing Identity:     "Sign to Run Locally"
-    
+
     /usr/bin/codesign --force --sign - --entitlements /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Intermediates.noindex/Fork.build/Debug/Fork.build/Fork.app.xcent --timestamp\=none --generate-entitlement-der /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app
 
 Validate /Users/waffu/Library/Developer/Xcode/DerivedData/Fork-bdjxjpzsmbhsbrgimtgjxwrwtens/Build/Products/Debug/Fork.app (in target 'Fork' from project 'Fork')

@@ -1,0 +1,2776 @@
+Reading additional input from stdin...
+2026-11-10T12:49:13.088234Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:23373/v0/mcp)")))
+2026-11-10T12:49:13.088235Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:8420/mcp)")))
+OpenAI Codex v0.166.0-alpha.6
+--------
+workdir: /Users/waffu/Claude/inspo
+model: gpt-6.1-sol
+provider: openai
+approval: never
+sandbox: workspace-write [workdir, /tmp, $TMPDIR, /Users/waffu/Library/Developer, /Users/waffu/Library/Caches] (network access enabled)
+reasoning effort: medium
+reasoning summaries: concise
+session id: 01a1c581-5c21-7d02-8f11-b934bbb429b4
+--------
+user
+Round 3 for the Fork SwiftUI app (apple/ only). Read context/sol-native.md (your handoff), then section "8. Boards" at the end of docs/UX-SPEC.md, and AGENTS.md. Implement Boards exactly per that section against the live API on http://localhost:3300 (curl /api/boards and /api/boards/account:NormieEdits with the FORK_TOKEN from .env.local to see real JSON; never put the token in source). The NormieEdits board has 91 groups / 413 scenes: it must stay smooth (lazy image loading, downsampled thumbnails, don't build all views eagerly when zoomed out — draw a low-detail rect per card below a zoom threshold).
+Keep everything else. Both acceptance builds must pass. Do not commit. Append a "Round 3" section to context/sol-native.md.
+2026-11-10T12:49:13.343340Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:23373/v0/mcp)")))
+2026-11-10T12:49:13.343440Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:8420/mcp)")))
+warning: Under-development features enabled: chronicle. Under-development features are incomplete and may behave unpredictably. To suppress this warning, set `suppress_unstable_features_warning = true` in /Users/waffu/.codex/config.toml.
+2026-11-10T12:49:14.344834Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:23373/v0/mcp)")))
+2026-11-10T12:49:14.344875Z ERROR rmcp::transport::worker: worker quit with fatal: Transport channel closed, when Client(HttpRequest(HttpRequest("http/request failed: error sending request for url (http://127.0.0.1:8420/mcp)")))
+codex
+I’ll read the handoff and Boards spec, inspect the live JSON, then implement it in `apple/` and run both acceptance builds.
+exec
+/bin/zsh -lc 'rg -n "Fork|inspo|sol-native" /Users/waffu/.codex/memories/MEMORY.md' in /Users/waffu/Claude/inspo
+ exited 1 in 0ms:
+exec
+/bin/zsh -lc "cat AGENTS.md; cat context/sol-native.md; sed -n '/"'^## 8'"\\. Boards/,"'$p'"' docs/UX-SPEC.md" in /Users/waffu/Claude/inspo
+ succeeded in 15ms:
+# Fork — agent guide
+
+Private swipe-to-learn reference library for motion design, design and video edits.
+Grokbot finds 10 links a day → the owner swipes right (like) / left (dislike) → every link is split into **scenes**
+(screenshot + exact timestamp + deep link + tags) → likes build a **taste profile** and an Obsidian-style **web** of ideas.
+
+## Fastest ways in (pick one)
+| You are | Use |
+|---|---|
+| Claude / any MCP agent | MCP server `http://localhost:3300/api/mcp` (Bearer `FORK_TOKEN`). Tools: `get_taste_profile`, `search_scenes`, `get_scene`, `get_source`, `get_taste_web`, `list_ideas`, `get_today`, `swipe`, `get_history`, `add_link`. |
+| A script | REST API below (same token). |
+| A human or agent with only files | `data/LIBRARY.md` (every source → its scenes with timestamps + links) and `data/library.json` (same, machine-readable). Regenerate: `npm run export`. |
+
+Add the MCP to Claude Code:
+```
+claude mcp add --transport http fork http://localhost:3300/api/mcp --header "Authorization: Bearer $FORK_TOKEN" -s user
+```
+
+## Data model
+- **source** — one saved link. `id` = `yt-<videoId>` | `x-<statusId>` | `ig-<code>` | `pin-<id>` | `creator-x-<handle>` (creator/profile seeds are not downloaded). `origin` = `seed` (owner's hand-picked list) | `grok` (Grokbot pick) | `manual`. `status` = `queued` → `ready` (scenes cut) → `tagged` | `error` | `seed`.
+- **scene** — `id` = `<source id>:<n>`. `t_start`/`t_end` seconds, `timestamp` "m:ss", `link` (YouTube links carry `&t=`; X has no time links so read `timestamp`), `frames` = 1–3 screenshots, `hero` = the middle one, `tags` by facet.
+- **facets** (controlled vocabulary in `pipeline/taxonomy.json`): technique, style, format, motion, medium, palette, + free `concepts`.
+- **swipe** — one verdict per source (latest wins). Seeds (the owner's hand-picked links) count as full likes and never appear in the deck.
+- **web** — `idea:<facet>:<tag>` nodes; scene→idea `has` edges; scene↔scene `bridge` edges (shared rare ideas, IDF-weighted, different sources; `cross:true` = different formats/genres); `co` edges between ideas in `mode=ideas`.
+
+## REST API (auth: `Authorization: Bearer <FORK_TOKEN>`, `?token=`, or cookie)
+| | |
+|---|---|
+| `GET /api/today` | today's 10 Grokbot picks (seeds are never re-served) |
+| `POST /api/swipe {id, verdict: like\|dislike\|clear}` | record a swipe; when the day is done Grokbot is notified |
+| `GET /api/history` | likes + dislikes, newest first |
+| `GET /api/taste` | taste profile (summary, loves/avoids per facet, creators, weights) |
+| `GET /api/graph?mode=ideas\|full&liked=1&focus=<id>&depth=1` | the web |
+| `GET /api/scenes?q=&tag=facet:tag&liked=1` · `GET /api/scenes/<id>` | search / one scene |
+| `GET /api/sources?origin=&status=&verdict=` · `GET /api/sources/<id>` · `POST /api/sources {url,note}` | sources |
+| `GET /api/stats` | counts + top tags |
+| `GET /api/media/<source id>/<file>.jpg` | screenshots (public) |
+| `GET /api/worker` · `POST /api/worker {ids?}` | Mac worker queue / re-import JSON |
+
+## Grokbot bridge (auth: `GROK_SECRET` as `?token=`, Bearer, or `X-Fork-Signature: sha256=<hmac(body)>`)
+- `GET /api/grok/brief?token=…` — what to hunt: task, taste summary, liked creators, seed creators, links already owned.
+- `POST /api/grok/inbox?token=…` `{"items":[{"url","pitch","title?"}]}` — submit picks (or `GET …/inbox?token=…&url=…&pitch=…`).
+- Outbound: when all 10 of a day are swiped, `POST` to `GROK_WEBHOOK_URL` (env or `settings.grok_webhook_url`) with `{event:"day_complete", results, taste, brief_url}` signed with `X-Fork-Signature`.
+
+## Pipeline (runs on the owner's Mac)
+- `python3 pipeline/ingest.py seed/links.txt` — download (yt-dlp `--js-runtimes node` for YouTube, fxtwitter API for X), ffmpeg scene detection, merge flash frames, keep ≤6/10/14/18 representative scenes by length, 1–3 screenshots each → `data/sources/<id>.json`, `data/media/<id>/`.
+- `~/Claude/tools/asr/.venv-mlx/bin/python pipeline/tag.py` — Qwen3-VL (local, MLX) tags every scene against the taxonomy.
+- `npm run import` — JSON → database. `python3 pipeline/worker.py --loop` — does all three for queued links.
+
+## Layout
+`lib/` backend (db, library, taste, graph, grok, mcp) · `app/api/` routes · `pipeline/` Python ingest/tag/worker · `data/` sources JSON + screenshots (raw downloads in `data/raw`, git-ignored) · `apple/` SwiftUI app · `docs/UX-SPEC.md` UI spec · `context/` run logs and agent hand-off notes.
+# Fork native handoff
+
+Built one native SwiftUI multiplatform target, Fork (`com.waffu.fork`), for iOS 26 and macOS 26. Read AGENTS.md and docs/UX-SPEC.md before implementation. App code is entirely under apple/. This requested handoff is the only authored file outside apple/. No commits. Existing backend, pipeline, data, scripts, and other working-tree changes were left alone.
+
+## Built
+
+- iOS TabView and macOS NavigationSplitView sidebar: Today, Map, Library, History, Settings. Mac window minimum 1000×700. System fonts, semantic colours, SF Symbols, system controls, automatic light/dark appearance.
+- Today: ordered unswiped deck, scene cycling and page dots, metadata/pitch, current-scene deep link, drag/rotation/fly-out, like/dislike buttons, undo via clear, Mac arrows and Command-Z, refresh, empty/completed states. Failed posts retain the item and show the error.
+- Map: Ideas/Full, liked filter, searchable node buttons, focus/depth-2 fetch and breadcrumb reset, scene sheets. One Canvas with batched edge paths, dashed bridges and accent cross-bridges, facet colours, zoom-dependent labels, rounded thumbnails, pan/pinch/buttons and native macOS scroll-wheel zoom.
+- Library: debounced server search, top 30 facet/tag filters, liked filter, adaptive scene grid, scene sheets, loading/errors/refresh.
+- Scene: image and selectable frame strip, timestamp/title/description, Open at, ShareLink, Source navigation, grouped tag buttons that focus Map and dismiss detail sheets.
+- Source: title/author/platform/duration/origin/status/pitch, external link, current-verdict like/dislike controls (tap the selected verdict to clear), scene grid.
+- History: All/Liked/Disliked, thumbnails/author/verdict/relative time, source navigation, flip/clear swipe actions and Mac context menu.
+- Settings: server URL, SecureField token, explicit Save, Keychain storage, stats connection test, shared 401 banner linking to Settings.
+
+## Files
+
+| File | Purpose |
+|---|---|
+| apple/project.yml | Single-target XcodeGen project and shared Fork scheme |
+| apple/Info.plist | Local-network ATS permission, arbitrary loads off |
+| apple/Fork.xcodeproj/project.pbxproj | Generated project |
+| apple/Fork.xcodeproj/project.xcworkspace/contents.xcworkspacedata | Generated workspace |
+| apple/Fork.xcodeproj/xcshareddata/xcschemes/Fork.xcscheme | Generated shared scheme |
+| apple/Fork/ForkApp.swift | App entry, platform navigation, shared route state and auth banner |
+| apple/Fork/APIClient.swift | Async URLSession/Codable client, Keychain, DEBUG environment, observable loading store |
+| apple/Fork/Models.swift | Endpoint response models |
+| apple/Fork/Images.swift | Shared bounded image cache, off-main downsampling, reusable stock UI |
+| apple/Fork/TodayView.swift | Deck and undo |
+| apple/Fork/MapView.swift | Map store, Canvas, gestures, visible thumbnail loading |
+| apple/Fork/GraphLayout.swift | Detached 300-iteration spatial-grid force layout and actor cache |
+| apple/Fork/LibraryView.swift | Search, tags and grid |
+| apple/Fork/DetailViews.swift | Scene and Source details |
+| apple/Fork/HistoryView.swift | Verdict history |
+| apple/Fork/SettingsView.swift | Connection settings |
+| apple/Checks/Smoke.swift | Read-only checks using the actual client/models/layout |
+| apple/Checks/run.py | Compiles DEBUG checks; supplies token only via launch environment |
+| apple/README.md | Build, credentials, checks and simulator launch notes |
+| apple/build-ios.log, apple/build-macos.log | Final successful acceptance build output |
+| apple/smoke.log | Successful live checks and layout timing |
+| apple/simulator.log | CoreSimulator failure evidence |
+
+## Decisions
+
+- No packages, web views, custom fonts, or custom visual theme. UIKit/AppKit only bridge decoded images into SwiftUI Image; all UI is SwiftUI.
+- Token is never in source, project, scheme or logs. DEBUG FORK_TOKEN/FORK_URL prefill in memory; Settings persists only on Save/Test. Release ignores launch environment. A scan against the actual token found no matches anywhere under apple/.
+- macOS signing is automatic with empty team and ad hoc identity `-`. iOS simulator builds without signing.
+- Debug adds Swift compiler `-disable-sandbox`: Observation macro subprocesses otherwise fail with `sandbox-exec: sandbox_apply: Operation not permitted` inside this already sandboxed host. Release has no override; app network/security permissions aren't changed.
+- Layout is computed off the main actor, cached by server/mode/filter/focus/graph fingerprint, then drawn statically. Spatial-grid repulsion bounds the larger graph workload. Thumbnail requests run six at a time, only for visible nodes, downsampled to 96 pixels; normal scene images use up to 1600 pixels. Cache is limited by decoded-image cost.
+- Run destination builds sequentially: concurrent builds initially conflicted over Xcode's shared build database. Final exact acceptance commands passed sequentially.
+
+## Verification
+
+With Xcode 26.6 (26.5 SDKs), ran `cd apple && xcodegen`, then:
+
+```sh
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+```
+
+Both final builds: **BUILD SUCCEEDED**. iOS simulator compiled arm64 and x86_64; macOS compiled arm64 and signed ad hoc. No Swift compiler warnings/errors in final logs. Xcode prints environment CoreSimulator diagnostics and its usual unused AppIntents metadata warning.
+
+`python3 apple/Checks/run.py` passed against http://localhost:3300 using DEBUG launch environment. Verified real stats/Today/history decoding; Library search and tag filtering; scene/source details and membership; image HTTP 200; valid Open-at URL; both graph modes, idea focus and connected endpoints; cached finite layout positions; 401 banner state. No swipe mutations. Final live snapshot: 246 scenes / 45 sources, Ideas 194 nodes / 2307 edges, Full 441 nodes / 3359 edges. Data changed during this run as the existing backend/library work continued, so these are test-time counts. Synthetic 900 nodes / 4000 edges / 300 iterations: 2.74 seconds in Debug.
+
+## Known gaps / follow-up checks
+
+- `xcrun simctl list devices available` fails with CoreSimulatorService connection invalid / connection refused; runtime discovery and simdiskimaged are unavailable in this sandbox. Couldn't boot, install, launch or capture simulator screenshots. No context/shots images were produced. No desktop app or visible browser was launched.
+- Consequently rendered layout, gestures, macOS wheel zoom, Keychain save UI, ShareLink and actually opening an external URL still need an interactive device/simulator check. The read-only check validates the deep-link URL and image, not an openURL interaction.
+- Today and History were empty throughout testing. Their empty responses decoded successfully; swipe/undo/flip/clear UI and completion transitions aren't runtime-tested against populated data. Nothing was added to the library to manufacture a deck.
+- The backend graph excludes palette ideas. Tapping a palette chip sends the specified idea focus, but that server response may have no nodes. No backend changes were made.
+
+## Round 2
+
+Fixed the owner-reported Map issues in `apple/`:
+
+- Both Ideas and Full use the shared revised force layout. Initial positions now come from a stable FNV-1a ID seed and SplitMix64 samples distributed uniformly inside a disc. Repulsion searches all cells within the 360-point neighbourhood (seven by seven with 120-point cells), applies a circular distance cutoff, and smoothly tapers to zero at that radius. The old cell-shaped force boundary is gone. The simulation runs 1,000 iterations with quadratic cooling from 18.02 to approximately 0.02 points per step. Detached execution, cancellation and caching remain.
+- Idea radius is `3 + sqrt(max(1, count))`. The 25 largest ideas (stable ID tie-breaks) always draw labels, including at default fit zoom. Other labels appear at 1.8× zoom relative to fit, independent of graph size.
+- Map's Liked only filter starts off. Other screens and interactions are unchanged.
+- Updated the native README and read-only smoke checks. Added an uncached determinism check and a 96-node disconnected-cloud regression check for collisions and four-fold angular bias.
+
+Acceptance commands ran sequentially from `apple/`:
+
+```sh
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+```
+
+Both **BUILD SUCCEEDED**. Logs: `apple/build-ios.log`, `apple/build-macos.log`. No Swift compiler warnings/errors; the usual unused AppIntents metadata warning and CoreSimulator environment diagnostics remain.
+
+CoreSimulator still fails at `xcrun simctl list devices available` with connection invalid / connection refused and no runtime discovery. Evidence: `apple/simulator.log`. Could not launch or capture screenshots, so rendered appearance and label readability still need owner-side simulator QC. No foreground app control was used. No commits. Existing changes outside apple were left alone apart from this requested handoff append.
+
+Final `python3 apple/Checks/run.py`: **PASS**. Fresh computations matched exactly; the circular cloud had no collapsed pairs and four-fold grid bias 0.00936 (limit 0.2). Live snapshot: 787 scenes / 133 sources; liked Ideas 244 nodes / 2,878 edges; liked Full 560 nodes / 4,380 edges. Both modes/focus, cache, decoding, image fetch, Library search/tag, scene/source, deep-link URL and 401 handling passed. The 900-node / 4,000-edge / 1,000-iteration Debug layout took 20.49 seconds. Log: `apple/smoke.log`. Numerical checks do not replace rendered simulator QC. `git diff --check -- apple context/sol-native.md` passed.
+## 8. Boards (added v0.3) — Figma-style board per account and per video
+Owner: "I need like figma boards for every video or account."
+- New tab **Boards** (iOS tab order: Today · Boards · Map · Library · History · Settings; on iOS 6 tabs → Settings may move under "More", fine; macOS sidebar).
+- **Boards index** `GET /api/boards` → `{accounts:[{id:"account:<handle>",handle,platform,sources,scenes,liked_scenes,covers[≤4 urls],profile}], videos:[{id:"video:<source id>",source_id,title,author,platform,scenes,note,cover}], creator_seeds}`.
+  Segmented **Accounts | Videos**, `.searchable`. Account tile = 2×2 cover collage + @handle + "N posts · M scenes". Video tile = cover + title + @author + note (if any).
+- **Board canvas** `GET /api/boards/<id>` → `{id,kind,title,subtitle,profile?,groups:[{source_id,title,url,note,verdict,origin,scenes:[{id,image,frames[],timestamp,title,link,tags,quality}]}]}`.
+  Infinite canvas like a Figma page: light grey canvas background, each group is a white rounded "frame" with a small header (post title, note in italics, ♥/✕ verdict, Open ↗) and its scenes in a horizontal row of cards (image, "0:12", title). Frames laid out in a wrapping grid (account boards) or one big frame (video boards). Pan + pinch / scroll-wheel zoom, "fit" button. Tap scene card → Scene detail sheet. Header bar: board title, subtitle, profile link.
+- Entry points: Source detail gets a "Board" button (→ video board) and tapping @author anywhere opens the account board.
+
+exec
+/bin/zsh -lc 'cat apple/Fork/ForkApp.swift apple/Fork/Models.swift apple/Fork/APIClient.swift' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+import SwiftUI
+import Observation
+
+enum Section: String, CaseIterable, Identifiable {
+    case today = "Today", map = "Map", library = "Library", history = "History", settings = "Settings"
+    var id: String { rawValue }
+    var symbol: String {
+        switch self {
+        case .today: "square.stack"
+        case .map: "point.3.connected.trianglepath.dotted"
+        case .library: "square.grid.2x2"
+        case .history: "clock"
+        case .settings: "gear"
+        }
+    }
+}
+@MainActor @Observable final class AppNavigation {
+    var selection: Section = .today
+    var mapFocus: String?
+    func focus(_ idea: String) { mapFocus = idea; selection = .map }
+}
+@main struct ForkApp: App {
+    @State private var api = APIClient()
+    @State private var navigation = AppNavigation()
+    var body: some SwiftUI.Scene {
+        WindowGroup {
+            RootView().environment(api).environment(navigation)
+                #if os(macOS)
+                .frame(minWidth: 1000, minHeight: 700)
+                #endif
+        }
+        #if os(macOS)
+        .defaultSize(width: 1100, height: 800)
+        #endif
+    }
+}
+struct RootView: View {
+    @Environment(APIClient.self) private var api
+    @Environment(AppNavigation.self) private var navigation
+    var body: some View {
+        @Bindable var navigation = navigation
+        Group {
+            #if os(iOS)
+            TabView(selection: $navigation.selection) {
+                ForEach(Section.allCases) { section in
+                    Tab(section.rawValue, systemImage: section.symbol, value: section) {
+                        NavigationStack { screen(section) }
+                    }
+                }
+            }
+            #else
+            NavigationSplitView {
+                List(Section.allCases, selection: Binding<Section?>(get: { navigation.selection }, set: { if let value = $0 { navigation.selection = value } })) { section in
+                    Label(section.rawValue, systemImage: section.symbol).tag(section)
+                }.navigationTitle("Fork")
+            } detail: {
+                NavigationStack { screen(navigation.selection) }
+            }
+            #endif
+        }
+        .safeAreaInset(edge: .top, spacing: 0) {
+            if api.unauthorized {
+                Button { navigation.selection = .settings } label: {
+                    Label("Check token in Settings", systemImage: "key").frame(maxWidth: .infinity).padding(8)
+                }.buttonStyle(.bordered).tint(.orange)
+            }
+        }
+    }
+    @ViewBuilder private func screen(_ section: Section) -> some View {
+        switch section {
+        case .today: TodayView()
+        case .map: MapView()
+        case .library: LibraryView()
+        case .history: HistoryView()
+        case .settings: SettingsView()
+        }
+    }
+}
+import Foundation
+
+struct Items<T: Decodable & Sendable>: Decodable, Sendable { var items: [T] }
+struct Scene: Decodable, Identifiable, Sendable {
+    var id: String
+    var image: String?
+    var timestamp: String?
+    var title: String
+    var link: String
+    var description: String?
+    var frame_urls: [String]?
+    var t_start: Double?
+    var t_end: Double?
+    var tags: [String: [String]]?
+    var source: Source?
+    var displayTitle: String { title.isEmpty ? "Scene at \(timestamp ?? "0:00")" : title }
+}
+struct Source: Decodable, Identifiable, Sendable {
+    var id: String
+    var title: String
+    var author: String
+    var url: String
+    var verdict: String?
+    var scenes: [Scene]?
+    var origin: String?
+    var duration: Double?
+    var pitch: String?
+    var status: String?
+    var platform: String?
+    var displayTitle: String { title.isEmpty ? "Untitled source" : title }
+}
+struct TodayResponse: Decodable, Sendable {
+    var day: String
+    var total: Int
+    var remaining: Int
+    var items: [Source]
+}
+struct TagCount: Decodable, Identifiable, Sendable {
+    var facet: String
+    var tag: String
+    var n: Int
+    var id: String { "\(facet):\(tag)" }
+}
+struct Stats: Decodable, Sendable {
+    var sources: Int
+    var scenes: Int
+    var tags: [TagCount]
+}
+struct HistoryItem: Decodable, Identifiable, Sendable {
+    var id: String
+    var title: String
+    var author: String
+    var url: String
+    var verdict: String?
+    var at: String?
+    var cover: String?
+    var date: Date? {
+        guard let at else { return nil }
+        let fractional = ISO8601DateFormatter()
+        fractional.formatOptions = [.withInternetDateTime, .withFractionalSeconds]
+        return fractional.date(from: at) ?? ISO8601DateFormatter().date(from: at)
+    }
+}
+struct GraphNode: Decodable, Identifiable, Sendable {
+    var id: String
+    var type: String
+    var label: String
+    var image: String?
+    var timestamp: String?
+    var link: String?
+    var liked: Bool?
+    var facet: String?
+    var count: Int?
+    var degree: Int
+}
+struct GraphEdge: Decodable, Sendable {
+    var source: String
+    var target: String
+    var kind: String
+    var weight: Double
+    var cross: Bool?
+    var shared: [String]?
+}
+struct Graph: Decodable, Sendable {
+    var nodes: [GraphNode]
+    var edges: [GraphEdge]
+    var stats: [String: Int]
+}
+struct SwipeResponse: Decodable, Sendable { var id: String; var verdict: String }
+struct ItemID: Identifiable, Hashable { var id: String }
+import Foundation
+import Observation
+import Security
+
+private enum TokenKeychain {
+    static let service = "com.waffu.fork"
+    static var query: [String: Any] {
+        [kSecClass as String: kSecClassGenericPassword,
+         kSecAttrService as String: service, kSecAttrAccount as String: "api-token"]
+    }
+    static func read() -> String {
+        var q = query
+        q[kSecReturnData as String] = true
+        q[kSecMatchLimit as String] = kSecMatchLimitOne
+        var result: CFTypeRef?
+        guard SecItemCopyMatching(q as CFDictionary, &result) == errSecSuccess,
+              let data = result as? Data else { return "" }
+        return String(decoding: data, as: UTF8.self)
+    }
+    static func save(_ value: String) throws {
+        guard !value.isEmpty else {
+            let status = SecItemDelete(query as CFDictionary)
+            guard status == errSecSuccess || status == errSecItemNotFound else { throw APIError.keychain(status) }
+            return
+        }
+        let data = Data(value.utf8)
+        var status = SecItemUpdate(query as CFDictionary, [kSecValueData as String: data] as CFDictionary)
+        if status == errSecItemNotFound {
+            var q = query
+            q[kSecValueData as String] = data
+            q[kSecAttrAccessible as String] = kSecAttrAccessibleAfterFirstUnlockThisDeviceOnly
+            status = SecItemAdd(q as CFDictionary, nil)
+        }
+        guard status == errSecSuccess else { throw APIError.keychain(status) }
+    }
+}
+
+enum APIError: LocalizedError {
+    case invalidURL, http(Int), keychain(OSStatus)
+    var errorDescription: String? {
+        switch self {
+        case .invalidURL: "Enter a valid http or https server URL in Settings."
+        case .http(401): "Check token in Settings"
+        case .http(let status): "Server returned HTTP \(status). Try again."
+        case .keychain(let status): "Couldn't save the token in Keychain (\(status))."
+        }
+    }
+}
+
+@MainActor @Observable final class APIClient {
+    var server: String
+    var token: String
+    var unauthorized = false
+    var revision = 0
+    init() {
+        server = UserDefaults.standard.string(forKey: "serverURL") ?? "http://localhost:3300"
+        token = TokenKeychain.read()
+        #if DEBUG
+        if let value = ProcessInfo.processInfo.environment["FORK_URL"] { server = value }
+        if let value = ProcessInfo.processInfo.environment["FORK_TOKEN"] { token = value }
+        #endif
+    }
+    func save(server: String, token: String) throws {
+        let value = server.trimmingCharacters(in: .whitespacesAndNewlines).trimmingCharacters(in: CharacterSet(charactersIn: "/"))
+        guard let url = URL(string: value), ["http", "https"].contains(url.scheme), url.host != nil else { throw APIError.invalidURL }
+        try TokenKeychain.save(token)
+        self.server = value
+        self.token = token
+        UserDefaults.standard.set(value, forKey: "serverURL")
+        unauthorized = false
+        revision += 1
+    }
+    func url(_ path: String, query: [URLQueryItem] = []) throws -> URL {
+        guard let base = URL(string: server), ["http", "https"].contains(base.scheme), base.host != nil,
+              var parts = URLComponents(url: base.appendingPathComponent("api").appendingPathComponent(path), resolvingAgainstBaseURL: false) else { throw APIError.invalidURL }
+        if !query.isEmpty { parts.queryItems = query }
+        guard let url = parts.url else { throw APIError.invalidURL }
+        return url
+    }
+    func request<T: Decodable & Sendable>(_ path: String, query: [URLQueryItem] = [], body: [String: String]? = nil) async throws -> T {
+        var request = URLRequest(url: try url(path, query: query))
+        request.timeoutInterval = 30
+        request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        if let body {
+            request.httpMethod = "POST"
+            request.httpBody = try JSONEncoder().encode(body)
+            request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+        }
+        let (data, response) = try await URLSession.shared.data(for: request)
+        guard let http = response as? HTTPURLResponse else { throw APIError.http(0) }
+        if http.statusCode == 401 { unauthorized = true }
+        guard (200..<300).contains(http.statusCode) else { throw APIError.http(http.statusCode) }
+        return try JSONDecoder().decode(T.self, from: data)
+    }
+    func swipe(_ id: String, _ verdict: String) async throws {
+        let _: SwipeResponse = try await request("swipe", body: ["id": id, "verdict": verdict])
+        revision += 1
+    }
+    func imageRequest(_ path: String) -> URLRequest? {
+        guard let base = URL(string: server), let url = URL(string: path, relativeTo: base)?.absoluteURL else { return nil }
+        var request = URLRequest(url: url)
+        if url.host == base.host && url.port == base.port && url.scheme == base.scheme {
+            request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+        }
+        return request
+    }
+}
+
+@MainActor @Observable final class LoadStore<Value: Sendable> {
+    var value: Value?
+    var error: String?
+    var loading = false
+    private var generation = 0
+    func load(_ action: @MainActor () async throws -> Value) async {
+        generation += 1
+        let current = generation
+        loading = true
+        error = nil
+        do {
+            let result = try await action()
+            guard current == generation, !Task.isCancelled else { return }
+            value = result
+        } catch {
+            guard current == generation else { return }
+            if !Task.isCancelled { self.error = error.localizedDescription }
+        }
+        if current == generation { loading = false }
+    }
+}
+
+exec
+/bin/zsh -lc "cat apple/Fork/Images.swift apple/Fork/DetailViews.swift apple/Fork/LibraryView.swift; cat apple/project.yml; rg -n 'author|Scroll|scroll|NSView' apple/Fork" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+import SwiftUI
+import ImageIO
+#if os(iOS)
+import UIKit
+typealias PlatformImage = UIImage
+#else
+import AppKit
+typealias PlatformImage = NSImage
+#endif
+
+@MainActor final class ImageCache {
+    static let shared = ImageCache()
+    private let cache = NSCache<NSString, PlatformImage>()
+    private var pending: [String: Task<PlatformImage?, Never>] = [:]
+    init() { cache.totalCostLimit = 80 * 1024 * 1024; cache.countLimit = 500 }
+    func cached(_ key: String) -> Image? { cache.object(forKey: key as NSString).map(Self.image) }
+    static func image(_ native: PlatformImage) -> Image {
+        #if os(iOS)
+        Image(uiImage: native)
+        #else
+        Image(nsImage: native)
+        #endif
+    }
+    func load(_ request: URLRequest, api: APIClient, maxPixel: Int = 1600) async -> Image? {
+        guard let url = request.url else { return nil }
+        let key = "\(url.absoluteString)|\(maxPixel)"
+        if let hit = cached(key) { return hit }
+        if let task = pending[key] { return await task.value.map(Self.image) }
+        let task = Task<PlatformImage?, Never> {
+            do {
+                let (data, response) = try await URLSession.shared.data(for: request)
+                if (response as? HTTPURLResponse)?.statusCode == 401 { api.unauthorized = true }
+                guard let response = response as? HTTPURLResponse, (200..<300).contains(response.statusCode) else { return nil }
+                let cgImage = await Task.detached(priority: .utility) {
+                    guard let source = CGImageSourceCreateWithData(data as CFData, nil) else { return nil as CGImage? }
+                    return CGImageSourceCreateThumbnailAtIndex(source, 0, [
+                        kCGImageSourceCreateThumbnailFromImageAlways: true,
+                        kCGImageSourceCreateThumbnailWithTransform: true,
+                        kCGImageSourceThumbnailMaxPixelSize: maxPixel
+                    ] as CFDictionary)
+                }.value
+                guard let cgImage else { return nil }
+                #if os(iOS)
+                let native = UIImage(cgImage: cgImage)
+                #else
+                let native = NSImage(cgImage: cgImage, size: NSSize(width: cgImage.width, height: cgImage.height))
+                #endif
+                cache.setObject(native, forKey: key as NSString, cost: cgImage.bytesPerRow * cgImage.height)
+                return native
+            } catch { return nil }
+        }
+        pending[key] = task
+        let value = await task.value
+        pending[key] = nil
+        return value.map(Self.image)
+    }
+}
+
+struct RemoteImage: View {
+    @Environment(APIClient.self) private var api
+    var path: String?
+    var fit = true
+    @State private var image: Image?
+    @State private var loading = false
+    var body: some View {
+        GeometryReader { proxy in
+            ZStack {
+                Rectangle().fill(.quaternary)
+                if let image {
+                    image.resizable().aspectRatio(contentMode: fit ? .fit : .fill)
+                        .frame(width: proxy.size.width, height: proxy.size.height).clipped()
+                } else if loading { ProgressView() }
+                else { Image(systemName: "photo").foregroundStyle(.secondary) }
+            }
+        }
+        .task(id: "\(api.server)|\(api.revision)|\(path ?? "")") {
+            image = nil
+            guard let path, !path.isEmpty, let request = api.imageRequest(path) else { return }
+            loading = true
+            image = await ImageCache.shared.load(request, api: api)
+            loading = false
+        }
+        .accessibilityLabel("Scene screenshot")
+    }
+}
+
+struct ErrorNotice: View {
+    var message: String
+    var retry: () -> Void
+    var body: some View {
+        VStack(spacing: 12) {
+            Label(message, systemImage: "exclamationmark.triangle").foregroundStyle(.secondary)
+            Button("Try again", action: retry)
+        }.padding().frame(maxWidth: .infinity)
+    }
+}
+struct SceneCard: View {
+    var scene: Scene
+    var body: some View {
+        VStack(alignment: .leading, spacing: 6) {
+            RemoteImage(path: scene.image).frame(height: 140).clipShape(.rect(cornerRadius: 8))
+            if let timestamp = scene.timestamp { Text(timestamp).font(.caption.monospacedDigit()).foregroundStyle(.secondary) }
+            Text(scene.displayTitle).font(.subheadline).lineLimit(2)
+        }.frame(maxWidth: .infinity, alignment: .leading).contentShape(Rectangle())
+    }
+}
+func facetColor(_ facet: String?) -> Color {
+    switch facet {
+    case "technique": .blue
+    case "style": .purple
+    case "format": .orange
+    case "motion": .green
+    case "concepts": .teal
+    default: .gray
+    }
+}
+import SwiftUI
+
+struct SceneDetailView: View {
+    var id: String
+    @Environment(APIClient.self) private var api
+    @Environment(AppNavigation.self) private var navigation
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
+    @State private var store = LoadStore<Scene>()
+    @State private var selectedFrame: String?
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+                    if let scene = store.value {
+                        RemoteImage(path: selectedFrame ?? scene.image).frame(height: 320).clipShape(.rect(cornerRadius: 10))
+                        if let frames = scene.frame_urls, frames.count > 1 {
+                            ScrollView(.horizontal) {
+                                HStack {
+                                    ForEach(frames, id: \.self) { frame in
+                                        Button { selectedFrame = frame } label: {
+                                            RemoteImage(path: frame).frame(width: 120, height: 80).clipShape(.rect(cornerRadius: 6))
+                                                .overlay(RoundedRectangle(cornerRadius: 6).stroke(selectedFrame == frame ? Color.accentColor : .clear, lineWidth: 2))
+                                        }.buttonStyle(.plain).accessibilityLabel("Show frame \((frames.firstIndex(of: frame) ?? 0) + 1)")
+                                    }
+                                }
+                            }
+                        }
+                        Text(scene.displayTitle).font(.title2).fontWeight(.semibold)
+                        Text("at \(scene.timestamp ?? "0:00")").font(.subheadline.monospacedDigit()).foregroundStyle(.secondary)
+                        if let description = scene.description, !description.isEmpty { Text(description) }
+                        HStack {
+                            Button("Open at \(scene.timestamp ?? "0:00") ↗") { if let url = URL(string: scene.link) { openURL(url) } }.buttonStyle(.borderedProminent)
+                            if let url = URL(string: scene.link) { ShareLink(item: url) }
+                        }
+                        if let source = scene.source {
+                            NavigationLink {
+                                SourceDetailView(id: source.id)
+                            } label: {
+                                VStack(alignment: .leading) {
+                                    Text("From \(source.displayTitle)")
+                                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").font(.subheadline).foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                        if let tags = scene.tags {
+                            ForEach(["technique", "style", "format", "motion", "medium", "palette", "concepts"], id: \.self) { facet in
+                                if let values = tags[facet], !values.isEmpty {
+                                    Text(facet.capitalized).font(.headline)
+                                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))], alignment: .leading) {
+                                        ForEach(values, id: \.self) { tag in
+                                            Button(tag) {
+                                                navigation.focus("idea:\(facet):\(tag)")
+                                                dismiss()
+                                            }.buttonStyle(.bordered).tint(facetColor(facet))
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } else if store.loading { ProgressView().frame(maxWidth: .infinity).padding(80) }
+                }.padding().frame(maxWidth: 850).frame(maxWidth: .infinity)
+            }.navigationTitle("Scene")
+            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
+            .task(id: id) { await load() }
+            .onChange(of: navigation.mapFocus) { dismiss() }
+        }
+        #if os(macOS)
+        .frame(minWidth: 650, idealWidth: 800, minHeight: 650)
+        #endif
+    }
+    private func load() async { await store.load { try await api.request("scenes/\(id)") } }
+}
+
+struct SourceDetailView: View {
+    var id: String
+    @Environment(APIClient.self) private var api
+    @State private var store = LoadStore<Source>()
+    @State private var detail: ItemID?
+    @State private var sending = false
+    @State private var actionError: String?
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+                if let error = actionError { Text(error).foregroundStyle(.red) }
+                if let source = store.value {
+                    Text(source.displayTitle).font(.title2)
+                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").foregroundStyle(.secondary)
+                    HStack {
+                        if let url = URL(string: source.url) { Link("Open source ↗", destination: url) }
+                        Spacer()
+                        Button { Task { await vote(source.verdict == "dislike" ? "clear" : "dislike") } } label: {
+                            Label("Dislike", systemImage: source.verdict == "dislike" ? "xmark.circle.fill" : "xmark.circle")
+                        }.tint(source.verdict == "dislike" ? .red : .secondary)
+                        Button { Task { await vote(source.verdict == "like" ? "clear" : "like") } } label: {
+                            Label("Like", systemImage: source.verdict == "like" ? "heart.fill" : "heart")
+                        }.tint(source.verdict == "like" ? .pink : .secondary)
+                    }.buttonStyle(.bordered).disabled(sending)
+                    HStack {
+                        if let platform = source.platform { Text(platform.capitalized) }
+                        if let duration = source.duration { Text("\(Int(duration) / 60):\(String(format: "%02d", Int(duration) % 60))") }
+                        if let origin = source.origin { Text(origin.capitalized) }
+                    }.font(.subheadline).foregroundStyle(.secondary)
+                    if let pitch = source.pitch, !pitch.isEmpty { Text(pitch) }
+                    if let status = source.status { Text(status.capitalized).font(.caption).foregroundStyle(.secondary) }
+                    let scenes = source.scenes ?? []
+                    if scenes.isEmpty { ContentUnavailableView("No scenes yet", systemImage: "photo.stack") }
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 155, maximum: 280), alignment: .top)], spacing: 20) {
+                        ForEach(scenes) { scene in
+                            Button { detail = ItemID(id: scene.id) } label: { SceneCard(scene: scene) }.buttonStyle(.plain)
+                        }
+                    }
+                } else if store.loading { ProgressView().frame(maxWidth: .infinity).padding(80) }
+            }.padding()
+        }.navigationTitle("Source")
+        .task(id: id) { await load() }
+        .sheet(item: $detail) { SceneDetailView(id: $0.id) }
+    }
+    private func load() async { await store.load { try await api.request("sources/\(id)") } }
+    private func vote(_ verdict: String) async {
+        sending = true; actionError = nil
+        do { try await api.swipe(id, verdict); await load() } catch { actionError = error.localizedDescription }
+        sending = false
+    }
+}
+import SwiftUI
+
+struct LibraryView: View {
+    @Environment(APIClient.self) private var api
+    @State private var store = LoadStore<Items<Scene>>()
+    @State private var tags: [TagCount] = []
+    @State private var query = ""
+    @State private var selectedTag: String?
+    @State private var liked = true
+    @State private var detail: ItemID?
+    private var requestKey: String { "\(query)|\(selectedTag ?? "")|\(liked)|\(api.revision)" }
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading) {
+                ScrollView(.horizontal) {
+                    HStack {
+                        ForEach(tags.prefix(30)) { tag in
+                            Button(tag.tag) { selectedTag = selectedTag == tag.id ? nil : tag.id }
+                                .buttonStyle(.bordered).tint(selectedTag == tag.id ? .accentColor : .secondary)
+                                .accessibilityLabel("\(tag.facet): \(tag.tag)")
+                        }
+                    }.padding(.horizontal)
+                }
+                if let tag = selectedTag { Button("Clear \(tag)", systemImage: "xmark.circle") { selectedTag = nil }.padding(.horizontal) }
+                if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+                if store.loading { ProgressView().frame(maxWidth: .infinity).padding() }
+                if let scenes = store.value?.items {
+                    if scenes.isEmpty && !store.loading {
+                        ContentUnavailableView.search(text: query)
+                    } else {
+                        LazyVGrid(columns: [GridItem(.adaptive(minimum: 155, maximum: 280), alignment: .top)], alignment: .leading, spacing: 20) {
+                            ForEach(scenes) { scene in
+                                Button { detail = ItemID(id: scene.id) } label: { SceneCard(scene: scene) }.buttonStyle(.plain)
+                            }
+                        }.padding()
+                    }
+                }
+            }
+        }.navigationTitle("Library")
+        .searchable(text: $query, prompt: "Search scenes")
+        .toolbar { Toggle("Liked only", isOn: $liked) }
+        .refreshable { await load(); await loadTags() }
+        .task(id: requestKey) {
+            do { try await Task.sleep(for: .milliseconds(250)); try Task.checkCancellation(); await load() } catch { }
+        }
+        .task(id: api.server) { await loadTags() }
+        .sheet(item: $detail) { SceneDetailView(id: $0.id) }
+    }
+    private func load() async {
+        await store.load {
+            var params = [URLQueryItem(name: "q", value: query), URLQueryItem(name: "limit", value: "60")]
+            if liked { params.append(URLQueryItem(name: "liked", value: "1")) }
+            if let selectedTag { params.append(URLQueryItem(name: "tag", value: selectedTag)) }
+            return try await api.request("scenes", query: params)
+        }
+    }
+    private func loadTags() async {
+        do { let stats: Stats = try await api.request("stats"); tags = stats.tags } catch { store.error = error.localizedDescription }
+    }
+}
+name: Fork
+options:
+  minimumXcodeGenVersion: 2.44.0
+  deploymentTarget:
+    iOS: '26.0'
+    macOS: '26.0'
+settings:
+  base:
+    PRODUCT_BUNDLE_IDENTIFIER: com.waffu.fork
+    PRODUCT_NAME: Fork
+    SWIFT_VERSION: '6.0'
+    DEVELOPMENT_TEAM: ''
+    CODE_SIGN_STYLE: Automatic
+    GENERATE_INFOPLIST_FILE: YES
+    INFOPLIST_KEY_CFBundleDisplayName: Fork
+    INFOPLIST_KEY_NSLocalNetworkUsageDescription: Fork connects to your reference library server.
+    INFOPLIST_KEY_UIApplicationSceneManifest_Generation: YES
+    INFOPLIST_KEY_UILaunchScreen_Generation: YES
+    INFOPLIST_KEY_NSSupportsAutomaticTermination: YES
+    INFOPLIST_KEY_NSSupportsSuddenTermination: YES
+  configs:
+    Debug:
+      SWIFT_ACTIVE_COMPILATION_CONDITIONS: DEBUG
+      SWIFT_OPTIMIZATION_LEVEL: '-Onone'
+      # Allow Swift's macro helper to run inside an already sandboxed build host.
+      OTHER_SWIFT_FLAGS: '$(inherited) -disable-sandbox'
+targets:
+  Fork:
+    type: application
+    platform: auto
+    supportedDestinations: [iOS, macOS]
+    sources: [Fork]
+    info:
+      path: Info.plist
+      properties:
+        NSAppTransportSecurity:
+          NSAllowsLocalNetworking: true
+          NSAllowsArbitraryLoads: false
+    settings:
+      base:
+        SUPPORTS_MACCATALYST: NO
+        TARGETED_DEVICE_FAMILY: '1,2'
+      configs:
+        Debug:
+          'CODE_SIGN_IDENTITY[sdk=macosx*]': '-'
+        Release:
+          'CODE_SIGN_IDENTITY[sdk=macosx*]': '-'
+schemes:
+  Fork:
+    build:
+      targets:
+        Fork: all
+    run:
+      config: Debug
+apple/Fork/HistoryView.swift:26:                            Text(item.author.hasPrefix("@") ? item.author : "@\(item.author)").font(.subheadline).foregroundStyle(.secondary)
+apple/Fork/TodayView.swift:18:        ScrollView {
+apple/Fork/TodayView.swift:69:                Text(item.author.hasPrefix("@") ? item.author : "@\(item.author)")
+apple/Fork/Images.swift:32:                if (response as? HTTPURLResponse)?.statusCode == 401 { api.unauthorized = true }
+apple/Fork/ForkApp.swift:62:            if api.unauthorized {
+apple/Fork/Models.swift:21:    var author: String
+apple/Fork/Models.swift:52:    var author: String
+apple/Fork/LibraryView.swift:13:        ScrollView {
+apple/Fork/LibraryView.swift:15:                ScrollView(.horizontal) {
+apple/Fork/SettingsView.swift:38:            api.unauthorized = false
+apple/Fork/DetailViews.swift:13:            ScrollView {
+apple/Fork/DetailViews.swift:19:                            ScrollView(.horizontal) {
+apple/Fork/DetailViews.swift:43:                                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").font(.subheadline).foregroundStyle(.secondary)
+apple/Fork/DetailViews.swift:84:        ScrollView {
+apple/Fork/DetailViews.swift:90:                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").foregroundStyle(.secondary)
+apple/Fork/APIClient.swift:53:    var unauthorized = false
+apple/Fork/APIClient.swift:70:        unauthorized = false
+apple/Fork/APIClient.swift:91:        if http.statusCode == 401 { unauthorized = true }
+apple/Fork/MapView.swift:102:    @State private var scrollOffset: CGFloat = 0
+apple/Fork/MapView.swift:127:            // SwiftUI's native scroll geometry supplies wheel deltas without an AppKit event monitor.
+apple/Fork/MapView.swift:128:            ScrollView(.vertical) {
+apple/Fork/MapView.swift:130:                    .offset(y: scrollOffset)
+apple/Fork/MapView.swift:132:            }.scrollIndicators(.hidden).defaultScrollAnchor(.center)
+apple/Fork/MapView.swift:133:            .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y } action: { old, new in
+apple/Fork/MapView.swift:134:                scrollOffset = new
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import json,subprocess
+from pathlib import Path
+e={}
+for l in Path('.env.local').read_text().splitlines():
+ if '=' in l and not l.startswith('#'):
+  k,v=l.split('=',1);e[k]=v.strip().strip('\\\"\\'')
+for p in ['/api/boards','/api/boards/account:NormieEdits']:
+ r=subprocess.run(['curl','-sf','-H','Authorization: Bearer '+e['FORK_TOKEN'],'http://localhost:3300'+p],capture_output=True,text=True)
+ d=json.loads(r.stdout)
+ print(p)
+ if 'groups' in d:
+  print(json.dumps({**d,'groups':d['groups'][:1]},indent=2)[:14000]); print('groups',len(d['groups']),'scenes',sum(len(g['scenes']) for g in d['groups']))
+ else: print(json.dumps(d,indent=2)[:11000])
+PY" in /Users/waffu/Claude/inspo
+ succeeded in 1209ms:
+/api/boards
+{
+  "accounts": [
+    {
+      "id": "account:NormieEdits",
+      "handle": "NormieEdits",
+      "platform": "x",
+      "sources": 91,
+      "scenes": 413,
+      "liked_scenes": 413,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2027754607687176232/s03_0.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2033538452508315740/s04_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2034998681414549828/s02_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2034998681414549828/s04_1.jpg"
+      ],
+      "profile": "https://x.com/NormieEdits"
+    },
+    {
+      "id": "account:EditSatyjeet",
+      "handle": "EditSatyjeet",
+      "platform": "x",
+      "sources": 7,
+      "scenes": 32,
+      "liked_scenes": 32,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2007907795929350537/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2007907795929350537/s03_0.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2007907795929350537/s05_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2007907795929350537/s06_1.jpg"
+      ],
+      "profile": "https://x.com/EditSatyjeet"
+    },
+    {
+      "id": "account:belomp4",
+      "handle": "belomp4",
+      "platform": "x",
+      "sources": 4,
+      "scenes": 38,
+      "liked_scenes": 38,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2009686609969766869/s06_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2009686609969766869/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2009686609969766869/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2009686609969766869/s02_1.jpg"
+      ],
+      "profile": "https://x.com/belomp4"
+    },
+    {
+      "id": "account:everygen_ai",
+      "handle": "everygen_ai",
+      "platform": "x",
+      "sources": 3,
+      "scenes": 11,
+      "liked_scenes": 11,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2100481567436992783/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2100481567436992783/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2110123575919468963/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2110123575919468963/s01_1.jpg"
+      ],
+      "profile": "https://x.com/everygen_ai"
+    },
+    {
+      "id": "account:xarrfx",
+      "handle": "xarrfx",
+      "platform": "x",
+      "sources": 3,
+      "scenes": 10,
+      "liked_scenes": 10,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2061849957536260354/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2089049556088463746/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2100216931681010089/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2100216931681010089/s01_1.jpg"
+      ],
+      "profile": "https://x.com/xarrfx"
+    },
+    {
+      "id": "account:eback_4u",
+      "handle": "eback_4u",
+      "platform": "x",
+      "sources": 3,
+      "scenes": 3,
+      "liked_scenes": 3,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2118975098631983346/s00_0.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2119303823185612826/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2119311804048503178/s00_1.jpg"
+      ],
+      "profile": "https://x.com/eback_4u"
+    },
+    {
+      "id": "account:Brandon Hwang",
+      "handle": "Brandon Hwang",
+      "platform": "youtube",
+      "sources": 2,
+      "scenes": 36,
+      "liked_scenes": 36,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-6VFpt7HZTug/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-6VFpt7HZTug/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-6VFpt7HZTug/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-6VFpt7HZTug/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:Tuan Le",
+      "handle": "Tuan Le",
+      "platform": "youtube",
+      "sources": 2,
+      "scenes": 28,
+      "liked_scenes": 28,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-E9htIWGc1Dk/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-E9htIWGc1Dk/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-E9htIWGc1Dk/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-E9htIWGc1Dk/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:1of10 YouTube Strategy",
+      "handle": "1of10 YouTube Strategy",
+      "platform": "youtube",
+      "sources": 2,
+      "scenes": 28,
+      "liked_scenes": 28,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-5azN3LLN4i0/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-5azN3LLN4i0/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-5azN3LLN4i0/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-5azN3LLN4i0/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:tstudi0s_",
+      "handle": "tstudi0s_",
+      "platform": "x",
+      "sources": 2,
+      "scenes": 18,
+      "liked_scenes": 18,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2070608098063274068/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2070608098063274068/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2070608098063274068/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2070608098063274068/s11_1.jpg"
+      ],
+      "profile": "https://x.com/tstudi0s_"
+    },
+    {
+      "id": "account:hikarimotions",
+      "handle": "hikarimotions",
+      "platform": "x",
+      "sources": 2,
+      "scenes": 16,
+      "liked_scenes": 16,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2032835157040968136/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2032835157040968136/s01_0.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2032835157040968136/s02_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2032835157040968136/s03_1.jpg"
+      ],
+      "profile": "https://x.com/hikarimotions"
+    },
+    {
+      "id": "account:Suhit Business",
+      "handle": "Suhit Business",
+      "platform": "youtube",
+      "sources": 1,
+      "scenes": 18,
+      "liked_scenes": 18,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-LhLhKW0IN8U/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-LhLhKW0IN8U/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-LhLhKW0IN8U/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-LhLhKW0IN8U/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:Suhit Amin",
+      "handle": "Suhit Amin",
+      "platform": "youtube",
+      "sources": 1,
+      "scenes": 18,
+      "liked_scenes": 18,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-9HG3AhWVpbg/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-9HG3AhWVpbg/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-9HG3AhWVpbg/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-9HG3AhWVpbg/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:Max Sturtevant",
+      "handle": "Max Sturtevant",
+      "platform": "youtube",
+      "sources": 1,
+      "scenes": 18,
+      "liked_scenes": 18,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-onxqELLUp3M/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-onxqELLUp3M/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-onxqELLUp3M/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-onxqELLUp3M/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:Jeremy Moser",
+      "handle": "Jeremy Moser",
+      "platform": "youtube",
+      "sources": 1,
+      "scenes": 18,
+      "liked_scenes": 18,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-N7DCv0wHMzY/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-N7DCv0wHMzY/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-N7DCv0wHMzY/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-N7DCv0wHMzY/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:Fabio Was Here",
+      "handle": "Fabio Was Here",
+      "platform": "youtube",
+      "sources": 1,
+      "scenes": 17,
+      "liked_scenes": 17,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-v7bu20F62JM/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-v7bu20F62JM/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-v7bu20F62JM/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-v7bu20F62JM/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:Musa",
+      "handle": "Musa",
+      "platform": "youtube",
+      "sources": 1,
+      "scenes": 14,
+      "liked_scenes": 14,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-EdfIYgRIH7w/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-EdfIYgRIH7w/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-EdfIYgRIH7w/s10_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-EdfIYgRIH7w/s11_1.jpg"
+      ],
+      "profile": null
+    },
+    {
+      "id": "account:Brandon Bryant",
+      "handle": "Brandon Bryant",
+      "platform": "youtube",
+      "sources": 1,
+      "scenes": 14,
+      "liked_scenes": 14,
+      "covers": [
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-AO2VJ1eHi9c/s00_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/yt-AO2VJ1eHi9c/s01_1.jpg",
+        "https://wafees-macbook-pro-4365.tailb235e
+/api/boards/account:NormieEdits
+{
+  "id": "account:NormieEdits",
+  "kind": "account",
+  "title": "@NormieEdits",
+  "subtitle": "91 posts \u00b7 413 scenes",
+  "profile": "https://x.com/NormieEdits",
+  "groups": [
+    {
+      "source_id": "x-2105268022827229443",
+      "title": "My edit Vs Ai Recreation",
+      "url": "https://x.com/NormieEdits/status/2105268022827229443",
+      "note": "",
+      "verdict": null,
+      "origin": "seed",
+      "scenes": [
+        {
+          "id": "x-2105268022827229443:0",
+          "image": "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2105268022827229443/s00_1.jpg",
+          "frames": [
+            "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2105268022827229443/s00_0.jpg",
+            "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2105268022827229443/s00_1.jpg",
+            "https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2105268022827229443/s00_2.jpg"
+          ],
+          "timestamp": "0:00",
+          "title": "",
+          "link": "https://x.com/NormieEdits/status/2105268022827229443",
+          "tags": {},
+          "quality": null
+        }
+      ]
+    }
+  ]
+}
+groups 91 scenes 413
+
+**Designing canvas and overlay layout**
+exec
+/bin/zsh -lc "cat apple/Fork/DetailViews.swift apple/Fork/HistoryView.swift apple/Fork/TodayView.swift; sed -n '85,210p' apple/Fork/MapView.swift; cat apple/Checks/run.py; head -70 apple/Checks/Smoke.swift; git status --short" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+import SwiftUI
+
+struct SceneDetailView: View {
+    var id: String
+    @Environment(APIClient.self) private var api
+    @Environment(AppNavigation.self) private var navigation
+    @Environment(\.dismiss) private var dismiss
+    @Environment(\.openURL) private var openURL
+    @State private var store = LoadStore<Scene>()
+    @State private var selectedFrame: String?
+    var body: some View {
+        NavigationStack {
+            ScrollView {
+                VStack(alignment: .leading, spacing: 16) {
+                    if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+                    if let scene = store.value {
+                        RemoteImage(path: selectedFrame ?? scene.image).frame(height: 320).clipShape(.rect(cornerRadius: 10))
+                        if let frames = scene.frame_urls, frames.count > 1 {
+                            ScrollView(.horizontal) {
+                                HStack {
+                                    ForEach(frames, id: \.self) { frame in
+                                        Button { selectedFrame = frame } label: {
+                                            RemoteImage(path: frame).frame(width: 120, height: 80).clipShape(.rect(cornerRadius: 6))
+                                                .overlay(RoundedRectangle(cornerRadius: 6).stroke(selectedFrame == frame ? Color.accentColor : .clear, lineWidth: 2))
+                                        }.buttonStyle(.plain).accessibilityLabel("Show frame \((frames.firstIndex(of: frame) ?? 0) + 1)")
+                                    }
+                                }
+                            }
+                        }
+                        Text(scene.displayTitle).font(.title2).fontWeight(.semibold)
+                        Text("at \(scene.timestamp ?? "0:00")").font(.subheadline.monospacedDigit()).foregroundStyle(.secondary)
+                        if let description = scene.description, !description.isEmpty { Text(description) }
+                        HStack {
+                            Button("Open at \(scene.timestamp ?? "0:00") ↗") { if let url = URL(string: scene.link) { openURL(url) } }.buttonStyle(.borderedProminent)
+                            if let url = URL(string: scene.link) { ShareLink(item: url) }
+                        }
+                        if let source = scene.source {
+                            NavigationLink {
+                                SourceDetailView(id: source.id)
+                            } label: {
+                                VStack(alignment: .leading) {
+                                    Text("From \(source.displayTitle)")
+                                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").font(.subheadline).foregroundStyle(.secondary)
+                                }
+                            }
+                        }
+                        if let tags = scene.tags {
+                            ForEach(["technique", "style", "format", "motion", "medium", "palette", "concepts"], id: \.self) { facet in
+                                if let values = tags[facet], !values.isEmpty {
+                                    Text(facet.capitalized).font(.headline)
+                                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 120))], alignment: .leading) {
+                                        ForEach(values, id: \.self) { tag in
+                                            Button(tag) {
+                                                navigation.focus("idea:\(facet):\(tag)")
+                                                dismiss()
+                                            }.buttonStyle(.bordered).tint(facetColor(facet))
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    } else if store.loading { ProgressView().frame(maxWidth: .infinity).padding(80) }
+                }.padding().frame(maxWidth: 850).frame(maxWidth: .infinity)
+            }.navigationTitle("Scene")
+            .toolbar { ToolbarItem(placement: .confirmationAction) { Button("Done") { dismiss() } } }
+            .task(id: id) { await load() }
+            .onChange(of: navigation.mapFocus) { dismiss() }
+        }
+        #if os(macOS)
+        .frame(minWidth: 650, idealWidth: 800, minHeight: 650)
+        #endif
+    }
+    private func load() async { await store.load { try await api.request("scenes/\(id)") } }
+}
+
+struct SourceDetailView: View {
+    var id: String
+    @Environment(APIClient.self) private var api
+    @State private var store = LoadStore<Source>()
+    @State private var detail: ItemID?
+    @State private var sending = false
+    @State private var actionError: String?
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 16) {
+                if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+                if let error = actionError { Text(error).foregroundStyle(.red) }
+                if let source = store.value {
+                    Text(source.displayTitle).font(.title2)
+                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").foregroundStyle(.secondary)
+                    HStack {
+                        if let url = URL(string: source.url) { Link("Open source ↗", destination: url) }
+                        Spacer()
+                        Button { Task { await vote(source.verdict == "dislike" ? "clear" : "dislike") } } label: {
+                            Label("Dislike", systemImage: source.verdict == "dislike" ? "xmark.circle.fill" : "xmark.circle")
+                        }.tint(source.verdict == "dislike" ? .red : .secondary)
+                        Button { Task { await vote(source.verdict == "like" ? "clear" : "like") } } label: {
+                            Label("Like", systemImage: source.verdict == "like" ? "heart.fill" : "heart")
+                        }.tint(source.verdict == "like" ? .pink : .secondary)
+                    }.buttonStyle(.bordered).disabled(sending)
+                    HStack {
+                        if let platform = source.platform { Text(platform.capitalized) }
+                        if let duration = source.duration { Text("\(Int(duration) / 60):\(String(format: "%02d", Int(duration) % 60))") }
+                        if let origin = source.origin { Text(origin.capitalized) }
+                    }.font(.subheadline).foregroundStyle(.secondary)
+                    if let pitch = source.pitch, !pitch.isEmpty { Text(pitch) }
+                    if let status = source.status { Text(status.capitalized).font(.caption).foregroundStyle(.secondary) }
+                    let scenes = source.scenes ?? []
+                    if scenes.isEmpty { ContentUnavailableView("No scenes yet", systemImage: "photo.stack") }
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 155, maximum: 280), alignment: .top)], spacing: 20) {
+                        ForEach(scenes) { scene in
+                            Button { detail = ItemID(id: scene.id) } label: { SceneCard(scene: scene) }.buttonStyle(.plain)
+                        }
+                    }
+                } else if store.loading { ProgressView().frame(maxWidth: .infinity).padding(80) }
+            }.padding()
+        }.navigationTitle("Source")
+        .task(id: id) { await load() }
+        .sheet(item: $detail) { SceneDetailView(id: $0.id) }
+    }
+    private func load() async { await store.load { try await api.request("sources/\(id)") } }
+    private func vote(_ verdict: String) async {
+        sending = true; actionError = nil
+        do { try await api.swipe(id, verdict); await load() } catch { actionError = error.localizedDescription }
+        sending = false
+    }
+}
+import SwiftUI
+
+struct HistoryView: View {
+    @Environment(APIClient.self) private var api
+    @State private var store = LoadStore<Items<HistoryItem>>()
+    @State private var filter = "All"
+    @State private var sending = false
+    @State private var actionError: String?
+    private var items: [HistoryItem] {
+        (store.value?.items ?? []).filter { filter == "All" || $0.verdict == (filter == "Liked" ? "like" : "dislike") }
+    }
+    var body: some View {
+        VStack(spacing: 0) {
+            Picker("Verdict", selection: $filter) {
+                ForEach(["All", "Liked", "Disliked"], id: \.self) { Text($0) }
+            }.pickerStyle(.segmented).padding()
+            if let error = actionError { Text(error).foregroundStyle(.red) }
+            if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+            if store.loading { ProgressView() }
+            List(items) { item in
+                NavigationLink { SourceDetailView(id: item.id) } label: {
+                    HStack(spacing: 12) {
+                        RemoteImage(path: item.cover).frame(width: 70, height: 55).clipShape(.rect(cornerRadius: 6))
+                        VStack(alignment: .leading, spacing: 4) {
+                            Text(item.title.isEmpty ? "Untitled source" : item.title).lineLimit(2)
+                            Text(item.author.hasPrefix("@") ? item.author : "@\(item.author)").font(.subheadline).foregroundStyle(.secondary)
+                            if let date = item.date { Text(date, style: .relative).font(.caption).foregroundStyle(.secondary) }
+                        }
+                        Spacer()
+                        Image(systemName: item.verdict == "like" ? "heart.fill" : "xmark").foregroundStyle(item.verdict == "like" ? Color.pink : Color.secondary)
+                    }
+                }
+                .swipeActions {
+                    Button("Clear", role: .destructive) { Task { await update(item.id, "clear") } }
+                    Button(item.verdict == "like" ? "Dislike" : "Like") { Task { await update(item.id, item.verdict == "like" ? "dislike" : "like") } }.tint(.accentColor)
+                }
+                .contextMenu {
+                    Button(item.verdict == "like" ? "Dislike" : "Like") { Task { await update(item.id, item.verdict == "like" ? "dislike" : "like") } }
+                    Button("Clear verdict", role: .destructive) { Task { await update(item.id, "clear") } }
+                }
+            }.disabled(sending)
+            .overlay { if items.isEmpty && !store.loading && store.error == nil { ContentUnavailableView("No \(filter == "All" ? "swipes" : filter.lowercased() + " picks") yet", systemImage: "clock", description: Text("Your swipe history appears here.")) } }
+            .refreshable { await load() }
+        }.navigationTitle("History")
+        .toolbar { Button("Refresh", systemImage: "arrow.clockwise") { Task { await load() } } }
+        .task(id: api.revision) { await load() }
+    }
+    private func load() async { await store.load { try await api.request("history") } }
+    private func update(_ id: String, _ verdict: String) async {
+        guard !sending else { return }
+        sending = true; actionError = nil
+        do { try await api.swipe(id, verdict); await load() } catch { actionError = error.localizedDescription }
+        sending = false
+    }
+}
+import SwiftUI
+
+struct TodayView: View {
+    @Environment(APIClient.self) private var api
+    @Environment(AppNavigation.self) private var navigation
+    @Environment(\.openURL) private var openURL
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @State private var store = LoadStore<TodayResponse>()
+    @State private var sceneIndex = 0
+    @State private var offset: CGFloat = 0
+    @State private var sending = false
+    @State private var undoIDs: [String] = []
+    @State private var actionError: String?
+    private var current: Source? { store.value?.items.first { $0.verdict == nil } }
+    private var scenes: [Scene] { current?.scenes ?? [] }
+    private var scene: Scene? { scenes.isEmpty ? nil : scenes[min(sceneIndex, scenes.count - 1)] }
+    var body: some View {
+        ScrollView {
+            VStack(spacing: 16) {
+                if let error = store.error { ErrorNotice(message: error) { Task { await reload() } } }
+                if let error = actionError { Text(error).foregroundStyle(.red) }
+                if let today = store.value {
+                    HStack { Spacer(); Text("\(today.items.filter { $0.verdict == nil }.count) of \(today.total) left").foregroundStyle(.secondary) }
+                    if today.total == 0 {
+                        ContentUnavailableView("Grokbot hasn't sent today's picks yet", systemImage: "tray", description: Text("Pull to refresh for new picks."))
+                    } else if let item = current {
+                        card(item)
+                        HStack(spacing: 40) {
+                            Button { Task { await vote("dislike") } } label: { Image(systemName: "xmark").frame(width: 40, height: 40) }
+                                .keyboardShortcut(.leftArrow, modifiers: []).accessibilityLabel("Dislike")
+                            Button { Task { await undo() } } label: { Image(systemName: "arrow.uturn.backward").frame(width: 40, height: 40) }
+                                .keyboardShortcut("z", modifiers: .command).disabled(undoIDs.isEmpty).accessibilityLabel("Undo swipe")
+                            Button { Task { await vote("like") } } label: { Image(systemName: "heart").frame(width: 40, height: 40) }
+                                .keyboardShortcut(.rightArrow, modifiers: []).accessibilityLabel("Like")
+                        }.buttonStyle(.bordered).buttonBorderShape(.circle).disabled(sending)
+                    } else {
+                        ContentUnavailableView {
+                            Label("Done for today · \(today.items.filter { $0.verdict == "like" }.count) liked", systemImage: "checkmark.circle")
+                        } actions: { Button("Go to Map") { navigation.selection = .map } }
+                        if !undoIDs.isEmpty { Button("Undo last swipe") { Task { await undo() } }.keyboardShortcut("z", modifiers: .command).disabled(sending) }
+                    }
+                } else if store.loading { ProgressView().padding(80) }
+            }.padding().frame(maxWidth: 680).frame(maxWidth: .infinity)
+        }
+        .navigationTitle("Today")
+        .refreshable { await reload() }
+        .toolbar { Button("Refresh", systemImage: "arrow.clockwise") { Task { await reload() } }.disabled(sending) }
+        .task(id: api.revision) { if !sending { await reload() } }
+        .onChange(of: current?.id) { sceneIndex = 0 }
+    }
+    private func card(_ item: Source) -> some View {
+        VStack(alignment: .leading, spacing: 12) {
+            Button {
+                if !scenes.isEmpty { sceneIndex = (sceneIndex + 1) % scenes.count }
+            } label: {
+                RemoteImage(path: scene?.image).frame(height: 320).clipShape(.rect(cornerRadius: 12))
+            }.buttonStyle(.plain).accessibilityLabel("Next scene")
+            HStack(spacing: 6) {
+                Spacer()
+                ForEach(Array(scenes.enumerated()), id: \.element.id) { index, _ in
+                    Button { sceneIndex = index } label: {
+                        Image(systemName: index == sceneIndex ? "circle.fill" : "circle").font(.system(size: 7))
+                    }.buttonStyle(.plain).accessibilityLabel("Scene \(index + 1) of \(scenes.count)")
+                }
+                Spacer()
+            }
+            Text(item.displayTitle).font(.title2).fontWeight(.semibold)
+            HStack {
+                Text(item.author.hasPrefix("@") ? item.author : "@\(item.author)")
+                if let duration = item.duration { Text("· \(Int(duration) / 60):\(String(format: "%02d", Int(duration) % 60))") }
+                Text("· \(item.origin == "grok" ? "Grok pick" : "Manual pick")")
+            }.font(.subheadline).foregroundStyle(.secondary)
+            if let pitch = item.pitch, !pitch.isEmpty { Text(pitch) }
+            Button("Open at \(scene?.timestamp ?? "0:00") ↗") {
+                if let url = URL(string: scene?.link ?? item.url) { openURL(url) }
+            }.buttonStyle(.bordered)
+        }
+        .offset(x: offset).rotationEffect(.degrees(reduceMotion ? 0 : Double(offset / 30)))
+        .gesture(DragGesture().onChanged { if !sending { offset = $0.translation.width } }.onEnded {
+            guard !sending else { return }
+            if abs($0.translation.width) > 120 { let verdict = $0.translation.width > 0 ? "like" : "dislike"; Task { await vote(verdict) } }
+            else { withAnimation(.spring) { offset = 0 } }
+        })
+    }
+    private func reload() async { await store.load { try await api.request("today") } }
+    private func vote(_ verdict: String) async {
+        guard let item = current, !sending else { return }
+        sending = true; actionError = nil
+        withAnimation(reduceMotion ? nil : .easeIn(duration: 0.18)) { offset = verdict == "like" ? 1000 : -1000 }
+        do {
+            try await api.swipe(item.id, verdict)
+            try? await Task.sleep(for: .milliseconds(180))
+            if let i = store.value?.items.firstIndex(where: { $0.id == item.id }) { store.value?.items[i].verdict = verdict }
+            undoIDs.append(item.id)
+        } catch { actionError = error.localizedDescription }
+        offset = 0; sending = false
+    }
+    private func undo() async {
+        guard let id = undoIDs.last, !sending else { return }
+        sending = true; actionError = nil
+        do {
+            try await api.swipe(id, "clear")
+            undoIDs.removeLast()
+            await reload()
+        } catch { actionError = error.localizedDescription }
+        sending = false
+    }
+}
+        if node.type == "idea" { navigation.mapFocus = node.id }
+        else { detail = ItemID(id: node.id) }
+    }
+    private func load() async { await store.load(api: api, mode: mode, liked: liked, focus: navigation.mapFocus) }
+}
+
+private struct GraphCanvas: View {
+    var graph: Graph
+    var positions: [String: CGPoint]
+    var select: (GraphNode) -> Void
+    @Environment(APIClient.self) private var api
+    @State private var pan = CGSize.zero
+    @GestureState private var drag = CGSize.zero
+    @State private var zoom: CGFloat = 1
+    @GestureState private var magnification: CGFloat = 1
+    @State private var thumbnails = ThumbnailStore()
+    #if os(macOS)
+    @State private var scrollOffset: CGFloat = 0
+    #endif
+    private let bounds: CGRect
+    private let prominentIdeas: Set<String>
+    init(graph: Graph, positions: [String: CGPoint], select: @escaping (GraphNode) -> Void) {
+        self.graph = graph; self.positions = positions; self.select = select
+        prominentIdeas = Set(graph.nodes.filter { $0.type == "idea" }.sorted {
+            let a = $0.count ?? 1, b = $1.count ?? 1
+            return a == b ? $0.id < $1.id : a > b
+        }.prefix(25).map(\.id))
+        let xs = positions.values.map(\.x), ys = positions.values.map(\.y)
+        bounds = CGRect(x: xs.min() ?? 0, y: ys.min() ?? 0,
+                        width: max(1, (xs.max() ?? 0) - (xs.min() ?? 0)),
+                        height: max(1, (ys.max() ?? 0) - (ys.min() ?? 0)))
+    }
+    private func scale(_ size: CGSize) -> CGFloat { min((size.width - 80) / (bounds.width + 60), (size.height - 80) / (bounds.height + 60)) * zoom * magnification }
+    private func point(_ id: String, _ size: CGSize) -> CGPoint {
+        let p = positions[id] ?? .zero
+        let s = max(0.01, scale(size))
+        return CGPoint(x: (p.x - bounds.midX) * s + size.width / 2 + pan.width + drag.width,
+                       y: (p.y - bounds.midY) * s + size.height / 2 + pan.height + drag.height)
+    }
+    var body: some View {
+        GeometryReader { proxy in
+            #if os(macOS)
+            // SwiftUI's native scroll geometry supplies wheel deltas without an AppKit event monitor.
+            ScrollView(.vertical) {
+                canvas(proxy.size).frame(height: proxy.size.height)
+                    .offset(y: scrollOffset)
+                    .frame(height: proxy.size.height + 100_000, alignment: .top)
+            }.scrollIndicators(.hidden).defaultScrollAnchor(.center)
+            .onScrollGeometryChange(for: CGFloat.self) { $0.contentOffset.y } action: { old, new in
+                scrollOffset = new
+                if abs(new - old) < 2000 { zoom = min(12, max(0.2, zoom * exp((new - old) * 0.003))) }
+            }
+            #else
+            canvas(proxy.size)
+            #endif
+        }
+        .overlay(alignment: .bottomTrailing) {
+            HStack {
+                Button("Zoom out", systemImage: "minus.magnifyingglass") { zoom = max(0.2, zoom / 1.3) }
+                Button("Fit", systemImage: "arrow.up.left.and.arrow.down.right") { zoom = 1; pan = .zero }
+                Button("Zoom in", systemImage: "plus.magnifyingglass") { zoom = min(12, zoom * 1.3) }
+            }.labelStyle(.iconOnly).buttonStyle(.bordered).padding()
+        }
+    }
+    private func canvas(_ size: CGSize) -> some View {
+        let visible = graph.nodes.filter { CGRect(origin: .zero, size: size).insetBy(dx: -40, dy: -40).contains(point($0.id, size)) }
+        let imageKey = visible.filter { $0.type == "scene" }.map(\.id).joined(separator: "|")
+        return Canvas { context, canvasSize in
+            var has = Path(), co = Path(), bridge = Path(), cross = Path()
+            for edge in graph.edges {
+                let a = point(edge.source, canvasSize), b = point(edge.target, canvasSize)
+                switch edge.kind {
+                case "has": has.move(to: a); has.addLine(to: b)
+                case "co": co.move(to: a); co.addLine(to: b)
+                default:
+                    if edge.cross == true { cross.move(to: a); cross.addLine(to: b) }
+                    else { bridge.move(to: a); bridge.addLine(to: b) }
+                }
+            }
+            context.stroke(has, with: .color(.secondary.opacity(0.15)), lineWidth: 0.5)
+            context.stroke(co, with: .color(.secondary.opacity(0.24)), lineWidth: 0.7)
+            context.stroke(bridge, with: .color(.secondary.opacity(0.3)), style: StrokeStyle(lineWidth: 0.7, dash: [3, 3]))
+            context.stroke(cross, with: .color(.accentColor.opacity(0.5)), style: StrokeStyle(lineWidth: 0.8, dash: [3, 3]))
+            for node in visible {
+                let p = point(node.id, canvasSize)
+                if node.type == "idea" {
+                    let r: CGFloat = 3 + sqrt(CGFloat(max(1, node.count ?? 1)))
+                    context.fill(Path(ellipseIn: CGRect(x: p.x - r, y: p.y - r, width: r * 2, height: r * 2)), with: .color(facetColor(node.facet)))
+                    if prominentIdeas.contains(node.id) || zoom * magnification >= 1.8 {
+                        context.draw(Text(node.label).font(.caption2).foregroundColor(facetColor(node.facet)), at: CGPoint(x: p.x + r + 3, y: p.y), anchor: .leading)
+                    }
+                } else {
+                    let rect = CGRect(x: p.x - 13, y: p.y - 13, width: 26, height: 26)
+                    let shape = Path(roundedRect: rect, cornerRadius: 4)
+                    if let image = thumbnails.images[node.id] {
+                        var clipped = context
+                        clipped.clip(to: shape)
+                        clipped.draw(image, in: rect)
+                    } else { context.fill(shape, with: .color(.secondary.opacity(0.4))) }
+                }
+            }
+        }
+        .contentShape(Rectangle())
+        .gesture(DragGesture(minimumDistance: 4).updating($drag) { value, state, _ in state = value.translation }.onEnded { pan.width += $0.translation.width; pan.height += $0.translation.height })
+        .simultaneousGesture(MagnifyGesture().updating($magnification) { value, state, _ in state = value.magnification }.onEnded { zoom = min(12, max(0.2, zoom * $0.magnification)) })
+        .simultaneousGesture(SpatialTapGesture().onEnded { value in
+            let nearest = visible.min { hypot(point($0.id, size).x - value.location.x, point($0.id, size).y - value.location.y) < hypot(point($1.id, size).x - value.location.x, point($1.id, size).y - value.location.y) }
+            if let node = nearest {
+                let p = point(node.id, size)
+                if hypot(p.x - value.location.x, p.y - value.location.y) < 28 { select(node) }
+            }
+        })
+        .task(id: imageKey) {
+            await thumbnails.load(visible, api: api)
+        }
+        .accessibilityLabel("Taste map, \(graph.nodes.count) nodes. Use search to select an idea or scene.")
+    }
+}
+
+@MainActor @Observable private final class ThumbnailStore {
+    var images: [String: Image] = [:]
+    func load(_ visible: [GraphNode], api: APIClient) async {
+        let nodes = visible.filter { $0.type == "scene" && images[$0.id] == nil }
+        for start in stride(from: 0, to: nodes.count, by: 6) {
+            if Task.isCancelled { return }
+            await withTaskGroup(of: Void.self) { group in
+#!/usr/bin/env python3
+"""Run read-only checks against the local API without writing credentials to disk."""
+import os
+from pathlib import Path
+import subprocess
+import tempfile
+
+apple = Path(__file__).resolve().parents[1]
+env = os.environ.copy()
+if not env.get('FORK_TOKEN'):
+    for line in (apple.parent / '.env.local').read_text().splitlines():
+        if line.startswith('FORK_TOKEN='):
+            env['FORK_TOKEN'] = line.split('=', 1)[1].strip().strip('\"\'')
+env.setdefault('FORK_URL', 'http://localhost:3300')
+with tempfile.TemporaryDirectory(prefix='fork-check-') as temp:
+    executable = Path(temp) / 'smoke'
+    cache = Path.home() / 'Library/Caches/ForkSwift'
+    subprocess.run([
+        'xcrun', 'swiftc', '-D', 'DEBUG', '-disable-sandbox', '-swift-version', '6',
+        '-module-cache-path', str(cache), '-parse-as-library',
+        *[str(apple / 'Fork' / name) for name in ['Models.swift', 'APIClient.swift', 'GraphLayout.swift']],
+        str(apple / 'Checks/Smoke.swift'), '-o', str(executable)
+    ], check=True)
+    result = subprocess.run([str(executable)], env=env, text=True, capture_output=True)
+    (apple / 'smoke.log').write_text(result.stdout + result.stderr)
+    print(result.stdout + result.stderr, end='')
+    raise SystemExit(result.returncode)
+import Foundation
+
+// Read-only integration checks. Compile with the same models/client as the app.
+@main struct Smoke {
+    @MainActor static func main() async throws {
+        // A circular cloud must not acquire the old grid's four-fold bias.
+        let cloud = Graph(nodes: (0..<96).map {
+            GraphNode(id: "cloud-\($0)", type: "idea", label: "Cloud", degree: 0)
+        }, edges: [], stats: [:])
+        let cloudLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud")
+        let repeatLayout = try await GraphLayout.shared.positions(graph: cloud, key: "cloud-fresh")
+        precondition(cloudLayout.count == repeatLayout.count && cloudLayout.allSatisfy { repeatLayout[$0.key]?.x == $0.value.x && repeatLayout[$0.key]?.y == $0.value.y }, "Layout must be deterministic without a cache hit")
+        let points = Array(cloudLayout.values)
+        let center = CGPoint(x: points.map(\.x).reduce(0, +) / Double(points.count),
+                             y: points.map(\.y).reduce(0, +) / Double(points.count))
+        let angles = points.map { atan2($0.y - center.y, $0.x - center.x) * 4 }
+        let gridBias = hypot(angles.map { cos($0) }.reduce(0, +), angles.map { sin($0) }.reduce(0, +)) / Double(points.count)
+        precondition(gridBias < 0.2, "Circular repulsion developed an axis-aligned grid")
+        for i in points.indices {
+            for j in points.indices where j > i {
+                precondition(hypot(points[i].x - points[j].x, points[i].y - points[j].y) > 1, "Collapsed nodes")
+            }
+        }
+        print("PASS: deterministic fresh layout, separated cloud, four-fold grid bias \(gridBias)")
+        let api = APIClient()
+        let stats: Stats = try await api.request("stats")
+        let today: TodayResponse = try await api.request("today")
+        let history: Items<HistoryItem> = try await api.request("history")
+        print("Stats: \(stats.scenes) scenes, \(stats.sources) sources; Today: \(today.total); History: \(history.items.count)")
+        let scenes: Items<Scene> = try await api.request("scenes", query: [.init(name: "limit", value: "60"), .init(name: "liked", value: "1")])
+        guard let first = scenes.items.first else { fatalError("Expected a real Library scene") }
+        let scene: Scene = try await api.request("scenes/\(first.id)")
+        guard let sourceID = scene.source?.id, let image = scene.image, let request = api.imageRequest(image),
+              let deepLink = URL(string: scene.link), ["http", "https"].contains(deepLink.scheme) else { fatalError("Missing scene detail fields") }
+        let source: Source = try await api.request("sources/\(sourceID)")
+        precondition(source.scenes?.contains { $0.id == scene.id } == true)
+        let (imageData, response) = try await URLSession.shared.data(for: request)
+        precondition((response as? HTTPURLResponse)?.statusCode == 200 && !imageData.isEmpty)
+        let search: Items<Scene> = try await api.request("scenes", query: [.init(name: "q", value: "showreel"), .init(name: "limit", value: "60")])
+        precondition(!search.items.isEmpty)
+        if let tag = stats.tags.first {
+            let filtered: Items<Scene> = try await api.request("scenes", query: [.init(name: "tag", value: tag.id)])
+            precondition(filtered.items.allSatisfy { $0.tags?[tag.facet]?.contains(tag.tag) == true })
+        }
+        for mode in ["ideas", "full"] {
+            let graph: Graph = try await api.request("graph", query: [.init(name: "mode", value: mode), .init(name: "liked", value: "1")])
+            let ids = Set(graph.nodes.map(\.id))
+            precondition(graph.edges.allSatisfy { ids.contains($0.source) && ids.contains($0.target) })
+            let positions = try await GraphLayout.shared.positions(graph: graph, key: mode)
+            precondition(positions.count == graph.nodes.count)
+            if let idea = graph.nodes.first(where: { $0.type == "idea" }) {
+                let focused: Graph = try await api.request("graph", query: [.init(name: "mode", value: mode), .init(name: "focus", value: idea.id), .init(name: "depth", value: "2")])
+                precondition(focused.nodes.contains { $0.id == idea.id })
+            }
+            print("\(mode): \(graph.nodes.count) nodes, \(graph.edges.count) edges, focus decoded")
+        }
+        // Test the specified scale even when the current library is still being tagged.
+        let nodes = (0..<900).map { GraphNode(id: "n\($0)", type: "idea", label: "Node \($0)", facet: "technique", degree: 9) }
+        let edges = (0..<4000).map { GraphEdge(source: "n\($0 % 900)", target: "n\(($0 * 17 + 1) % 900)", kind: "co", weight: 1) }
+        let graph = Graph(nodes: nodes, edges: edges, stats: [:])
+        let clock = ContinuousClock()
+        let start = clock.now
+        let layout = try await GraphLayout.shared.positions(graph: graph, key: "scale-check")
+        precondition(layout.count == 900 && layout.values.allSatisfy { $0.x.isFinite && $0.y.isFinite })
+        print("900 nodes / 4000 edges / 1000 iterations: \(start.duration(to: clock.now))")
+        let cached = try await GraphLayout.shared.positions(graph: graph, key: "scale-check")
+        precondition(cached.count == layout.count && layout.allSatisfy { cached[$0.key]?.x == $0.value.x && cached[$0.key]?.y == $0.value.y })
+        let badAuth = APIClient()
+        badAuth.token = "invalid-test-token"
+        do {
+?? context/sol-native-r3.log
+
+**Planning UI and navigation layout**
+codex
+The live NormieEdits board has 91 groups and 413 scenes. I’ll cull offscreen frames and cards, load downsampled thumbnails only for visible cards, and draw plain rectangles when zoomed out.
+exec
+/bin/zsh -lc "cat > apple/Fork/BoardModels.swift <<'EOF'
+import Foundation
+
+struct BoardsIndex: Decodable, Sendable {
+    var accounts: [BoardAccount]
+    var videos: [BoardVideo]
+    // Creator seeds aren't boards until they have posts; the index displays accounts/videos.
+}
+struct BoardAccount: Decodable, Identifiable, Sendable {
+    var id: String
+    var handle: String
+    var platform: String
+    var sources: Int
+    var scenes: Int
+    var liked_scenes: Int
+    var covers: [String]
+    var profile: String?
+}
+struct BoardVideo: Decodable, Identifiable, Sendable {
+    var id: String
+    var source_id: String
+    var title: String
+    var author: String
+    var platform: String
+    var scenes: Int
+    var note: String?
+    var cover: String?
+}
+struct Board: Decodable, Sendable {
+    var id: String
+    var kind: String
+    var title: String
+    var subtitle: String
+    var profile: String?
+    var groups: [BoardGroup]
+}
+struct BoardGroup: Decodable, Identifiable, Sendable {
+    var source_id: String
+    var title: String
+    var url: String
+    var note: String?
+    var verdict: String?
+    var origin: String
+    var scenes: [BoardScene]
+    var id: String { source_id }
+}
+struct BoardScene: Decodable, Identifiable, Sendable {
+    var id: String
+    var image: String?
+    var frames: [String]
+    var timestamp: String
+    var title: String
+    var link: String
+    var tags: [String: [String]]
+}
+
+// Geometry only: independent of SwiftUI and cheap to compute once per response.
+struct BoardLayout {
+    struct Frame: Identifiable {
+        var group: BoardGroup
+        var rect: CGRect
+        var id: String { group.id }
+        func cardRect(_ index: Int) -> CGRect {
+            CGRect(x: rect.minX + 16 + CGFloat(index) * 196, y: rect.minY + 88, width: 180, height: 184)
+        }
+    }
+    var frames: [Frame]
+    var bounds: CGRect
+    init(_ board: Board) {
+        let widths = board.groups.map { max(360, CGFloat("'$0.scenes.count) * 196 + 16) }
+        let area = widths.reduce(0, +) * 328
+        let wrap = max(widths.max() ?? 360, sqrt(area) * 1.25)
+        var x: CGFloat = 0, y: CGFloat = 0
+        var result: [Frame] = []
+        for (group, width) in zip(board.groups, widths) {
+            if board.kind == "account", x > 0, x + width > wrap { x = 0; y += 328 }
+            result.append(Frame(group: group, rect: CGRect(x: x, y: y, width: width, height: 288)))
+            x += width + 40
+        }
+        frames = result
+        bounds = result.reduce(CGRect.null) { $0.union($1.rect) }
+        if bounds.isNull { bounds = CGRect(x: 0, y: 0, width: 360, height: 288) }
+    }
+}
+EOF
+python3 - <<'"'PY'
+p='apple/Fork/ForkApp.swift'
+s=open(p).read().replace('case today = \"Today\", map', 'case today = \"Today\", boards = \"Boards\", map').replace('case .map: \"point', 'case .boards: \"rectangle.3.group\"\\n        case .map: \"point').replace('case .map: MapView()', 'case .boards: BoardsView()\\n        case .map: MapView()')
+open(p,'w').write(s)
+p='apple/Fork/Images.swift';s=open(p).read().replace('var fit = true\\n', 'var fit = true\\n    var maxPixel = 1600\\n').replace('|\\\\(path ?? \"\")\")', '|\\\\(path ?? \"\")|\\\\(maxPixel)\")').replace('load(request, api: api)\\n', 'load(request, api: api, maxPixel: maxPixel)\\n');open(p,'w').write(s)
+PY
+cat > apple/Fork/BoardsView.swift <<'EOF'
+import SwiftUI
+
+struct AuthorBoardLink: View {
+    var author: String
+    private var handle: String { author.hasPrefix(\"@\") ? String(author.dropFirst()) : author }
+    var body: some View {
+        NavigationLink { BoardDetailView(id: \"account:\\(handle)\") } label: { Text(\"@\\(handle)\") }
+            .buttonStyle(.plain).foregroundStyle(.secondary)
+            .accessibilityLabel(\"Open @\\(handle) board\")
+    }
+}
+
+struct BoardsView: View {
+    @Environment(APIClient.self) private var api
+    @State private var store = LoadStore<BoardsIndex>()
+    @State private var category = \"Accounts\"
+    @State private var query = \"\"
+    var body: some View {
+        VStack(spacing: 0) {
+            Picker(\"Boards\", selection: "'$category) {
+                Text("Accounts").tag("Accounts")
+                Text("Videos").tag("Videos")
+            }.pickerStyle(.segmented).padding()
+            ScrollView {
+                if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+                if store.loading { ProgressView().padding() }
+                if let index = store.value {
+                    let accounts = index.accounts.filter { query.isEmpty || $0.handle.localizedCaseInsensitiveContains(query) }
+                    let videos = index.videos.filter { query.isEmpty || "'"\\("'$0.title) '"\\("'$0.author) '"\\("'$0.note ?? "")".localizedCaseInsensitiveContains(query) }
+                    if category == "Accounts" ? accounts.isEmpty : videos.isEmpty { ContentUnavailableView.search(text: query) }
+                    LazyVGrid(columns: [GridItem(.adaptive(minimum: 230, maximum: 350), alignment: .top)], spacing: 24) {
+                        if category == "Accounts" {
+                            ForEach(accounts) { account in
+                                NavigationLink { BoardDetailView(id: account.id) } label: {
+                                    VStack(alignment: .leading, spacing: 8) {
+                                        Grid(horizontalSpacing: 3, verticalSpacing: 3) {
+                                            ForEach(0..<2) { row in
+                                                GridRow {
+                                                    ForEach(0..<2) { col in
+                                                        let i = row * 2 + col
+                                                        RemoteImage(path: i < account.covers.count ? account.covers[i] : nil, fit: false, maxPixel: 320).frame(height: 90)
+                                                    }
+                                                }
+                                            }
+                                        }.clipShape(.rect(cornerRadius: 10))
+                                        Text("@'"\\(account.handle)\").font(.headline)
+                                        Text(\"\\(account.sources) posts · \\(account.scenes) scenes\").font(.subheadline).foregroundStyle(.secondary)
+                                    }
+                                }.buttonStyle(.plain)
+                            }
+                        } else {
+                            ForEach(videos) { video in
+                                VStack(alignment: .leading, spacing: 8) {
+                                    NavigationLink { BoardDetailView(id: video.id) } label: {
+                                        VStack(alignment: .leading, spacing: 8) {
+                                            RemoteImage(path: video.cover, maxPixel: 480).frame(height: 180).clipShape(.rect(cornerRadius: 10))
+                                            Text(video.title.isEmpty ? \"Untitled video\" : video.title).font(.headline).lineLimit(2)
+                                        }
+                                    }.buttonStyle(.plain)
+                                    AuthorBoardLink(author: video.author).font(.subheadline)
+                                    if let note = video.note, "'!note.isEmpty { Text(note).font(.caption).foregroundStyle(.secondary).lineLimit(3) }
+                                }
+                            }
+                        }
+                    }.padding()
+                }
+            }.refreshable { await load() }
+        }.navigationTitle("Boards")
+        .searchable(text: $query, prompt: "Search boards")
+        .toolbar { Button("Refresh", systemImage: "arrow.clockwise") { Task { await load() } } }
+        .task(id: "'"\\(api.server)|\\(api.revision)\") { await load() }
+    }
+    private func load() async { await store.load { try await api.request(\"boards\") } }
+}
+
+struct BoardDetailView: View {
+    var id: String
+    @Environment(APIClient.self) private var api
+    @State private var store = LoadStore<Board>()
+    @State private var layout: BoardLayout?
+    var body: some View {
+        VStack(spacing: 0) {
+            if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
+            if let board = store.value, let layout {
+                HStack {
+                    VStack(alignment: .leading, spacing: 4) {
+                        Text(board.title).font(.headline)
+                        Text(board.subtitle).font(.subheadline).foregroundStyle(.secondary)
+                    }
+                    Spacer()
+                    if let profile = board.profile, let url = URL(string: profile) { Link(\"Profile ↗\", destination: url) }
+                }.padding()
+                Divider()
+                if board.groups.isEmpty { ContentUnavailableView(\"No scenes yet\", systemImage: \"rectangle.3.group\") }
+                else { BoardCanvas(layout: layout).id(\"\\(api.server)|\\(board.id)\") }
+            } else if store.loading { ProgressView().frame(maxWidth: .infinity, maxHeight: .infinity) }
+        }.navigationTitle(\"Board\")
+        .toolbar { Button(\"Refresh\", systemImage: \"arrow.clockwise\") { Task { await load() } } }
+        .task(id: \"\\(api.server)|\\(api.revision)|\\(id)\") { await load() }
+    }
+    private func load() async {
+        await store.load { try await api.request(\"boards/\\(id)\") }
+        if let board = store.value { layout = BoardLayout(board) }
+    }
+}
+
+private struct BoardCanvas: View {
+    var layout: BoardLayout
+    @State private var zoom: CGFloat = 1
+    @State private var pan = CGSize.zero
+    @GestureState private var drag = CGSize.zero
+    @GestureState private var magnification: CGFloat = 1
+    @State private var detail: ItemID?
+    #if os(macOS)
+    @State private var scrollOffset: CGFloat = 0
+    #endif
+    var body: some View {
+        GeometryReader { proxy in
+            #if os(macOS)
+            ScrollView(.vertical) {
+                content(proxy.size).frame(height: proxy.size.height).offset(y: scrollOffset)
+                    .frame(height: proxy.size.height + 100_000, alignment: .top)
+            }.scrollIndicators(.hidden).defaultScrollAnchor(.center)
+            .onScrollGeometryChange(for: CGFloat.self) { "'$0.contentOffset.y } action: { old, new in
+                scrollOffset = new
+                if abs(new - old) < 2000 { zoom = min(100, max(0.1, zoom * exp((new - old) * 0.003))) }
+            }
+            #else
+            content(proxy.size)
+            #endif
+        }
+        .clipped()
+        .overlay(alignment: .bottomTrailing) {
+            HStack {
+                Button("Zoom out", systemImage: "minus.magnifyingglass") { zoom = max(0.1, zoom / 1.4) }
+                Button("Fit", systemImage: "arrow.up.left.and.arrow.down.right") { zoom = 1; pan = .zero }
+                Button("Zoom in", systemImage: "plus.magnifyingglass") { zoom = min(100, zoom * 1.4) }
+            }.labelStyle(.iconOnly).buttonStyle(.bordered).padding().background(.regularMaterial, in: .rect(cornerRadius: 12)).padding()
+        }
+        .sheet(item: $detail) { SceneDetailView(id: $0.id) }
+    }
+    private func content(_ size: CGSize) -> some View {
+        let fit = max(0.001, min(max(1, size.width - 64) / layout.bounds.width, max(1, size.height - 64) / layout.bounds.height))
+        let scale = min(3, max(0.005, fit * zoom * magnification))
+        let origin = CGPoint(x: size.width / 2 + pan.width + drag.width - layout.bounds.midX * scale,
+                             y: size.height / 2 + pan.height + drag.height - layout.bounds.midY * scale)
+        let viewport = CGRect(x: -origin.x / scale, y: -origin.y / scale, width: size.width / scale, height: size.height / scale)
+        let visible = layout.frames.filter { $0.rect.intersects(viewport) }
+        let detailed = scale >= 0.45
+        return ZStack(alignment: .topLeading) {
+            Color(white: 0.93)
+            Canvas { context, _ in
+                context.translateBy(x: origin.x, y: origin.y)
+                context.scaleBy(x: scale, y: scale)
+                for frame in visible {
+                    context.fill(Path(roundedRect: frame.rect, cornerRadius: 12), with: .color(.white))
+                    if !detailed {
+                        context.draw(Text(frame.group.title.isEmpty ? "Untitled post" : frame.group.title).font(.system(size: 16)).foregroundColor(.black), in: CGRect(x: frame.rect.minX + 16, y: frame.rect.minY + 12, width: frame.rect.width - 32, height: 56))
+                        for i in frame.group.scenes.indices {
+                            let rect = frame.cardRect(i)
+                            if rect.intersects(viewport) { context.fill(Path(roundedRect: rect, cornerRadius: 6), with: .color(Color(white: 0.82))) }
+                        }
+                    }
+                }
+            }.allowsHitTesting(false)
+            if detailed {
+                ForEach(visible) { frame in
+                    let header = CGRect(x: frame.rect.minX + 16, y: frame.rect.minY + 8, width: frame.rect.width - 32, height: 72)
+                    if header.intersects(viewport) {
+                        BoardFrameHeader(group: frame.group)
+                            .frame(width: header.width, height: header.height).scaleEffect(scale)
+                            .position(x: origin.x + header.midX * scale, y: origin.y + header.midY * scale)
+                    }
+                    ForEach(Array(frame.group.scenes.enumerated()), id: '"\\.element.id) { i, scene in
+                        let rect = frame.cardRect(i)
+                        if rect.intersects(viewport) {
+                            Button { detail = ItemID(id: scene.id) } label: { BoardSceneCard(scene: scene) }
+                                .buttonStyle(.plain).frame(width: rect.width, height: rect.height).scaleEffect(scale)
+                                .position(x: origin.x + rect.midX * scale, y: origin.y + rect.midY * scale)
+                        }
+                    }
+                }
+            }
+        }.contentShape(Rectangle())
+        .gesture(DragGesture(minimumDistance: 5).updating("'$drag) { value, state, _ in state = value.translation }
+            .onEnded { pan.width += $0.translation.width; pan.height += $0.translation.height })
+        .simultaneousGesture(MagnifyGesture().updating($magnification) { value, state, _ in state = value.magnification }
+            .onEnded { zoom = min(100, max(0.1, zoom * $0.magnification)) })
+        .simultaneousGesture(SpatialTapGesture().onEnded { value in
+            guard !detailed else { return }
+            let p = CGPoint(x: (value.location.x - origin.x) / scale, y: (value.location.y - origin.y) / scale)
+            for frame in visible {
+                for i in frame.group.scenes.indices where frame.cardRect(i).contains(p) { detail = ItemID(id: frame.group.scenes[i].id); return }
+            }
+        })
+        .accessibilityLabel("Board canvas. Pan to move, pinch to zoom, or use Fit and zoom buttons.")
+    }
+}
+
+private struct BoardFrameHeader: View {
+    var group: BoardGroup
+    var body: some View {
+        HStack(alignment: .top, spacing: 12) {
+            VStack(alignment: .leading, spacing: 4) {
+                Text(group.title.isEmpty ? "Untitled post" : group.title).font(.subheadline.weight(.semibold)).lineLimit(1)
+                if let note = group.note, !note.isEmpty { Text(note).font(.caption).italic().lineLimit(2) }
+            }
+            Spacer(minLength: 0)
+            if group.verdict == "like" || group.origin == "seed" && group.verdict != "dislike" { Image(systemName: "heart.fill").foregroundStyle(.pink).accessibilityLabel("Liked") }
+            else if group.verdict == "dislike" { Image(systemName: "xmark").foregroundStyle(.secondary).accessibilityLabel("Disliked") }
+            if let url = URL(string: group.url) { Link("Open ↗", destination: url).font(.caption) }
+        }.foregroundStyle(.black).environment('"\\.colorScheme, .light)
+    }
+}
+private struct BoardSceneCard: View {
+    var scene: BoardScene
+    var body: some View {
+        VStack(alignment: .leading, spacing: 5) {
+            RemoteImage(path: scene.image, maxPixel: 480).frame(height: 120).clipShape(.rect(cornerRadius: 6))
+            Text(scene.timestamp).font(.caption.monospacedDigit()).foregroundStyle(.secondary)
+            Text(scene.title.isEmpty ? \"Scene at \\(scene.timestamp)\" : scene.title).font(.caption).lineLimit(2)
+            Spacer(minLength: 0)
+        }.foregroundStyle(.black).environment(\\.colorScheme, .light).contentShape(Rectangle())
+    }
+}
+EOF" in /Users/waffu/Claude/inspo
+ succeeded in 268ms:
+**Optimizing array processing and UI elements**
+exec
+/bin/zsh -lc "python3 - <<'PY'
+p='apple/Fork/DetailViews.swift';s=open(p).read();s=s.replace('''                                VStack(alignment: .leading) {
+                                    Text(\"From \\\\(source.displayTitle)\")
+                                    Text(source.author.hasPrefix(\"@\") ? source.author : \"@\\\\(source.author)\").font(.subheadline).foregroundStyle(.secondary)
+                                }''','''                                Text(\"From \\\\(source.displayTitle)\")''');s=s.replace('''                            }
+                        }
+                        if let tags''','''                            }
+                            AuthorBoardLink(author: source.author).font(.subheadline)
+                        }
+                        if let tags''');s=s.replace('Text(source.author.hasPrefix(\"@\") ? source.author : \"@\\\\(source.author)\").foregroundStyle(.secondary)', 'AuthorBoardLink(author: source.author)');s=s.replace('''                        Spacer()
+                        Button { Task { await vote''','''                        NavigationLink { BoardDetailView(id: \"video:\\\\(source.id)\") } label: { Label(\"Board\", systemImage: \"rectangle.3.group\") }
+                        Spacer()
+                        Button { Task { await vote''',1);open(p,'w').write(s)
+p='apple/Fork/TodayView.swift';s=open(p).read().replace('Text(item.author.hasPrefix(\"@\") ? item.author : \"@\\\\(item.author)\")','AuthorBoardLink(author: item.author)');open(p,'w').write(s)
+p='apple/Fork/HistoryView.swift';s=open(p).read();s=s.replace('''                NavigationLink { SourceDetailView(id: item.id) } label: {
+                    HStack(spacing: 12) {''','''                HStack(spacing: 12) {''');s=s.replace('''                            Text(item.title.isEmpty ? \"Untitled source\" : item.title).lineLimit(2)
+                            Text(item.author.hasPrefix(\"@\") ? item.author : \"@\\\\(item.author)\").font(.subheadline).foregroundStyle(.secondary)''','''                            NavigationLink { SourceDetailView(id: item.id) } label: {
+                                Text(item.title.isEmpty ? \"Untitled source\" : item.title).lineLimit(2)
+                            }
+                            AuthorBoardLink(author: item.author).font(.subheadline)''');s=s.replace('''                    }
+                }
+                .swipeActions''','''                }
+                .swipeActions''');open(p,'w').write(s)
+p='apple/Checks/run.py';s=open(p).read().replace(\"'Models.swift', 'APIClient.swift', 'GraphLayout.swift'\", \"'Models.swift', 'BoardModels.swift', 'APIClient.swift', 'GraphLayout.swift'\");open(p,'w').write(s)
+p='apple/Checks/Smoke.swift';s=open(p).read().replace('''        let stats: Stats''','''        let boards: BoardsIndex = try await api.request(\"boards\")
+        precondition("'!boards.accounts.isEmpty && !boards.videos.isEmpty)
+        let account: Board = try await api.request("boards/account:NormieEdits")
+        let boardLayout = BoardLayout(account)
+        precondition(boardLayout.frames.count == account.groups.count)
+        precondition(account.groups.count >= 91 && account.groups.reduce(0) { $0 + $1.scenes.count } >= 413)
+        for (i, frame) in boardLayout.frames.enumerated() {
+            precondition(frame.rect.width.isFinite && frame.rect.height.isFinite)
+            for j in boardLayout.frames.indices where j > i { precondition(!frame.rect.intersects(boardLayout.frames[j].rect)) }
+            for index in frame.group.scenes.indices { precondition(frame.rect.contains(frame.cardRect(index))) }
+        }
+        let video: Board = try await api.request("boards/'"\\\\(boards.videos[0].id)\")
+        precondition(video.kind == \"video\" && video.groups.count == 1)
+        let boardScene = account.groups.flatMap(\\\\.scenes)[0]
+        let boardDetail: Scene = try await api.request(\"scenes/\\\\(boardScene.id)\")
+        precondition(boardDetail.id == boardScene.id)
+        print(\"PASS: Boards index, NormieEdits \\\\(account.groups.count) groups / \\\\(account.groups.reduce(0) { "'$0 + $1.scenes.count }) scenes, nonoverlapping frames, contained cards, video board, scene detail")
+        let stats: Stats'"''');open(p,'w').write(s)
+PY
+cd apple && xcodegen && xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build > build-ios.log 2>&1" in /Users/waffu/Claude/inspo
+**Running parallel smoke test**
+exec
+/bin/zsh -lc 'python3 apple/Checks/run.py' in /Users/waffu/Claude/inspo
+exec
+/bin/zsh -lc "rg -n 'error:|warning:|BUILD ' apple/build-ios.log; sed -n '20,52p' apple/Fork/HistoryView.swift; rg -n 'task\\(id|maxPixel' apple/Fork/Images.swift; git diff --stat -- apple" in /Users/waffu/Claude/inspo
+ succeeded in 138ms:
+9:2026-11-10 07:50:58.338 xcodebuild[88388:14122302] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
+29:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+33:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+34:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+40:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+            List(items) { item in
+                HStack(spacing: 12) {
+                        RemoteImage(path: item.cover).frame(width: 70, height: 55).clipShape(.rect(cornerRadius: 6))
+                        VStack(alignment: .leading, spacing: 4) {
+                            NavigationLink { SourceDetailView(id: item.id) } label: {
+                                Text(item.title.isEmpty ? "Untitled source" : item.title).lineLimit(2)
+                            }
+                            AuthorBoardLink(author: item.author).font(.subheadline)
+                            if let date = item.date { Text(date, style: .relative).font(.caption).foregroundStyle(.secondary) }
+                        }
+                        Spacer()
+                        Image(systemName: item.verdict == "like" ? "heart.fill" : "xmark").foregroundStyle(item.verdict == "like" ? Color.pink : Color.secondary)
+                }
+                .swipeActions {
+                    Button("Clear", role: .destructive) { Task { await update(item.id, "clear") } }
+                    Button(item.verdict == "like" ? "Dislike" : "Like") { Task { await update(item.id, item.verdict == "like" ? "dislike" : "like") } }.tint(.accentColor)
+                }
+                .contextMenu {
+                    Button(item.verdict == "like" ? "Dislike" : "Like") { Task { await update(item.id, item.verdict == "like" ? "dislike" : "like") } }
+                    Button("Clear verdict", role: .destructive) { Task { await update(item.id, "clear") } }
+                }
+            }.disabled(sending)
+            .overlay { if items.isEmpty && !store.loading && store.error == nil { ContentUnavailableView("No \(filter == "All" ? "swipes" : filter.lowercased() + " picks") yet", systemImage: "clock", description: Text("Your swipe history appears here.")) } }
+            .refreshable { await load() }
+        }.navigationTitle("History")
+        .toolbar { Button("Refresh", systemImage: "arrow.clockwise") { Task { await load() } } }
+        .task(id: api.revision) { await load() }
+    }
+    private func load() async { await store.load { try await api.request("history") } }
+    private func update(_ id: String, _ verdict: String) async {
+        guard !sending else { return }
+        sending = true; actionError = nil
+        do { try await api.swipe(id, verdict); await load() } catch { actionError = error.localizedDescription }
+24:    func load(_ request: URLRequest, api: APIClient, maxPixel: Int = 1600) async -> Image? {
+26:        let key = "\(url.absoluteString)|\(maxPixel)"
+39:                        kCGImageSourceThumbnailMaxPixelSize: maxPixel
+63:    var maxPixel = 1600
+77:        .task(id: "\(api.server)|\(api.revision)|\(path ?? "")|\(maxPixel)") {
+81:            image = await ImageCache.shared.load(request, api: api, maxPixel: maxPixel)
+ apple/Checks/Smoke.swift             |  17 +++
+ apple/Checks/run.py                  |   2 +-
+ apple/Fork.xcodeproj/project.pbxproj |   8 ++
+ apple/Fork/DetailViews.swift         |   9 +-
+ apple/Fork/ForkApp.swift             |   4 +-
+ apple/Fork/HistoryView.swift         |  10 +-
+ apple/Fork/Images.swift              |   5 +-
+ apple/Fork/TodayView.swift           |   2 +-
+ apple/build-ios.log                  | 213 ++++++++++++-----------------------
+ 9 files changed, 113 insertions(+), 157 deletions(-)
+
+ exited 1 in 1588ms:
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:63:19: error: argument passed to call that takes no arguments
+61 |         var id: String { group.id }
+62 |         func cardRect(_ index: Int) -> CGRect {
+63 |             CGRect(x: rect.minX + 16 + CGFloat(index) * 196, y: rect.minY + 88, width: 180, height: 184)
+   |                   `- error: argument passed to call that takes no arguments
+64 |         }
+65 |     }
+
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:63:28: error: value of type 'CGRect' has no member 'minX'
+61 |         var id: String { group.id }
+62 |         func cardRect(_ index: Int) -> CGRect {
+63 |             CGRect(x: rect.minX + 16 + CGFloat(index) * 196, y: rect.minY + 88, width: 180, height: 184)
+   |                            `- error: value of type 'CGRect' has no member 'minX'
+64 |         }
+65 |     }
+
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:63:70: error: value of type 'CGRect' has no member 'minY'
+61 |         var id: String { group.id }
+62 |         func cardRect(_ index: Int) -> CGRect {
+63 |             CGRect(x: rect.minX + 16 + CGFloat(index) * 196, y: rect.minY + 88, width: 180, height: 184)
+   |                                                                      `- error: value of type 'CGRect' has no member 'minY'
+64 |         }
+65 |     }
+
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:76:59: error: argument passed to call that takes no arguments
+74 |         for (group, width) in zip(board.groups, widths) {
+75 |             if board.kind == "account", x > 0, x + width > wrap { x = 0; y += 328 }
+76 |             result.append(Frame(group: group, rect: CGRect(x: x, y: y, width: width, height: 288)))
+   |                                                           `- error: argument passed to call that takes no arguments
+77 |             x += width + 40
+78 |         }
+
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:80:39: error: type 'CGRect' has no member 'null'
+78 |         }
+79 |         frames = result
+80 |         bounds = result.reduce(CGRect.null) { $0.union($1.rect) }
+   |                                       `- error: type 'CGRect' has no member 'null'
+81 |         if bounds.isNull { bounds = CGRect(x: 0, y: 0, width: 360, height: 288) }
+82 |     }
+
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:80:50: error: value of type 'CGRect' has no member 'union'
+78 |         }
+79 |         frames = result
+80 |         bounds = result.reduce(CGRect.null) { $0.union($1.rect) }
+   |                                                  `- error: value of type 'CGRect' has no member 'union'
+81 |         if bounds.isNull { bounds = CGRect(x: 0, y: 0, width: 360, height: 288) }
+82 |     }
+
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:81:19: error: value of type 'CGRect' has no member 'isNull'
+79 |         frames = result
+80 |         bounds = result.reduce(CGRect.null) { $0.union($1.rect) }
+81 |         if bounds.isNull { bounds = CGRect(x: 0, y: 0, width: 360, height: 288) }
+   |                   `- error: value of type 'CGRect' has no member 'isNull'
+82 |     }
+83 | }
+
+/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift:81:43: error: argument passed to call that takes no arguments
+79 |         frames = result
+80 |         bounds = result.reduce(CGRect.null) { $0.union($1.rect) }
+81 |         if bounds.isNull { bounds = CGRect(x: 0, y: 0, width: 360, height: 288) }
+   |                                           `- error: argument passed to call that takes no arguments
+82 |     }
+83 | }
+Traceback (most recent call last):
+  File "/Users/waffu/Claude/inspo/apple/Checks/run.py", line 18, in <module>
+    subprocess.run([
+    ~~~~~~~~~~~~~~^^
+        'xcrun', 'swiftc', '-D', 'DEBUG', '-disable-sandbox', '-swift-version', '6',
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        str(apple / 'Checks/Smoke.swift'), '-o', str(executable)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ], check=True)
+    ^^^^^^^^^^^^^^
+  File "/opt/homebrew/Cellar/python@3.15/3.15.1/Frameworks/Python.framework/Versions/3.15/lib/python3.15/subprocess.py", line 692, in run
+    raise CalledProcessError(retcode, process.args,
+                             output=stdout, stderr=stderr)
+subprocess.CalledProcessError: Command ['xcrun', 'swiftc', '-D', 'DEBUG', '-disable-sandbox', '-swift-version', '6', '-module-cache-path', '/Users/waffu/Library/Caches/ForkSwift', '-parse-as-library', '/Users/waffu/Claude/inspo/apple/Fork/Models.swift', '/Users/waffu/Claude/inspo/apple/Fork/BoardModels.swift', '/Users/waffu/Claude/inspo/apple/Fork/APIClient.swift', '/Users/waffu/Claude/inspo/apple/Fork/GraphLayout.swift', '/Users/waffu/Claude/inspo/apple/Checks/Smoke.swift', '-o', '/var/folders/ss/shw8rcjd2rb7jqj1dnbthfr80000gn/T/fork-check-acxzt8tg/smoke'] returned non-zero exit status 1.
+
+ succeeded in 6404ms:
+⚙️  Generating plists...
+⚙️  Generating project...
+⚙️  Writing project...
+Created project at /Users/waffu/Claude/inspo/apple/Fork.xcodeproj
+
+**Reviewing boardScene rendering and navigation**
+exec
+/bin/zsh -lc "rg -n 'error:|warning:|BUILD ' apple/build-ios.log | tail -10; cat apple/README.md" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+9:2026-11-10 07:50:58.338 xcodebuild[88388:14122302] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
+29:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+33:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+34:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+40:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+356:2026-11-10 07:51:03.428 appintentsmetadataprocessor[88574:14122937] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+358:** BUILD SUCCEEDED **
+# Fork native app
+
+One SwiftUI target for iOS 26 and macOS 26. No packages or web views.
+
+Generate and build, sequentially (both destinations share Xcode's build database):
+
+```sh
+cd apple
+xcodegen
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+```
+
+Settings stores the server URL in UserDefaults and the token in Keychain. Debug builds also accept `FORK_URL` and `FORK_TOKEN` in the launch environment. Environment values aren't saved until Save or Test connection is pressed. Release builds ignore those variables. For a physical iPhone, use the Mac's LAN hostname or address in Settings; localhost refers to the iPhone itself.
+
+Debug builds use Swift's `-disable-sandbox` compiler option because the build host already runs in a sandbox and cannot start a nested sandbox for Observation macro helpers. This affects compiler subprocesses, not app permissions. Release has no such override. macOS uses ad hoc signing.
+
+Read-only integration checks (loads the local token only into the Debug check executable's environment):
+
+```sh
+python3 apple/Checks/run.py
+```
+
+Run that command from the repository root. It checks live JSON decoding, search, tag filtering, scene/source details, image fetch, deep-link URL, both graph modes and focus, layout caching, deterministic fresh layouts, circular-cloud separation and grid bias, a 900-node/4,000-edge layout, and 401 state. It doesn't change swipes or claim to test rendered UI. Output is saved to `apple/smoke.log`.
+
+For simulator launch, pass the token through `SIMCTL_CHILD_FORK_TOKEN` and the URL through `SIMCTL_CHILD_FORK_URL` when invoking `xcrun simctl launch booted com.waffu.fork`. Don't put credentials in the scheme or project. Capture UI with `xcrun simctl io booted screenshot ../context/shots/<screen>.png` from `apple/`.
+
+The map uses one Canvas, four batched edge paths, a spatial-grid force layout in a detached task (1,000 iterations, ID-seeded disc positions and circular repulsion), and cached static positions. Images are fetched only for visible scene nodes in batches of six, downsampled off the main thread, and cached. Map starts with Liked only off. Idea radii use square-root scene counts; the 25 largest idea labels stay visible at fit, and other labels appear at 1.8× zoom. Search also exposes Canvas nodes as native buttons. Pan with a drag, zoom with a pinch or the toolbar controls; macOS also converts native ScrollView wheel movement to zoom. Layout cache keys include server, mode, liked filter, focus, and graph membership/degrees.
+
+**Checking CGRect conflict in GraphLayout**
+exec
+/bin/zsh -lc "head -45 apple/Fork/GraphLayout.swift; rg -n 'CGRect' apple/Fork/GraphLayout.swift; sed -n '208,245p' apple/Fork/MapView.swift; git diff -- apple/Fork/DetailViews.swift" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+import Foundation
+
+// A spatial grid keeps the repulsion pass bounded for larger libraries.
+// Layout work runs in a detached task; only the finished positions reach the UI.
+actor GraphLayout {
+    static let shared = GraphLayout()
+    private var cache: [String: [String: CGPoint]] = [:]
+    func positions(graph: Graph, key: String) async throws -> [String: CGPoint] {
+        if let value = cache[key] { return value }
+        let task = Task.detached(priority: .userInitiated) { try Self.compute(graph) }
+        let result = try await withTaskCancellationHandler { try await task.value } onCancel: { task.cancel() }
+        if cache.count >= 12 { cache.removeAll() }
+        cache[key] = result
+        return result
+    }
+    private struct Cell: Hashable { var x: Int; var y: Int }
+    // Stable across launches (Swift's Hasher is deliberately randomized).
+    private static func discPosition(id: String, radius: Double) -> (Double, Double) {
+        var state: UInt64 = 14695981039346656037
+        for byte in id.utf8 { state = (state ^ UInt64(byte)) &* 1099511628211 }
+        func uniform() -> Double {
+            state &+= 0x9E3779B97F4A7C15
+            var value = state
+            value = (value ^ (value >> 30)) &* 0xBF58476D1CE4E5B9
+            value = (value ^ (value >> 27)) &* 0x94D049BB133111EB
+            value ^= value >> 31
+            return Double(value >> 11) / 9007199254740992
+        }
+        let angle = uniform() * 2 * Double.pi
+        let distance = radius * sqrt(uniform())
+        return (cos(angle) * distance, sin(angle) * distance)
+    }
+    private static func compute(_ graph: Graph) throws -> [String: CGPoint] {
+        let count = graph.nodes.count
+        guard count > 0 else { return [:] }
+        let indices = Dictionary(uniqueKeysWithValues: graph.nodes.enumerated().map { ($0.element.id, $0.offset) })
+        let edges = graph.edges.compactMap { edge -> (Int, Int, Double)? in
+            guard let a = indices[edge.source], let b = indices[edge.target] else { return nil }
+            return (a, b, min(3, sqrt(edge.weight)))
+        }
+        var x = [Double](repeating: 0, count: count), y = x
+        let radius = max(150, sqrt(Double(count)) * 24)
+        for i in 0..<count {
+            (x[i], y[i]) = discPosition(id: graph.nodes[i].id, radius: radius)
+        }
+        for start in stride(from: 0, to: nodes.count, by: 6) {
+            if Task.isCancelled { return }
+            await withTaskGroup(of: Void.self) { group in
+                for node in nodes[start..<min(nodes.count, start + 6)] {
+                    group.addTask { await self.loadOne(node, api: api) }
+                }
+            }
+        }
+    }
+    private func loadOne(_ node: GraphNode, api: APIClient) async {
+        guard !Task.isCancelled, let image = node.image, let request = api.imageRequest(image) else { return }
+        if let loaded = await ImageCache.shared.load(request, api: api, maxPixel: 96) { images[node.id] = loaded }
+    }
+}
+diff --git a/apple/Fork/DetailViews.swift b/apple/Fork/DetailViews.swift
+index d2b5481..b2f8637 100644
+--- a/apple/Fork/DetailViews.swift
++++ b/apple/Fork/DetailViews.swift
+@@ -38,11 +38,9 @@ struct SceneDetailView: View {
+                             NavigationLink {
+                                 SourceDetailView(id: source.id)
+                             } label: {
+-                                VStack(alignment: .leading) {
+-                                    Text("From \(source.displayTitle)")
+-                                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").font(.subheadline).foregroundStyle(.secondary)
+-                                }
++                                Text("From \(source.displayTitle)")
+                             }
++                            AuthorBoardLink(author: source.author).font(.subheadline)
+                         }
+                         if let tags = scene.tags {
+                             ForEach(["technique", "style", "format", "motion", "medium", "palette", "concepts"], id: \.self) { facet in
+@@ -87,9 +85,10 @@ struct SourceDetailView: View {
+                 if let error = actionError { Text(error).foregroundStyle(.red) }
+                 if let source = store.value {
+                     Text(source.displayTitle).font(.title2)
+-                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").foregroundStyle(.secondary)
++                    AuthorBoardLink(author: source.author)
+                     HStack {
+                         if let url = URL(string: source.url) { Link("Open source ↗", destination: url) }
++                        NavigationLink { BoardDetailView(id: "video:\(source.id)") } label: { Label("Board", systemImage: "rectangle.3.group") }
+                         Spacer()
+                         Button { Task { await vote(source.verdict == "dislike" ? "clear" : "dislike") } } label: {
+                             Label("Dislike", systemImage: source.verdict == "dislike" ? "xmark.circle.fill" : "xmark.circle")
+
+2026-11-10T12:51:13.522410Z ERROR codex_core::tools::router: error=apply_patch verification failed: invalid patch: multiple operations target /Users/waffu/.codex/memories/MEMORY.md
+**Adding CoreGraphics import and visual verification**
+exec
+/bin/zsh -lc "python3 - <<'PY'
+p='apple/Fork/BoardModels.swift';s=open(p).read().replace('import Foundation','import Foundation\\nimport CoreGraphics',1);open(p,'w').write(s)
+p='apple/Checks/Smoke.swift';s=open(p).read().replace('import Foundation','import Foundation\\nimport CoreGraphics',1);open(p,'w').write(s)
+p='apple/Fork/HistoryView.swift';s=open(p).read().replace('''                        RemoteImage(path: item.cover).frame(width: 70, height: 55).clipShape(.rect(cornerRadius: 6))''','''                        NavigationLink { SourceDetailView(id: item.id) } label: {
+                            RemoteImage(path: item.cover).frame(width: 70, height: 55).clipShape(.rect(cornerRadius: 6))
+                        }.buttonStyle(.plain)''');open(p,'w').write(s)
+PY
+cd apple && xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build > build-macos.log 2>&1" in /Users/waffu/Claude/inspo
+exec
+/bin/zsh -lc 'python3 apple/Checks/run.py' in /Users/waffu/Claude/inspo
+ succeeded in 4730ms:
+ exited 251 in 7608ms:
+Swift/ErrorType.swift:254: Fatal error: Error raised at top level: DecodingError.valueNotFound: Expected value of type String but found null instead. Path: groups[38].scenes[0].timestamp. Debug description: Cannot get value of type String -- found null value instead
+
+**Analyzing UI layout challenges**
+**Optimizing image caching and task management**
+codex
+Boards is implemented, including the index, canvas, source “Board” button, and account links on author names. The iOS build passed. macOS and read-only live API checks are running now.
+exec
+/bin/zsh -lc "rg -n 'error:|warning:|BUILD ' apple/build-macos.log | tail -12; xcrun simctl list devices available > apple/simulator.log 2>&1; git diff --check -- apple context/sol-native.md" in /Users/waffu/Claude/inspo
+ exited 2 in 376ms:
+18:2026-11-10 07:51:19.351 xcodebuild[88721:14123893] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
+23:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+27:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+30:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+33:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+209:2026-11-10 07:51:22.681 appintentsmetadataprocessor[88786:14124327] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+244:** BUILD SUCCEEDED **
+apple/build-ios.log:148: trailing whitespace.
++    
+apple/build-ios.log:154: trailing whitespace.
++    
+apple/build-ios.log:160: trailing whitespace.
++    
+apple/build-ios.log:165: trailing whitespace.
++    
+apple/build-ios.log:171: trailing whitespace.
++    
+apple/build-ios.log:177: trailing whitespace.
++    
+apple/build-ios.log:195: trailing whitespace.
++    
+apple/build-ios.log:201: trailing whitespace.
++    
+apple/build-ios.log:207: trailing whitespace.
++    
+apple/build-ios.log:213: trailing whitespace.
++    
+apple/build-ios.log:246: trailing whitespace.
++    
+apple/build-macos.log:111: trailing whitespace.
++    
+apple/build-macos.log:117: trailing whitespace.
++    
+apple/build-macos.log:135: trailing whitespace.
++    
+apple/build-macos.log:141: trailing whitespace.
++    
+apple/build-macos.log:147: trailing whitespace.
++    
+
+**Checking JSON null fields**
+exec
+/bin/zsh -lc "python3 - <<'PY'
+import json,subprocess,collections
+from pathlib import Path
+t=next(l.split('=',1)[1].strip().strip('\\\"\\'') for l in Path('.env.local').read_text().splitlines() if l.startswith('FORK_TOKEN='))
+for p in ['boards','boards/account:NormieEdits']:
+ d=json.loads(subprocess.check_output(['curl','-sf','-H','Authorization: Bearer '+t,'http://localhost:3300/api/'+p]))
+ for label,rows in ([('accounts',d['accounts']),('videos',d['videos'])] if p=='boards' else [('groups',d['groups']),('scenes',[s for g in d['groups'] for s in g['scenes']])]):
+  counts=collections.defaultdict(collections.Counter)
+  for row in rows:
+   for k,v in row.items(): counts[k][type(v).__name__]+=1
+  print(label,dict(counts))
+PY" in /Users/waffu/Claude/inspo
+ succeeded in 1291ms:
+accounts {'id': Counter({'str': 23}), 'handle': Counter({'str': 23}), 'platform': Counter({'str': 23}), 'sources': Counter({'int': 23}), 'scenes': Counter({'int': 23}), 'liked_scenes': Counter({'int': 23}), 'covers': Counter({'list': 23}), 'profile': Counter({'str': 13, 'NoneType': 10})}
+videos {'id': Counter({'str': 133}), 'source_id': Counter({'str': 133}), 'title': Counter({'str': 133}), 'author': Counter({'str': 133}), 'platform': Counter({'str': 133}), 'scenes': Counter({'int': 133}), 'note': Counter({'str': 133}), 'cover': Counter({'str': 133})}
+groups {'source_id': Counter({'str': 91}), 'title': Counter({'str': 91}), 'url': Counter({'str': 91}), 'note': Counter({'str': 91}), 'verdict': Counter({'NoneType': 91}), 'origin': Counter({'str': 91}), 'scenes': Counter({'list': 91})}
+scenes {'id': Counter({'str': 413}), 'image': Counter({'str': 413}), 'frames': Counter({'list': 413}), 'timestamp': Counter({'str': 408, 'NoneType': 5}), 'title': Counter({'str': 413}), 'link': Counter({'str': 413}), 'tags': Counter({'dict': 413}), 'quality': Counter({'int': 228, 'NoneType': 185})}
+
+**Improving timestamp handling and performance**
+exec
+/bin/zsh -lc "python3 - <<'PY'
+p='apple/Fork/BoardModels.swift';s=open(p).read().replace('var timestamp: String\\n', 'var timestamp: String?\\n    var displayTimestamp: String { timestamp ?? \"0:00\" }\\n').replace('var tags: [String: [String]]\\n}', 'var tags: [String: [String]]\\n    var quality: Double?\\n}');open(p,'w').write(s)
+p='apple/Fork/BoardsView.swift';s=open(p).read().replace('Text(scene.timestamp)', 'Text(scene.displayTimestamp)').replace('\\\\(scene.timestamp)', '\\\\(scene.displayTimestamp)');open(p,'w').write(s)
+p='apple/README.md';s=open(p).read();s+='''
+Boards adds a searchable Accounts/Videos index and a pan/zoom canvas. Account frames wrap in a grid; video boards have one frame. At scales below 0.45, one Canvas draws plain card rectangles and no card/image views are created. Above that scale, only cards and headers intersecting the viewport create SwiftUI views. Board images use off-main downsampling (480 pixels for cards, 320 for collages) and the shared 80 MB decoded-image cache. Fit resets the view; pinch, buttons and macOS wheel control zoom. Author names open account boards; Source has a video Board button. Live checks also decode both board endpoints, verify NormieEdits frame/card geometry and resolve a board scene through the existing detail endpoint.
+''';open(p,'w').write(s)
+PY
+python3 apple/Checks/run.py" in /Users/waffu/Claude/inspo
+exec
+/bin/zsh -lc "cd apple && xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build > build-ios.log 2>&1" in /Users/waffu/Claude/inspo
+ succeeded in 5310ms:
+ exited 251 in 9781ms:
+Swift/ErrorType.swift:254: Fatal error: Error raised at top level: Error Domain=NSURLErrorDomain Code=-1200 "A TLS error caused the secure connection to fail." UserInfo={_kCFStreamErrorCodeKey=-9816, NSUnderlyingError=0x817400090 {Error Domain=kCFErrorDomainCFNetwork Code=-1200 "(null)" UserInfo={_kCFStreamPropertySSLClientCertificateState=0, _kCFNetworkCFStreamSSLErrorOriginalValue=-9816, _kCFStreamErrorDomainKey=3, _kCFStreamErrorCodeKey=-9816, _NSURLErrorNWPathKey=satisfied (Path is satisfied), viable, interface: en0[802.11], ipv4, dns, uses wifi, LQM: good}}, _NSURLErrorFailingURLSessionTaskErrorKey=LocalDataTask <863EA361-8317-4619-B97D-DDC42F18C7BF>.<11>, _NSURLErrorRelatedURLSessionTaskErrorKey=(
+    "LocalDataTask <863EA361-8317-4619-B97D-DDC42F18C7BF>.<11>"
+), NSLocalizedDescription=A TLS error caused the secure connection to fail., NSErrorFailingURLStringKey=https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2009686609969766869/s06_1.jpg, NSErrorFailingURLKey=https://wafees-macbook-pro-4365.tailb235eb.ts.net/api/media/x-2009686609969766869/s06_1.jpg, _kCFStreamErrorDomainKey=3}
+
+**Optimizing culling and layout checks**
+**Adjusting UI layout for small screens**
+2026-11-10T12:52:04.843549Z ERROR codex_core::tools::router: error=apply_patch verification failed: Failed to find expected lines in /Users/waffu/.codex/memories/MEMORY.md:
+## Task 21: 2026-10-10 four oldest X videos patched live, partial
+
+### rollout_summary_files
+
+- rollout_summaries/2026-10-11T03-49-34-sWjW-taste_breakdown_four_x_videos_live_publish.md (cwd=/Users/waffu/Claude, rollout_path=/Users/waffu/.codex/sessions/2026/10/10/rollout-2026-10-10T22-49-34-01a12914-8c09-7512-92ed-8d546a19865c.jsonl, updated_at=2026-10-10T17:23:00+00:00, thread_id=01a12914-8c09-7512-92ed-8d546a19865c, four live PATCHes returned HTTP 200; local prod-only IDs absent)
+
+### keywords
+
+- taste-breakdown, X videos, live PATCH, `tastedump.app`, `local.db`, `No video with id`, contact sheet, Vercel endpoint
+
+exec
+/bin/zsh -lc "python3 - <<'PY'
+p='apple/Fork/DetailViews.swift';s=open(p).read();s=s.replace('''                    AuthorBoardLink(author: source.author)
+                    HStack {''','''                    HStack {
+                        AuthorBoardLink(author: source.author)
+                        Spacer()
+                        NavigationLink { BoardDetailView(id: \"video:\\\\(source.id)\") } label: { Label(\"Board\", systemImage: \"rectangle.3.group\") }.buttonStyle(.bordered)
+                    }
+                    HStack {''');s=s.replace('''                        NavigationLink { BoardDetailView(id: \"video:\\\\(source.id)\") } label: { Label(\"Board\", systemImage: \"rectangle.3.group\") }
+                        Spacer()''','''                        Spacer()''');open(p,'w').write(s)
+PY" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+**Adjusting image URL handling for local API**
+**Refining media URL normalization approach**
+codex
+Live checks found five scenes with null timestamps; those now display `0:00`. They also found image URLs pointing to a Tailscale host that fails TLS here. I’ll load Fork media paths through the configured server so thumbnails work with `localhost:3300`.
+exec
+/bin/zsh -lc "python3 - <<'PY'
+p='apple/Fork/APIClient.swift';s=open(p).read().replace('''        guard let base = URL(string: server), let url = URL(string: path, relativeTo: base)?.absoluteURL else { return nil }
+        var request = URLRequest(url: url)''','''        guard let base = URL(string: server), let supplied = URL(string: path, relativeTo: base)?.absoluteURL else { return nil }
+        // Fork's media URLs can name the server's public host. Use the selected
+        // connection for its media endpoint too (localhost, LAN or Tailscale).
+        let url: URL
+        if supplied.path.hasPrefix(\"/api/media/\"),
+           let local = URL(string: supplied.path, relativeTo: base)?.absoluteURL {
+            url = local
+        } else { url = supplied }
+        var request = URLRequest(url: url)''');open(p,'w').write(s)
+PY
+python3 apple/Checks/run.py" in /Users/waffu/Claude/inspo
+exec
+/bin/zsh -lc "cd apple && xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build > build-ios.log 2>&1 && xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build > build-macos.log 2>&1" in /Users/waffu/Claude/inspo
+**Reviewing image caching and UI updates**
+exec
+/bin/zsh -lc 'git diff -- apple/Fork/APIClient.swift apple/Fork/ForkApp.swift apple/Fork/Images.swift apple/Fork/DetailViews.swift; tail -8 apple/simulator.log; git status --short' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+diff --git a/apple/Fork/APIClient.swift b/apple/Fork/APIClient.swift
+index 68c99bf..01af813 100644
+--- a/apple/Fork/APIClient.swift
++++ b/apple/Fork/APIClient.swift
+@@ -97,7 +97,14 @@ enum APIError: LocalizedError {
+         revision += 1
+     }
+     func imageRequest(_ path: String) -> URLRequest? {
+-        guard let base = URL(string: server), let url = URL(string: path, relativeTo: base)?.absoluteURL else { return nil }
++        guard let base = URL(string: server), let supplied = URL(string: path, relativeTo: base)?.absoluteURL else { return nil }
++        // Fork's media URLs can name the server's public host. Use the selected
++        // connection for its media endpoint too (localhost, LAN or Tailscale).
++        let url: URL
++        if supplied.path.hasPrefix("/api/media/"),
++           let local = URL(string: supplied.path, relativeTo: base)?.absoluteURL {
++            url = local
++        } else { url = supplied }
+         var request = URLRequest(url: url)
+         if url.host == base.host && url.port == base.port && url.scheme == base.scheme {
+             request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
+diff --git a/apple/Fork/DetailViews.swift b/apple/Fork/DetailViews.swift
+index d2b5481..f18b990 100644
+--- a/apple/Fork/DetailViews.swift
++++ b/apple/Fork/DetailViews.swift
+@@ -38,11 +38,9 @@ struct SceneDetailView: View {
+                             NavigationLink {
+                                 SourceDetailView(id: source.id)
+                             } label: {
+-                                VStack(alignment: .leading) {
+-                                    Text("From \(source.displayTitle)")
+-                                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").font(.subheadline).foregroundStyle(.secondary)
+-                                }
++                                Text("From \(source.displayTitle)")
+                             }
++                            AuthorBoardLink(author: source.author).font(.subheadline)
+                         }
+                         if let tags = scene.tags {
+                             ForEach(["technique", "style", "format", "motion", "medium", "palette", "concepts"], id: \.self) { facet in
+@@ -87,7 +85,11 @@ struct SourceDetailView: View {
+                 if let error = actionError { Text(error).foregroundStyle(.red) }
+                 if let source = store.value {
+                     Text(source.displayTitle).font(.title2)
+-                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").foregroundStyle(.secondary)
++                    HStack {
++                        AuthorBoardLink(author: source.author)
++                        Spacer()
++                        NavigationLink { BoardDetailView(id: "video:\(source.id)") } label: { Label("Board", systemImage: "rectangle.3.group") }.buttonStyle(.bordered)
++                    }
+                     HStack {
+                         if let url = URL(string: source.url) { Link("Open source ↗", destination: url) }
+                         Spacer()
+diff --git a/apple/Fork/ForkApp.swift b/apple/Fork/ForkApp.swift
+index b9ae072..3de7a4e 100644
+--- a/apple/Fork/ForkApp.swift
++++ b/apple/Fork/ForkApp.swift
+@@ -2,11 +2,12 @@ import SwiftUI
+ import Observation
+ 
+ enum Section: String, CaseIterable, Identifiable {
+-    case today = "Today", map = "Map", library = "Library", history = "History", settings = "Settings"
++    case today = "Today", boards = "Boards", map = "Map", library = "Library", history = "History", settings = "Settings"
+     var id: String { rawValue }
+     var symbol: String {
+         switch self {
+         case .today: "square.stack"
++        case .boards: "rectangle.3.group"
+         case .map: "point.3.connected.trianglepath.dotted"
+         case .library: "square.grid.2x2"
+         case .history: "clock"
+@@ -69,6 +70,7 @@ struct RootView: View {
+     @ViewBuilder private func screen(_ section: Section) -> some View {
+         switch section {
+         case .today: TodayView()
++        case .boards: BoardsView()
+         case .map: MapView()
+         case .library: LibraryView()
+         case .history: HistoryView()
+diff --git a/apple/Fork/Images.swift b/apple/Fork/Images.swift
+index 762d625..772d17b 100644
+--- a/apple/Fork/Images.swift
++++ b/apple/Fork/Images.swift
+@@ -60,6 +60,7 @@ struct RemoteImage: View {
+     @Environment(APIClient.self) private var api
+     var path: String?
+     var fit = true
++    var maxPixel = 1600
+     @State private var image: Image?
+     @State private var loading = false
+     var body: some View {
+@@ -73,11 +74,11 @@ struct RemoteImage: View {
+                 else { Image(systemName: "photo").foregroundStyle(.secondary) }
+             }
+         }
+-        .task(id: "\(api.server)|\(api.revision)|\(path ?? "")") {
++        .task(id: "\(api.server)|\(api.revision)|\(path ?? "")|\(maxPixel)") {
+             image = nil
+             guard let path, !path.isEmpty, let request = api.imageRequest(path) else { return }
+             loading = true
+-            image = await ImageCache.shared.load(request, api: api)
++            image = await ImageCache.shared.load(request, api: api, maxPixel: maxPixel)
+             loading = false
+         }
+         .accessibilityLabel("Scene screenshot")
+[-[SimDiskImageManager _onQueue_checkConnection:]:239] ERROR : simdiskimaged returned error (invalid), marking disconnected.
+[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+    request = "notification_subscription";
+    "set_path" = "/Users/waffu/Library/Developer/CoreSimulator/Devices";
+}) because we are not connected to CoreSimulatorService.
+2026-11-10 07:51:33.009 simctl[88896:14125473] Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}
+Unable to locate device set: Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedFailureReason=Failed to subscribe to notifications from CoreSimulatorService., NSLocalizedDescription=Failed to initialize simulator device set., NSUnderlyingError=0xbfed7c390 {Error Domain=NSPOSIXErrorDomain Code=61 "Connection refused" UserInfo={NSLocalizedDescription=CoreSimulatorService connection became invalid.  Simulator services will no longer be available.}}}
+ M apple/Checks/Smoke.swift
+ M apple/Checks/run.py
+ M apple/Fork.xcodeproj/project.pbxproj
+ M apple/Fork/APIClient.swift
+ M apple/Fork/DetailViews.swift
+ M apple/Fork/ForkApp.swift
+ M apple/Fork/HistoryView.swift
+ M apple/Fork/Images.swift
+ M apple/Fork/TodayView.swift
+ M apple/README.md
+ M apple/build-ios.log
+ M apple/build-macos.log
+ M apple/simulator.log
+ M apple/smoke.log
+ M seed/links.txt
+?? apple/Fork/BoardModels.swift
+?? apple/Fork/BoardsView.swift
+?? context/sol-native-r3.log
+?? data/media/x-2119975663151043015/
+?? data/sources/x-2119975663151043015.json
+?? seed/links-9.txt
+
+**Reviewing concurrent modifications**
+ succeeded in 8887ms:
+**Evaluating rendering and caching strategies**
+**Handling zoom and layout adjustments**
+exec
+/bin/zsh -lc "python3 - <<'PY'
+from pathlib import Path
+for name in ['build-ios.log','build-macos.log']:
+ p=Path('apple')/name
+ p.write_text('\\n'.join(line.rstrip() for line in p.read_text().splitlines())+'\\n')
+ print(name, 'BUILD SUCCEEDED' in p.read_text())
+t=next(l.split('=',1)[1].strip().strip('\\\"\\'') for l in Path('.env.local').read_text().splitlines() if l.startswith('FORK_TOKEN='))
+hits=[]
+for p in Path('apple').rglob('*'):
+ if p.is_file():
+  try:
+   if t.encode() in p.read_bytes(): hits.append(str(p))
+  except OSError: pass
+print('Credential scan:', 'PASS' if not hits else hits)
+PY
+rg -n 'error:|warning:|BUILD ' apple/build-ios.log apple/build-macos.log | tail -8" in /Users/waffu/Claude/inspo
+ succeeded in 249ms:
+build-ios.log True
+build-macos.log True
+Credential scan: PASS
+apple/build-macos.log:198:** BUILD SUCCEEDED **
+apple/build-ios.log:3:2026-11-10 07:52:21.205 xcodebuild[89410:14130622] Logging connecton invalid: <OS_xpc_error: <dictionary: 0x1f7a395f0> { count = 1, transaction: 0, voucher = 0x0, contents =
+apple/build-ios.log:29:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]:432] WARN  : Unable to discover any Simulator runtimes. Developer Directory is /Applications/Xcode.app/Contents/Developer.
+apple/build-ios.log:31:[-[SimServiceContext initWithDeveloperDir:connectionType:error:]_block_invoke:468] ERROR : Could not get list of trusted mount directories: Error Domain=com.apple.CoreSimulator.SimError Code=410 "The service used to manage runtime disk images (simdiskimaged) crashed or is not responding" UserInfo={NSLocalizedDescription=The service used to manage runtime disk images (simdiskimaged) crashed or is not responding}
+apple/build-ios.log:33:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+apple/build-ios.log:41:[-[SimServiceContext sendRequest:reply:error:]:1771] ERROR : Unable to deliver request ({
+apple/build-ios.log:206:2026-11-10 07:52:24.524 appintentsmetadataprocessor[89458:14130991] warning: Metadata extraction skipped. No AppIntents.framework dependency found.
+apple/build-ios.log:213:** BUILD SUCCEEDED **
+
+**Checking viewport and scene rendering**
+exec
+/bin/zsh -lc "git diff --check -- apple context/sol-native.md; rg -n 'BoardModels|BoardsView' apple/Fork.xcodeproj/project.pbxproj" in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+12:		6398E10F41D50AEBC64EF791 /* BoardsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31C721B704522DC0D634BB13 /* BoardsView.swift */; };
+20:		B906D598227C78738FFD3615 /* BoardModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = F447BCE7354FD399323E826C /* BoardModels.swift */; };
+27:		31C721B704522DC0D634BB13 /* BoardsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardsView.swift; sourceTree = "<group>"; };
+39:		F447BCE7354FD399323E826C /* BoardModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoardModels.swift; sourceTree = "<group>"; };
+63:				F447BCE7354FD399323E826C /* BoardModels.swift */,
+64:				31C721B704522DC0D634BB13 /* BoardsView.swift */,
+139:				B906D598227C78738FFD3615 /* BoardModels.swift in Sources */,
+140:				6398E10F41D50AEBC64EF791 /* BoardsView.swift in Sources */,
+
+**Verifying timestamp and URL handling**
+codex
+Both acceptance builds pass. The full live smoke check is still running. CoreSimulator still can’t connect, so gesture feel and rendered appearance remain unverified; I haven’t opened a foreground app.
+ succeeded in 47885ms:
+PASS: deterministic fresh layout, separated cloud, four-fold grid bias 0.009358037293811586
+PASS: Boards index, NormieEdits 91 groups / 413 scenes, nonoverlapping frames, contained cards, video board, scene detail
+Stats: 787 scenes, 133 sources; Today: 0; History: 0
+ideas: 244 nodes, 2878 edges, focus decoded
+full: 560 nodes, 4380 edges, focus decoded
+900 nodes / 4000 edges / 1000 iterations: 18.054349917 seconds
+PASS: live decoding, Library search/tag, scene/source, image, Open-at URL, graph modes/focus/cache/scale, 401 banner state
+
+exec
+/bin/zsh -lc "cat >> context/sol-native.md <<'EOF'
+
+## Round 3
+
+Implemented UX spec section 8, Boards, under "'`apple/`. This handoff append is the only authored change outside that directory. No commits; unrelated concurrent working-tree changes were left alone.
+
+- Added Boards between Today and Map in the iOS tabs and macOS sidebar. Accounts/Videos segmented index supports search, pull-to-refresh and Refresh, loading/error/empty states, account 2×2 cover collages and post/scene counts, video covers/titles/authors/notes.
+- Added live Codable board models and deterministic frame geometry in `BoardModels.swift`; the UI is in `BoardsView.swift`. Account frames wrap in a grid, video boards use the server'"'s single frame. Light grey canvas, white rounded frames, post title, italic note, heart/cross verdict, Open link, horizontal scene cards, timestamp/title, scene detail sheets, board title/subtitle/profile link, pan/pinch, macOS wheel zoom, zoom buttons and Fit.
+- Below absolute canvas scale 0.45, one Canvas draws simple card rectangles with no SwiftUI card views or image tasks. Above it, only viewport-intersecting frames, headers and cards instantiate detail views. Thumbnails load lazily, downsample off-main to 480 pixels (320 for account collage cells), and share the bounded 80 MB decoded-image cache. Layout is computed once per response rather than during gestures.
+- Source detail has a Board button for its video. Author names in Today, History, scene/source details and video index tiles open account boards. Existing source navigation, voting, swipe actions and scene details remain.
+- Inspected both requested live endpoints with curl and credentials read from "'`.env.local`, without printing the token. NormieEdits has 91 groups / 413 scenes. Five scene timestamps are null; decoding handles them and cards use the existing 0:00 fallback. Quality is optional numeric data.
+- The API emits absolute media URLs using the public Tailscale hostname. URLSession failed TLS against that hostname here. `APIClient.imageRequest` now resolves `/api/media/` paths through the configured server, so a localhost connection also fetches its images locally. Other image URLs retain their supplied host. Credentials continue to be sent only to the configured origin.
+
+Final acceptance commands ran sequentially from `apple/`:
+
+```sh
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination '"'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+"'```
+
+Both **BUILD SUCCEEDED**. Logs: `apple/build-ios.log`, `apple/build-macos.log`. No Swift compiler warnings/errors; existing CoreSimulator diagnostics and the unused AppIntents metadata warning remain. Generated project includes both new files. Credential scan found no token anywhere under `apple/`.
+
+`xcrun simctl list devices available` still fails with CoreSimulatorService connection invalid/refused; evidence is in `apple/simulator.log`. No simulator launch, rendered screenshots or interactive smoothness/gesture check was possible, and no foreground app/browser control was used. Viewport culling and level-of-detail behavior are implemented, but device frame rate remains an owner-side check.
+EOF
+cat >> apple/README.md <<'"'EOF'
+
+Fork "'`/api/media/` image URLs use the configured server connection even if JSON names its public host. Other external images keep their original URLs.
+EOF' in /Users/waffu/Claude/inspo
+ succeeded in 0ms:
+**Finalizing UI adjustments**
+exec
+/bin/zsh -lc "cat >> context/sol-native.md <<'EOF'
+
+Final "'`python3 apple/Checks/run.py`: **PASS**. Read-only live checks decoded the index and both board kinds, confirmed NormieEdits 91 groups / 413 scenes, checked nonoverlapping frames and card containment, and resolved a board scene through the existing detail endpoint. Existing Library search/tag, source/scene membership, image HTTP fetch, deep-link URL, graph modes/focus/cache/determinism/cloud/scale and 401 checks all passed. Snapshot: 787 scenes / 133 sources; liked Ideas 244 nodes / 2,878 edges; liked Full 560 nodes / 4,380 edges. Synthetic 900-node layout: 18.05 seconds in Debug. Log: `apple/smoke.log`. `git diff --check -- apple context/sol-native.md` passed.
+EOF
+git diff --check -- apple context/sol-native.md; git status --short' in /Users/waffu/Claude/inspo
+ succeeded in 68ms:
+ M apple/Checks/Smoke.swift
+ M apple/Checks/run.py
+ M apple/Fork.xcodeproj/project.pbxproj
+ M apple/Fork/APIClient.swift
+ M apple/Fork/DetailViews.swift
+ M apple/Fork/ForkApp.swift
+ M apple/Fork/HistoryView.swift
+ M apple/Fork/Images.swift
+ M apple/Fork/TodayView.swift
+ M apple/README.md
+ M apple/build-ios.log
+ M apple/build-macos.log
+ M apple/simulator.log
+ M apple/smoke.log
+ M context/sol-native.md
+ M seed/links.txt
+?? apple/Fork/BoardModels.swift
+?? apple/Fork/BoardsView.swift
+?? context/sol-native-r3.log
+?? data/media/x-2119975663151043015/
+?? data/sources/x-2119975663151043015.json
+?? seed/links-9.txt
+
+codex
+Implemented Boards with searchable Accounts/Videos, pan/zoom canvas, scene sheets, and author/source entry points. Offscreen cards are culled; zoomed-out cards use plain rectangles; thumbnails load lazily and downsample.
+
+Both acceptance builds and live API checks passed, including NormieEdits’ 91 groups / 413 scenes.
+
+Appended [Round 3 handoff](/Users/waffu/Claude/inspo/context/sol-native.md). No commits. CoreSimulator remains unavailable, so appearance and gesture smoothness still need device review.
+tokens used
+68,061
+Implemented Boards with searchable Accounts/Videos, pan/zoom canvas, scene sheets, and author/source entry points. Offscreen cards are culled; zoomed-out cards use plain rectangles; thumbnails load lazily and downsample.
+
+Both acceptance builds and live API checks passed, including NormieEdits’ 91 groups / 413 scenes.
+
+Appended [Round 3 handoff](/Users/waffu/Claude/inspo/context/sol-native.md). No commits. CoreSimulator remains unavailable, so appearance and gesture smoothness still need device review.

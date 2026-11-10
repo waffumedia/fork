@@ -38,11 +38,9 @@ struct SceneDetailView: View {
                             NavigationLink {
                                 SourceDetailView(id: source.id)
                             } label: {
-                                VStack(alignment: .leading) {
-                                    Text("From \(source.displayTitle)")
-                                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").font(.subheadline).foregroundStyle(.secondary)
-                                }
+                                Text("From \(source.displayTitle)")
                             }
+                            AuthorBoardLink(author: source.author).font(.subheadline)
                         }
                         if let tags = scene.tags {
                             ForEach(["technique", "style", "format", "motion", "medium", "palette", "concepts"], id: \.self) { facet in
@@ -87,7 +85,11 @@ struct SourceDetailView: View {
                 if let error = actionError { Text(error).foregroundStyle(.red) }
                 if let source = store.value {
                     Text(source.displayTitle).font(.title2)
-                    Text(source.author.hasPrefix("@") ? source.author : "@\(source.author)").foregroundStyle(.secondary)
+                    HStack {
+                        AuthorBoardLink(author: source.author)
+                        Spacer()
+                        NavigationLink { BoardDetailView(id: "video:\(source.id)") } label: { Label("Board", systemImage: "rectangle.3.group") }.buttonStyle(.bordered)
+                    }
                     HStack {
                         if let url = URL(string: source.url) { Link("Open source ↗", destination: url) }
                         Spacer()

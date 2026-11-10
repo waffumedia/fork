@@ -66,7 +66,7 @@ struct TodayView: View {
             }
             Text(item.displayTitle).font(.title2).fontWeight(.semibold)
             HStack {
-                Text(item.author.hasPrefix("@") ? item.author : "@\(item.author)")
+                AuthorBoardLink(author: item.author)
                 if let duration = item.duration { Text("· \(Int(duration) / 60):\(String(format: "%02d", Int(duration) % 60))") }
                 Text("· \(item.origin == "grok" ? "Grok pick" : "Manual pick")")
             }.font(.subheadline).foregroundStyle(.secondary)

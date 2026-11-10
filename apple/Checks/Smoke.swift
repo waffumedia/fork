@@ -1,4 +1,5 @@
 import Foundation
+import CoreGraphics
 
 // Read-only integration checks. Compile with the same models/client as the app.
 @main struct Smoke {
@@ -23,6 +24,23 @@ import Foundation
         }
         print("PASS: deterministic fresh layout, separated cloud, four-fold grid bias \(gridBias)")
         let api = APIClient()
+        let boards: BoardsIndex = try await api.request("boards")
+        precondition(!boards.accounts.isEmpty && !boards.videos.isEmpty)
+        let account: Board = try await api.request("boards/account:NormieEdits")
+        let boardLayout = BoardLayout(account)
+        precondition(boardLayout.frames.count == account.groups.count)
+        precondition(account.groups.count >= 91 && account.groups.reduce(0) { $0 + $1.scenes.count } >= 413)
+        for (i, frame) in boardLayout.frames.enumerated() {
+            precondition(frame.rect.width.isFinite && frame.rect.height.isFinite)
+            for j in boardLayout.frames.indices where j > i { precondition(!frame.rect.intersects(boardLayout.frames[j].rect)) }
+            for index in frame.group.scenes.indices { precondition(frame.rect.contains(frame.cardRect(index))) }
+        }
+        let video: Board = try await api.request("boards/\(boards.videos[0].id)")
+        precondition(video.kind == "video" && video.groups.count == 1)
+        let boardScene = account.groups.flatMap(\.scenes)[0]
+        let boardDetail: Scene = try await api.request("scenes/\(boardScene.id)")
+        precondition(boardDetail.id == boardScene.id)
+        print("PASS: Boards index, NormieEdits \(account.groups.count) groups / \(account.groups.reduce(0) { $0 + $1.scenes.count }) scenes, nonoverlapping frames, contained cards, video board, scene detail")
         let stats: Stats = try await api.request("stats")
         let today: TodayResponse = try await api.request("today")
         let history: Items<HistoryItem> = try await api.request("history")

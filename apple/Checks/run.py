@@ -18,7 +18,7 @@ with tempfile.TemporaryDirectory(prefix='fork-check-') as temp:
     subprocess.run([
         'xcrun', 'swiftc', '-D', 'DEBUG', '-disable-sandbox', '-swift-version', '6',
         '-module-cache-path', str(cache), '-parse-as-library',
-        *[str(apple / 'Fork' / name) for name in ['Models.swift', 'APIClient.swift', 'GraphLayout.swift']],
+        *[str(apple / 'Fork' / name) for name in ['Models.swift', 'BoardModels.swift', 'APIClient.swift', 'GraphLayout.swift']],
         str(apple / 'Checks/Smoke.swift'), '-o', str(executable)
     ], check=True)
     result = subprocess.run([str(executable)], env=env, text=True, capture_output=True)

@@ -97,7 +97,14 @@ enum APIError: LocalizedError {
         revision += 1
     }
     func imageRequest(_ path: String) -> URLRequest? {
-        guard let base = URL(string: server), let url = URL(string: path, relativeTo: base)?.absoluteURL else { return nil }
+        guard let base = URL(string: server), let supplied = URL(string: path, relativeTo: base)?.absoluteURL else { return nil }
+        // Fork's media URLs can name the server's public host. Use the selected
+        // connection for its media endpoint too (localhost, LAN or Tailscale).
+        let url: URL
+        if supplied.path.hasPrefix("/api/media/"),
+           let local = URL(string: supplied.path, relativeTo: base)?.absoluteURL {
+            url = local
+        } else { url = supplied }
         var request = URLRequest(url: url)
         if url.host == base.host && url.port == base.port && url.scheme == base.scheme {
             request.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")

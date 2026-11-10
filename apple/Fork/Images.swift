@@ -60,6 +60,7 @@ struct RemoteImage: View {
     @Environment(APIClient.self) private var api
     var path: String?
     var fit = true
+    var maxPixel = 1600
     @State private var image: Image?
     @State private var loading = false
     var body: some View {
@@ -73,11 +74,11 @@ struct RemoteImage: View {
                 else { Image(systemName: "photo").foregroundStyle(.secondary) }
             }
         }
-        .task(id: "\(api.server)|\(api.revision)|\(path ?? "")") {
+        .task(id: "\(api.server)|\(api.revision)|\(path ?? "")|\(maxPixel)") {
             image = nil
             guard let path, !path.isEmpty, let request = api.imageRequest(path) else { return }
             loading = true
-            image = await ImageCache.shared.load(request, api: api)
+            image = await ImageCache.shared.load(request, api: api, maxPixel: maxPixel)
             loading = false
         }
         .accessibilityLabel("Scene screenshot")

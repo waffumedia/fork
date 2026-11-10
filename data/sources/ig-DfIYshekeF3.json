@@ -1,0 +1,71 @@
+{
+  "id": "ig-DfIYshekeF3",
+  "platform": "instagram",
+  "kind": "post",
+  "url": "https://www.instagram.com/reel/DfIYshekeF3/",
+  "native_id": "DfIYshekeF3",
+  "input_url": "https://www.instagram.com/reel/DfIYshekeF3/",
+  "added_at": "2026-11-10T12:53:48Z",
+  "title": "Video by realskytan",
+  "author": "Sky Tan",
+  "posted_at": "20261030",
+  "views": null,
+  "text": "Stop asking ChatGPT for content ideas. Do this instead.",
+  "videos": [
+    {
+      "file": 0,
+      "duration": 60.44,
+      "width": 540,
+      "height": 960
+    }
+  ],
+  "shot_count": 3,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 2.7,
+      "t_mid": 1.35,
+      "timestamp": "0:00",
+      "frames": [
+        "media/ig-DfIYshekeF3/s00_0.jpg",
+        "media/ig-DfIYshekeF3/s00_1.jpg",
+        "media/ig-DfIYshekeF3/s00_2.jpg"
+      ],
+      "link": "https://www.instagram.com/reel/DfIYshekeF3/"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.7,
+      "t_end": 4.33,
+      "t_mid": 3.52,
+      "timestamp": "0:03",
+      "frames": [
+        "media/ig-DfIYshekeF3/s01_0.jpg",
+        "media/ig-DfIYshekeF3/s01_1.jpg",
+        "media/ig-DfIYshekeF3/s01_2.jpg"
+      ],
+      "link": "https://www.instagram.com/reel/DfIYshekeF3/"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.33,
+      "t_end": 60.44,
+      "t_mid": 32.39,
+      "timestamp": "0:04",
+      "frames": [
+        "media/ig-DfIYshekeF3/s02_0.jpg",
+        "media/ig-DfIYshekeF3/s02_1.jpg",
+        "media/ig-DfIYshekeF3/s02_2.jpg"
+      ],
+      "link": "https://www.instagram.com/reel/DfIYshekeF3/"
+    }
+  ],
+  "status": "ready"
+}

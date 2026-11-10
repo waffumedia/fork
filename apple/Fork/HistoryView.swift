@@ -18,17 +18,19 @@ struct HistoryView: View {
             if let error = store.error { ErrorNotice(message: error) { Task { await load() } } }
             if store.loading { ProgressView() }
             List(items) { item in
-                NavigationLink { SourceDetailView(id: item.id) } label: {
-                    HStack(spacing: 12) {
-                        RemoteImage(path: item.cover).frame(width: 70, height: 55).clipShape(.rect(cornerRadius: 6))
+                HStack(spacing: 12) {
+                        NavigationLink { SourceDetailView(id: item.id) } label: {
+                            RemoteImage(path: item.cover).frame(width: 70, height: 55).clipShape(.rect(cornerRadius: 6))
+                        }.buttonStyle(.plain)
                         VStack(alignment: .leading, spacing: 4) {
-                            Text(item.title.isEmpty ? "Untitled source" : item.title).lineLimit(2)
-                            Text(item.author.hasPrefix("@") ? item.author : "@\(item.author)").font(.subheadline).foregroundStyle(.secondary)
+                            NavigationLink { SourceDetailView(id: item.id) } label: {
+                                Text(item.title.isEmpty ? "Untitled source" : item.title).lineLimit(2)
+                            }
+                            AuthorBoardLink(author: item.author).font(.subheadline)
                             if let date = item.date { Text(date, style: .relative).font(.caption).foregroundStyle(.secondary) }
                         }
                         Spacer()
                         Image(systemName: item.verdict == "like" ? "heart.fill" : "xmark").foregroundStyle(item.verdict == "like" ? Color.pink : Color.secondary)
-                    }
                 }
                 .swipeActions {
                     Button("Clear", role: .destructive) { Task { await update(item.id, "clear") } }
