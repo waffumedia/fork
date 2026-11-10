@@ -36,7 +36,47 @@
         "media/x-1971786881625952750/s00_1.jpg",
         "media/x-1971786881625952750/s00_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "3d-render",
+          "reflection",
+          "refraction-glass"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "glossy-3d",
+          "corporate-clean"
+        ],
+        "format": [
+          "showreel",
+          "logo-sting"
+        ],
+        "motion": [
+          "smooth-ease",
+          "bouncy-overshoot"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black",
+          "brown"
+        ],
+        "concepts": [
+          "type as texture",
+          "metallic letters",
+          "3d composition"
+        ],
+        "title": "Kinetic type reveal",
+        "description": "A dynamic 3D animation of the word 'REEL' with stylized letters made from metallic and glass-like materials, forming a complex, layered composition. The number '25' appears subtly, indicating a year.",
+        "quality": 5
+      }
     },
     {
       "idx": 1,
@@ -51,7 +91,41 @@
         "media/x-1971786881625952750/s01_1.jpg",
         "media/x-1971786881625952750/s01_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "3d-render"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "corporate-clean"
+        ],
+        "format": [
+          "showreel",
+          "logo-sting"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "blue"
+        ],
+        "concepts": [
+          "text with a dot",
+          "minimalist design"
+        ],
+        "title": "Text with a bouncing dot",
+        "description": "The word 'BOUNC' in bold white letters against a grey background, with a small blue dot positioned over the 'O'. Below, a textured stone-like object is partially visible.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +140,42 @@
         "media/x-1971786881625952750/s02_1.jpg",
         "media/x-1971786881625952750/s02_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "cloth-sim"
+        ],
+        "style": [
+          "retro-futurism",
+          "vaporwave",
+          "bright-playful"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "red",
+          "yellow",
+          "orange",
+          "white"
+        ],
+        "concepts": [
+          "paper folding",
+          "advertising design"
+        ],
+        "title": "Folding paper ad",
+        "description": "A red and yellow paper advertisement for 'PIZZAPIE' is shown folding on a speckled pink countertop. The ad features images of food and the brand name.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +190,41 @@
         "media/x-1971786881625952750/s03_1.jpg",
         "media/x-1971786881625952750/s03_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "depth-of-field"
+        ],
+        "style": [
+          "minimal",
+          "luxury",
+          "apple-style"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white"
+        ],
+        "concepts": [
+          "product close-up",
+          "audio gear"
+        ],
+        "title": "Audio equipment close-up",
+        "description": "A close-up shot of a sleek black audio amplifier with the 'micro' brand logo. The device features a large knob and a perforated speaker grille.",
+        "quality": 5
+      }
     },
     {
       "idx": 4,
@@ -96,7 +239,40 @@
         "media/x-1971786881625952750/s04_1.jpg",
         "media/x-1971786881625952750/s04_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "reflection",
+          "refraction-glass"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "surreal"
+        ],
+        "format": [
+          "showreel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "glass objects",
+          "abstract composition"
+        ],
+        "title": "Blue glass plates",
+        "description": "A dynamic arrangement of blue glass plates on a black background. A small metallic sphere rests in the center of one plate, creating a sense of balance and reflection.",
+        "quality": 5
+      }
     },
     {
       "idx": 5,
@@ -111,7 +287,39 @@
         "media/x-1971786881625952750/s05_1.jpg",
         "media/x-1971786881625952750/s05_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "3d-render"
+        ],
+        "style": [
+          "minimal",
+          "organic",
+          "geometric"
+        ],
+        "format": [
+          "showreel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "white",
+          "blue"
+        ],
+        "concepts": [
+          "dot on a path",
+          "abstract motion"
+        ],
+        "title": "Blue dot on a loop",
+        "description": "A white, sculptural loop with a small blue dot rolling along its path. The object has a soft, matte texture against a bright white background.",
+        "quality": 5
+      }
     },
     {
       "idx": 6,
@@ -124,7 +332,39 @@
       "frames": [
         "media/x-1971786881625952750/s06_0.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "3d-render"
+        ],
+        "style": [
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "showreel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "blender",
+          "cinema4d"
+        ],
+        "palette": [
+          "red",
+          "yellow",
+          "green",
+          "blue"
+        ],
+        "concepts": [
+          "colorful objects",
+          "cluttered composition"
+        ],
+        "title": "Colorful pencils",
+        "description": "A dynamic cluster of colorful pencils with pink erasers, arranged in a chaotic yet balanced composition against a plain grey background.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +379,38 @@
         "media/x-1971786881625952750/s07_1.jpg",
         "media/x-1971786881625952750/s07_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "2.5d"
+        ],
+        "style": [
+          "minimal",
+          "geometric"
+        ],
+        "format": [
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "abstract shapes",
+          "minimalist animation"
+        ],
+        "title": "Abstract white shapes",
+        "description": "A minimalist composition of abstract white geometric shapes on a black background. The shapes appear to be in motion, creating a sense of dynamism.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -154,7 +425,37 @@
         "media/x-1971786881625952750/s08_1.jpg",
         "media/x-1971786881625952750/s08_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "geometric"
+        ],
+        "format": [
+          "showreel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "grey",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "text with a square",
+          "minimalist design"
+        ],
+        "title": "Text with a green square",
+        "description": "A minimalist scene with the text 'o et' in dark blue on a light grey background. A small green square is positioned to the right of the text.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,8 +470,38 @@
         "media/x-1971786881625952750/s09_1.jpg",
         "media/x-1971786881625952750/s09_2.jpg"
       ],
-      "link": "https://x.com/motionimo/status/1971786881625952750"
+      "link": "https://x.com/motionimo/status/1971786881625952750",
+      "tags": {
+        "technique": [
+          "logo-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "showreel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "branding",
+          "certification"
+        ],
+        "title": "Buff Motion logo",
+        "description": "The final frame displays the '@buffmotion' handle and a 'Certified B Corporation' logo against a soft, abstract background with gentle curves.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

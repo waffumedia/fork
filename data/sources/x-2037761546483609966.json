@@ -24,8 +24,51 @@
       "frames": [
         "media/x-2037761546483609966/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2037761546483609966"
+      "link": "https://x.com/NormieEdits/status/2037761546483609966",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "cyberpunk",
+          "neon"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white",
+          "red"
+        ],
+        "concepts": [
+          "crypto branding",
+          "digital icons",
+          "minimal grid",
+          "glow effects"
+        ],
+        "title": "crypto icons collage",
+        "description": "A dark, minimalist collage of cryptocurrency logos (Ethereum, Bitcoin, etc.) arranged in a grid with subtle animations and a faint 'Gain' watermark.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

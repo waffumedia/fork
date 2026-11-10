@@ -36,8 +36,52 @@
         "media/x-2078454313572237404/s00_1.jpg",
         "media/x-2078454313572237404/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2078454313572237404"
+      "link": "https://x.com/NormieEdits/status/2078454313572237404",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "gradient-mesh",
+          "glow-bloom",
+          "split-screen"
+        ],
+        "style": [
+          "minimal",
+          "vaporwave",
+          "cyberpunk",
+          "geometric"
+        ],
+        "format": [
+          "showreel",
+          "title-sequence",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "code"
+        ],
+        "palette": [
+          "blue",
+          "pink",
+          "purple",
+          "white"
+        ],
+        "concepts": [
+          "radial patterns",
+          "gradient transitions",
+          "split screen design",
+          "digital art"
+        ],
+        "title": "Abstract geometric animations",
+        "description": "A triptych of abstract animations featuring radial patterns, vertical dots, and a sweeping spiral, all rendered with vibrant blue and pink gradients on white backgrounds.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

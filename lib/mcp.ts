@@ -6,7 +6,7 @@ import { addCandidate, DATA_DIR, getScene, getSource, mediaUrl, searchScenes, st
 import { dailyPicks, history, swipe, tasteProfile } from "@/lib/taste";
 import { buildGraph } from "@/lib/graph";
 
-export const SERVER_INSTRUCTIONS = `Inspo is the owner's private motion-design / design / video-edit reference library and taste web.
+export const SERVER_INSTRUCTIONS = `Fork is the owner's private motion-design / design / video-edit reference library and taste web.
 Every saved link (YouTube video, X post...) is split into SCENES: a screenshot, the exact timestamp, a deep link, and tags
 (technique, style, format, motion, medium, palette, concepts). The owner swipes right (like) / left (dislike) on 10 picks a day;
 likes, dislikes and hand-picked seeds form a taste profile.
@@ -121,7 +121,7 @@ export function registerTools(server: McpServer, { baseUrl }: { baseUrl: string 
 
   server.registerTool("get_today", {
     title: "Today's swipe deck",
-    description: "The 10 picks for today (Grokbot's finds first, then un-rated seeds), each with cover scenes and current verdict.",
+    description: "The 10 picks for today (Grokbot's finds, best taste match first), each with cover scenes and current verdict.",
     inputSchema: {},
     annotations: { readOnlyHint: true },
   }, async () => ({ content: [text(await dailyPicks(undefined, baseUrl))] }));

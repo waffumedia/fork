@@ -36,7 +36,44 @@
         "media/x-2079908576429318380/s00_1.jpg",
         "media/x-2079908576429318380/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "collage",
+          "grid-layout",
+          "motion-blur",
+          "light-leak"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "montage of lifestyle scenes",
+          "text overlay",
+          "high-contrast"
+        ],
+        "title": "four-panel collage",
+        "description": "A four-panel grid collage featuring a person on a laptop, a sports car, a man in a suit, and a man with a cigarette, all with a cinematic and moody aesthetic.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +88,41 @@
         "media/x-2079908576429318380/s01_1.jpg",
         "media/x-2079908576429318380/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "depth-of-field"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "talking-head",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "brown"
+        ],
+        "concepts": [
+          "interview segment",
+          "direct address",
+          "tattooed personality"
+        ],
+        "title": "man speaking to camera",
+        "description": "A man with tattoos and a cap speaks directly to the camera while holding a microphone, in what appears to be a clothing store or studio.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +137,42 @@
         "media/x-2079908576429318380/s02_1.jpg",
         "media/x-2079908576429318380/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "motion-blur",
+          "glitch"
+        ],
+        "style": [
+          "grunge",
+          "dark-moody",
+          "lofi"
+        ],
+        "format": [
+          "short-film",
+          "social-reel"
+        ],
+        "motion": [
+          "chaotic",
+          "stutter"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "blue"
+        ],
+        "concepts": [
+          "abstract concept",
+          "text overlay",
+          "mood setting"
+        ],
+        "title": "man with blankets",
+        "description": "A man with a cigarette stands in a dimly lit space, wrapped in a large pile of colorful blankets, with text overlay.",
+        "quality": 3
+      }
     },
     {
       "idx": 3,
@@ -79,7 +185,41 @@
       "frames": [
         "media/x-2079908576429318380/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "depth-of-field"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "blue"
+        ],
+        "concepts": [
+          "creative process",
+          "intense focus",
+          "text overlay"
+        ],
+        "title": "man with laptop",
+        "description": "A man in a hoodie and cap sits at a laptop, looking focused, with a wall of photos behind him.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +232,43 @@
       "frames": [
         "media/x-2079908576429318380/s04_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "collage",
+          "grid-layout",
+          "motion-blur"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "design selection",
+          "text overlay",
+          "tattooed hands"
+        ],
+        "title": "hand on photos",
+        "description": "A close-up of a tattooed hand selecting a photo from a grid of clothing designs laid out on a table.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -107,7 +283,41 @@
         "media/x-2079908576429318380/s05_1.jpg",
         "media/x-2079908576429318380/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "depth-of-field"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "talking-head",
+          "brand-ad"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "brown"
+        ],
+        "concepts": [
+          "interview segment",
+          "direct address",
+          "tattooed personality"
+        ],
+        "title": "man speaking to camera",
+        "description": "A man with tattoos and a cap speaks directly to the camera while holding a microphone, in what appears to be a clothing store or studio.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -122,7 +332,42 @@
         "media/x-2079908576429318380/s06_1.jpg",
         "media/x-2079908576429318380/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "motion-blur",
+          "glitch"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "product-promo",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "brown"
+        ],
+        "concepts": [
+          "product demonstration",
+          "text overlay",
+          "lifestyle setting"
+        ],
+        "title": "printer output",
+        "description": "A white printer outputs a photo of a garment, with a candle and keys nearby on a textured surface.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -137,7 +382,42 @@
         "media/x-2079908576429318380/s07_1.jpg",
         "media/x-2079908576429318380/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "motion-blur",
+          "glitch"
+        ],
+        "style": [
+          "grunge",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "product detail",
+          "text overlay",
+          "raw aesthetic"
+        ],
+        "title": "ripped jeans",
+        "description": "A pair of heavily ripped light blue jeans lies on the floor, with a person's hands and legs around it.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -152,7 +432,41 @@
         "media/x-2079908576429318380/s08_1.jpg",
         "media/x-2079908576429318380/s08_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "depth-of-field"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "short-film",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "emotional moment",
+          "text overlay",
+          "stress"
+        ],
+        "title": "man in red hoodie",
+        "description": "A man in a red hoodie sits at a desk with his hands on his head, looking stressed, with a digital clock in the background.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -167,8 +481,43 @@
         "media/x-2079908576429318380/s09_1.jpg",
         "media/x-2079908576429318380/s09_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079908576429318380"
+      "link": "https://x.com/NormieEdits/status/2079908576429318380",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "depth-of-field"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "streetwear"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "black",
+          "brown"
+        ],
+        "concepts": [
+          "team interaction",
+          "text overlay",
+          "leadership"
+        ],
+        "title": "man talking to group",
+        "description": "A man with curly hair speaks to a group of people in an industrial setting.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

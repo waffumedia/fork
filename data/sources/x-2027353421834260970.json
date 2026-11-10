@@ -36,7 +36,44 @@
         "media/x-2027353421834260970/s00_1.jpg",
         "media/x-2027353421834260970/s00_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "kinetic-type",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "corporate-clean"
+        ],
+        "format": [
+          "intro",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "green",
+          "white",
+          "blue",
+          "yellow"
+        ],
+        "concepts": [
+          "money counter",
+          "numbered cards",
+          "highlighted selection"
+        ],
+        "title": "Money counter graphic",
+        "description": "A clean, minimalist graphic displays a dollar amount of $10,604 in bright green text above three numbered cards. The numbers are highlighted with colored lines, suggesting a ranking or selection process.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +88,36 @@
         "media/x-2027353421834260970/s01_1.jpg",
         "media/x-2027353421834260970/s01_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "streamer",
+          "content creator",
+          "home studio"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man with brown hair and a beard, wearing headphones, smiles at the camera while sitting in front of a microphone. The setting appears to be a home office or streaming setup.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +132,39 @@
         "media/x-2027353421834260970/s02_1.jpg",
         "media/x-2027353421834260970/s02_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "retro-futurism",
+          "y2k"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "green",
+          "red"
+        ],
+        "concepts": [
+          "video timeline",
+          "2012 content",
+          "skylanders"
+        ],
+        "title": "YouTube video thumbnail",
+        "description": "A screenshot of a YouTube video titled 'Skylanders' from 2012. The thumbnail shows three children on a red couch, with the video paused.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +179,36 @@
         "media/x-2027353421834260970/s03_1.jpg",
         "media/x-2027353421834260970/s03_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "content creator",
+          "device demonstration",
+          "home studio"
+        ],
+        "title": "Man holding a device",
+        "description": "A man in a grey sweatshirt holds a small black device while speaking into a microphone. He is wearing headphones and appears to be explaining something.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,7 +223,39 @@
         "media/x-2027353421834260970/s04_1.jpg",
         "media/x-2027353421834260970/s04_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "retro-futurism",
+          "y2k"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "green",
+          "brown"
+        ],
+        "concepts": [
+          "video timeline",
+          "minecraft content",
+          "episode 1"
+        ],
+        "title": "Minecraft video thumbnail",
+        "description": "A screenshot of a YouTube video titled 'Minecraft - Let's Play | Episode 1'. The thumbnail shows a Minecraft scene with a character and a wooden structure.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +270,36 @@
         "media/x-2027353421834260970/s05_1.jpg",
         "media/x-2027353421834260970/s05_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "streamer",
+          "content creator",
+          "home studio"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man with brown hair and a beard, wearing headphones, smiles at the camera while sitting in front of a microphone. The setting appears to be a home office or streaming setup.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -126,7 +314,38 @@
         "media/x-2027353421834260970/s06_1.jpg",
         "media/x-2027353421834260970/s06_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "retro-futurism",
+          "y2k"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "brown"
+        ],
+        "concepts": [
+          "fortnite gameplay",
+          "gaming culture",
+          "personal connection"
+        ],
+        "title": "Fortnite gameplay screenshot",
+        "description": "A screenshot of a Fortnite game showing a character on a structure. The text 'LITERALLY ME:' is displayed above the image, indicating a personal connection to the game.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -141,7 +360,39 @@
         "media/x-2027353421834260970/s07_1.jpg",
         "media/x-2027353421834260970/s07_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "retro-futurism",
+          "y2k"
+        ],
+        "format": [
+          "social-reel",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "social media profile",
+          "gaming content",
+          "instagram"
+        ],
+        "title": "Instagram profile screenshot",
+        "description": "A screenshot of an Instagram profile named 'notluc' with a red-eyed avatar. The profile shows three posts related to Fortnite gameplay.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -156,7 +407,38 @@
         "media/x-2027353421834260970/s08_1.jpg",
         "media/x-2027353421834260970/s08_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "content creator",
+          "social media reference",
+          "home studio"
+        ],
+        "title": "Man speaking with overlay",
+        "description": "A man speaks into a microphone while an Instagram profile for 'notluc' is overlaid on the screen. This suggests he is discussing or referencing the profile.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -171,8 +453,38 @@
         "media/x-2027353421834260970/s09_1.jpg",
         "media/x-2027353421834260970/s09_2.jpg"
       ],
-      "link": "https://x.com/Razinvfx/status/2027353421834260970"
+      "link": "https://x.com/Razinvfx/status/2027353421834260970",
+      "tags": {
+        "technique": [],
+        "style": [
+          "cinematic",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "streamer",
+          "content creator",
+          "home studio"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man with brown hair and a beard, wearing headphones, smiles at the camera while sitting in front of a microphone. The setting appears to be a home office or streaming setup.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

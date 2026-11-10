@@ -34,7 +34,42 @@
       "frames": [
         "media/x-2024473239213474143/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2024473239213474143"
+      "link": "https://x.com/NormieEdits/status/2024473239213474143",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "streetwear"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "photo collage",
+          "branding",
+          "minimal layout"
+        ],
+        "title": "Polaroid collage of people",
+        "description": "A minimalist composition featuring four Polaroid-style photos arranged around a central brand logo, creating a clean and modern aesthetic.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +84,39 @@
         "media/x-2024473239213474143/s01_1.jpg",
         "media/x-2024473239213474143/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2024473239213474143"
+      "link": "https://x.com/NormieEdits/status/2024473239213474143",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "time tracking",
+          "highlighted dates",
+          "data viz"
+        ],
+        "title": "Calendar with highlighted dates",
+        "description": "A simple calendar graphic with a focus on two adjacent days, 27 and 28, highlighted in blue, suggesting a significant event or deadline.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +129,39 @@
       "frames": [
         "media/x-2024473239213474143/s02_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2024473239213474143"
+      "link": "https://x.com/NormieEdits/status/2024473239213474143",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "green",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "financial success",
+          "profit notification",
+          "data viz"
+        ],
+        "title": "Profit notification",
+        "description": "A clean, green-themed graphic displays a received profit of $1,000,000, emphasizing financial success with a simple and effective design.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +176,39 @@
         "media/x-2024473239213474143/s03_1.jpg",
         "media/x-2024473239213474143/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2024473239213474143"
+      "link": "https://x.com/NormieEdits/status/2024473239213474143",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "dark-moody",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "yellow"
+        ],
+        "concepts": [
+          "review",
+          "commentary",
+          "graphic overlays"
+        ],
+        "title": "Man speaking at a desk",
+        "description": "A man is seated at a desk with a microphone, surrounded by various graphic elements like stars and exclamation marks, indicating a review or commentary.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -90,7 +221,42 @@
       "frames": [
         "media/x-2024473239213474143/s04_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2024473239213474143"
+      "link": "https://x.com/NormieEdits/status/2024473239213474143",
+      "tags": {
+        "technique": [
+          "collage",
+          "grid-layout"
+        ],
+        "style": [
+          "maximal",
+          "bright-playful",
+          "meme"
+        ],
+        "format": [
+          "showreel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "yellow",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "product promotion",
+          "celebrity collab",
+          "social media"
+        ],
+        "title": "Collage of people with products",
+        "description": "A vibrant collage featuring multiple individuals holding various products, creating a dynamic and engaging visual narrative.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -105,8 +271,42 @@
         "media/x-2024473239213474143/s05_1.jpg",
         "media/x-2024473239213474143/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2024473239213474143"
+      "link": "https://x.com/NormieEdits/status/2024473239213474143",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "collage"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "blue",
+          "yellow",
+          "white"
+        ],
+        "concepts": [
+          "product diversity",
+          "brand identity",
+          "text overlay"
+        ],
+        "title": "Product collage with text",
+        "description": "A collection of various snack products arranged around the text 'More to it?', suggesting a diverse range of offerings.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

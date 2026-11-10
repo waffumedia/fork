@@ -1,78 +1,66 @@
-# Inspo — UX spec v0.1 (nominal UI)
+# Fork — UX spec v0.2 (native app, nominal UI)
 
-Owner brief: "very nominal frontend for now, basically Apple style; we iterate on looks later."
-So: system fonts, system colours, native controls, light + dark, no custom branding, no decoration.
-Backend is DONE and is the source of truth — do not change `lib/` or `app/api/` (except where noted). Read `AGENTS.md` for the API.
+Owner: "I want this to be an APP, not a website." + "very nominal frontend for now, basically Apple style; we iterate on looks later."
+Fork = ideas forking off each other (the web) + the utensil. No web UI at all: the Next.js server is only the API.
 
-## Surfaces
-1. **Web** (Next.js app router, same repo, React 19, no UI library needed; plain CSS modules or one global CSS file).
-2. **Native** SwiftUI multiplatform app (iOS 26 + macOS 26) in `apple/`, generated with XcodeGen (`apple/project.yml`).
+- One SwiftUI **multiplatform** target (iOS 26 + macOS 26) in `apple/`, generated with XcodeGen (`apple/project.yml`).
+- Stock SwiftUI only: system fonts, system colours, SF Symbols, light + dark. No custom branding, no decoration.
+- Backend is DONE and is the source of truth — do not change `lib/`, `app/`, `pipeline/`. Read `AGENTS.md` for every endpoint + JSON shape.
+- Auth: `Authorization: Bearer <token>` on every request. Token + server URL live in Settings (token in Keychain).
 
-Both are thin clients of the same API. Auth: web uses cookie (`POST /api/login {token}`), native sends `Authorization: Bearer <token>`.
+## Tabs
+iOS: `TabView` — Today · Map · Library · History · Settings. macOS: `NavigationSplitView` sidebar with the same items, window min 1000×700.
 
-## Screens (both surfaces)
-
-### 1. Today (default)
+### 1. Today (default) — the swipe deck
 ```
 ┌──────────────────────────────┐
-│ Today            3 of 10 left │  ← large title + counter
+│ Today            3 of 10 left │  large title + counter
 │ ┌──────────────────────────┐ │
-│ │                          │ │
-│ │   hero scene image       │ │  ← scenes[0].image; tap = next scene (dots below)
+│ │   hero scene image       │ │  scenes[i].image; tap = next scene of this item
 │ │   (aspect fit, rounded)  │ │
 │ └──────────────────────────┘ │
-│      • ○ ○ ○                  │  ← scene dots
+│      • ○ ○ ○                  │  page dots per scene
 │ Title of post                 │
-│ @author · 0:44 · Grok pick    │  ← origin badge: "Grok pick" | "Seed" | "Added"
-│ "pitch text from Grokbot"     │  ← only if pitch
-│ [ Open ↗ ]                    │  ← opens url (scene.link of current scene)
-│                               │
-│   (✕)                 (♥)    │  ← dislike / like buttons
+│ @author · 0:44 · Grok pick    │  origin badge
+│ "pitch from Grokbot"          │  only if pitch
+│ [ Open at 0:12 ↗ ]            │  opens current scene.link (openURL)
+│   (✕)        (↺)       (♥)   │  dislike · undo · like
 └──────────────────────────────┘
 ```
-- Swipe right = like, left = dislike (drag gesture; card follows finger, rotates slightly, flies off past ~120 pt). Buttons do the same. Web: also ← / → keys, Z = undo.
-- Each swipe → `POST /api/swipe {id, verdict}`. Undo (button in toolbar) → `verdict: "clear"` on the last one.
-- When `remaining == 0`: empty state "Done for today" + count of likes; link to Map.
-- Source of data: `GET /api/today` → `{day,total,remaining,items:[{id,url,title,author,platform,origin,pitch,duration,verdict,scenes:[{id,image,timestamp,title,link}]}]}`. Items with a verdict are already swiped (skip them in the deck).
+- Swipe right = like, left = dislike: card follows the finger (DragGesture), slight rotation, flies off past ~120 pt, springs back otherwise. Buttons do the same. macOS: ← / → keys, ⌘Z undo.
+- `GET /api/today` → `{day,total,remaining,items:[{id,url,title,author,platform,origin,pitch,duration,verdict,scenes:[{id,image,timestamp,title,link}]}]}`. Items with a non-null verdict are already swiped; deck shows the rest in order.
+- Swipe → `POST /api/swipe {id, verdict:"like"|"dislike"}`; undo → same id with `"clear"`.
+- Empty states: `total == 0` → "Grokbot hasn't sent today's picks yet" + pull to refresh. `remaining == 0` → "Done for today · N liked" + button to Map.
 
-### 2. History (bottom of Today on web; own tab on native)
-- `GET /api/history` → `{items:[{id,title,author,url,verdict,at,cover}]}`.
-- Two filters: All / Liked / Disliked (segmented control). Row: cover thumb, title, @author, ♥ or ✕, relative time. Swipe-to-change verdict on native (like ↔ dislike, or clear).
-- Tap → Source detail.
+### 2. Map — the taste web (native, no web view)
+- `GET /api/graph?mode=ideas|full&liked=1&focus=<node id>&depth=1|2`
+  → `{stats, nodes:[ {id,type:"scene",label,image,timestamp,link,liked,degree} | {id,type:"idea",label,facet,count,degree} ], edges:[{source,target,kind:"has"|"bridge"|"co",weight,cross?,shared?}]}`
+- Draw with SwiftUI `Canvas` (not one View per node). Layout: simple force-directed (repulsion + spring edges + centering) computed off the main thread for ~300 iterations, then static; cache positions per (mode, focus). Must stay smooth with ~900 nodes / ~4000 edges: draw edges as one path per kind, skip labels below a zoom threshold.
+- Pan (drag) + pinch/scroll-wheel zoom. Idea nodes = small circles + text label coloured by facet (technique blue, style purple, format orange, motion green, medium gray, concepts teal). Scene nodes = rounded-square thumbnails (load images lazily, cache; draw a plain square until loaded). `bridge` edges thin dashed; `cross:true` bridges in accent colour; `has` edges hairline.
+- Toolbar: segmented **Ideas | Full**, toggle **Liked only**, search field (matches node labels; picking one focuses it).
+- Tap idea → refetch with `focus=idea:<facet>:<tag>&depth=2`, breadcrumb "All › kinetic-type" (tap All to reset). Tap scene → Scene detail sheet.
 
-### 3. Map (the taste web)
-- `GET /api/graph?mode=ideas|full&liked=1&focus=<id>&depth=1`
-  → `{stats, nodes:[scene {id,type:"scene",label,image,timestamp,link,liked,degree} | idea {id,type:"idea",label,facet,count,degree}], edges:[{source,target,kind:"has"|"bridge"|"co",weight,cross?,shared?}]}`
-- Web: force-directed graph (d3-force via CDN-free npm `d3-force` is fine), canvas or SVG. Scene nodes = small rounded image thumbnails; idea nodes = text pills coloured by facet (system colours: technique blue, style purple, format orange, motion green, medium grey, concepts teal). Bridge edges dashed; `cross:true` bridges highlighted (accent).
-- Controls (top bar): segmented "Ideas | Full", toggle "Liked only", search field (filters + focuses a node).
-- Click scene node → right side sheet (Scene detail). Click idea node → refetch with `focus=idea:...&depth=2` (breadcrumb "All ›  kinetic-type", click All to reset).
-- Native: Map tab = WKWebView of `<server>/map?embed=1` with the cookie set from the stored token (nominal; native graph comes later). `embed=1` hides the web top nav.
+### 3. Scene detail (sheet on iOS, inspector/sheet on macOS)
+- `GET /api/scenes/<id>` → `image, frame_urls[1–3], title, description, timestamp, t_start, t_end, link, tags{technique,style,format,motion,medium,palette,concepts}, source{id,title,author,url,verdict}`.
+- Big screenshot, horizontal strip of the other frames, "at 0:12", **Open at 0:12 ↗** (link), "From <source title> · @author" (→ Source detail), tag chips grouped by facet (tap → Map focused on that idea), ShareLink for the link.
 
-### 4. Scene detail (sheet / page `/scene/[id]`)
-- `GET /api/scenes/[id]` → image, frame_urls (1–3 screenshots of that scene), title, description, timestamp, t_start/t_end, link, tags {technique,style,format,motion,medium,palette,concepts}, source {...}.
-- Shows: big screenshot, frame strip, "at 0:12" + **Open at 0:12 ↗** (link), "From: <source title> @author" (→ source), tag chips grouped by facet (tap chip → Map focused on that idea).
+### 4. Source detail
+- `GET /api/sources/<id>` → metadata + verdict + `scenes[]` (image, timestamp, title, link). Grid of scene cards; like/dislike control reflecting `verdict`.
 
-### 5. Source detail (`/source/[id]`)
-- `GET /api/sources/[id]` → metadata + verdict + scenes[] (image, timestamp, link, title).
-- Grid of scene cards (image, timestamp, title). Like/Dislike control at top reflecting `verdict`.
+### 5. Library
+- `GET /api/scenes?q=&tag=facet:tag&liked=1&limit=60` → adaptive grid of scene cards (image, timestamp, title). `.searchable` text + tag chips from `GET /api/stats` (`tags`, top ~30). Tap → Scene detail.
 
-### 6. Library / search (web `/library`, native tab "Library")
-- `GET /api/scenes?q=&tag=facet:tag&liked=1` → grid of scenes. Search field + tag chips from `GET /api/stats` (`tags` = top tags).
+### 6. History
+- `GET /api/history` → `{items:[{id,title,author,url,verdict,at,cover}]}`. Segmented All / Liked / Disliked. Row: cover thumb, title, @author, ♥/✕, relative time. Swipe actions: flip verdict or clear. Tap → Source detail.
 
-### 7. Settings / Login
-- Web `/login`: one secure field "Access token" → POST /api/login → redirect `/`. Any 401 from the API → redirect to /login.
-- Native Settings: Server URL (default `http://localhost:3300`), Token (stored in Keychain), "Test connection" (GET /api/stats shows counts).
+### 7. Settings
+- Server URL (default `http://localhost:3300`), Token (SecureField → Keychain), "Test connection" → `GET /api/stats` shows "734 scenes · 130 sources". Any 401 anywhere → banner "Check token in Settings".
 
-## Web nav
-Top bar (hidden with `?embed=1`): **Today · Map · Library** left, stats text right ("734 scenes · 12 ♥"). Max content width 1100 px; Today card max 420 px wide, centred. Mobile web works at 375 px.
-
-## Native structure
-- `TabView`: Today, Map, Library, History, Settings. macOS: same tabs as a sidebar (`NavigationSplitView`), window min 900×640.
-- `APIClient` (async/await, URLSession, Codable models mirroring the JSON above), `@Observable` stores.
-- Images: `AsyncImage`. Bundle id `com.waffu.inspo`. Signing: automatic, team left empty (`DEVELOPMENT_TEAM` blank) so simulator + "Sign to Run Locally" Mac build work; owner adds team later.
-- ATS: allow local networking (`NSAllowsLocalNetworking`) for the localhost/LAN server.
+## Code shape
+- `APIClient` (async/await URLSession, Codable models mirroring the JSON), `@Observable` stores per screen, shared image cache.
+- Bundle id `com.waffu.fork`, product name **Fork**. `DEVELOPMENT_TEAM` empty, automatic signing; macOS `CODE_SIGN_IDENTITY "-"` so it builds without an account. ATS: `NSAllowsLocalNetworking` + `NSAllowsArbitraryLoads` off.
+- DEBUG only: launch env `FORK_TOKEN` / `FORK_URL` prefill Settings for tests. Never hardcode the token.
 
 ## Acceptance
-- `npm run build` passes; `npm run typecheck` passes.
-- Web: Today deck swipes and persists (reload keeps state); undo works; Map renders all nodes with no overlap explosion (`stats.nodes` in hundreds), click → sheet with working "Open at" link; Library search returns results; works in dark mode.
-- Native: `xcodegen` + `xcodebuild -scheme Inspo -destination 'platform=iOS Simulator,name=iPhone 17'` and `-destination 'platform=macOS'` both build; app shows Today with real data from localhost:3300 in the simulator.
+- `cd apple && xcodegen` then `xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build` and `-destination 'platform=macOS' build` both succeed.
+- Launched in an iOS simulator with FORK_TOKEN/FORK_URL env against http://localhost:3300: Today, Map (both modes), Library search, Scene detail "Open at" all work with real data.

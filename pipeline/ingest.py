@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Ingest links into Inspo: download -> scene split -> screenshots -> data/sources/<id>.json
+"""Ingest links into Fork: download -> scene split -> screenshots -> data/sources/<id>.json
 
 usage: python3 pipeline/ingest.py seed/links.txt [--only ID,ID] [--force] [--jobs 3]
        python3 pipeline/ingest.py --url https://x.com/a/status/1
@@ -13,7 +13,7 @@ import argparse, concurrent.futures as cf, json, pathlib, re, subprocess, sys, t
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 DATA = ROOT / 'data'
 YTDLP = '/opt/homebrew/bin/yt-dlp'
-UA = 'inspo-ingest/0.1'
+UA = 'fork-ingest/0.1'
 
 
 # ---------- url handling ----------

@@ -36,8 +36,47 @@
         "media/x-2079203864960774409/s00_1.jpg",
         "media/x-2079203864960774409/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079203864960774409"
+      "link": "https://x.com/NormieEdits/status/2079203864960774409",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "low-poly",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "geometric",
+          "glossy-3d",
+          "apple-style"
+        ],
+        "format": [
+          "product-promo",
+          "ui-demo"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "blender",
+          "after-effects"
+        ],
+        "palette": [
+          "green",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "digital product display",
+          "3d model in interface",
+          "minimal ui"
+        ],
+        "title": "3D T-shirt in a window",
+        "description": "A low-poly green t-shirt is displayed inside a stylized computer window interface, suggesting a product visualization or digital mockup.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

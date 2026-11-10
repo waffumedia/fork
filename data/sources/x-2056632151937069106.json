@@ -36,7 +36,44 @@
         "media/x-2056632151937069106/s00_1.jpg",
         "media/x-2056632151937069106/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "red"
+        ],
+        "concepts": [
+          "text overlay on speaker",
+          "direct address to audience",
+          "call to action"
+        ],
+        "title": "Man speaking with text overlay",
+        "description": "A man in a black shirt and tie speaks directly to the camera against a grey background, with large white text overlaying his chest that reads 'we should call Alcohol cancer' in a mix of fonts.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +88,44 @@
         "media/x-2056632151937069106/s01_1.jpg",
         "media/x-2056632151937069106/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "yellow"
+        ],
+        "concepts": [
+          "text overlay on speaker",
+          "emphasizing a number",
+          "direct address to audience"
+        ],
+        "title": "Man speaking with text",
+        "description": "A man in a black shirt speaks animatedly, gesturing with his right hand. The text '12 year' appears in yellow on the right side of the frame.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +140,42 @@
         "media/x-2056632151937069106/s02_1.jpg",
         "media/x-2056632151937069106/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "subtitle for dialogue",
+          "direct address to audience",
+          "interview format"
+        ],
+        "title": "Man speaking with subtitles",
+        "description": "A man in a black shirt speaks, looking slightly to his right. Subtitles appear on the screen: 'he : I had' on the left and 'happened what : Alan' on the right.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +190,40 @@
         "media/x-2056632151937069106/s03_1.jpg",
         "media/x-2056632151937069106/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "line-art",
+          "frame-by-frame"
+        ],
+        "style": [
+          "minimal",
+          "hand-drawn",
+          "monochrome"
+        ],
+        "format": [
+          "explainer",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "illustration"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "line art illustration",
+          "food imagery",
+          "character illustration"
+        ],
+        "title": "Line art of a boy",
+        "description": "A simple black and white line-art illustration shows a boy in a hoodie holding a hamburger.",
+        "quality": 3
+      }
     },
     {
       "idx": 4,
@@ -96,7 +238,40 @@
         "media/x-2056632151937069106/s04_1.jpg",
         "media/x-2056632151937069106/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "line-art",
+          "frame-by-frame"
+        ],
+        "style": [
+          "minimal",
+          "hand-drawn",
+          "monochrome"
+        ],
+        "format": [
+          "explainer",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "illustration"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "line art illustration",
+          "food imagery",
+          "meal scene"
+        ],
+        "title": "Line art of a meal",
+        "description": "A top-down line-art illustration depicts a meal on a checkered tablecloth, featuring a hamburger, fries, a glass of water, and a soda cup labeled 'COKE'. A hand reaches for the fries.",
+        "quality": 3
+      }
     },
     {
       "idx": 5,
@@ -111,7 +286,44 @@
         "media/x-2056632151937069106/s05_1.jpg",
         "media/x-2056632151937069106/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "yellow"
+        ],
+        "concepts": [
+          "text overlay on speaker",
+          "direct address to audience",
+          "interview format"
+        ],
+        "title": "Man speaking to another person",
+        "description": "A man in a black shirt speaks to someone off-camera, with the text 'bet you can't' overlaid in yellow. The shot is a medium two-shot.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -126,7 +338,44 @@
         "media/x-2056632151937069106/s06_1.jpg",
         "media/x-2056632151937069106/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "yellow"
+        ],
+        "concepts": [
+          "text overlay on speaker",
+          "emphasizing a time period",
+          "direct address to audience"
+        ],
+        "title": "Man speaking with text overlay",
+        "description": "A man in a black shirt speaks while holding a microphone. The text 'now in their 70s 80s' appears in yellow on the left side of the frame.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -141,8 +390,44 @@
         "media/x-2056632151937069106/s07_1.jpg",
         "media/x-2056632151937069106/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2056632151937069106"
+      "link": "https://x.com/NormieEdits/status/2056632151937069106",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "subtitle for dialogue",
+          "direct address to audience",
+          "interview format"
+        ],
+        "title": "Man speaking with text",
+        "description": "A man in a black shirt speaks, looking slightly to his right. The text 'i think it's' appears in white on the left side of the frame.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -36,7 +36,48 @@
         "media/x-2036096672015765622/s00_1.jpg",
         "media/x-2036096672015765622/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "compositing",
+          "glow-bloom",
+          "motion-blur"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "grunge",
+          "high-contrast"
+        ],
+        "format": [
+          "title-sequence",
+          "trailer",
+          "movie-edit"
+        ],
+        "motion": [
+          "chaotic",
+          "beat-synced",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "fire on sign",
+          "apocalyptic scene",
+          "selective color"
+        ],
+        "title": "Hollywood sign on fire",
+        "description": "A dramatic, desaturated shot of the Hollywood sign engulfed in flames and smoke, with a communications tower visible on the right. The scene uses selective color to emphasize the fire against a mostly monochrome background.",
+        "quality": 5
+      }
     },
     {
       "idx": 1,
@@ -51,7 +92,44 @@
         "media/x-2036096672015765622/s01_1.jpg",
         "media/x-2036096672015765622/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics",
+          "glow-bloom"
+        ],
+        "style": [
+          "cinematic",
+          "bright-playful",
+          "retro-futurism",
+          "vaporwave"
+        ],
+        "format": [
+          "poster",
+          "movie-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "illustration"
+        ],
+        "palette": [
+          "red",
+          "orange",
+          "yellow",
+          "blue"
+        ],
+        "concepts": [
+          "movie poster",
+          "hero group",
+          "action scene"
+        ],
+        "title": "Suicide Squad movie poster",
+        "description": "A vibrant and action-packed movie poster for 'The Suicide Squad' is centered against a dark, desaturated background featuring the burning Hollywood sign. The poster uses bright colors to contrast with the grim setting.",
+        "quality": 5
+      }
     },
     {
       "idx": 2,
@@ -66,7 +144,35 @@
         "media/x-2036096672015765622/s02_1.jpg",
         "media/x-2036096672015765622/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [],
+        "style": [
+          "documentary",
+          "streetwear"
+        ],
+        "format": [
+          "social-reel"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "film festival",
+          "group photo",
+          "outdoor scene"
+        ],
+        "title": "People at film festival",
+        "description": "A group of four people pose for a photo in front of a movie theater marquee that reads 'CAMP FILM + FEST'. The image is a standard photograph with a natural, outdoor lighting setup.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +187,40 @@
         "media/x-2036096672015765622/s03_1.jpg",
         "media/x-2036096672015765622/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "interview",
+          "speaker",
+          "studio shot"
+        ],
+        "title": "Man speaking into microphone",
+        "description": "A man in a black polo shirt speaks directly to the camera, gesturing with his hands. He is in a studio setting with a black background and a professional microphone.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,7 +235,40 @@
         "media/x-2036096672015765622/s04_1.jpg",
         "media/x-2036096672015765622/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "interview",
+          "speaker",
+          "gesturing"
+        ],
+        "title": "Man speaking with hands",
+        "description": "The same man continues to speak, now using more expressive hand gestures. The shot is a medium close-up against a dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +283,40 @@
         "media/x-2036096672015765622/s05_1.jpg",
         "media/x-2036096672015765622/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "interview",
+          "speaker",
+          "pointing"
+        ],
+        "title": "Man pointing at camera",
+        "description": "The man points his finger directly at the viewer while speaking. The shot is a medium close-up with a dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,7 +329,38 @@
       "frames": [
         "media/x-2036096672015765622/s06_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [],
+        "style": [
+          "documentary",
+          "streetwear"
+        ],
+        "format": [
+          "short-film",
+          "social-reel"
+        ],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "green",
+          "grey",
+          "brown",
+          "blue"
+        ],
+        "concepts": [
+          "urban scene",
+          "poster",
+          "street art"
+        ],
+        "title": "Man posting a flyer",
+        "description": "A man in a green cap and grey t-shirt is seen from behind, pasting a flyer onto a utility pole in an urban setting. The scene has natural lighting.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -139,7 +375,48 @@
         "media/x-2036096672015765622/s07_1.jpg",
         "media/x-2036096672015765622/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "compositing",
+          "glow-bloom",
+          "film-grain"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "grunge",
+          "high-contrast"
+        ],
+        "format": [
+          "title-sequence",
+          "trailer",
+          "movie-edit"
+        ],
+        "motion": [
+          "chaotic",
+          "beat-synced",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "fire on sign",
+          "apocalyptic scene",
+          "selective color"
+        ],
+        "title": "Hollywood sign on fire",
+        "description": "A repeat of the opening shot, showing the Hollywood sign burning. This time, the image is slightly more desaturated and has a film grain effect.",
+        "quality": 5
+      }
     },
     {
       "idx": 8,
@@ -154,7 +431,41 @@
         "media/x-2036096672015765622/s08_1.jpg",
         "media/x-2036096672015765622/s08_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "split-screen"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "brown"
+        ],
+        "concepts": [
+          "video call",
+          "interview",
+          "split-screen"
+        ],
+        "title": "Split-screen interview",
+        "description": "A split-screen view shows two men in a video call. The man on the left is in a vehicle, while the man on the right is in a room. The format suggests a remote interview.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -169,8 +480,42 @@
         "media/x-2036096672015765622/s09_1.jpg",
         "media/x-2036096672015765622/s09_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2036096672015765622"
+      "link": "https://x.com/NormieEdits/status/2036096672015765622",
+      "tags": {
+        "technique": [
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "interview",
+          "speaker",
+          "studio shot"
+        ],
+        "title": "Man speaking into microphone",
+        "description": "A repeat of the earlier talking-head shot, showing the man speaking with his hands. The composition and lighting are identical to scene 3.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

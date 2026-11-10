@@ -36,8 +36,47 @@
         "media/x-2080652003475324954/s00_1.jpg",
         "media/x-2080652003475324954/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2080652003475324954"
+      "link": "https://x.com/NormieEdits/status/2080652003475324954",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "match-cut",
+          "compositing"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "corporate-clean"
+        ],
+        "format": [
+          "talking-head",
+          "breakdown",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "warm"
+        ],
+        "concepts": [
+          "before and after",
+          "video editing",
+          "transformation"
+        ],
+        "title": "Before and After Transformation",
+        "description": "A side-by-side comparison showing a man covering his face in the 'Before' frame and then speaking directly to the camera in the 'After' frame, likely demonstrating a video editing transformation.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

@@ -11,7 +11,7 @@ async function main() {
   for (const { id } of ids) sources.push(await getSource(id));
   const taste = await tasteProfile();
   await fs.writeFile(path.join(DATA_DIR, "library.json"), JSON.stringify({ generated: new Date().toISOString(), taste, sources }, null, 1));
-  const md: string[] = [`# Inspo library\n`, `Generated ${new Date().toISOString()} · ${sources.length} sources · ${sources.reduce((a, s) => a + (s?.scenes.length ?? 0), 0)} scenes\n`,
+  const md: string[] = [`# Fork library\n`, `Generated ${new Date().toISOString()} · ${sources.length} sources · ${sources.reduce((a, s) => a + (s?.scenes.length ?? 0), 0)} scenes\n`,
     `**Taste:** ${taste.summary}\n`, `Screenshots live in \`data/\` (paths below are relative to it). Scene ids work with the MCP \`get_scene\` tool.\n`];
   for (const s of sources) {
     if (!s) continue;

@@ -15,7 +15,7 @@ async function take(items: z.infer<typeof Item>[]) {
   return Response.json({ received: out.length, items: out });
 }
 
-/** Grokbot drops its picks here. Auth: ?token=<GROK_SECRET>, Bearer, or X-Inspo-Signature HMAC. */
+/** Grokbot drops its picks here. Auth: ?token=<GROK_SECRET>, Bearer, or X-Fork-Signature HMAC. */
 export async function POST(req: Request) {
   const raw = await req.text();
   if (raw.length > 200_000) return Response.json({ error: "too large" }, { status: 413 });

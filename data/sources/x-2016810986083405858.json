@@ -36,7 +36,43 @@
         "media/x-2016810986083405858/s00_1.jpg",
         "media/x-2016810986083405858/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2016810986083405858"
+      "link": "https://x.com/NormieEdits/status/2016810986083405858",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "profile data display",
+          "subscriber count",
+          "minimal ui"
+        ],
+        "title": "subscriber count display",
+        "description": "A clean, minimalist graphic shows a profile picture and the text 'John Nellis 220,000 Total subscribers' against a white grid background. The design is simple and direct, focusing on the data.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,8 +85,46 @@
       "frames": [
         "media/x-2016810986083405858/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2016810986083405858"
+      "link": "https://x.com/NormieEdits/status/2016810986083405858",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "grid-layout",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "orange"
+        ],
+        "concepts": [
+          "subscriber comparison",
+          "data visualization",
+          "brand comparison"
+        ],
+        "title": "subscriber comparison chart",
+        "description": "A bar chart compares the number of subscribers for different entities, including a profile picture of John Nellis and the BBC News logo. The bars are vertically aligned with a dark background, creating a clear visual comparison.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

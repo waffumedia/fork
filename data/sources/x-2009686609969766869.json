@@ -36,7 +36,43 @@
         "media/x-2009686609969766869/s00_1.jpg",
         "media/x-2009686609969766869/s00_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "bright-playful",
+          "minimal",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "yellow",
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "man speaking",
+          "text overlay",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man with dark hair and a grey shirt speaks into a microphone, looking directly at the camera. The text 'EVERYTHING I've been seeing' is overlaid in bold yellow and white font.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +87,41 @@
         "media/x-2009686609969766869/s01_1.jpg",
         "media/x-2009686609969766869/s01_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "glitch"
+        ],
+        "style": [
+          "cyberpunk",
+          "neon",
+          "minimal"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "green",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "channel analytics",
+          "financial data",
+          "digital overlay"
+        ],
+        "title": "YouTube channel screenshot",
+        "description": "A screenshot of a YouTube channel page for 'Luc Boulch' with a large green dollar amount '$336,111' superimposed over the profile. The background is a blurred version of the channel page.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +136,42 @@
         "media/x-2009686609969766869/s02_1.jpg",
         "media/x-2009686609969766869/s02_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "glitch"
+        ],
+        "style": [
+          "meme",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "man speaking",
+          "emoji overlay",
+          "talking head"
+        ],
+        "title": "Man with emoji",
+        "description": "A man in a grey shirt smiles while resting his chin on his hand. A large emoji with glasses is superimposed on a monitor behind him.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +186,41 @@
         "media/x-2009686609969766869/s03_1.jpg",
         "media/x-2009686609969766869/s03_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody"
+        ],
+        "format": [
+          "infographic",
+          "ui-demo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "teal",
+          "white"
+        ],
+        "concepts": [
+          "data visualization",
+          "analytics dashboard",
+          "trend graphs"
+        ],
+        "title": "Data charts",
+        "description": "A dark screen displays three line graphs, likely representing data trends. The text 'IN THIS VIDEO...' appears at the top.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,7 +235,42 @@
         "media/x-2009686609969766869/s04_1.jpg",
         "media/x-2009686609969766869/s04_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "screen-recording"
+        ],
+        "style": [
+          "meme",
+          "bright-playful",
+          "minimal"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "social media interface",
+          "shorts content",
+          "call to action"
+        ],
+        "title": "YouTube Shorts page",
+        "description": "A screenshot of a YouTube channel's Shorts section. The text 'Subscribe if you're cool' is overlaid at the top.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +285,40 @@
         "media/x-2009686609969766869/s05_1.jpg",
         "media/x-2009686609969766869/s05_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "brown"
+        ],
+        "concepts": [
+          "man speaking",
+          "bookshelf background",
+          "direct address"
+        ],
+        "title": "Man speaking to camera",
+        "description": "A man in a grey polo shirt speaks into a microphone. He is positioned in front of a white bookshelf filled with books.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -126,7 +333,40 @@
         "media/x-2009686609969766869/s06_1.jpg",
         "media/x-2009686609969766869/s06_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "scale-blowup"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "neon"
+        ],
+        "format": [
+          "title-sequence",
+          "logo-sting"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "green",
+          "black"
+        ],
+        "concepts": [
+          "financial milestone",
+          "text reveal",
+          "digital display"
+        ],
+        "title": "Dollar amount on black",
+        "description": "A large green '$30K' text is displayed against a solid black background.",
+        "quality": 5
+      }
     },
     {
       "idx": 7,
@@ -141,7 +381,43 @@
         "media/x-2009686609969766869/s07_1.jpg",
         "media/x-2009686609969766869/s07_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "collage",
+          "glitch",
+          "overlay-graphics"
+        ],
+        "style": [
+          "meme",
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "infographic",
+          "showreel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "green"
+        ],
+        "concepts": [
+          "process timeline",
+          "event progression",
+          "visual storytelling"
+        ],
+        "title": "Timeline of events",
+        "description": "A timeline shows a progression from Day 1 to Day 10, with images representing different stages of a process. A large red 'BAM!' graphic appears at the end.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -156,8 +432,43 @@
         "media/x-2009686609969766869/s08_1.jpg",
         "media/x-2009686609969766869/s08_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2009686609969766869"
+      "link": "https://x.com/belomp4/status/2009686609969766869",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "meme",
+          "bright-playful",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "brown"
+        ],
+        "concepts": [
+          "reaction shot",
+          "surprise expression",
+          "direct address"
+        ],
+        "title": "Man with open mouth",
+        "description": "A close-up of a man's face with his mouth wide open in an expression of surprise or excitement. He is looking directly at the camera.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

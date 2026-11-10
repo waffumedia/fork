@@ -34,7 +34,41 @@
       "frames": [
         "media/x-2057821074356932652/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2057821074356932652"
+      "link": "https://x.com/NormieEdits/status/2057821074356932652",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "editorial"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "text emphasis",
+          "news headline",
+          "financial success"
+        ],
+        "title": "News headline about a successful dropout",
+        "description": "A screenshot of a news article with a bold headline about a 25-year-old college dropout's successful production company, highlighted by an orange box around the '$1.08 million' figure.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -47,7 +81,41 @@
       "frames": [
         "media/x-2057821074356932652/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2057821074356932652"
+      "link": "https://x.com/NormieEdits/status/2057821074356932652",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "green",
+          "red"
+        ],
+        "concepts": [
+          "freelance platform",
+          "service listing",
+          "rating display"
+        ],
+        "title": "Freelance video editing service listing",
+        "description": "A screenshot of a freelance profile for a video editor named Tuan le, showcasing his skills in professional and YouTube video editing with a high rating and price.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +130,39 @@
         "media/x-2057821074356932652/s02_1.jpg",
         "media/x-2057821074356932652/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2057821074356932652"
+      "link": "https://x.com/NormieEdits/status/2057821074356932652",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "social media feature",
+          "copy function",
+          "mobile interface"
+        ],
+        "title": "TikTok video with a 'COPY' button",
+        "description": "A smartphone screen displaying a TikTok video, with a prominent 'COPY' button overlayed on the content, indicating a feature to copy the video's link or text.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +177,40 @@
         "media/x-2057821074356932652/s03_1.jpg",
         "media/x-2057821074356932652/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2057821074356932652"
+      "link": "https://x.com/NormieEdits/status/2057821074356932652",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "video analysis",
+          "content structure",
+          "social media breakdown"
+        ],
+        "title": "TikTok video with structural annotations",
+        "description": "A smartphone screen showing a TikTok video, annotated with labels like 'Structure', 'Layout', and 'Format' to analyze the content's composition.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +225,41 @@
         "media/x-2057821074356932652/s04_1.jpg",
         "media/x-2057821074356932652/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2057821074356932652"
+      "link": "https://x.com/NormieEdits/status/2057821074356932652",
+      "tags": {
+        "technique": [
+          "parallax",
+          "2.5d"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "process explanation",
+          "talking head",
+          "step-by-step guide"
+        ],
+        "title": "Man explaining a four-step process",
+        "description": "A man in a brown jacket sits at a desk, gesturing while explaining a four-step process labeled 'COPY', 'UNDERSTAND', 'ADAPT', and 'INNOVATE' on a wooden background.",
+        "quality": 5
+      }
     },
     {
       "idx": 5,
@@ -107,8 +274,41 @@
         "media/x-2057821074356932652/s05_1.jpg",
         "media/x-2057821074356932652/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2057821074356932652"
+      "link": "https://x.com/NormieEdits/status/2057821074356932652",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "social media engagement",
+          "mobile interface",
+          "video interaction"
+        ],
+        "title": "TikTok video with engagement icons",
+        "description": "A smartphone screen displays a TikTok video, highlighting the engagement icons like like, comment, and share on the right side of the interface.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

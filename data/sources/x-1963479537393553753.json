@@ -36,7 +36,46 @@
         "media/x-1963479537393553753/s00_1.jpg",
         "media/x-1963479537393553753/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+      "link": "https://x.com/NormieEdits/status/1963479537393553753",
+      "tags": {
+        "technique": [
+          "collage",
+          "mask-reveal",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "streetwear",
+          "high-contrast"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "orange"
+        ],
+        "concepts": [
+          "three-panel layout",
+          "text as graphic",
+          "face collage"
+        ],
+        "title": "three-panel collage",
+        "description": "A triptych of stylized images featuring a man in a black outfit, a central graphic with multiple faces and text, and a close-up of the same man, all unified by a clean, modern aesthetic with red accents.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +90,46 @@
         "media/x-1963479537393553753/s01_1.jpg",
         "media/x-1963479537393553753/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+      "link": "https://x.com/NormieEdits/status/1963479537393553753",
+      "tags": {
+        "technique": [
+          "collage",
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "retro-futurism",
+          "y2k",
+          "meme"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "orange"
+        ],
+        "concepts": [
+          "digital identity",
+          "vintage tech",
+          "content feed"
+        ],
+        "title": "three-panel collage",
+        "description": "A triptych showing a man with a red hat, a vintage TV graphic with text, and a smartphone screen displaying a themed content feed, suggesting a narrative about digital identity.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +144,44 @@
         "media/x-1963479537393553753/s02_1.jpg",
         "media/x-1963479537393553753/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+      "link": "https://x.com/NormieEdits/status/1963479537393553753",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "streetwear",
+          "bright-playful"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "photography"
+        ],
+        "palette": [
+          "orange",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "football branding",
+          "player portrait",
+          "team collage"
+        ],
+        "title": "three-panel collage",
+        "description": "A triptych featuring a football jersey, a group photo of players with text, and a portrait of a player in a frame, all set against a vibrant orange background.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,8 +196,46 @@
         "media/x-1963479537393553753/s03_1.jpg",
         "media/x-1963479537393553753/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1963479537393553753"
+      "link": "https://x.com/NormieEdits/status/1963479537393553753",
+      "tags": {
+        "technique": [
+          "collage",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "streetwear",
+          "dark-moody"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "player comparison",
+          "symbolic imagery",
+          "time contrast"
+        ],
+        "title": "three-panel collage",
+        "description": "A triptych showing a man with curly hair, a symbolic image of two hands reaching for each other with text, and a side-by-side comparison of two players in different eras.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

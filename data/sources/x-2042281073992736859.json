@@ -36,7 +36,50 @@
         "media/x-2042281073992736859/s00_1.jpg",
         "media/x-2042281073992736859/s00_2.jpg"
       ],
-      "link": "https://x.com/Ricardofilms_/status/2042281073992736859"
+      "link": "https://x.com/Ricardofilms_/status/2042281073992736859",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "depth-of-field",
+          "volumetric-light",
+          "glow-bloom"
+        ],
+        "style": [
+          "cinematic",
+          "luxury",
+          "dark-moody",
+          "photoreal"
+        ],
+        "format": [
+          "intro",
+          "title-sequence",
+          "short-film"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects",
+          "blender",
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "orange",
+          "gold",
+          "warm"
+        ],
+        "concepts": [
+          "horse-drawn carriage",
+          "vintage city street",
+          "title card overlay",
+          "golden hour lighting"
+        ],
+        "title": "Horse-drawn carriage street",
+        "description": "A photorealistic, cinematic scene of a horse-drawn carriage on a wet, sunlit European street, with a vintage aesthetic and a prominent red title card overlay.",
+        "quality": 5
+      }
     },
     {
       "idx": 1,
@@ -51,8 +94,52 @@
         "media/x-2042281073992736859/s01_1.jpg",
         "media/x-2042281073992736859/s01_2.jpg"
       ],
-      "link": "https://x.com/Ricardofilms_/status/2042281073992736859"
+      "link": "https://x.com/Ricardofilms_/status/2042281073992736859",
+      "tags": {
+        "technique": [
+          "3d-render",
+          "depth-of-field",
+          "volumetric-light",
+          "glow-bloom"
+        ],
+        "style": [
+          "cinematic",
+          "luxury",
+          "dark-moody",
+          "photoreal"
+        ],
+        "format": [
+          "intro",
+          "title-sequence",
+          "short-film"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "after-effects",
+          "blender",
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "black",
+          "gold",
+          "warm"
+        ],
+        "concepts": [
+          "formal portrait",
+          "period clothing",
+          "dramatic lighting",
+          "title card overlay"
+        ],
+        "title": "Man in formal wear",
+        "description": "A cinematic portrait of a man in a period suit, standing in a dimly lit room with dramatic lighting and a red title card overlay.",
+        "quality": 5
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

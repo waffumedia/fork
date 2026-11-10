@@ -36,7 +36,47 @@
         "media/x-1966913949619863952/s00_1.jpg",
         "media/x-1966913949619863952/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1966913949619863952"
+      "link": "https://x.com/NormieEdits/status/1966913949619863952",
+      "tags": {
+        "technique": [
+          "collage",
+          "grid-layout",
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "maximal",
+          "editorial",
+          "bright-playful",
+          "geometric"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "green",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "social media highlights",
+          "sports montage",
+          "design collage"
+        ],
+        "title": "Top of their game",
+        "description": "A dynamic collage of social media clips featuring sports highlights, a person writing on a green screen, and a man in a stadium. The layout uses a grid format with a mix of live-action footage and graphic overlays.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +91,45 @@
         "media/x-1966913949619863952/s01_1.jpg",
         "media/x-1966913949619863952/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1966913949619863952"
+      "link": "https://x.com/NormieEdits/status/1966913949619863952",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "retro-futurism"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "illustration"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "red",
+          "orange"
+        ],
+        "concepts": [
+          "minimalist design",
+          "task management",
+          "retro aesthetic"
+        ],
+        "title": "Stop being lazy",
+        "description": "A minimalist composition featuring a vinyl record, a to-do list on paper, and text about video formats. The design uses a clean layout with a focus on typography and simple objects.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +144,45 @@
         "media/x-1966913949619863952/s02_1.jpg",
         "media/x-1966913949619863952/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1966913949619863952"
+      "link": "https://x.com/NormieEdits/status/1966913949619863952",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "vaporwave"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "illustration"
+        ],
+        "palette": [
+          "white",
+          "orange",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "designer identity",
+          "productivity message",
+          "social media branding"
+        ],
+        "title": "Your Designer",
+        "description": "A triptych layout with a solid orange background, a note with text about discipline, and an Instagram profile. The design uses bold colors and typography to convey a message about productivity.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +197,46 @@
         "media/x-1966913949619863952/s03_1.jpg",
         "media/x-1966913949619863952/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1966913949619863952"
+      "link": "https://x.com/NormieEdits/status/1966913949619863952",
+      "tags": {
+        "technique": [
+          "glitch",
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "retro-futurism"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced",
+          "chaotic"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red",
+          "orange"
+        ],
+        "concepts": [
+          "tech glitch",
+          "error message",
+          "analytics data"
+        ],
+        "title": "The analytics",
+        "description": "A split-screen composition with a glitch effect, a person with an error pop-up, and a number '15' with a line. The scene uses a dark background and dynamic elements to create a tech-focused aesthetic.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,8 +251,46 @@
         "media/x-1966913949619863952/s04_1.jpg",
         "media/x-1966913949619863952/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1966913949619863952"
+      "link": "https://x.com/NormieEdits/status/1966913949619863952",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "retro-futurism"
+        ],
+        "format": [
+          "showreel",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange",
+          "teal"
+        ],
+        "concepts": [
+          "strategy planning",
+          "neon aesthetic",
+          "thematic buckets"
+        ],
+        "title": "Strategy",
+        "description": "A triptych layout with a list of strategy points, a neon-lit scene with text, and a section about thematic buckets. The design uses a mix of text, neon lighting, and a dark background to create a modern aesthetic.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

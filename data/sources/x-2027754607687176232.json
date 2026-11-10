@@ -54,7 +54,41 @@
         "media/x-2027754607687176232/s00_1.jpg",
         "media/x-2027754607687176232/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2027754607687176232"
+      "link": "https://x.com/NormieEdits/status/2027754607687176232",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "apple-style",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "messaging app interface",
+          "smartphone screen",
+          "text input"
+        ],
+        "title": "iMessage conversation",
+        "description": "A close-up of a smartphone screen showing an iMessage with a user named Stephen, where the message 'Can you edit a video for me?' is visible. The keyboard is active, suggesting an ongoing conversation. The design is clean and modern, characteristic of a product demonstration.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -69,7 +103,41 @@
         "media/x-2027754607687176232/s01_1.jpg",
         "media/x-2027754607687176232/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2027754607687176232"
+      "link": "https://x.com/NormieEdits/status/2027754607687176232",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "line-art"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "explainer"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "data visualization",
+          "timeline",
+          "chronological flow"
+        ],
+        "title": "Timeline animation",
+        "description": "A minimalist timeline graphic with a smooth, undulating line. Key years like 2015 and 2019 are highlighted with text, indicating a chronological progression. The design is clean and modern.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -84,7 +152,38 @@
         "media/x-2027754607687176232/s02_1.jpg",
         "media/x-2027754607687176232/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2027754607687176232"
+      "link": "https://x.com/NormieEdits/status/2027754607687176232",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "retro-futurism",
+          "y2k",
+          "organic"
+        ],
+        "format": [
+          "short-film",
+          "social-reel"
+        ],
+        "motion": [],
+        "medium": [
+          "photography"
+        ],
+        "palette": [
+          "brown",
+          "yellow",
+          "green"
+        ],
+        "concepts": [
+          "family photo",
+          "personal story",
+          "nostalgia"
+        ],
+        "title": "Photo with text overlay",
+        "description": "A vintage photograph of a woman and a child, likely a mother and son. The image has a nostalgic feel with warm tones. Text overlay reads 'a video about my parents', indicating the subject of a personal story.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -97,7 +196,40 @@
       "frames": [
         "media/x-2027754607687176232/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2027754607687176232"
+      "link": "https://x.com/NormieEdits/status/2027754607687176232",
+      "tags": {
+        "technique": [
+          "mask-reveal",
+          "glow-bloom"
+        ],
+        "style": [
+          "luxury",
+          "cinematic"
+        ],
+        "format": [
+          "title-sequence",
+          "showreel"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "gold",
+          "black"
+        ],
+        "concepts": [
+          "theatrical reveal",
+          "framed memory",
+          "golden frame"
+        ],
+        "title": "Framed photo reveal",
+        "description": "A vintage photograph of a woman and child is displayed within an ornate golden frame. The frame is centered against a rich red curtain backdrop, creating a theatrical and dramatic reveal. The year (2019) is noted below.",
+        "quality": 5
+      }
     },
     {
       "idx": 4,
@@ -112,8 +244,43 @@
         "media/x-2027754607687176232/s04_1.jpg",
         "media/x-2027754607687176232/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2027754607687176232"
+      "link": "https://x.com/NormieEdits/status/2027754607687176232",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "apple-style",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "product-promo"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "social media analytics",
+          "split-screen comparison",
+          "follower count"
+        ],
+        "title": "Split-screen social media",
+        "description": "Two smartphones are shown side-by-side in a split-screen format. Both display a social media app interface with a circular loading icon and follower counts ('700k' and '300k'). The layout is clean and modern, suggesting a comparison or data visualization.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

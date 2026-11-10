@@ -34,7 +34,41 @@
       "frames": [
         "media/x-2055740311314346318/s00_0.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glow-bloom",
+          "overlay-graphics"
+        ],
+        "style": [
+          "dark-moody",
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "text on dark background",
+          "highlighted text",
+          "digital article"
+        ],
+        "title": "Article headline on dark background",
+        "description": "A screenshot of a Medium article with a dark mode interface, featuring a bold white headline about creators and freelancers not making money on Instagram. The text is highlighted with a brown overlay, creating a strong visual contrast.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +83,37 @@
         "media/x-2055740311314346318/s01_1.jpg",
         "media/x-2055740311314346318/s01_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "depth-of-field",
+          "motion-blur"
+        ],
+        "style": [
+          "dark-moody",
+          "cinematic"
+        ],
+        "format": [],
+        "motion": [
+          "slow-drift"
+        ],
+        "medium": [
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "close-up hand",
+          "computer interaction",
+          "dark lighting"
+        ],
+        "title": "Hand on computer mouse",
+        "description": "A close-up shot of a person's hand resting on a black computer mouse, with soft lighting creating a moody atmosphere. The focus is on the hand and mouse, while the background is blurred.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +126,37 @@
       "frames": [
         "media/x-2055740311314346318/s02_0.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "depth-of-field",
+          "parallax"
+        ],
+        "style": [
+          "dark-moody",
+          "cinematic"
+        ],
+        "format": [],
+        "motion": [
+          "slow-drift"
+        ],
+        "medium": [
+          "photography"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "back view",
+          "desk setup",
+          "work environment"
+        ],
+        "title": "Person at computer from behind",
+        "description": "A person in an orange hoodie is seen from behind, sitting at a desk and looking at a computer monitor. The scene is dimly lit, creating a focused and intimate atmosphere.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +171,38 @@
         "media/x-2055740311314346318/s03_1.jpg",
         "media/x-2055740311314346318/s03_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "social media profile",
+          "data display",
+          "digital interface"
+        ],
+        "title": "Instagram profile screenshot",
+        "description": "A close-up of an Instagram profile page showing a username, post count, follower count, and bio. The text is white on a black background, emphasizing the numbers.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +217,37 @@
         "media/x-2055740311314346318/s04_1.jpg",
         "media/x-2055740311314346318/s04_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "blue"
+        ],
+        "concepts": [
+          "data visualization",
+          "growth chart",
+          "digital analytics"
+        ],
+        "title": "Line graph of views over time",
+        "description": "A glowing blue line graph on a dark background shows a significant increase in views over time, with a data point indicating 94M views. The graph is clean and modern.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -107,7 +262,39 @@
         "media/x-2055740311314346318/s05_1.jpg",
         "media/x-2055740311314346318/s05_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "financial dashboard",
+          "digital analytics",
+          "data display"
+        ],
+        "title": "Earnings Dashboard",
+        "description": "A dark-themed dashboard displays a total earnings of $0 and various insights, including views and a breakdown of earnings sources. The layout is clean and modern.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -122,7 +309,39 @@
         "media/x-2055740311314346318/s06_1.jpg",
         "media/x-2055740311314346318/s06_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "orange",
+          "white"
+        ],
+        "concepts": [
+          "call to action",
+          "button interaction",
+          "digital interface"
+        ],
+        "title": "Button with cursor",
+        "description": "A close-up of an orange button labeled 'Join the Creator Network' with a white hand cursor hovering over it. The background is dark, making the button stand out.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -137,7 +356,39 @@
         "media/x-2055740311314346318/s07_1.jpg",
         "media/x-2055740311314346318/s07_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "financial dashboard",
+          "digital analytics",
+          "data display"
+        ],
+        "title": "Earnings Dashboard",
+        "description": "A dark-themed dashboard displays a total earnings of $0 and various insights, including views and a breakdown of earnings sources. The layout is clean and modern.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -152,7 +403,37 @@
         "media/x-2055740311314346318/s08_1.jpg",
         "media/x-2055740311314346318/s08_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "parallax",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [],
+        "motion": [
+          "continuous-camera"
+        ],
+        "medium": [
+          "photography"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "office environment",
+          "creative workspace",
+          "person walking"
+        ],
+        "title": "Person walking past monitor",
+        "description": "A person in an orange hoodie walks past a desk with a camera on a tripod and a monitor displaying a promotional video. The scene is well-lit and has a clean, modern look.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -167,8 +448,42 @@
         "media/x-2055740311314346318/s09_1.jpg",
         "media/x-2055740311314346318/s09_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2055740311314346318"
+      "link": "https://x.com/belomp4/status/2055740311314346318",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "glow-bloom"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk"
+        ],
+        "format": [
+          "title-sequence"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "red"
+        ],
+        "concepts": [
+          "text reveal",
+          "emphasis on word",
+          "simple message"
+        ],
+        "title": "Text on dark background",
+        "description": "A simple text 'it was that simple...' appears on a dark background with a glowing effect. The word 'simple' is highlighted in red, emphasizing the message.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

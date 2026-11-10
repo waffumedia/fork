@@ -36,7 +36,45 @@
         "media/x-2079549345507217807/s00_1.jpg",
         "media/x-2079549345507217807/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079549345507217807"
+      "link": "https://x.com/NormieEdits/status/2079549345507217807",
+      "tags": {
+        "technique": [
+          "motion-blur",
+          "depth-of-field",
+          "glow-bloom"
+        ],
+        "style": [
+          "streetwear",
+          "dark-moody",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "brown",
+          "warm"
+        ],
+        "concepts": [
+          "tattooed man",
+          "microphone",
+          "laptop",
+          "branding"
+        ],
+        "title": "man speaking to camera",
+        "description": "A man with tattoos and a cap speaks directly to the camera while holding a microphone, in what appears to be a studio or retail space with clothing racks and mannequins in the background.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +89,41 @@
         "media/x-2079549345507217807/s01_1.jpg",
         "media/x-2079549345507217807/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079549345507217807"
+      "link": "https://x.com/NormieEdits/status/2079549345507217807",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout",
+          "scale-blowup"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "calendar",
+          "countdown",
+          "highlighted dates"
+        ],
+        "title": "calendar animation",
+        "description": "A close-up of a digital calendar showing the dates 27 and 28 highlighted in blue, suggesting a countdown or scheduled event.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +136,44 @@
       "frames": [
         "media/x-2079549345507217807/s02_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079549345507217807"
+      "link": "https://x.com/NormieEdits/status/2079549345507217807",
+      "tags": {
+        "technique": [
+          "motion-blur",
+          "depth-of-field"
+        ],
+        "style": [
+          "streetwear",
+          "dark-moody",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "vsl"
+        ],
+        "motion": [
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "brown",
+          "warm"
+        ],
+        "concepts": [
+          "tattooed man",
+          "microphone",
+          "gesturing",
+          "branding"
+        ],
+        "title": "man gesturing",
+        "description": "The same man from the first frame is shown again, now gesturing with his left hand while speaking into a microphone.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,8 +188,43 @@
         "media/x-2079549345507217807/s03_1.jpg",
         "media/x-2079549345507217807/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2079549345507217807"
+      "link": "https://x.com/NormieEdits/status/2079549345507217807",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "retro-futurism"
+        ],
+        "format": [
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "red",
+          "black"
+        ],
+        "concepts": [
+          "calendar",
+          "text animation",
+          "narrative"
+        ],
+        "title": "text on calendar",
+        "description": "A minimalist calendar with red dots and handwritten text, including 'We're building' and 'I'm showing you the truth', creating a narrative of progress.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

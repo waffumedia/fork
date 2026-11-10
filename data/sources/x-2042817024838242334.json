@@ -36,7 +36,37 @@
         "media/x-2042817024838242334/s00_1.jpg",
         "media/x-2042817024838242334/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "hard-cut-montage"
+        ],
+        "style": [
+          "minimal",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white"
+        ],
+        "concepts": [
+          "blank canvas",
+          "transition",
+          "minimalist"
+        ],
+        "title": "blank white screen",
+        "description": "A plain white screen serves as a clean, minimalist opening or transition.",
+        "quality": 3
+      }
     },
     {
       "idx": 1,
@@ -51,7 +81,41 @@
         "media/x-2042817024838242334/s01_1.jpg",
         "media/x-2042817024838242334/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "glitch",
+          "motion-blur"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "slow-drift"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "urban wildlife",
+          "night scene",
+          "black and white"
+        ],
+        "title": "pigeon on sidewalk",
+        "description": "A black and white shot of a pigeon walking on a city sidewalk at night, with a car tire in the background.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +130,41 @@
         "media/x-2042817024838242334/s02_1.jpg",
         "media/x-2042817024838242334/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "glitch",
+          "overlay-graphics"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "coding",
+          "technology",
+          "data processing"
+        ],
+        "title": "hands on laptop",
+        "description": "A close-up of hands typing on a laptop keyboard, with the screen displaying code or data in a dark interface.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +179,40 @@
         "media/x-2042817024838242334/s03_1.jpg",
         "media/x-2042817024838242334/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "glitch",
+          "overlay-graphics",
+          "data-viz"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "data analysis",
+          "analytics dashboard",
+          "tracking"
+        ],
+        "title": "data dashboard",
+        "description": "A complex user interface with a bar chart, line graph, and a video feed of a person being tracked, all presented in a dark, tech-focused aesthetic.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,7 +227,41 @@
         "media/x-2042817024838242334/s04_1.jpg",
         "media/x-2042817024838242334/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "glitch",
+          "overlay-graphics"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "urban landscape",
+          "night scene",
+          "billboard"
+        ],
+        "title": "city night scene",
+        "description": "A wide-angle, low-light shot of a city street at night, featuring a large illuminated billboard and a motorcycle.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +276,38 @@
         "media/x-2042817024838242334/s05_1.jpg",
         "media/x-2042817024838242334/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "text animation",
+          "financial data",
+          "minimalist"
+        ],
+        "title": "text on black",
+        "description": "A simple text overlay on a black background, stating a financial expenditure.",
+        "quality": 3
+      }
     },
     {
       "idx": 6,
@@ -126,7 +322,40 @@
         "media/x-2042817024838242334/s06_1.jpg",
         "media/x-2042817024838242334/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "map-animation"
+        ],
+        "style": [
+          "cyberpunk",
+          "dark-moody",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "global reach",
+          "data visualization",
+          "map"
+        ],
+        "title": "world map",
+        "description": "A dark world map with a few highlighted points, indicating locations of views.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -141,7 +370,38 @@
         "media/x-2042817024838242334/s07_1.jpg",
         "media/x-2042817024838242334/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "text animation",
+          "statistics",
+          "minimalist"
+        ],
+        "title": "text on black",
+        "description": "A simple text overlay on a black background, stating a large number of people who saw a logo.",
+        "quality": 3
+      }
     },
     {
       "idx": 8,
@@ -156,8 +416,40 @@
         "media/x-2042817024838242334/s08_1.jpg",
         "media/x-2042817024838242334/s08_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2042817024838242334"
+      "link": "https://x.com/NormieEdits/status/2042817024838242334",
+      "tags": {
+        "technique": [
+          "logo-animation"
+        ],
+        "style": [
+          "minimal",
+          "monochrome"
+        ],
+        "format": [
+          "brand-ad",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "brand identity",
+          "logo reveal",
+          "minimalist"
+        ],
+        "title": "logo reveal",
+        "description": "A clean, white logo for 'Content Rewards' with a star motif, appearing on a black background.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

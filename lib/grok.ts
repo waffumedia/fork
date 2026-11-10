@@ -8,7 +8,7 @@ import { all } from "@/lib/db";
  * Grokbot bridge.
  * Inbound  POST /api/grok/inbox?token=<GROK_SECRET>  {"items":[{"url","pitch?","title?"}]}
  *          (also GET /api/grok/inbox?token=..&url=..&pitch=.. for bots that can only fetch URLs;
- *           or header X-Inspo-Signature: sha256=<hmac(body)>)
+ *           or header X-Fork-Signature: sha256=<hmac(body)>)
  * Brief    GET  /api/grok/brief?token=<GROK_SECRET>  -> what to look for, what to skip.
  * Outbound when a day's 10 are all swiped we POST the result + updated taste to `grok_webhook_url` (settings).
  */
@@ -20,7 +20,7 @@ export function grokAuthorized(req: Request, raw = ""): boolean {
   const u = new URL(req.url);
   const token = u.searchParams.get("token") ?? (req.headers.get("authorization") ?? "").replace(/^bearer\s+/i, "");
   if (token && safeEq(token, secret)) return true;
-  const sig = req.headers.get("x-inspo-signature");
+  const sig = req.headers.get("x-fork-signature");
   return !!sig && safeEq(sig, sign(secret, raw));
 }
 
@@ -33,7 +33,7 @@ export async function notifyGrok(payload: unknown): Promise<{ ok: boolean; statu
   try {
     const r = await fetch(url, {
       method: "POST",
-      headers: { "Content-Type": "application/json", "X-Inspo-Signature": sign(secret, body), ...(auth ? { Authorization: auth } : {}) },
+      headers: { "Content-Type": "application/json", "X-Fork-Signature": sign(secret, body), ...(auth ? { Authorization: auth } : {}) },
       body,
       signal: AbortSignal.timeout(10_000),
     });

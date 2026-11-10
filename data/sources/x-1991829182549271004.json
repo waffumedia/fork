@@ -36,7 +36,45 @@
         "media/x-1991829182549271004/s00_1.jpg",
         "media/x-1991829182549271004/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1991829182549271004"
+      "link": "https://x.com/NormieEdits/status/1991829182549271004",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "split-screen",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue",
+          "orange"
+        ],
+        "concepts": [
+          "content montage",
+          "brand promotion",
+          "product showcase"
+        ],
+        "title": "four-panel content collage",
+        "description": "A four-quadrant split-screen layout displays diverse content: a woman holding a snack, a product box, a hoodie, and a chocolate bar with text. The composition uses a grid-layout to present a mix of live-action footage and graphic elements, creating a dynamic social-reel format.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,8 +89,46 @@
         "media/x-1991829182549271004/s01_1.jpg",
         "media/x-1991829182549271004/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1991829182549271004"
+      "link": "https://x.com/NormieEdits/status/1991829182549271004",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics",
+          "split-screen"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "high-contrast"
+        ],
+        "format": [
+          "infographic",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "data visualization",
+          "financial metrics",
+          "product promotion"
+        ],
+        "title": "sales data with live-action",
+        "description": "A dark background features large text displaying '$251m in sales' and '$20m Profit', alongside a live-action shot of a man in a store. The layout uses a clean, corporate style to present financial data with a human element.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

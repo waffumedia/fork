@@ -36,7 +36,46 @@
         "media/x-2032835157040968136/s00_1.jpg",
         "media/x-2032835157040968136/s00_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+      "link": "https://x.com/hikarimotions/status/2032835157040968136",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "ui-animation",
+          "3d-render"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "ui-demo",
+          "logo-sting"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "teal",
+          "black",
+          "neon-palette"
+        ],
+        "concepts": [
+          "notification badge",
+          "user profile icon",
+          "glowing interface",
+          "dark theme"
+        ],
+        "title": "user icon notification",
+        "description": "A glowing blue user profile icon with a notification badge showing '15' on a dark background, creating a modern and minimalist UI design.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +88,41 @@
       "frames": [
         "media/x-2032835157040968136/s01_0.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+      "link": "https://x.com/hikarimotions/status/2032835157040968136",
+      "tags": {
+        "technique": [
+          "depth-of-field",
+          "volumetric-light"
+        ],
+        "style": [
+          "dark-moody",
+          "cyberpunk",
+          "neon"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "slow-drift"
+        ],
+        "medium": [
+          "photography"
+        ],
+        "palette": [
+          "blue",
+          "black",
+          "neon-palette"
+        ],
+        "concepts": [
+          "content creator",
+          "gaming setup",
+          "ambient lighting",
+          "focus"
+        ],
+        "title": "man with headphones",
+        "description": "A young man wearing headphones looks intently at a screen in a dimly lit room with blue ambient lighting, suggesting he is focused on content creation or gaming.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +137,45 @@
         "media/x-2032835157040968136/s02_1.jpg",
         "media/x-2032835157040968136/s02_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+      "link": "https://x.com/hikarimotions/status/2032835157040968136",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "3d-render"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "ui-demo",
+          "logo-sting"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "teal",
+          "black",
+          "neon-palette"
+        ],
+        "concepts": [
+          "team collaboration",
+          "editorial workflow",
+          "user interface",
+          "glowing elements"
+        ],
+        "title": "three editor icons",
+        "description": "Three identical user profile icons arranged horizontally, each labeled 'Editor', representing a collaborative or team-based workflow in a clean and modern design.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -79,7 +190,46 @@
         "media/x-2032835157040968136/s03_1.jpg",
         "media/x-2032835157040968136/s03_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+      "link": "https://x.com/hikarimotions/status/2032835157040968136",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "ui-animation",
+          "3d-render"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "ui-demo",
+          "logo-sting"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "teal",
+          "black",
+          "neon-palette"
+        ],
+        "concepts": [
+          "network visualization",
+          "user connection",
+          "glowing interface",
+          "circular pattern"
+        ],
+        "title": "circular user icons",
+        "description": "A circular arrangement of glowing blue user profile icons on a dark background, forming a dynamic and interconnected network pattern.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -94,7 +244,46 @@
         "media/x-2032835157040968136/s04_1.jpg",
         "media/x-2032835157040968136/s04_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+      "link": "https://x.com/hikarimotions/status/2032835157040968136",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "ui-animation",
+          "3d-render"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "title-sequence",
+          "logo-sting"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "teal",
+          "black",
+          "neon-palette"
+        ],
+        "concepts": [
+          "title card",
+          "branding",
+          "welcome message",
+          "glowing text"
+        ],
+        "title": "ultimate editors title",
+        "description": "A sleek title card with the text 'ULTIMATE EDITORS' and a welcome message, featuring a modern and professional design with a dark background and blue accents.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,7 +298,46 @@
         "media/x-2032835157040968136/s05_1.jpg",
         "media/x-2032835157040968136/s05_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+      "link": "https://x.com/hikarimotions/status/2032835157040968136",
+      "tags": {
+        "technique": [
+          "glow-bloom",
+          "ui-animation",
+          "3d-render"
+        ],
+        "style": [
+          "minimal",
+          "cyberpunk",
+          "dark-moody",
+          "neon"
+        ],
+        "format": [
+          "ui-demo",
+          "logo-sting"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "white",
+          "black",
+          "neon-palette"
+        ],
+        "concepts": [
+          "progress indicator",
+          "skill level",
+          "minimal interface",
+          "glowing elements"
+        ],
+        "title": "two circular progress bars",
+        "description": "Two circular progress indicators with a red-to-white gradient, one labeled 'Noob', suggesting a progression or skill level system in a minimalist and modern interface.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -124,8 +352,44 @@
         "media/x-2032835157040968136/s06_1.jpg",
         "media/x-2032835157040968136/s06_2.jpg"
       ],
-      "link": "https://x.com/hikarimotions/status/2032835157040968136"
+      "link": "https://x.com/hikarimotions/status/2032835157040968136",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "tutorial",
+          "breakdown"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "after effects tutorial",
+          "course outline",
+          "learning path",
+          "digital content"
+        ],
+        "title": "after effects masterclass",
+        "description": "A screenshot of a tutorial video titled 'Welcome to the After Effects Masterclass', listing topics like 'The AE Timeline & Layers' and 'Creating Text in After Effects'.",
+        "quality": 3
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

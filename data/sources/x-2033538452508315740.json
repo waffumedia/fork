@@ -34,7 +34,42 @@
       "frames": [
         "media/x-2033538452508315740/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033538452508315740"
+      "link": "https://x.com/NormieEdits/status/2033538452508315740",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "black"
+        ],
+        "concepts": [
+          "text-heavy content",
+          "news headline",
+          "success story"
+        ],
+        "title": "Article headline about a success story",
+        "description": "A screenshot of an online article titled 'HOW I MADE IT', featuring a headline about a 25-year-old college dropout who built a successful production company. The image uses a clean, corporate-clean layout with a white background and blue text for the title.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -47,7 +82,43 @@
       "frames": [
         "media/x-2033538452508315740/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033538452508315740"
+      "link": "https://x.com/NormieEdits/status/2033538452508315740",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "red",
+          "green"
+        ],
+        "concepts": [
+          "freelance services",
+          "pricing display",
+          "profile showcase"
+        ],
+        "title": "Freelancer profile on a platform",
+        "description": "A screenshot of a freelancer's profile on a service platform, showing their name, rating, and a price range for video editing services. The image uses a clean layout with a dark background and highlights the price in red.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +133,41 @@
         "media/x-2033538452508315740/s02_1.jpg",
         "media/x-2033538452508315740/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033538452508315740"
+      "link": "https://x.com/NormieEdits/status/2033538452508315740",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "social media app",
+          "user interface",
+          "copy function"
+        ],
+        "title": "TikTok app interface",
+        "description": "A screenshot of a smartphone displaying the TikTok app. The screen shows a video playing with a prominent 'COPY' button overlayed in the center, indicating a user interaction point.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +182,42 @@
         "media/x-2033538452508315740/s03_1.jpg",
         "media/x-2033538452508315740/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033538452508315740"
+      "link": "https://x.com/NormieEdits/status/2033538452508315740",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "editorial"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "orange"
+        ],
+        "concepts": [
+          "video breakdown",
+          "social media content",
+          "annotation"
+        ],
+        "title": "TikTok video with annotations",
+        "description": "A smartphone screen shows a TikTok video of a person walking. The image is annotated with labels like 'Structure', 'Layout', and 'Format' pointing to different parts of the video, suggesting a breakdown of its composition.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +232,42 @@
         "media/x-2033538452508315740/s04_1.jpg",
         "media/x-2033538452508315740/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033538452508315740"
+      "link": "https://x.com/NormieEdits/status/2033538452508315740",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "editorial"
+        ],
+        "format": [
+          "talking-head",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "brown",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "talking head",
+          "conceptual breakdown",
+          "text overlay"
+        ],
+        "title": "Talking head with text overlay",
+        "description": "A man in a brown jacket sits at a desk, speaking to the camera. To his left, four text boxes appear with the words 'COPY', 'UNDERSTAND', 'ADAPT', and 'INNOVATE', each with a brief explanation. The scene has a clean, corporate aesthetic.",
+        "quality": 5
+      }
     },
     {
       "idx": 5,
@@ -107,8 +282,43 @@
         "media/x-2033538452508315740/s05_1.jpg",
         "media/x-2033538452508315740/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033538452508315740"
+      "link": "https://x.com/NormieEdits/status/2033538452508315740",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "apple-style"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "social media app",
+          "user interface",
+          "video playback"
+        ],
+        "title": "TikTok app with user interaction",
+        "description": "A screenshot of a smartphone showing the TikTok app. The screen displays a video playing, with a user interface on the right side showing various interactive icons like heart, comment, and share buttons.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

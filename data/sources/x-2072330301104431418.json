@@ -36,8 +36,43 @@
         "media/x-2072330301104431418/s00_1.jpg",
         "media/x-2072330301104431418/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2072330301104431418"
+      "link": "https://x.com/NormieEdits/status/2072330301104431418",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "title-sequence",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "figma",
+          "after-effects"
+        ],
+        "palette": [
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "text on white background",
+          "minimalist design",
+          "product documentation"
+        ],
+        "title": "PRD: Product Spec Delta",
+        "description": "A clean, minimalist title card for a product requirements document, featuring a simple layout with a white background and subtle grey text. The design is professional and corporate, likely created using a UI animation tool.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

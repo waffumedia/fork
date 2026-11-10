@@ -36,8 +36,46 @@
         "media/x-2012874890374713739/s00_1.jpg",
         "media/x-2012874890374713739/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2012874890374713739"
+      "link": "https://x.com/NormieEdits/status/2012874890374713739",
+      "tags": {
+        "technique": [
+          "zoom-transition",
+          "motion-blur",
+          "grid-layout",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "ui-demo",
+          "social-reel"
+        ],
+        "motion": [
+          "smooth-ease",
+          "slow-drift"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "digital interface",
+          "date selection",
+          "highlighted cell"
+        ],
+        "title": "Calendar animation",
+        "description": "A close-up of a digital calendar grid where the date 28 is highlighted in blue, with a soft focus effect and a slight motion blur suggesting a gentle zoom or pan across the interface.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

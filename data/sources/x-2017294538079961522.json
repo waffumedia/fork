@@ -34,7 +34,43 @@
       "frames": [
         "media/x-2017294538079961522/s00_0.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "fluid-sim",
+          "mask-reveal",
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "corporate-clean"
+        ],
+        "format": [
+          "title-sequence",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "yellow",
+          "white"
+        ],
+        "concepts": [
+          "channel reveal",
+          "fluid transformation",
+          "text animation"
+        ],
+        "title": "channel profile reveal",
+        "description": "A dynamic, fluid-morphing shape reveals a YouTube channel profile for Tom Davis Dog, set against a black background with a large yellow 'grow' text overlay.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +85,37 @@
         "media/x-2017294538079961522/s01_1.jpg",
         "media/x-2017294538079961522/s01_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "black",
+          "grey"
+        ],
+        "concepts": [
+          "channel statistics",
+          "data display",
+          "web interface"
+        ],
+        "title": "channel stats display",
+        "description": "A close-up screenshot of a YouTube channel page showing the subscriber count and video count, with a focus on the number 2,209.",
+        "quality": 3
+      }
     },
     {
       "idx": 2,
@@ -64,7 +130,39 @@
         "media/x-2017294538079961522/s02_1.jpg",
         "media/x-2017294538079961522/s02_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black",
+          "yellow"
+        ],
+        "concepts": [
+          "channel branding",
+          "social media profile",
+          "dog content"
+        ],
+        "title": "channel banner showcase",
+        "description": "A full view of a YouTube channel page for 'The Golden Kobe Family', featuring a blue banner with two dogs and the tagline 'Dogs > People'.",
+        "quality": 3
+      }
     },
     {
       "idx": 3,
@@ -77,7 +175,37 @@
       "frames": [
         "media/x-2017294538079961522/s03_0.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "call to action",
+          "channel promotion",
+          "text overlay"
+        ],
+        "title": "channel call-to-action",
+        "description": "A screenshot of a YouTube channel page for 'Yadster' with a large black banner at the top that says 'subscribe plz.' in white text.",
+        "quality": 3
+      }
     },
     {
       "idx": 4,
@@ -92,7 +220,40 @@
         "media/x-2017294538079961522/s04_1.jpg",
         "media/x-2017294538079961522/s04_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful",
+          "corporate-clean"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "yellow"
+        ],
+        "concepts": [
+          "talking head",
+          "text overlay",
+          "channel growth"
+        ],
+        "title": "talking head with text overlay",
+        "description": "A man in a black shirt speaks to the camera, with large yellow text overlaying the left side of the screen that reads 'some channels that I've GROWN to over 33,988'.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -105,7 +266,38 @@
       "frames": [
         "media/x-2017294538079961522/s05_0.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "title-sequence",
+          "intro"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "white"
+        ],
+        "concepts": [
+          "text reveal",
+          "transition",
+          "minimalist"
+        ],
+        "title": "text reveal",
+        "description": "A simple, bold yellow text 'LAST' centered on a plain white background.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -120,7 +312,36 @@
         "media/x-2017294538079961522/s06_1.jpg",
         "media/x-2017294538079961522/s06_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "talking-head"
+        ],
+        "motion": [
+          "smooth-ease"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "direct address",
+          "office setting"
+        ],
+        "title": "talking head",
+        "description": "A man in a black shirt speaks to the camera, with his hands clasped. The background is a simple office setting.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -135,7 +356,37 @@
         "media/x-2017294538079961522/s07_1.jpg",
         "media/x-2017294538079961522/s07_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "analytics data",
+          "performance metrics",
+          "dashboard"
+        ],
+        "title": "analytics dashboard",
+        "description": "A screenshot of a YouTube analytics dashboard showing key metrics: views, watch time, and estimated earnings.",
+        "quality": 3
+      }
     },
     {
       "idx": 8,
@@ -148,8 +399,40 @@
       "frames": [
         "media/x-2017294538079961522/s08_0.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2017294538079961522"
+      "link": "https://x.com/belomp4/status/2017294538079961522",
+      "tags": {
+        "technique": [
+          "kinetic-type"
+        ],
+        "style": [
+          "minimal",
+          "bright-playful"
+        ],
+        "format": [
+          "title-sequence",
+          "intro"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "black"
+        ],
+        "concepts": [
+          "text reveal",
+          "transition",
+          "minimalist"
+        ],
+        "title": "text reveal",
+        "description": "A simple, cursive yellow text 'before' centered on a plain black background.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

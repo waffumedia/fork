@@ -36,7 +36,45 @@
         "media/x-2033915439936639410/s00_1.jpg",
         "media/x-2033915439936639410/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "mask-reveal"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "video comparison",
+          "content repurposing",
+          "social media adaptation"
+        ],
+        "title": "split-screen podcast",
+        "description": "A side-by-side comparison of a long-form and short-form video, both showing three men in a podcast setting. The long form is a full shot while the short form is a cropped close-up, demonstrating a common video editing technique for social media.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +89,41 @@
         "media/x-2033915439936639410/s01_1.jpg",
         "media/x-2033915439936639410/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "brand-ad"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects",
+          "figma"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "profile design",
+          "responsive layout",
+          "social media branding"
+        ],
+        "title": "profile card comparison",
+        "description": "A side-by-side grid layout comparing a long-form and short-form profile card for John Nellis. The long form is more detailed, while the short form is a compact version, illustrating a design for different platforms.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +138,42 @@
         "media/x-2033915439936639410/s02_1.jpg",
         "media/x-2033915439936639410/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "mask-reveal"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "text animation",
+          "speaker focus",
+          "content adaptation"
+        ],
+        "title": "text overlay on speaker",
+        "description": "A man with a beard speaks into a microphone, with the text 'we do Everything we can' overlaid. The long form shows the full scene, while the short form is a cropped close-up focusing on the speaker and text.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +188,42 @@
         "media/x-2033915439936639410/s03_1.jpg",
         "media/x-2033915439936639410/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "mask-reveal"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "blindfolded challenge",
+          "social media adaptation",
+          "content repurposing"
+        ],
+        "title": "blindfolded interaction",
+        "description": "A man in a white shirt shakes hands with another man who is blindfolded and wearing headphones. The long form shows a wider shot of the interaction, while the short form is a tighter crop.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,7 +238,42 @@
         "media/x-2033915439936639410/s04_1.jpg",
         "media/x-2033915439936639410/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "mask-reveal"
+        ],
+        "style": [
+          "minimal",
+          "neon"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "color contrast",
+          "social media adaptation",
+          "content repurposing"
+        ],
+        "title": "colorful interaction",
+        "description": "A man in a white shirt interacts with another man who is blindfolded. The long form shows a wider shot against a blue and green background, while the short form is a cropped close-up.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +288,42 @@
         "media/x-2033915439936639410/s05_1.jpg",
         "media/x-2033915439936639410/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "mask-reveal"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "direct address",
+          "text animation",
+          "content adaptation"
+        ],
+        "title": "pointing speaker",
+        "description": "A man with a beard points at the camera while speaking. The long form shows a full shot, while the short form is a cropped close-up focusing on his gesture and text.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -126,7 +338,41 @@
         "media/x-2033915439936639410/s06_1.jpg",
         "media/x-2033915439936639410/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "showreel"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "after-effects",
+          "figma"
+        ],
+        "palette": [
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "content structure",
+          "hook and payoff",
+          "social media adaptation"
+        ],
+        "title": "hook and payoff",
+        "description": "A side-by-side grid layout comparing a long-form and short-form video. The long form shows two images with the text 'HOOK' and 'PAYOFF', while the short form is a cropped version of the same.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -141,8 +387,44 @@
         "media/x-2033915439936639410/s07_1.jpg",
         "media/x-2033915439936639410/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2033915439936639410"
+      "link": "https://x.com/NormieEdits/status/2033915439936639410",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "mask-reveal"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "social-reel",
+          "talking-head"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "orange"
+        ],
+        "concepts": [
+          "text animation",
+          "speaker focus",
+          "content adaptation"
+        ],
+        "title": "speaker with text",
+        "description": "A man speaks into a microphone, with the text 'multiple a day' overlaid. The long form shows a full shot of the speaker, while the short form is a cropped close-up focusing on his face and the text.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

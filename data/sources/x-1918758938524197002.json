@@ -1,0 +1,112 @@
+{
+  "id": "x-1918758938524197002",
+  "platform": "x",
+  "kind": "post",
+  "url": "https://x.com/rossvfx_/status/1918758938524197002",
+  "native_id": "1918758938524197002",
+  "author": "rossvfx_",
+  "input_url": "https://x.com/rossvfx_/status/1918758938524197002",
+  "added_at": "2026-11-10T11:09:24Z",
+  "title": "First video with @StableRonaldo \ud83d\ude4f",
+  "text": "First video with @StableRonaldo \ud83d\ude4f",
+  "author_name": "ross",
+  "posted_at": "Sat May 03 20:05:54 +0000 2025",
+  "likes": 1515,
+  "views": 72093,
+  "videos": [
+    {
+      "file": 0,
+      "duration": 16.3,
+      "width": 1920,
+      "height": 1080
+    }
+  ],
+  "shot_count": 11,
+  "scenes": [
+    {
+      "idx": 0,
+      "file": 0,
+      "kind": "video",
+      "t_start": 0.0,
+      "t_end": 1.23,
+      "t_mid": 0.62,
+      "timestamp": "0:00",
+      "frames": [
+        "media/x-1918758938524197002/s00_0.jpg"
+      ],
+      "link": "https://x.com/rossvfx_/status/1918758938524197002"
+    },
+    {
+      "idx": 1,
+      "file": 0,
+      "kind": "video",
+      "t_start": 1.23,
+      "t_end": 2.45,
+      "t_mid": 1.84,
+      "timestamp": "0:01",
+      "frames": [
+        "media/x-1918758938524197002/s01_0.jpg"
+      ],
+      "link": "https://x.com/rossvfx_/status/1918758938524197002"
+    },
+    {
+      "idx": 2,
+      "file": 0,
+      "kind": "video",
+      "t_start": 2.45,
+      "t_end": 4.6,
+      "t_mid": 3.53,
+      "timestamp": "0:02",
+      "frames": [
+        "media/x-1918758938524197002/s02_0.jpg",
+        "media/x-1918758938524197002/s02_1.jpg",
+        "media/x-1918758938524197002/s02_2.jpg"
+      ],
+      "link": "https://x.com/rossvfx_/status/1918758938524197002"
+    },
+    {
+      "idx": 3,
+      "file": 0,
+      "kind": "video",
+      "t_start": 4.6,
+      "t_end": 5.62,
+      "t_mid": 5.11,
+      "timestamp": "0:05",
+      "frames": [
+        "media/x-1918758938524197002/s03_0.jpg"
+      ],
+      "link": "https://x.com/rossvfx_/status/1918758938524197002"
+    },
+    {
+      "idx": 4,
+      "file": 0,
+      "kind": "video",
+      "t_start": 5.62,
+      "t_end": 7.12,
+      "t_mid": 6.37,
+      "timestamp": "0:06",
+      "frames": [
+        "media/x-1918758938524197002/s04_0.jpg",
+        "media/x-1918758938524197002/s04_1.jpg",
+        "media/x-1918758938524197002/s04_2.jpg"
+      ],
+      "link": "https://x.com/rossvfx_/status/1918758938524197002"
+    },
+    {
+      "idx": 5,
+      "file": 0,
+      "kind": "video",
+      "t_start": 7.12,
+      "t_end": 16.3,
+      "t_mid": 11.71,
+      "timestamp": "0:07",
+      "frames": [
+        "media/x-1918758938524197002/s05_0.jpg",
+        "media/x-1918758938524197002/s05_1.jpg",
+        "media/x-1918758938524197002/s05_2.jpg"
+      ],
+      "link": "https://x.com/rossvfx_/status/1918758938524197002"
+    }
+  ],
+  "status": "ready"
+}

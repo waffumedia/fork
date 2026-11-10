@@ -36,8 +36,51 @@
         "media/x-1993334215325499700/s00_1.jpg",
         "media/x-1993334215325499700/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1993334215325499700"
+      "link": "https://x.com/NormieEdits/status/1993334215325499700",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "text-on-path",
+          "scale-blowup"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric",
+          "high-contrast"
+        ],
+        "format": [
+          "brand-ad",
+          "infographic",
+          "showreel"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "orange",
+          "grey",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "brand values",
+          "process flow",
+          "split-screen layout",
+          "corporate branding"
+        ],
+        "title": "Split-screen brand presentation",
+        "description": "A clean, four-quadrant split-screen layout presenting a brand's values, mission, vision, and full process. The design uses a bold orange and grey color scheme with clear typography and simple icons to convey information in a structured, corporate style.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

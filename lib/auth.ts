@@ -1,6 +1,6 @@
 import { timingSafeEqual } from "node:crypto";
 
-/** Single-owner auth: `Authorization: Bearer <INSPO_TOKEN>`, `?token=`, or the `inspo_token` cookie. */
+/** Single-owner auth: `Authorization: Bearer <FORK_TOKEN>`, `?token=`, or the `fork_token` cookie. */
 export function safeEq(a: string, b: string) {
   const x = Buffer.from(a), y = Buffer.from(b);
   return x.length === y.length && timingSafeEqual(x, y);
@@ -11,12 +11,12 @@ export function presentedToken(req: Request): string {
   if (/^bearer\s/i.test(h)) return h.replace(/^bearer\s+/i, "").trim();
   const q = new URL(req.url).searchParams.get("token");
   if (q) return q;
-  const c = (req.headers.get("cookie") ?? "").match(/(?:^|;\s*)inspo_token=([^;]+)/);
+  const c = (req.headers.get("cookie") ?? "").match(/(?:^|;\s*)fork_token=([^;]+)/);
   return c ? decodeURIComponent(c[1]) : "";
 }
 
 export function isAuthorized(req: Request): boolean {
-  const want = process.env.INSPO_TOKEN;
+  const want = process.env.FORK_TOKEN;
   if (!want) return process.env.NODE_ENV !== "production"; // dev without a token stays open locally
   return safeEq(presentedToken(req), want);
 }
@@ -30,7 +30,7 @@ export function appUrl(req: Request): string {
 }
 
 export const unauthorized = () =>
-  Response.json({ error: "unauthorized" }, { status: 401, headers: { "WWW-Authenticate": 'Bearer realm="inspo"' } });
+  Response.json({ error: "unauthorized" }, { status: 401, headers: { "WWW-Authenticate": 'Bearer realm="fork"' } });
 
 /** Wrap a route handler with owner auth + JSON error handling. */
 export function owner<A extends unknown[]>(fn: (req: Request, ...rest: A) => Promise<Response>) {

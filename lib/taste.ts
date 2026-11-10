@@ -3,13 +3,13 @@ import { FACETS, listSources, mediaUrl } from "@/lib/library";
 
 /**
  * Taste = weight per facet:tag learned from swipes.
- * like = +1, dislike = -1, an un-swiped seed (a link the owner hand-picked) = +0.5.
+ * like = +1, dislike = -1, a seed (a link the owner hand-picked) = +1: seeds are already goated.
  * Each source's vote is spread over its scenes so long videos don't dominate.
  */
-const SEED_WEIGHT = 0.5;
+const SEED_WEIGHT = 1;
 const TAG_FACETS = FACETS.filter((f) => f !== "palette");
 
-export function today(tz = process.env.INSPO_TZ || "America/Winnipeg"): string {
+export function today(tz = process.env.FORK_TZ || "America/Winnipeg"): string {
   return new Intl.DateTimeFormat("en-CA", { timeZone: tz, year: "numeric", month: "2-digit", day: "2-digit" }).format(new Date());
 }
 
@@ -119,7 +119,7 @@ export async function dailyPicks(day = today(), base = "") {
   return { day, total: items.length, remaining: items.filter((i) => !i.verdict).length, items };
 }
 
-/** Grok's picks first (best taste match + some exploration), then un-rated seeds to keep training. */
+/** Grok's (and manual) picks only: best taste matches + a few wildcards. Seeds are already liked and never re-served. */
 async function chooseDaily(): Promise<string[]> {
   const pool = await all<{ id: string; origin: string }>(`SELECT s.id, s.origin FROM sources s
     LEFT JOIN swipes w ON w.source_id = s.id
@@ -129,11 +129,10 @@ async function chooseDaily(): Promise<string[]> {
   const scores = await scoreSources(pool.map((p) => p.id));
   const rank = (xs: typeof pool) => xs.sort((a, b) => (scores.get(b.id) ?? 0) - (scores.get(a.id) ?? 0));
   const fresh = rank(pool.filter((p) => p.origin !== "seed"));
-  const seeds = pool.filter((p) => p.origin === "seed").sort(() => Math.random() - 0.5);
   // 7 best matches + 3 wildcards from the fresh pool keeps Grok's exploration visible
   const best = fresh.slice(0, 7);
   const wild = fresh.slice(7).sort(() => Math.random() - 0.5).slice(0, 3);
-  const picks = [...best, ...wild, ...seeds].slice(0, DAILY).map((p) => p.id);
+  const picks = [...best, ...wild].slice(0, DAILY).map((p) => p.id);
   return picks;
 }
 

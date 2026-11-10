@@ -74,7 +74,7 @@ const SCHEMA = [
 function getClient(): Client {
   if (!client) {
     client = createClient({
-      url: process.env.TURSO_DATABASE_URL || `file:${process.env.INSPO_DB || "local.db"}`,
+      url: process.env.TURSO_DATABASE_URL || `file:${process.env.FORK_DB || "local.db"}`,
       authToken: process.env.TURSO_AUTH_TOKEN || undefined,
     });
   }

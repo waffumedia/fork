@@ -36,8 +36,50 @@
         "media/x-2061849957536260354/s00_1.jpg",
         "media/x-2061849957536260354/s00_2.jpg"
       ],
-      "link": "https://x.com/xarrfx/status/2061849957536260354"
+      "link": "https://x.com/xarrfx/status/2061849957536260354",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "split-screen",
+          "glow-bloom",
+          "kinetic-type"
+        ],
+        "style": [
+          "cyberpunk",
+          "neon",
+          "minimal",
+          "dark-moody"
+        ],
+        "format": [
+          "ui-demo",
+          "showreel",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "purple",
+          "neon-palette"
+        ],
+        "concepts": [
+          "interactive menu",
+          "glowing interface",
+          "ui design",
+          "split-screen comparison"
+        ],
+        "title": "UI animation with split-screen",
+        "description": "A dynamic UI animation showcasing a circular menu interface with glowing elements, presented in a split-screen format to demonstrate a before-and-after editing process. The design features a dark theme with vibrant purple accents and a central focus on the 'Launch Ads' option.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

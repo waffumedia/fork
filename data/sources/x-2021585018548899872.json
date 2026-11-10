@@ -36,7 +36,47 @@
         "media/x-2021585018548899872/s00_1.jpg",
         "media/x-2021585018548899872/s00_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics",
+          "hard-cut-montage"
+        ],
+        "style": [
+          "retro-futurism",
+          "y2k",
+          "cinematic",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "intro",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "red",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "text overlay",
+          "retro aesthetic",
+          "direct address"
+        ],
+        "title": "man talking about social shows",
+        "description": "A man in a cap and jacket speaks directly to the camera, with bold red text overlaying the image that reads 'SOCIAL SHOWS'. The scene is a talking-head format with a retro aesthetic.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +91,40 @@
         "media/x-2021585018548899872/s01_1.jpg",
         "media/x-2021585018548899872/s01_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "monochrome"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "follower count",
+          "social media metrics",
+          "data-viz"
+        ],
+        "title": "social media follower count",
+        "description": "A screenshot of a social media profile showing '150K followers'. The text is highlighted in white against a dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -66,7 +139,41 @@
         "media/x-2021585018548899872/s02_1.jpg",
         "media/x-2021585018548899872/s02_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "editorial"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "grey"
+        ],
+        "concepts": [
+          "article headline",
+          "branding",
+          "social media"
+        ],
+        "title": "article headline about branded social shows",
+        "description": "A screenshot of a media article titled 'The rise of branded social shows' from media-marketing.com. The text is clean and centered on a white background.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -81,7 +188,40 @@
         "media/x-2021585018548899872/s03_1.jpg",
         "media/x-2021585018548899872/s03_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "monochrome"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "view count",
+          "video metrics",
+          "data-viz"
+        ],
+        "title": "video play count",
+        "description": "A close-up of a video player interface showing '6.9M' views. The play button and number are highlighted in white.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -96,7 +236,40 @@
         "media/x-2021585018548899872/s04_1.jpg",
         "media/x-2021585018548899872/s04_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "monochrome"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "follower count",
+          "social media metrics",
+          "data-viz"
+        ],
+        "title": "social media profile with follower count",
+        "description": "A screenshot of a social media profile showing '198.1K Followers'. The text is highlighted in white against a dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -111,7 +284,40 @@
         "media/x-2021585018548899872/s05_1.jpg",
         "media/x-2021585018548899872/s05_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "line-art",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "geometric"
+        ],
+        "format": [
+          "title-sequence",
+          "intro"
+        ],
+        "motion": [
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "red",
+          "black"
+        ],
+        "concepts": [
+          "abstract motion",
+          "geometric design",
+          "connection"
+        ],
+        "title": "abstract red lines",
+        "description": "An abstract graphic of red horizontal lines with numbered points, creating a sense of motion and connection.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -126,7 +332,42 @@
         "media/x-2021585018548899872/s06_1.jpg",
         "media/x-2021585018548899872/s06_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "parallax",
+          "camera-shake"
+        ],
+        "style": [
+          "retro-futurism",
+          "y2k",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "retro tech",
+          "direct address",
+          "talking head"
+        ],
+        "title": "man at computer",
+        "description": "A man in a cap and jacket sits at a desk with a vintage computer, typing on the keyboard. The scene has a retro aesthetic.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -141,7 +382,40 @@
         "media/x-2021585018548899872/s07_1.jpg",
         "media/x-2021585018548899872/s07_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "ui-animation"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "monochrome"
+        ],
+        "format": [
+          "ui-demo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "follower count",
+          "social media metrics",
+          "data-viz"
+        ],
+        "title": "social media profile with follower count",
+        "description": "A screenshot of a social media profile showing '10.8K followers'. The text is highlighted in white against a dark background.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -156,7 +430,42 @@
         "media/x-2021585018548899872/s08_1.jpg",
         "media/x-2021585018548899872/s08_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "camera-move-3d",
+          "parallax"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "grunge"
+        ],
+        "format": [
+          "short-film",
+          "showreel"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "green",
+          "blue",
+          "brown"
+        ],
+        "concepts": [
+          "film production",
+          "cinematic shot",
+          "outdoor scene"
+        ],
+        "title": "film crew by a lake",
+        "description": "A film crew is shooting a scene by a lake. Two actors are playing chess while a camera operator records them.",
+        "quality": 4
+      }
     },
     {
       "idx": 9,
@@ -171,8 +480,44 @@
         "media/x-2021585018548899872/s09_1.jpg",
         "media/x-2021585018548899872/s09_2.jpg"
       ],
-      "link": "https://x.com/belomp4/status/2021585018548899872"
+      "link": "https://x.com/belomp4/status/2021585018548899872",
+      "tags": {
+        "technique": [
+          "camera-move-3d",
+          "parallax"
+        ],
+        "style": [
+          "cinematic",
+          "dark-moody",
+          "grunge"
+        ],
+        "format": [
+          "short-film",
+          "showreel"
+        ],
+        "motion": [
+          "smooth-ease",
+          "continuous-camera"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "film production",
+          "cinematic shot",
+          "lab setting"
+        ],
+        "title": "film crew in a lab",
+        "description": "A film crew is shooting a scene in a laboratory. A man in a lab coat is interacting with another man while a camera operator films them.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

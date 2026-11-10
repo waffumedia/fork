@@ -36,7 +36,46 @@
         "media/x-2000878040155562116/s00_1.jpg",
         "media/x-2000878040155562116/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics",
+          "freeze-frame"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "talking-head",
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "yellow",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "talking head",
+          "text overlay",
+          "sports commentary"
+        ],
+        "title": "Man in blue jacket speaking",
+        "description": "A man in a blue and yellow sports jacket speaks animatedly, gesturing with his right hand. The scene is a talking-head shot with green text overlay reading 'that's what i would always say' and a 'NORMIE EDITS' watermark.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,7 +90,43 @@
         "media/x-2000878040155562116/s01_1.jpg",
         "media/x-2000878040155562116/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "overlay-graphics"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "blue",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "team celebration",
+          "financial milestone",
+          "video player frame"
+        ],
+        "title": "Team celebrating with \u00a36m",
+        "description": "A group of football players in yellow and blue kits celebrate on a pitch, surrounded by people. A large white text overlay displays '\u00a36,000,000'. The image is framed as a screenshot from a video player.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +139,41 @@
       "frames": [
         "media/x-2000878040155562116/s02_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "team unity",
+          "low angle shot",
+          "video player frame"
+        ],
+        "title": "Players looking up",
+        "description": "A low-angle shot of several football players in yellow and blue kits looking upwards. The image is framed as a screenshot from a video player.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,7 +186,41 @@
       "frames": [
         "media/x-2000878040155562116/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "blue",
+          "white"
+        ],
+        "concepts": [
+          "team celebration",
+          "water splash",
+          "video player frame"
+        ],
+        "title": "Team celebrating with water",
+        "description": "Football players in yellow and blue kits celebrate on a field, drenched in water. The image is framed as a screenshot from a video player.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -92,7 +235,41 @@
         "media/x-2000878040155562116/s04_1.jpg",
         "media/x-2000878040155562116/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "silver",
+          "white"
+        ],
+        "concepts": [
+          "player celebration",
+          "trophy win",
+          "video player frame"
+        ],
+        "title": "Cesar Azpilicueta celebrating",
+        "description": "A close-up of Cesar Azpilicueta in a blue Chelsea kit, shouting with joy while holding a large silver trophy. Text identifies him as 'Ex-Chelsea Captain'. The image is framed as a screenshot from a video player.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -107,7 +284,42 @@
         "media/x-2000878040155562116/s05_1.jpg",
         "media/x-2000878040155562116/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "blue",
+          "green",
+          "white"
+        ],
+        "concepts": [
+          "team photo",
+          "sports team",
+          "video player frame"
+        ],
+        "title": "Team photo in yellow kits",
+        "description": "A full team group photo of players in yellow and blue kits posing on a football pitch. The image is framed as a screenshot from a video player.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -122,7 +334,42 @@
         "media/x-2000878040155562116/s06_1.jpg",
         "media/x-2000878040155562116/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "freeze-frame"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "monochrome"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "talking head",
+          "monochrome effect",
+          "video player frame"
+        ],
+        "title": "Spencer Owen smiling",
+        "description": "A man, identified as Spencer Owen, smiles with his arms crossed. The image is in black and white, framed as a screenshot from a video player.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -135,7 +382,42 @@
       "frames": [
         "media/x-2000878040155562116/s07_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "blue",
+          "red",
+          "green"
+        ],
+        "concepts": [
+          "team photo",
+          "stadium backdrop",
+          "video player frame"
+        ],
+        "title": "Team photo with stadium",
+        "description": "A full team group photo posing on a football pitch in front of a stadium with 'HASHTAG UNITED' written on the stand. The image is framed as a screenshot from a video player.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -150,8 +432,44 @@
         "media/x-2000878040155562116/s08_1.jpg",
         "media/x-2000878040155562116/s08_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2000878040155562116"
+      "link": "https://x.com/NormieEdits/status/2000878040155562116",
+      "tags": {
+        "technique": [
+          "screen-recording"
+        ],
+        "style": [
+          "editorial",
+          "meme",
+          "bright-playful"
+        ],
+        "format": [
+          "social-reel",
+          "fan-edit"
+        ],
+        "motion": [
+          "snappy"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "blue",
+          "red",
+          "black"
+        ],
+        "concepts": [
+          "gaming setup",
+          "talking head",
+          "video player frame"
+        ],
+        "title": "Man in yellow jersey",
+        "description": "A man in a yellow and blue football jersey sits in a red gaming chair. The image is framed as a screenshot from a video player.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

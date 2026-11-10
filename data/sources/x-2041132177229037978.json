@@ -34,7 +34,47 @@
       "frames": [
         "media/x-2041132177229037978/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2041132177229037978"
+      "link": "https://x.com/NormieEdits/status/2041132177229037978",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "text-on-path",
+          "kinetic-type",
+          "line-art"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "corporate-clean",
+          "duotone"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "orange",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "data visualization",
+          "creator economy",
+          "monetization",
+          "minimalist design"
+        ],
+        "title": "Explainer with grid layout",
+        "description": "A four-quadrant split-screen presentation uses a dark, minimalist aesthetic with orange accents to display information about creator monetization. The layout features text-on-path for the title, a circular portrait with a subtle glow-bloom effect, a line-art graph with a kinetic-type highlight, and a data-viz element for 'higher volume'.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -47,7 +87,45 @@
       "frames": [
         "media/x-2041132177229037978/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2041132177229037978"
+      "link": "https://x.com/NormieEdits/status/2041132177229037978",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "mask-reveal"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "duotone"
+        ],
+        "format": [
+          "explainer",
+          "breakdown"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "online content",
+          "creator monetization",
+          "user interface",
+          "estimation"
+        ],
+        "title": "Video thumbnails and text",
+        "description": "A four-quadrant layout shows a user interface with video thumbnails on the top-left, a circular profile portrait with a red marker on the top-right, and text 'so you want' on the bottom-left. The bottom-right displays two content cards with estimated earnings, suggesting a tutorial or breakdown of online monetization.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +140,45 @@
         "media/x-2041132177229037978/s02_1.jpg",
         "media/x-2041132177229037978/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2041132177229037978"
+      "link": "https://x.com/NormieEdits/status/2041132177229037978",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "scale-blowup"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "duotone"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "revenue estimation",
+          "creator economy",
+          "data visualization",
+          "financial growth"
+        ],
+        "title": "Revenue estimation display",
+        "description": "A four-quadrant layout presents a dramatic visual of estimated revenue. The top-left shows a grid of video thumbnails, the top-right features a circular profile portrait with a red marker. The bottom-left uses a bold orange background to highlight an estimated revenue of $1,000,000. The bottom-right displays two content cards with different earnings figures.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -77,8 +193,47 @@
         "media/x-2041132177229037978/s03_1.jpg",
         "media/x-2041132177229037978/s03_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2041132177229037978"
+      "link": "https://x.com/NormieEdits/status/2041132177229037978",
+      "tags": {
+        "technique": [
+          "grid-layout",
+          "ui-animation",
+          "chart-animation"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "corporate-clean"
+        ],
+        "format": [
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "orange"
+        ],
+        "concepts": [
+          "creator analytics",
+          "income breakdown",
+          "social media",
+          "data visualization"
+        ],
+        "title": "Creator profile and analytics",
+        "description": "A four-quadrant layout displays a creator's profile, a pie chart showing a small percentage of earnings, a video thumbnail with social media icons, and a bar chart illustrating the breakdown of income sources. The design uses a dark theme with white and orange elements for clarity.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

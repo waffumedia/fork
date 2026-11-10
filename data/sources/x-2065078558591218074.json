@@ -24,8 +24,46 @@
       "frames": [
         "media/x-2065078558591218074/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2065078558591218074"
+      "link": "https://x.com/NormieEdits/status/2065078558591218074",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout",
+          "data-viz"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful"
+        ],
+        "format": [
+          "infographic",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "yellow",
+          "black",
+          "white",
+          "grey"
+        ],
+        "concepts": [
+          "monetization funnel",
+          "social media earnings",
+          "visual metaphor"
+        ],
+        "title": "TikTok to $100k conversion",
+        "description": "A smartphone screen shows a user creating content, with an arrow indicating a 10% conversion rate to $100,000, visually representing monetization. The scene uses a clean, illustrative style with clear labels and a direct visual metaphor.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

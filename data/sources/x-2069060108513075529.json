@@ -36,8 +36,47 @@
         "media/x-2069060108513075529/s00_1.jpg",
         "media/x-2069060108513075529/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2069060108513075529"
+      "link": "https://x.com/NormieEdits/status/2069060108513075529",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "text-on-path",
+          "glitch",
+          "motion-blur"
+        ],
+        "style": [
+          "minimal",
+          "editorial",
+          "corporate-clean"
+        ],
+        "format": [
+          "social-reel",
+          "explainer"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "grey",
+          "yellow"
+        ],
+        "concepts": [
+          "text highlight",
+          "academic research",
+          "digital health"
+        ],
+        "title": "text overlay on document",
+        "description": "A close-up of a printed document with highlighted text, likely a screenshot from a video explaining the effects of internet usage on brain matter, featuring a clean and academic presentation style.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

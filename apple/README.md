@@ -1,0 +1,28 @@
+# Fork native app
+
+One SwiftUI target for iOS 26 and macOS 26. No packages or web views.
+
+Generate and build, sequentially (both destinations share Xcode's build database):
+
+```sh
+cd apple
+xcodegen
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'generic/platform=iOS Simulator' CODE_SIGNING_ALLOWED=NO build
+xcodebuild -project Fork.xcodeproj -scheme Fork -destination 'platform=macOS' build
+```
+
+Settings stores the server URL in UserDefaults and the token in Keychain. Debug builds also accept `FORK_URL` and `FORK_TOKEN` in the launch environment. Environment values aren't saved until Save or Test connection is pressed. Release builds ignore those variables. For a physical iPhone, use the Mac's LAN hostname or address in Settings; localhost refers to the iPhone itself.
+
+Debug builds use Swift's `-disable-sandbox` compiler option because the build host already runs in a sandbox and cannot start a nested sandbox for Observation macro helpers. This affects compiler subprocesses, not app permissions. Release has no such override. macOS uses ad hoc signing.
+
+Read-only integration checks (loads the local token only into the Debug check executable's environment):
+
+```sh
+python3 apple/Checks/run.py
+```
+
+Run that command from the repository root. It checks live JSON decoding, search, tag filtering, scene/source details, image fetch, deep-link URL, both graph modes and focus, layout caching, a 900-node/4,000-edge layout, and 401 state. It doesn't change swipes or claim to test rendered UI. Output is saved to `apple/smoke.log`.
+
+For simulator launch, pass the token through `SIMCTL_CHILD_FORK_TOKEN` and the URL through `SIMCTL_CHILD_FORK_URL` when invoking `xcrun simctl launch booted com.waffu.fork`. Don't put credentials in the scheme or project. Capture UI with `xcrun simctl io booted screenshot ../context/shots/<screen>.png` from `apple/`.
+
+The map uses one Canvas, four batched edge paths, a spatial-grid force layout in a detached task (300 iterations), and cached static positions. Images are fetched only for visible scene nodes in batches of six, downsampled off the main thread, and cached. Search also exposes Canvas nodes as native buttons. Pan with a drag, zoom with a pinch or the toolbar controls; macOS also converts native ScrollView wheel movement to zoom. Layout cache keys include server, mode, liked filter, focus, and graph membership/degrees.

@@ -36,7 +36,49 @@
         "media/x-1988856472101421413/s00_1.jpg",
         "media/x-1988856472101421413/s00_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1988856472101421413"
+      "link": "https://x.com/NormieEdits/status/1988856472101421413",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "ui-animation",
+          "map-animation",
+          "overlay-graphics"
+        ],
+        "style": [
+          "corporate-clean",
+          "minimal",
+          "dark-moody",
+          "geometric"
+        ],
+        "format": [
+          "vsl",
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects",
+          "premiere"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue",
+          "red"
+        ],
+        "concepts": [
+          "data-viz",
+          "process flow",
+          "document display"
+        ],
+        "title": "Split-screen property workflow",
+        "description": "A dynamic split-screen composition showcasing a real estate or construction process, with a top panel displaying a map with property markers and a bottom panel showing a document titled 'Closing Disclosure' alongside UI elements for different stages like 'Search', 'Land', and 'Funding'.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -51,8 +93,49 @@
         "media/x-1988856472101421413/s01_1.jpg",
         "media/x-1988856472101421413/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/1988856472101421413"
+      "link": "https://x.com/NormieEdits/status/1988856472101421413",
+      "tags": {
+        "technique": [
+          "split-screen",
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "minimal",
+          "dark-moody",
+          "high-contrast",
+          "corporate-clean"
+        ],
+        "format": [
+          "vsl",
+          "explainer",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease"
+        ],
+        "medium": [
+          "after-effects",
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "white",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "cost comparison",
+          "real estate",
+          "financial data"
+        ],
+        "title": "House flip cost breakdown",
+        "description": "A composite image presenting a stark contrast between a modest $150 house and a large, expensive $2 million home under construction. The left side details the financials of a poor deal, while the right shows a modern build, likely for a real estate or finance explainer.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

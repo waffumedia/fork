@@ -34,7 +34,45 @@
       "frames": [
         "media/x-2077100668456702425/s00_0.jpg"
       ],
-      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+      "link": "https://x.com/RenderedVision/status/2077100668456702425",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics",
+          "hard-cut-montage"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "grey",
+          "white"
+        ],
+        "concepts": [
+          "man speaking",
+          "text overlay",
+          "direct address"
+        ],
+        "title": "man speaking to camera",
+        "description": "A man with a beard and cap speaks directly to the camera against a dark blue geometric background, with a text overlay introducing the video's content.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,7 +87,44 @@
         "media/x-2077100668456702425/s01_1.jpg",
         "media/x-2077100668456702425/s01_2.jpg"
       ],
-      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+      "link": "https://x.com/RenderedVision/status/2077100668456702425",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "grid-layout",
+          "screen-recording"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black"
+        ],
+        "concepts": [
+          "coaching package",
+          "price point",
+          "digital workspace"
+        ],
+        "title": "coaching package graphic",
+        "description": "A graphic with a grid background displays a computer screen recording of a spreadsheet, with text about creating a $5,000 coaching package.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -64,7 +139,45 @@
         "media/x-2077100668456702425/s02_1.jpg",
         "media/x-2077100668456702425/s02_2.jpg"
       ],
-      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+      "link": "https://x.com/RenderedVision/status/2077100668456702425",
+      "tags": {
+        "technique": [
+          "kinetic-type",
+          "overlay-graphics",
+          "hard-cut-montage"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "grey",
+          "white"
+        ],
+        "concepts": [
+          "man speaking",
+          "text overlay",
+          "direct address"
+        ],
+        "title": "man with text overlay",
+        "description": "A close-up of the man speaking, with the word 'HARD WORK' appearing as a kinetic text overlay.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -94,7 +207,44 @@
         "media/x-2077100668456702425/s04_1.jpg",
         "media/x-2077100668456702425/s04_2.jpg"
       ],
-      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+      "link": "https://x.com/RenderedVision/status/2077100668456702425",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "hard-cut-montage"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "dark-moody"
+        ],
+        "format": [
+          "talking-head",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "blue",
+          "grey",
+          "white"
+        ],
+        "concepts": [
+          "man speaking",
+          "direct address",
+          "minimal background"
+        ],
+        "title": "man speaking to camera",
+        "description": "A man with a beard and cap speaks directly to the camera against a dark blue geometric background.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -109,8 +259,47 @@
         "media/x-2077100668456702425/s05_1.jpg",
         "media/x-2077100668456702425/s05_2.jpg"
       ],
-      "link": "https://x.com/RenderedVision/status/2077100668456702425"
+      "link": "https://x.com/RenderedVision/status/2077100668456702425",
+      "tags": {
+        "technique": [
+          "chart-animation",
+          "overlay-graphics",
+          "hard-cut-montage"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "geometric"
+        ],
+        "format": [
+          "infographic",
+          "tutorial",
+          "social-reel"
+        ],
+        "motion": [
+          "snappy",
+          "staggered"
+        ],
+        "medium": [
+          "after-effects"
+        ],
+        "palette": [
+          "black",
+          "grey",
+          "white"
+        ],
+        "concepts": [
+          "pyramid structure",
+          "hierarchical model",
+          "offer packaging"
+        ],
+        "title": "pyramid diagram",
+        "description": "A dark grey pyramid diagram labeled 'High-End Offer Pyramid' with three parts, illustrating a hierarchical structure.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "ready",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit",
+  "tag_error": "1 scenes untagged"
 }

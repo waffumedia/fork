@@ -34,7 +34,51 @@
       "frames": [
         "media/x-2015292005325439358/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2015292005325439358"
+      "link": "https://x.com/NormieEdits/status/2015292005325439358",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "parallax",
+          "glow-bloom",
+          "depth-of-field"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful",
+          "geometric"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects",
+          "figma",
+          "spline"
+        ],
+        "palette": [
+          "green",
+          "white",
+          "grey",
+          "black"
+        ],
+        "concepts": [
+          "financial success",
+          "digital notification",
+          "profit milestone",
+          "clean interface"
+        ],
+        "title": "Profit notification card",
+        "description": "A clean, minimalist graphic of a digital notification card showing a received profit of $1,000,000. The design features a light green circular icon with a dollar sign and uses a soft, modern UI style with subtle layering.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -49,8 +93,52 @@
         "media/x-2015292005325439358/s01_1.jpg",
         "media/x-2015292005325439358/s01_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2015292005325439358"
+      "link": "https://x.com/NormieEdits/status/2015292005325439358",
+      "tags": {
+        "technique": [
+          "ui-animation",
+          "glow-bloom",
+          "overlay-graphics"
+        ],
+        "style": [
+          "minimal",
+          "corporate-clean",
+          "bright-playful",
+          "geometric"
+        ],
+        "format": [
+          "brand-ad",
+          "product-promo",
+          "infographic"
+        ],
+        "motion": [
+          "snappy",
+          "smooth-ease",
+          "looping"
+        ],
+        "medium": [
+          "after-effects",
+          "figma",
+          "spline"
+        ],
+        "palette": [
+          "grey",
+          "white",
+          "black",
+          "red"
+        ],
+        "concepts": [
+          "personal branding",
+          "investor identity",
+          "digital profile",
+          "brand integration"
+        ],
+        "title": "Investor profile card",
+        "description": "A minimalist profile card for a real estate investor named Jimmy, featuring a placeholder avatar and a small Airbnb logo. The design is clean and modern with a focus on branding.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }

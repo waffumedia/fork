@@ -34,7 +34,42 @@
       "frames": [
         "media/x-2001530551669592084/s00_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "brown",
+          "green"
+        ],
+        "concepts": [
+          "man pointing at face",
+          "football jersey",
+          "living room"
+        ],
+        "title": "Man on couch pointing",
+        "description": "A man in a white England football jersey sits on a patterned couch, pointing at his cheeks with both index fingers while speaking. The scene is a talking-head shot with a soft-focus background of a living room.",
+        "quality": 4
+      }
     },
     {
       "idx": 1,
@@ -47,7 +82,40 @@
       "frames": [
         "media/x-2001530551669592084/s01_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue"
+        ],
+        "concepts": [
+          "man gesturing",
+          "photo wall",
+          "talking head"
+        ],
+        "title": "Man in blue shirt",
+        "description": "A man in a dark blue t-shirt smiles and gestures with his right hand towards the camera. The background is a simple room with a wall covered in small photos.",
+        "quality": 4
+      }
     },
     {
       "idx": 2,
@@ -62,7 +130,43 @@
         "media/x-2001530551669592084/s02_1.jpg",
         "media/x-2001530551669592084/s02_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "screen-recording",
+          "split-screen"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "cinematic"
+        ],
+        "format": [
+          "game",
+          "intro"
+        ],
+        "motion": [
+          "continuous-camera",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action",
+          "after-effects"
+        ],
+        "palette": [
+          "green",
+          "white",
+          "blue"
+        ],
+        "concepts": [
+          "football game",
+          "inset video",
+          "gaming"
+        ],
+        "title": "Football game with inset",
+        "description": "A screen recording of a football video game (FIFA) is shown, with an inset video of a man in the bottom-left corner. The game shows players on a green pitch during a match.",
+        "quality": 4
+      }
     },
     {
       "idx": 3,
@@ -75,7 +179,41 @@
       "frames": [
         "media/x-2001530551669592084/s03_0.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "text-on-path"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "corporate-clean"
+        ],
+        "format": [
+          "brand-ad",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "yellow",
+          "blue"
+        ],
+        "concepts": [
+          "team logo",
+          "football jersey",
+          "branding"
+        ],
+        "title": "Hashtag United logo",
+        "description": "A close-up of a yellow football jersey with a blue 'Hashtag United' logo. The text 'a team' appears at the bottom.",
+        "quality": 4
+      }
     },
     {
       "idx": 4,
@@ -90,7 +228,42 @@
         "media/x-2001530551669592084/s04_1.jpg",
         "media/x-2001530551669592084/s04_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "overlay-graphics",
+          "ui-animation"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "corporate-clean"
+        ],
+        "format": [
+          "brand-ad",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "white",
+          "blue",
+          "yellow"
+        ],
+        "concepts": [
+          "youtube channel",
+          "social media",
+          "branding"
+        ],
+        "title": "YouTube channel page",
+        "description": "A screenshot of the 'Hashtag United' YouTube channel page, showing the channel art, name, subscriber count, and a subscribe button.",
+        "quality": 4
+      }
     },
     {
       "idx": 5,
@@ -105,7 +278,42 @@
         "media/x-2001530551669592084/s05_1.jpg",
         "media/x-2001530551669592084/s05_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "black",
+          "blue",
+          "green"
+        ],
+        "concepts": [
+          "man speaking",
+          "football stadium",
+          "talking head"
+        ],
+        "title": "Man in hoodie speaking",
+        "description": "A man with a beard and a black hoodie speaks directly to the camera. Behind him is a large framed image of a football stadium.",
+        "quality": 4
+      }
     },
     {
       "idx": 6,
@@ -120,7 +328,42 @@
         "media/x-2001530551669592084/s06_1.jpg",
         "media/x-2001530551669592084/s06_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "cinematic"
+        ],
+        "format": [
+          "brand-ad",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "green",
+          "yellow",
+          "blue"
+        ],
+        "concepts": [
+          "man in bin",
+          "chips on field",
+          "football kit"
+        ],
+        "title": "Man in bin on field",
+        "description": "A man in a yellow and blue football kit sits inside a black bin on a grassy field. A pile of chip packets surrounds the bin.",
+        "quality": 4
+      }
     },
     {
       "idx": 7,
@@ -135,7 +378,42 @@
         "media/x-2001530551669592084/s07_1.jpg",
         "media/x-2001530551669592084/s07_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "cinematic"
+        ],
+        "format": [
+          "brand-ad",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "green",
+          "yellow",
+          "blue"
+        ],
+        "concepts": [
+          "man smiling",
+          "chips on field",
+          "football kit"
+        ],
+        "title": "Man in bin smiling",
+        "description": "A man in a yellow and blue football kit sits inside a black bin on a grassy field, smiling at the camera. Chip packets are scattered around him.",
+        "quality": 4
+      }
     },
     {
       "idx": 8,
@@ -150,8 +428,44 @@
         "media/x-2001530551669592084/s08_1.jpg",
         "media/x-2001530551669592084/s08_2.jpg"
       ],
-      "link": "https://x.com/NormieEdits/status/2001530551669592084"
+      "link": "https://x.com/NormieEdits/status/2001530551669592084",
+      "tags": {
+        "technique": [
+          "freeze-frame",
+          "overlay-graphics"
+        ],
+        "style": [
+          "bright-playful",
+          "meme",
+          "cinematic"
+        ],
+        "format": [
+          "talking-head",
+          "intro"
+        ],
+        "motion": [
+          "snappy",
+          "beat-synced"
+        ],
+        "medium": [
+          "live-action"
+        ],
+        "palette": [
+          "blue",
+          "black",
+          "white"
+        ],
+        "concepts": [
+          "man holding mirror",
+          "wide eyes",
+          "talking head"
+        ],
+        "title": "Man with mirror",
+        "description": "A man with a wide-eyed expression holds a round mirror in his right hand. He is wearing a dark blue t-shirt with white speckles.",
+        "quality": 4
+      }
     }
   ],
-  "status": "ready"
+  "status": "tagged",
+  "tag_model": "mlx-community/Qwen3-VL-30B-A3B-Instruct-4bit"
 }
